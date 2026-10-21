@@ -1,185 +1,289 @@
 # Native HSA physiological pockets
 
-Pocket structures and geometric models from three independent 1 µs trajectories
-of **585-residue native HSA**. The R1–R3 results are retained, together with one
-common whole-protein template and independently selected pocket-shape templates.
+Atomic structures and geometric models of eleven physiological regions in
+**native, 585-residue HSA**, sampled in three independent 1 µs simulations.
+The collection includes a common HSA template, individual pocket templates,
+and the original R1–R3 results.
 
-## Two representative models
+## Choose a template
 
-| Model | Selection | Use |
-|---|---|---|
-| [Whole-protein representative](structures/representative/whole_protein) | Observed frame closest to the center of the dominant common protein cluster | Position all physiological pockets within one HSA conformation |
-| [Pocket-shape representatives](structures/representative/pocket_geometry) | Observed medoid of the dominant nonempty geometry group for each pocket | Inspect local cavity geometry independently of overall HSA opening |
+### Whole-protein representative
 
-The whole-protein template is **R3, frame 2726 (27.26%
-of production)**. Its protein cluster contains 68.3% of the equally
-weighted R1–R3 frames. All eleven pocket geometries in this template were
-calculated on that same frame.
+One observed frame is selected from the most populated group of overall HSA
+conformations. **All eleven pockets are extracted from this same frame.**
+Their relative positions, the shape of the protein and the surrounding residues
+therefore belong to one coherent structure.
 
-For the pocket-shape templates, each region was analyzed separately across
-102 uniformly sampled frames from each replica, giving 306 frames per region.
-Local Cα alignment places its probe-space masks on the same grid. Jaccard
-distance compares the occupied grid cells and distinguishes different shapes
-with equal volume. Average-linkage clustering and DBSCAN candidates were
-compared; the selected geometry is an actual member nearest the other members
-of the most populated nonempty group. A single group is retained when the
-candidate partitions have low silhouette scores. Each local template has its
-own source protein, frame and geometric envelope.
+Use this model to study the intact protein, locate several binding regions at
+once, or design a material around the complete HSA molecule.
 
-These criteria retained two DBSCAN groups for FA5. The remaining regions were
-summarized by one nonempty shape ensemble each. The medoid is chosen by spatial
-overlap and its volume can differ from the trajectory mean. The
-[representativeness table](tables/pocket_shape_representativeness.csv) reports
-shape overlap and the position of each selected volume within its sampled
-distribution.
+### Pocket-shape representatives
+
+Each pocket is considered separately. Frames containing space for the probe
+are compared across the three simulations, and one observed frame is selected
+to represent the most populated cavity-shape group. The selection reflects the **shape of that pocket**,
+including where its internal space lies. It is not determined by volume alone.
+
+Use these models to examine a particular cavity and its lining residues.
+Different pockets can come from different frames. Each model includes its own
+complete parent protein and geometric envelope. The selected structures are
+observed conformations; the trajectory averages are reported separately below.
+
+### Which should be used for MOF design?
+
+**Start with the whole-protein model for intact-HSA templating or encapsulation.**
+Use its atomic PDB to retain the exposed chemical groups, and its geometric
+envelope to describe the overall size and shape. Protein-directed MOF
+mineralization has been demonstrated experimentally, including with HSA
+([Liang et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26041070/)).
+
+**Use the pocket-shape models as complementary local templates** when the design
+concerns a specific cavity. They provide a cavity-focused choice of conformation
+and its surrounding atoms. The two collections let the MOF group compare an
+intact-protein design with a local-site design. Their suitability for a particular
+MOF chemistry will require testing with that material's building blocks.
+
+## The complete HSA template
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HSA_common_representative_dark.png">
-  <img src="images/HSA_common_representative.png" width="100%" alt="Whole-protein envelope with all physiological probes">
+  <img src="images/HSA_common_representative.png" width="100%" alt="Front and oblique HSA views with physiological probe spaces, and the complete protein envelope">
 </picture>
 
-[Whole-protein PDB](structures/representative/whole_protein/protein.pdb) ·
-[Atomic protein and all probes](structures/representative/whole_protein/HSA_with_all_pockets.pdb) ·
-[Protein hull and all probes, PDB](structures/representative/whole_protein/HSA_hull_with_all_pockets.pdb) ·
+The cartoon shows HSA secondary structure; colored regions show the available
+probe-center space in its physiological pockets. The separate wireframe shows
+the enclosing protein convex hull. A convex hull bridges surface indentations;
+it is a coarse geometric envelope. The atomic PDB retains atomic detail and chemical identities.
+
+[Protein PDB](structures/representative/whole_protein/protein.pdb) ·
+[Protein with all probes, PDB](structures/representative/whole_protein/HSA_with_all_pockets.pdb) ·
+[Protein hull with all probes, PDB](structures/representative/whole_protein/HSA_hull_with_all_pockets.pdb) ·
 [OBJ](structures/representative/whole_protein/HSA_hull_with_all_pockets.obj) ·
 [SDF](structures/representative/whole_protein/HSA_hull_with_all_pockets.sdf)
 
-## Pocket volumes and models
+## Pocket volumes
 
-Trajectory summaries are the mean ± sample SD of the three replica means.
-The two model columns give the volume in the selected observed frame. Click a
-model volume to open its structure folder. Probe availability is the fraction
-of the 306 sampled frames with nonzero probe-center space in the defined region.
-The local shape template is selected from those nonempty frames.
+The MD column is the mean ± SD of the three replica means. The other columns
+give the probe-space volume in each selected structure; click a value to open
+its model folder. All volumes are in Å³.
 
-| Region | Trajectory mean ± SD (Å³) | Whole-protein model (Å³) | Pocket-shape model (Å³) | Probe availability |
-|---|---:|---:|---:|---:|
-| Cleft | 233.5 ± 103.8 | [250](structures/representative/whole_protein/Cleft) | [307](structures/representative/pocket_geometry/Cleft) | 100.0% |
-| FA1 | 41.0 ± 13.1 | [0](structures/representative/whole_protein/FA1) | [129](structures/representative/pocket_geometry/FA1) | 83.7% |
-| FA2 | 5.7 ± 4.6 | [1](structures/representative/whole_protein/FA2) | [11](structures/representative/pocket_geometry/FA2) | 46.1% |
-| FA3 | 4.2 ± 4.4 | [0](structures/representative/whole_protein/FA3) | [3](structures/representative/pocket_geometry/FA3) | 42.5% |
-| FA4 | 57.9 ± 33.2 | [53](structures/representative/whole_protein/FA4) | [120](structures/representative/pocket_geometry/FA4) | 98.7% |
-| FA5 | 14.1 ± 15.0 | [26](structures/representative/whole_protein/FA5) | [38](structures/representative/pocket_geometry/FA5) | 64.4% |
-| FA6 | 169.1 ± 24.5 | [168](structures/representative/whole_protein/FA6) | [199](structures/representative/pocket_geometry/FA6) | 100.0% |
-| FA7 | 9.3 ± 5.5 | [2](structures/representative/whole_protein/FA7) | [25](structures/representative/pocket_geometry/FA7) | 51.3% |
-| Heme | 173.5 ± 36.9 | [136](structures/representative/whole_protein/Heme) | [383](structures/representative/pocket_geometry/Heme) | 99.3% |
-| Sudlow I | 65.9 ± 13.4 | [50](structures/representative/whole_protein/Sudlow_I) | [114](structures/representative/pocket_geometry/Sudlow_I) | 98.4% |
-| Sudlow II | 16.4 ± 10.6 | [24](structures/representative/whole_protein/Sudlow_II) | [36](structures/representative/pocket_geometry/Sudlow_II) | 63.7% |
+| Pocket | MD mean ± SD | Whole protein | Pocket shape |
+|---|---:|---:|---:|
+| Cleft | 233.5 ± 103.8 | [250](structures/representative/whole_protein/Cleft) | [307](structures/representative/pocket_geometry/Cleft) |
+| FA1 | 41.0 ± 13.1 | [0](structures/representative/whole_protein/FA1) | [129](structures/representative/pocket_geometry/FA1) |
+| FA2 | 5.7 ± 4.6 | [1](structures/representative/whole_protein/FA2) | [11](structures/representative/pocket_geometry/FA2) |
+| FA3 | 4.2 ± 4.4 | [0](structures/representative/whole_protein/FA3) | [3](structures/representative/pocket_geometry/FA3) |
+| FA4 | 57.9 ± 33.2 | [53](structures/representative/whole_protein/FA4) | [120](structures/representative/pocket_geometry/FA4) |
+| FA5 | 14.1 ± 15.0 | [26](structures/representative/whole_protein/FA5) | [38](structures/representative/pocket_geometry/FA5) |
+| FA6 | 169.1 ± 24.5 | [168](structures/representative/whole_protein/FA6) | [199](structures/representative/pocket_geometry/FA6) |
+| FA7 | 9.3 ± 5.5 | [2](structures/representative/whole_protein/FA7) | [25](structures/representative/pocket_geometry/FA7) |
+| Heme | 173.5 ± 36.9 | [136](structures/representative/whole_protein/Heme) | [383](structures/representative/pocket_geometry/Heme) |
+| Sudlow&nbsp;I | 65.9 ± 13.4 | [50](structures/representative/whole_protein/Sudlow_I) | [114](structures/representative/pocket_geometry/Sudlow_I) |
+| Sudlow&nbsp;II | 16.4 ± 10.6 | [24](structures/representative/whole_protein/Sudlow_II) | [36](structures/representative/pocket_geometry/Sudlow_II) |
 
-[Comparison table](tables/representative_comparison.csv) ·
-[Source frames, lining residues and models](tables/representative_models.csv) ·
-[Geometry-cluster populations by replica](tables/pocket_shape_populations.csv)
+A zero means that the 1.4 Å probe has no accessible center positions within
+the specified region in that frame. The physiological site is still defined by
+its reference residues. These volumes describe the selected probe and region;
+FA7 overlaps Sudlow I, and FA3/FA4 overlap Sudlow II.
+
+[Full comparison table](tables/representative_comparison.csv) ·
+[Source frames and lining residues](tables/representative_models.csv) ·
+[Methods and table definitions](tables/README.md)
+
+## See the different representations
+
+Each gallery separates four views: **atomic pocket residues**, the **probe
+surface**, **residues with the probe**, and the **residue convex hull** as a
+wireframe. The probe surface is the mesh stored in OBJ/PLY. Its stepped boundary
+retains the 1 Å calculation grid. The convex hull encloses lining atoms and has
+a different shape from the cavity itself.
+
+The upper row uses the whole-protein frame; the lower row uses the independently
+selected pocket-shape frame. All eight panels for a given pocket share the same
+scale and local alignment. The complete protein envelope is shown above and is
+also included in the combined PDB files.
 
 ### Heme
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Heme_representatives_dark.png">
-  <img src="images/Heme_representatives.png" width="100%" alt="Heme residues, probe and convex envelope in the two representative models">
+  <img src="images/Heme_representatives.png" width="100%" alt="Heme: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame model](structures/representative/whole_protein/Heme) ·
-[Pocket-shape model](structures/representative/pocket_geometry/Heme)
+[Whole-protein-frame files](structures/representative/whole_protein/Heme) ·
+[Pocket-shape files](structures/representative/pocket_geometry/Heme)
 
 ### FA6
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA6_representatives_dark.png">
-  <img src="images/FA6_representatives.png" width="100%" alt="FA6 residues, probe and convex envelope in the two representative models">
+  <img src="images/FA6_representatives.png" width="100%" alt="FA6: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame model](structures/representative/whole_protein/FA6) ·
-[Pocket-shape model](structures/representative/pocket_geometry/FA6)
+[Whole-protein-frame files](structures/representative/whole_protein/FA6) ·
+[Pocket-shape files](structures/representative/pocket_geometry/FA6)
 
 ### Sudlow I
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Sudlow_I_representatives_dark.png">
-  <img src="images/Sudlow_I_representatives.png" width="100%" alt="Sudlow I residues, probe and convex envelope in the two representative models">
+  <img src="images/Sudlow_I_representatives.png" width="100%" alt="Sudlow I: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame model](structures/representative/whole_protein/Sudlow_I) ·
-[Pocket-shape model](structures/representative/pocket_geometry/Sudlow_I)
+[Whole-protein-frame files](structures/representative/whole_protein/Sudlow_I) ·
+[Pocket-shape files](structures/representative/pocket_geometry/Sudlow_I)
 
-Green shows the space available to probe centers; sticks show actual pocket-lining
-atoms. The pale envelope is their convex hull. Both panels for one pocket use the
-same scale and a local Cα fit to the same reference. Scale bars are 5 Å.
+<details>
+<summary>Sudlow II — view all representations</summary>
 
-## Files
+### Sudlow II
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/Sudlow_II_representatives_dark.png">
+  <img src="images/Sudlow_II_representatives.png" width="100%" alt="Sudlow II: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[Whole-protein-frame files](structures/representative/whole_protein/Sudlow_II) ·
+[Pocket-shape files](structures/representative/pocket_geometry/Sudlow_II)
+
+</details>
+
+<details>
+<summary>FA1 — view all representations</summary>
+
+### FA1
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA1_representatives_dark.png">
+  <img src="images/FA1_representatives.png" width="100%" alt="FA1: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[Whole-protein-frame files](structures/representative/whole_protein/FA1) ·
+[Pocket-shape files](structures/representative/pocket_geometry/FA1)
+
+</details>
+
+<details>
+<summary>FA2 — view all representations</summary>
+
+### FA2
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA2_representatives_dark.png">
+  <img src="images/FA2_representatives.png" width="100%" alt="FA2: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[Whole-protein-frame files](structures/representative/whole_protein/FA2) ·
+[Pocket-shape files](structures/representative/pocket_geometry/FA2)
+
+</details>
+
+<details>
+<summary>FA3 — view all representations</summary>
+
+### FA3
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA3_representatives_dark.png">
+  <img src="images/FA3_representatives.png" width="100%" alt="FA3: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[Whole-protein-frame files](structures/representative/whole_protein/FA3) ·
+[Pocket-shape files](structures/representative/pocket_geometry/FA3)
+
+</details>
+
+<details>
+<summary>FA4 — view all representations</summary>
+
+### FA4
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA4_representatives_dark.png">
+  <img src="images/FA4_representatives.png" width="100%" alt="FA4: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[Whole-protein-frame files](structures/representative/whole_protein/FA4) ·
+[Pocket-shape files](structures/representative/pocket_geometry/FA4)
+
+</details>
+
+<details>
+<summary>FA5 — view all representations</summary>
+
+### FA5
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA5_representatives_dark.png">
+  <img src="images/FA5_representatives.png" width="100%" alt="FA5: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[Whole-protein-frame files](structures/representative/whole_protein/FA5) ·
+[Pocket-shape files](structures/representative/pocket_geometry/FA5)
+
+</details>
+
+<details>
+<summary>FA7 — view all representations</summary>
+
+### FA7
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA7_representatives_dark.png">
+  <img src="images/FA7_representatives.png" width="100%" alt="FA7: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[Whole-protein-frame files](structures/representative/whole_protein/FA7) ·
+[Pocket-shape files](structures/representative/pocket_geometry/FA7)
+
+</details>
+
+<details>
+<summary>Cleft — view all representations</summary>
+
+### Cleft
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/Cleft_representatives_dark.png">
+  <img src="images/Cleft_representatives.png" width="100%" alt="Cleft: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[Whole-protein-frame files](structures/representative/whole_protein/Cleft) ·
+[Pocket-shape files](structures/representative/pocket_geometry/Cleft)
+
+</details>
+
+## Find the files
 
 ```text
-tables/
 structures/
 ├── representative/
-│   ├── whole_protein/       One HSA frame, with all eleven pockets
-│   └── pocket_geometry/     One independently chosen frame per pocket
-├── R1/                     Original protein-cluster models
+│   ├── whole_protein/       One HSA frame with all eleven pockets
+│   └── pocket_geometry/     One frame selected for each pocket
+├── R1/                     Original per-replica models
 ├── R2/
 └── R3/
-images/
+tables/                     Volumes, source frames and methods
+images/                     Transparent previews
 ```
 
-The whole-protein folder contains `protein.pdb`, `protein_hull` models and one
-subfolder per physiological region. Each local pocket folder contains its own
-`protein.pdb`, `protein_hull` and the pocket files below. Coordinates are in Å.
+Every pocket folder contains the following models. Coordinates are in Å.
 
 | File | Contents |
 |---|---|
-| `pocket_atoms.pdb` | Actual lining residues within 4 Å of the probe-mesh vertices |
-| `region_atoms.pdb` | The physiological reference-region residues |
-| `probe.pdb`, `.obj`, `.ply` | Accessible probe-center geometry |
+| `pocket_atoms.pdb` | Actual pocket-lining residues |
+| `region_atoms.pdb` | Residues defining the physiological reference region |
+| `probe.pdb`, `.obj`, `.ply` | Accessible probe-center space |
 | `lining_hull.pdb`, `.obj`, `.ply` | Convex envelope of the lining-residue heavy atoms |
-| `pocket_with_geometry.pdb` | Lining atoms, probe model and complete protein hull |
-| `protein_with_pocket.pdb` | Complete atomic protein with that pocket and protein hull |
-| `protein_hull.pdb`, `.obj`, `.ply` | Convex envelope of the complete protein |
+| `pocket_with_geometry.pdb` | Pocket atoms, probe model and complete protein hull |
+| `protein_with_pocket.pdb` | Complete protein, that pocket's probe and protein hull |
+| `protein.pdb`, `protein_hull.*` | Complete parent protein and its enclosing hull; in the parent directory for the whole-protein collection |
 
-Every OBJ also has `.sdf`, `.mol` and `.mol2` exports. These geometric files use
-virtual vertices: `*` in MOL/SDF and `Du` in MOL2. Mesh edges carry no chemical
-bond types, physical charges or force-field parameters. MOL/SDF use V3000.
-OBJ/PLY retain triangular faces; SDF and MOL2 additionally record face indices.
-Actual protein atoms remain in the PDB files.
+Every OBJ also has **SDF, MOL and MOL2** exports. Their vertices and edges describe
+geometry. They use virtual atoms (`*` or `Du`); chemical atoms remain in the atomic
+PDB files. OBJ/PLY retain the triangular surface faces.
 
-[Representative geometry formats](tables/representative_geometry_formats.csv) ·
-[Original R1–R3 geometry formats](tables/geometry_formats.csv)
-
-## Replicas and numerical results
-
-The original R1, R2 and R3 structures and results are unchanged. Each replica
-retains two whole-protein cluster representatives, with all eleven regions
-calculated on the corresponding observed frame.
-
-| Table | Contents |
-|---|---|
-| [Volume summary](tables/pocket_volume_summary.csv) | Mean and SD of the three replica means |
-| [Per-replica volumes](tables/per_replica_pocket_volumes.csv) | Mean, median and spread within each replica |
-| [Sampled volumes](tables/sampled_pocket_volumes.csv) | Original 102 sampled frames per replica and region |
-| [Original pocket models](tables/pocket_models.csv) | The 66 R1–R3 models and source frames |
-| [Protein representatives](tables/protein_representatives.csv) | Original protein-cluster populations and frames |
-| [Pocket-shape assignments](tables/pocket_shape_assignments.csv) | Local geometry labels and volumes for all 306 sampled frames |
-| [Clustering candidates](tables/pocket_shape_candidates.csv) | Candidate partitions, silhouettes and coverage |
-| [Pocket-shape methods](tables/pocket_shape_methods.csv) | Alignment residues, grids and selected method for each site |
-
-## Extraction
-
-Experimental ligand positions define the physiological regions. Local canonical
-Cα anchors transfer those regions onto each observed frame. Protein atoms
-exclude space using element-specific radii. A 1.4 Å spherical probe and a
-1 Å grid measure seed-connected free space inside each ligand-informed region.
-Heme uses the hemin region from 1O9X. The cleft uses free space inside its moving
-residue-landmark convex envelope.
-
-The new cleft shape comparison uses a common grid after local landmark
-alignment. The original trajectory-volume table retains its original moving-grid
-measurement. Protein and lining hulls enclose atomic positions; the green probe
-mesh describes the available cavity space. FA7 overlaps Sudlow I; FA3 and FA4
-overlap Sudlow II, so these region volumes should not be summed.
-
-Shape clustering includes nonempty masks. Empty masks are recorded as group 0
-and DBSCAN noise as −1. Positive group numbers are ordered by population.
-Candidate groups require at least five frames or 5% of the nonempty sample,
-whichever is larger. DBSCAN coverage must reach 70%; the selected partition
-maximizes coverage × silhouette with a minimum score of 0.25. Otherwise one
-shape group is retained. These sampled populations describe this geometric
-classification; replica identity remains available in every assignment table.
-
-Source: `CATIONIZED_HSA/series_585_apbs`, native system 0%. Original trajectories,
-analysis code, probe masks and full calculation records remain on the cluster.
+The original R1, R2 and R3 models and numerical results are retained. Each replica
+has two whole-protein cluster representatives, with all eleven regions extracted
+from each frame. Frame identities, clustering details and the definitions of all
+tables are in [Methods and numerical results](tables/README.md).
