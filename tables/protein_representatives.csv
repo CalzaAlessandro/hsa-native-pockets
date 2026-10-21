@@ -1,7 +1,7 @@
 replica,cluster,sampled_population,frame,production_percent,folder
-R1,1,0.6977,4532,45.32,physiological/R1/cluster_1
-R2,1,0.3792,4648,46.480000000000004,physiological/R2/cluster_1
-R3,1,0.9717,7499,74.99,physiological/R3/cluster_1
-R1,2,0.3023,7432,74.32000000000001,physiological/R1/cluster_2
-R2,2,0.6208,9134,91.34,physiological/R2/cluster_2
-R3,2,0.0283,857,8.57,physiological/R3/cluster_2
+R1,1,0.6977,4532,45.32,structures/R1/cluster_1
+R2,1,0.3792,4648,46.480000000000004,structures/R2/cluster_1
+R3,1,0.9717,7499,74.99,structures/R3/cluster_1
+R1,2,0.3023,7432,74.32000000000001,structures/R1/cluster_2
+R2,2,0.6208,9134,91.34,structures/R2/cluster_2
+R3,2,0.0283,857,8.57,structures/R3/cluster_2

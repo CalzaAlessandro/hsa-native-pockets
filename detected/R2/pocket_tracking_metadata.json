@@ -1,8 +1,0 @@
-{
-  "method": "Unique exact lining sets first; adjacent sampled-frame Jaccard graph for remaining cavities",
-  "jaccard_cutoff": 0.3,
-  "min_shared_residues": 3,
-  "code_sha256": "b092b9595bd76503195526b53a49293278207edb495a9f85ff399610bf38f685",
-  "interpretation": "IDs are replica-local continuous branches. Split/merge creates new branches with explicit parent edges. Detection gaps end tracks; no identity is inferred across gaps. Spans and sampled-frame fractions are descriptive and depend on sampling and detection; they are not physical pocket lifetimes or thermodynamic populations.",
-  "spatial_validation": "Not included; residue-overlap correspondence remains provisional."
-}

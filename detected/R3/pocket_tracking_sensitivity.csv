@@ -1,4 +1,0 @@
-jaccard_cutoff,min_shared_residues,tracks,continuation_edges,split_edges,merge_edges
-0.2,3,3991,1514,3112,3087
-0.3,3,3079,2426,1092,1099
-0.5,3,3026,2479,90,110
