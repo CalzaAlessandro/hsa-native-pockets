@@ -1,0 +1,12 @@
+site,mean_volume_A3,between_replica_SD_A3,whole_protein_volume_A3,pocket_shape_volume_A3,pocket_shape_replica,pocket_shape_frame,pocket_shape_production_percent,sampled_probe_availability,shape_cluster_population_all_samples,whole_protein_folder,pocket_shape_folder
+Cleft,233.50980392156862,103.80936738013159,250.0,307.0,R2,1684,16.84,1.0,1.0,structures/representative/whole_protein/Cleft,structures/representative/pocket_geometry/Cleft
+FA1,40.950980392156865,13.108312426520826,0.0,129.0,R2,2179,21.79,0.8366013071895425,0.8366013071895425,structures/representative/whole_protein/FA1,structures/representative/pocket_geometry/FA1
+FA2,5.745098039215686,4.643903537059615,1.0,11.0,R2,5446,54.46,0.46078431372549017,0.46078431372549017,structures/representative/whole_protein/FA2,structures/representative/pocket_geometry/FA2
+FA3,4.176470588235294,4.384764875591996,0.0,3.0,R1,5446,54.46,0.42483660130718953,0.42483660130718953,structures/representative/whole_protein/FA3,structures/representative/pocket_geometry/FA3
+FA4,57.921568627450974,33.230618850986374,53.0,120.0,R1,2575,25.75,0.9869281045751634,0.9869281045751634,structures/representative/whole_protein/FA4,structures/representative/pocket_geometry/FA4
+FA5,14.107843137254902,14.98027345708029,26.0,38.0,R3,2971,29.71,0.6437908496732027,0.3431372549019608,structures/representative/whole_protein/FA5,structures/representative/pocket_geometry/FA5
+FA6,169.1437908496732,24.492386621866007,168.0,199.0,R3,5842,58.42,1.0,1.0,structures/representative/whole_protein/FA6,structures/representative/pocket_geometry/FA6
+FA7,9.258169934640522,5.5325774324689085,2.0,25.0,R3,6931,69.31,0.5130718954248366,0.5130718954248366,structures/representative/whole_protein/FA7,structures/representative/pocket_geometry/FA7
+Heme,173.52614379084966,36.9220454569885,136.0,383.0,R2,397,3.97,0.9934640522875817,0.9934640522875817,structures/representative/whole_protein/Heme,structures/representative/pocket_geometry/Heme
+Sudlow_I,65.91503267973856,13.407902541795766,50.0,114.0,R1,4654,46.54,0.9836601307189542,0.9836601307189542,structures/representative/whole_protein/Sudlow_I,structures/representative/pocket_geometry/Sudlow_I
+Sudlow_II,16.356209150326798,10.578955325724413,24.0,36.0,R3,7426,74.26,0.6372549019607843,0.6372549019607843,structures/representative/whole_protein/Sudlow_II,structures/representative/pocket_geometry/Sudlow_II

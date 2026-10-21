@@ -1,0 +1,58 @@
+REMARK   ACTUAL ATOMS RETAIN THEIR ORIGINAL COORDINATES AND SERIALS
+REMARK   PRB/P = PROBE GEOMETRY; HUL/H = ATOMIC CONVEX ENVELOPE
+REMARK   GEOMETRIC VERTICES ARE VIRTUAL DISPLAY POINTS, NOT MD ATOMS
+HETATM    1  VX  PRB P   1      10.286  22.875  25.794  0.00  0.00           X  
+HETATM    2  VX  PRB P   1       9.836  23.161  28.181  0.00  0.00           X  
+HETATM    3  VX  PRB P   1       7.665  22.702  29.447  0.00  0.00           X  
+HETATM    4  VX  PRB P   1       4.256  24.283  25.849  0.00  0.00           X  
+HETATM    5  VX  PRB P   1       2.489  26.255  25.808  0.00  0.00           X  
+HETATM    6  VX  PRB P   1       1.287  26.366  26.018  0.00  0.00           X  
+HETATM    7  VX  PRB P   1       2.522  22.677  36.835  0.00  0.00           X  
+HETATM    8  VX  PRB P   1       8.329  24.553  35.763  0.00  0.00           X  
+HETATM    9  VX  PRB P   1      -2.121  25.866  34.623  0.00  0.00           X  
+HETATM   10  VX  PRB P   1      -3.505  26.416  32.683  0.00  0.00           X  
+HETATM   11  VX  PRB P   1      -4.138  27.288  32.067  0.00  0.00           X  
+HETATM   12  VX  PRB P   1       0.538  32.936  34.917  0.00  0.00           X  
+HETATM   13  VX  PRB P   1      -0.741  28.911  36.719  0.00  0.00           X  
+HETATM   14  VX  PRB P   1       5.297  33.884  33.846  0.00  0.00           X  
+HETATM   15  VX  PRB P   1       6.023  33.801  31.638  0.00  0.00           X  
+HETATM   16  VX  PRB P   1       5.004  33.720  36.406  0.00  0.00           X  
+HETATM   17  VX  PRB P   1       6.112  33.614  36.923  0.00  0.00           X  
+HETATM   18  VX  PRB P   1       4.827  30.406  39.032  0.00  0.00           X  
+HETATM   19  VX  PRB P   1       7.223  30.367  39.848  0.00  0.00           X  
+HETATM   20  VX  PRB P   1       8.096  29.805  40.495  0.00  0.00           X  
+CONECT    1    2    3    4    5
+CONECT    1   15   20
+CONECT    2    1    3    7    8
+CONECT    2   20
+CONECT    3    1    2    4    7
+CONECT    4    1    3    5    6
+CONECT    4    7   10
+CONECT    5    1    4    6   15
+CONECT    6    4    5   10   11
+CONECT    6   12   15
+CONECT    7    2    3    4    8
+CONECT    7    9   10   13   20
+CONECT    8    2    7   20
+CONECT    9    7   10   11   13
+CONECT   10    4    6    7    9
+CONECT   10   11
+CONECT   11    6    9   10   12
+CONECT   11   13
+CONECT   12    6   11   13   14
+CONECT   12   15   16   18
+CONECT   13    7    9   11   12
+CONECT   13   18   20
+CONECT   14   12   15   16   17
+CONECT   15    1    5    6   12
+CONECT   15   14   17   20
+CONECT   16   12   14   17   18
+CONECT   17   14   15   16   18
+CONECT   17   19   20
+CONECT   18   12   13   16   17
+CONECT   18   19   20
+CONECT   19   17   18   20
+CONECT   20    1    2    7    8
+CONECT   20   13   15   17   18
+CONECT   20   19
+END
