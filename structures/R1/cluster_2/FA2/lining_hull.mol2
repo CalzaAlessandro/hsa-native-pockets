@@ -1,0 +1,11 @@
+# GEOMETRIC MESH: virtual vertices; links are mesh edges, not chemical bonds.
+# No force-field parameters or physical charges are assigned.
+# Source: structures/R1/cluster_2/FA2/lining_hull.obj
+@<TRIPOS>MOLECULE
+R1_cluster_2_FA2_lining_hull
+0 0 0 0 0
+SMALL
+NO_CHARGES
+
+@<TRIPOS>ATOM
+@<TRIPOS>BOND

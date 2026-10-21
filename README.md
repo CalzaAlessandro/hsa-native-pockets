@@ -5,7 +5,7 @@ Tables and structures from the new **585-residue native HSA** series: three inde
 ## Files
 
 ```text
-tables/       Volumes, lining residues and representative-frame information
+tables/       Volumes, frame information and geometry-format index
 structures/   R1, R2 and R3, each with cluster_1 and cluster_2
 images/       A few previews of the supplied geometric models
 ```
@@ -19,6 +19,7 @@ Start with [pocket_models.csv](tables/pocket_models.csv) to find the frame, resi
 | [Sampled volumes](tables/sampled_pocket_volumes.csv) | The 102 sampled frames per replica and region |
 | [Pocket models](tables/pocket_models.csv) | The 66 extracted region models, lining residues and source frames |
 | [Protein representatives](tables/protein_representatives.csv) | Cluster populations and representative-frame selection |
+| [Geometry formats](tables/geometry_formats.csv) | Dummy-vertex MOL/SDF/MOL2 models and their source meshes |
 
 ## Structure files
 
@@ -40,7 +41,7 @@ Coordinates and mesh dimensions are in Å. PDB files can be opened in molecular 
 
 ## Model previews
 
-The images below render the actual OBJ vertices and faces from **R3, cluster 1, frame 7499 (74.99% of production)**. Green shows the probe mesh; the pale amber surface encloses its lining atoms. Probe-only panels share one scale, and residue-envelope panels share another. The scale bars have a length of 5 Å.
+The images below render the actual OBJ vertices and faces from **R3, cluster 1, frame 7499 (74.99% of production)**. Green shows the probe mesh. The middle panel adds the actual pocket-lining atoms, with bonds taken from the native Amber topology; the right panel adds their pale amber convex envelope. Probe-only panels share one scale, and residue-envelope panels share another. The scale bars have a length of 5 Å.
 
 ![Complete HSA convex envelope containing all physiological probe models](images/HSA_all_pockets.png)
 
@@ -65,6 +66,28 @@ The images below render the actual OBJ vertices and faces from **R3, cluster 1, 
 ![Sudlow I probe mesh and surrounding residue envelope](images/Sudlow_I_model.png)
 
 [Probe PDB](structures/R3/cluster_1/Sudlow_I/probe.pdb) · [Probe OBJ](structures/R3/cluster_1/Sudlow_I/probe.obj) · [Pocket atoms and geometry](structures/R3/cluster_1/Sudlow_I/pocket_with_geometry.pdb)
+
+## Additional geometric formats
+
+Every OBJ model also has matching `.sdf`, `.mol` and `.mol2` files, including
+individual probes, residue hulls and the whole-protein envelope with all pockets.
+[geometry_formats.csv](tables/geometry_formats.csv) lists their paths and the
+numbers of vertices, edges and faces.
+
+These exports encode **geometric vertices as dummy atoms** (`*` in MOL/SDF,
+`Du` in MOL2). Their links are mesh edges. They carry no chemical atom types,
+physical charges or force-field parameters. MOL and SDF use V3000. OBJ and PLY
+retain surface faces directly; SDF also records the original face indices as
+a data field. MOL2 stores those indices in comments. Empty source models remain
+empty and are identified in the table.
+
+For example: heme [SDF](structures/R3/cluster_1/Heme/probe.sdf) ·
+[MOL](structures/R3/cluster_1/Heme/probe.mol) ·
+[MOL2](structures/R3/cluster_1/Heme/probe.mol2).
+The coordinate and graph round trips were checked using
+[RDKit](https://www.rdkit.org/docs/source/rdkit.Chem.rdmolfiles.html);
+[MOL2](https://openbabel.org/docs/FileFormats/Sybyl_Mol2_format.html) readers
+must support dummy atom type `Du`.
 
 ## Representative frames
 

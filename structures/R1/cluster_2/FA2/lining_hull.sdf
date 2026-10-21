@@ -1,0 +1,35 @@
+R1_cluster_2_FA2_lining_hull
+     RDKit          3D
+GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 0 0 0 0 0
+M  V30 BEGIN ATOM
+M  V30 END ATOM
+M  V30 END CTAB
+M  END
+>  <MODEL_KIND>
+GEOMETRIC_MESH_DUMMY_GRAPH
+
+>  <VERTICES>
+Virtual points, atomic number 0; not physical atoms
+
+>  <EDGES>
+Mesh links, not chemical bonds; no force-field parameters
+
+>  <COORDINATE_UNITS>
+angstrom
+
+>  <SOURCE_OBJ>
+structures/R1/cluster_2/FA2/lining_hull.obj
+
+>  <SOURCE_SHA256>
+e9c0be313e07df8edd9c0a31700c0236e2698f6ec5639beec02d056e45168e8d
+
+>  <SOURCE_FACE_INDICES_1_BASED>
+EMPTY
+
+>  <GEOMETRY_STATUS>
+EMPTY_SOURCE_GEOMETRY
+
+$$$$

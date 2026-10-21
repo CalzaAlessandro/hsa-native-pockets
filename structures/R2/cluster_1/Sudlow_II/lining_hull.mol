@@ -1,0 +1,10 @@
+R2_cluster_1_Sudlow_II_lining_hull
+     RDKit          3D
+GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 0 0 0 0 0
+M  V30 BEGIN ATOM
+M  V30 END ATOM
+M  V30 END CTAB
+M  END
