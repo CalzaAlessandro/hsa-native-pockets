@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "system": "0",
+      "replica": "R1",
+      "clean": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/analysis/0/R1",
+      "files": {
+        "protein.parm7": "a9df53f8ec8e66b8a57815651a1e1f3ccea65583aadcf5338a055a18fad73d40",
+        "clean_unfitted.nc": "a3b5c6403d911dcc2f2d7bfd6d9a947131cf4679887290a6cebcbb8385807b39",
+        "validation.json": "71d715e260273a1c7b881359e6983a729093716b6015b91b27e6da11cc948fc1",
+        "opening.csv": "a752d3f75da708d40baf95924704320b2ddb9fce0636432691016a021da0a842"
+      }
+    },
+    {
+      "system": "0",
+      "replica": "R2",
+      "clean": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/analysis/0/R2",
+      "files": {
+        "protein.parm7": "a9df53f8ec8e66b8a57815651a1e1f3ccea65583aadcf5338a055a18fad73d40",
+        "clean_unfitted.nc": "680598a9a630ba603b0216ee14be9ebcd5037b74c2d6384acbea6753140ad8f8",
+        "validation.json": "24adc775efe24094b48ec3b3358d531e1f87e9251916237d35d9af685e732a2f",
+        "opening.csv": "ed5c69892d93dc89b649224308e7b16d9869fe9cc88fdc45a20335546d0749f0"
+      }
+    },
+    {
+      "system": "0",
+      "replica": "R3",
+      "clean": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/analysis/0/R3",
+      "files": {
+        "protein.parm7": "a9df53f8ec8e66b8a57815651a1e1f3ccea65583aadcf5338a055a18fad73d40",
+        "clean_unfitted.nc": "e0516914fc6512cec0da8fb4dd0ad2c9f79e3f8eb804f8d892a070518f87e4e7",
+        "validation.json": "2a7b4c46fa6301fa17fe6d81f890a656898f5f3242f7d25ad0cf2bec6a39b121",
+        "opening.csv": "53a5bb3b0dc4131b9a7f89321cca856fe79cd1035a0d0dfce7b9feeb86f38984"
+      }
+    }
+  ],
+  "features": [
+    "domain_I_III_COM_distance_A",
+    "domain_I_II_III_COM_angle_deg",
+    "Q_I_III"
+  ],
+  "training": "Equal counts from each replica, uniformly sampled across each available interval",
+  "training_frames_per_replica": 200,
+  "scaling": "Training-set mean and standard deviation; constant features excluded",
+  "selected_candidate": {
+    "method": "ward_centroid",
+    "clusters": 2,
+    "occupied_clusters": 2,
+    "smallest_cluster_frames": 188,
+    "silhouette": 0.3823585465311938,
+    "inertia": 1080.7664271266576,
+    "coverage": 1.0,
+    "selection_score": 0.3823585465311938,
+    "eps": null,
+    "min_samples": null
+  },
+  "assignment": "K-means/Ward: nearest centroid. DBSCAN: fit balanced training subset and assign all frames to nearest core within epsilon; otherwise cluster 0 (noise). This is a subsample density model, not a full-frame DBSCAN fit.",
+  "selection": "Largest coverage times nonnegative silhouette proposes a model among candidates with at least five training frames per cluster. Smaller clusters remain in the candidate table for review; this technical screening is not a physical population cutoff. DBSCAN noise excluded from silhouette but penalized through coverage. Heuristic favors separation and may miss nonconvex states; inspect parameter sensitivity, representative structures and replica consistency before choosing physical states.",
+  "representative": "Observed frame minimizing sum of squared Euclidean feature distances within each cluster; extracted unfitted coordinates. PDB uses topology residue numbering; see project residue mapping.",
+  "populations": "Per-replica saved-frame fractions; no independent-frame error bars or thermodynamic claims",
+  "physical_labels": "Neutral cluster IDs until structural inspection; no automatic closed/intermediate/open labels",
+  "code_sha256": "44fa7e40fafe0798f67ca449be136ebb3c57dde1f5c467b03090ba5305d3f9cb",
+  "plot_code_sha256": "7a7cf4d4decf7128f322a00cfbb94539c2b9089712d350c83fcfc1d559444be9"
+}

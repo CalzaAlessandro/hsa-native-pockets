@@ -1,0 +1,12 @@
+{
+  "replica": "R2",
+  "cluster": 2,
+  "frame": 9134,
+  "production_percent": 91.34,
+  "site": "Heme",
+  "volume_A3": 17.0,
+  "lining_residues": "115;116;117;118;138;142;146;149;157;161;182;183;186;189",
+  "folder": "physiological/R2/cluster_2/Heme",
+  "protein_pdb": "physiological/R2/cluster_2/protein.pdb",
+  "source_trajectory_sha256": "680598a9a630ba603b0216ee14be9ebcd5037b74c2d6384acbea6753140ad8f8"
+}

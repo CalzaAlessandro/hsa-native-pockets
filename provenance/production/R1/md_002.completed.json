@@ -1,0 +1,39 @@
+{
+  "topology_sha256": "8ff75ff35d444dcdca9ba5c041ee2b945466b7502c54842230e1c56fc387781d",
+  "starting_restart": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/0/R1/md_001.rst7",
+  "starting_restart_sha256": "ac0c4f0eb3ea39da1a6a6da867d46a6fafb31a8924cfafc2bec0b3ad8a70eef5",
+  "start_ps": 252200.0,
+  "end_ps": 502200.0,
+  "seed": 1010201,
+  "executable": "pmemd.cuda",
+  "job": "343345",
+  "restart": {
+    "natom": 85010,
+    "time_ps": 502200.0,
+    "velocities": true,
+    "box": [
+      105.6718517,
+      71.9902209,
+      111.1059806,
+      90.0,
+      90.0,
+      90.0
+    ]
+  },
+  "frames": 2500,
+  "first_frame_ps": 252300.0,
+  "last_frame_ps": 502200.0,
+  "printed_time_offset_ps": -0.003000000026077032,
+  "printed_time_tolerance_ps": 0.1,
+  "max_last_frame_restart_difference_A": 3.864257806185378e-06,
+  "terminal_mean_temperature_K": 297.76,
+  "terminal_sd_temperature_K": 0.75,
+  "equilibration": {
+    "mean_density_g_cm3": 1.0236419199999998,
+    "relative_density_change_in_second_half": 2.4383526614643565e-05,
+    "mean_pressure_bar": 0.0,
+    "passed": true
+  },
+  "wall_seconds": 70128.9721186161,
+  "restart_sha256": "f77db9bcbca857bf7195fa9af97e3b910de376d63a64b60dc49b568e201e3ae0"
+}

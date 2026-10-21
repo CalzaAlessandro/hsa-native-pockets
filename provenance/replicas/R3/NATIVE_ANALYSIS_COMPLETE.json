@@ -1,0 +1,53 @@
+{
+  "status": "validated",
+  "replica": "R3",
+  "production_ns": 1000,
+  "frames": 10000,
+  "pocket_sampled_frames": 102,
+  "source_provenance": {
+    "topology": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/0/system.parm7",
+    "topology_sha256": "8ff75ff35d444dcdca9ba5c041ee2b945466b7502c54842230e1c56fc387781d",
+    "expected_frames": 10000,
+    "partial": false,
+    "production_origin_ps": 2200.0,
+    "completed_production_ns": 1000.0,
+    "first_time_ps": 2300.0,
+    "last_time_ps": 1002200.0,
+    "sampling": "Uniform index selection over the full validated 100 ps time grid; both endpoints retained",
+    "latest_valid_restart": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/0/R3/md_004.rst7",
+    "segments": [
+      {
+        "trajectory": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/0/R3/md_001.nc",
+        "first_frame": 1,
+        "last_frame": 2500,
+        "stride": 1
+      },
+      {
+        "trajectory": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/0/R3/md_002.nc",
+        "first_frame": 1,
+        "last_frame": 2500,
+        "stride": 1
+      },
+      {
+        "trajectory": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/0/R3/md_003.nc",
+        "first_frame": 1,
+        "last_frame": 2500,
+        "stride": 1
+      },
+      {
+        "trajectory": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/0/R3/md_004.nc",
+        "first_frame": 1,
+        "last_frame": 2500,
+        "stride": 1
+      }
+    ]
+  },
+  "files": {
+    "protein.parm7": "a9df53f8ec8e66b8a57815651a1e1f3ccea65583aadcf5338a055a18fad73d40",
+    "clean_unfitted.nc": "e0516914fc6512cec0da8fb4dd0ad2c9f79e3f8eb804f8d892a070518f87e4e7",
+    "metadata.json": "3583f4d6879a733db643d64d35d0c4307fba0beefaf6025574f1e8ef5446ef5e",
+    "opening.csv": "53a5bb3b0dc4131b9a7f89321cca856fe79cd1035a0d0dfce7b9feeb86f38984",
+    "physiological_volumes.csv": "567c44bfa361a242fa33f24e14dd6563e279ceb4cf722afca2c90a65392c35f8",
+    "pockets/pocket_metadata.json": "2839211cb6fd5275780c07a9b2dd7a7b198c8febd0042405e68256718a7bcb31"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "replica": "R3",
+  "cluster": 1,
+  "frame": 7499,
+  "production_percent": 74.99,
+  "site": "Sudlow_II",
+  "volume_A3": 26.0,
+  "lining_residues": "390;391;407;410;411;414;430;453;485;488",
+  "folder": "physiological/R3/cluster_1/Sudlow_II",
+  "protein_pdb": "physiological/R3/cluster_1/protein.pdb",
+  "source_trajectory_sha256": "e0516914fc6512cec0da8fb4dd0ad2c9f79e3f8eb804f8d892a070518f87e4e7"
+}

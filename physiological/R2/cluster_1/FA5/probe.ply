@@ -1,0 +1,30 @@
+ply
+format ascii 1.0
+comment Available centers of a 1.4 A spherical probe; angstrom
+element vertex 8
+property double x
+property double y
+property double z
+element face 12
+property list uchar int vertex_indices
+end_header
+-24.23432760 -9.68257886 36.70356762
+-23.50129981 -9.31658575 37.27690811
+-23.33873545 -8.59237525 36.60676487
+-24.07176323 -8.95836835 36.03342438
+-23.41127621 -9.54280670 35.56205539
+-22.67824843 -9.17681360 36.13539588
+-22.84081280 -9.90102410 36.80553912
+-23.57384058 -10.26701721 36.23219864
+3 0 1 2
+3 0 2 3
+3 4 5 6
+3 4 6 7
+3 3 4 7
+3 3 7 0
+3 1 6 5
+3 1 5 2
+3 2 5 4
+3 2 4 3
+3 0 7 6
+3 0 6 1

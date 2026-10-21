@@ -1,0 +1,340 @@
+REMARK 900 VISUALIZATION ONLY: PSEUDOATOMS, NOT A MOLECULE
+REMARK 900 MDpocket detection-region voxel surface; not physical empty 
+REMARK 900 cavity
+REMARK 900 UNITS ANGSTROM; GEO/C ARE DISPLAY LABELS, NOT CHEMISTRY
+REMARK 900 CONECT RECORDS ARE MESH EDGES, NOT CHEMICAL BONDS
+HETATM    1  V   GEO G   1      73.400  42.330  54.780  1.00  0.00           C
+HETATM    2  V   GEO G   1      73.400  43.330  54.780  1.00  0.00           C
+HETATM    3  V   GEO G   1      73.400  43.330  53.780  1.00  0.00           C
+HETATM    4  V   GEO G   1      73.400  42.330  53.780  1.00  0.00           C
+HETATM    5  V   GEO G   1      74.400  42.330  53.780  1.00  0.00           C
+HETATM    6  V   GEO G   1      74.400  42.330  54.780  1.00  0.00           C
+HETATM    7  V   GEO G   1      74.400  43.330  53.780  1.00  0.00           C
+HETATM    8  V   GEO G   1      73.400  42.330  55.780  1.00  0.00           C
+HETATM    9  V   GEO G   1      73.400  43.330  55.780  1.00  0.00           C
+HETATM   10  V   GEO G   1      74.400  42.330  55.780  1.00  0.00           C
+HETATM   11  V   GEO G   1      74.400  43.330  55.780  1.00  0.00           C
+HETATM   12  V   GEO G   1      73.400  44.330  54.780  1.00  0.00           C
+HETATM   13  V   GEO G   1      73.400  44.330  53.780  1.00  0.00           C
+HETATM   14  V   GEO G   1      74.400  44.330  54.780  1.00  0.00           C
+HETATM   15  V   GEO G   1      74.400  44.330  53.780  1.00  0.00           C
+HETATM   16  V   GEO G   1      73.400  44.330  55.780  1.00  0.00           C
+HETATM   17  V   GEO G   1      74.400  44.330  55.780  1.00  0.00           C
+HETATM   18  V   GEO G   1      74.400  41.330  55.780  1.00  0.00           C
+HETATM   19  V   GEO G   1      74.400  41.330  54.780  1.00  0.00           C
+HETATM   20  V   GEO G   1      75.400  41.330  54.780  1.00  0.00           C
+HETATM   21  V   GEO G   1      75.400  41.330  55.780  1.00  0.00           C
+HETATM   22  V   GEO G   1      75.400  42.330  54.780  1.00  0.00           C
+HETATM   23  V   GEO G   1      75.400  42.330  55.780  1.00  0.00           C
+HETATM   24  V   GEO G   1      75.400  42.330  53.780  1.00  0.00           C
+HETATM   25  V   GEO G   1      75.400  43.330  53.780  1.00  0.00           C
+HETATM   26  V   GEO G   1      75.400  43.330  55.780  1.00  0.00           C
+HETATM   27  V   GEO G   1      74.400  44.330  52.780  1.00  0.00           C
+HETATM   28  V   GEO G   1      74.400  43.330  52.780  1.00  0.00           C
+HETATM   29  V   GEO G   1      75.400  43.330  52.780  1.00  0.00           C
+HETATM   30  V   GEO G   1      75.400  44.330  53.780  1.00  0.00           C
+HETATM   31  V   GEO G   1      75.400  44.330  52.780  1.00  0.00           C
+HETATM   32  V   GEO G   1      75.400  44.330  54.780  1.00  0.00           C
+HETATM   33  V   GEO G   1      75.400  44.330  55.780  1.00  0.00           C
+HETATM   34  V   GEO G   1      75.400  40.330  54.780  1.00  0.00           C
+HETATM   35  V   GEO G   1      75.400  41.330  53.780  1.00  0.00           C
+HETATM   36  V   GEO G   1      75.400  40.330  53.780  1.00  0.00           C
+HETATM   37  V   GEO G   1      76.400  40.330  53.780  1.00  0.00           C
+HETATM   38  V   GEO G   1      76.400  40.330  54.780  1.00  0.00           C
+HETATM   39  V   GEO G   1      76.400  41.330  53.780  1.00  0.00           C
+HETATM   40  V   GEO G   1      75.400  40.330  55.780  1.00  0.00           C
+HETATM   41  V   GEO G   1      76.400  40.330  55.780  1.00  0.00           C
+HETATM   42  V   GEO G   1      76.400  41.330  55.780  1.00  0.00           C
+HETATM   43  V   GEO G   1      75.400  42.330  52.780  1.00  0.00           C
+HETATM   44  V   GEO G   1      75.400  41.330  52.780  1.00  0.00           C
+HETATM   45  V   GEO G   1      76.400  41.330  52.780  1.00  0.00           C
+HETATM   46  V   GEO G   1      76.400  42.330  52.780  1.00  0.00           C
+HETATM   47  V   GEO G   1      76.400  42.330  55.780  1.00  0.00           C
+HETATM   48  V   GEO G   1      76.400  43.330  52.780  1.00  0.00           C
+HETATM   49  V   GEO G   1      76.400  43.330  55.780  1.00  0.00           C
+HETATM   50  V   GEO G   1      76.400  44.330  53.780  1.00  0.00           C
+HETATM   51  V   GEO G   1      76.400  44.330  52.780  1.00  0.00           C
+HETATM   52  V   GEO G   1      76.400  44.330  54.780  1.00  0.00           C
+HETATM   53  V   GEO G   1      76.400  43.330  54.780  1.00  0.00           C
+HETATM   54  V   GEO G   1      76.400  44.330  55.780  1.00  0.00           C
+HETATM   55  V   GEO G   1      77.400  40.330  53.780  1.00  0.00           C
+HETATM   56  V   GEO G   1      77.400  41.330  53.780  1.00  0.00           C
+HETATM   57  V   GEO G   1      77.400  41.330  54.780  1.00  0.00           C
+HETATM   58  V   GEO G   1      77.400  40.330  54.780  1.00  0.00           C
+HETATM   59  V   GEO G   1      77.400  41.330  55.780  1.00  0.00           C
+HETATM   60  V   GEO G   1      77.400  40.330  55.780  1.00  0.00           C
+HETATM   61  V   GEO G   1      77.400  41.330  52.780  1.00  0.00           C
+HETATM   62  V   GEO G   1      77.400  42.330  52.780  1.00  0.00           C
+HETATM   63  V   GEO G   1      77.400  42.330  54.780  1.00  0.00           C
+HETATM   64  V   GEO G   1      77.400  42.330  55.780  1.00  0.00           C
+HETATM   65  V   GEO G   1      76.400  43.330  51.780  1.00  0.00           C
+HETATM   66  V   GEO G   1      76.400  42.330  51.780  1.00  0.00           C
+HETATM   67  V   GEO G   1      77.400  42.330  51.780  1.00  0.00           C
+HETATM   68  V   GEO G   1      77.400  43.330  51.780  1.00  0.00           C
+HETATM   69  V   GEO G   1      77.400  43.330  54.780  1.00  0.00           C
+HETATM   70  V   GEO G   1      77.400  43.330  55.780  1.00  0.00           C
+HETATM   71  V   GEO G   1      76.400  44.330  51.780  1.00  0.00           C
+HETATM   72  V   GEO G   1      77.400  44.330  52.780  1.00  0.00           C
+HETATM   73  V   GEO G   1      77.400  44.330  51.780  1.00  0.00           C
+HETATM   74  V   GEO G   1      77.400  44.330  53.780  1.00  0.00           C
+HETATM   75  V   GEO G   1      77.400  43.330  53.780  1.00  0.00           C
+HETATM   76  V   GEO G   1      77.400  44.330  54.780  1.00  0.00           C
+HETATM   77  V   GEO G   1      78.400  41.330  52.780  1.00  0.00           C
+HETATM   78  V   GEO G   1      78.400  41.330  53.780  1.00  0.00           C
+HETATM   79  V   GEO G   1      78.400  42.330  52.780  1.00  0.00           C
+HETATM   80  V   GEO G   1      78.400  41.330  54.780  1.00  0.00           C
+HETATM   81  V   GEO G   1      78.400  42.330  54.780  1.00  0.00           C
+HETATM   82  V   GEO G   1      78.400  42.330  51.780  1.00  0.00           C
+HETATM   83  V   GEO G   1      78.400  43.330  51.780  1.00  0.00           C
+HETATM   84  V   GEO G   1      78.400  43.330  54.780  1.00  0.00           C
+HETATM   85  V   GEO G   1      78.400  43.330  53.780  1.00  0.00           C
+HETATM   86  V   GEO G   1      78.400  44.330  52.780  1.00  0.00           C
+HETATM   87  V   GEO G   1      78.400  44.330  51.780  1.00  0.00           C
+HETATM   88  V   GEO G   1      78.400  44.330  53.780  1.00  0.00           C
+HETATM   89  V   GEO G   1      77.400  45.330  53.780  1.00  0.00           C
+HETATM   90  V   GEO G   1      77.400  45.330  52.780  1.00  0.00           C
+HETATM   91  V   GEO G   1      78.400  45.330  53.780  1.00  0.00           C
+HETATM   92  V   GEO G   1      78.400  45.330  52.780  1.00  0.00           C
+HETATM   93  V   GEO G   1      79.400  41.330  52.780  1.00  0.00           C
+HETATM   94  V   GEO G   1      79.400  42.330  52.780  1.00  0.00           C
+HETATM   95  V   GEO G   1      79.400  42.330  53.780  1.00  0.00           C
+HETATM   96  V   GEO G   1      79.400  41.330  53.780  1.00  0.00           C
+HETATM   97  V   GEO G   1      79.400  42.330  54.780  1.00  0.00           C
+HETATM   98  V   GEO G   1      79.400  41.330  54.780  1.00  0.00           C
+HETATM   99  V   GEO G   1      79.400  42.330  51.780  1.00  0.00           C
+HETATM  100  V   GEO G   1      79.400  43.330  51.780  1.00  0.00           C
+HETATM  101  V   GEO G   1      79.400  43.330  52.780  1.00  0.00           C
+HETATM  102  V   GEO G   1      79.400  43.330  53.780  1.00  0.00           C
+HETATM  103  V   GEO G   1      79.400  43.330  54.780  1.00  0.00           C
+HETATM  104  V   GEO G   1      78.400  44.330  50.780  1.00  0.00           C
+HETATM  105  V   GEO G   1      78.400  43.330  50.780  1.00  0.00           C
+HETATM  106  V   GEO G   1      79.400  43.330  50.780  1.00  0.00           C
+HETATM  107  V   GEO G   1      79.400  44.330  51.780  1.00  0.00           C
+HETATM  108  V   GEO G   1      79.400  44.330  50.780  1.00  0.00           C
+HETATM  109  V   GEO G   1      79.400  44.330  52.780  1.00  0.00           C
+HETATM  110  V   GEO G   1      79.400  44.330  53.780  1.00  0.00           C
+HETATM  111  V   GEO G   1      79.400  45.330  52.780  1.00  0.00           C
+HETATM  112  V   GEO G   1      79.400  45.330  53.780  1.00  0.00           C
+HETATM  113  V   GEO G   1      80.400  43.330  50.780  1.00  0.00           C
+HETATM  114  V   GEO G   1      80.400  44.330  50.780  1.00  0.00           C
+HETATM  115  V   GEO G   1      80.400  44.330  51.780  1.00  0.00           C
+HETATM  116  V   GEO G   1      80.400  43.330  51.780  1.00  0.00           C
+CONECT    1    2    3    4    6
+CONECT    1    8   10
+CONECT    2    1    3    8    9
+CONECT    2   12   13
+CONECT    3    1    2    4    5
+CONECT    3    7   13
+CONECT    4    1    3    5    6
+CONECT    5    3    4    6    7
+CONECT    5   22   24
+CONECT    6    1    4    5   10
+CONECT    6   18   19   20   22
+CONECT    7    3    5   13   15
+CONECT    7   24   25   27   28
+CONECT    8    1    2    9   10
+CONECT    8   11
+CONECT    9    2    8   11   12
+CONECT    9   16   17
+CONECT   10    1    6    8   11
+CONECT   10   18   23   26
+CONECT   11    8    9   10   17
+CONECT   11   26   33
+CONECT   12    2    9   13   14
+CONECT   12   15   16
+CONECT   13    2    3    7   12
+CONECT   13   15
+CONECT   14   12   15   16   17
+CONECT   14   30   32
+CONECT   15    7   12   13   14
+CONECT   15   27   30   31
+CONECT   16    9   12   14   17
+CONECT   17    9   11   14   16
+CONECT   17   32   33
+CONECT   18    6   10   19   21
+CONECT   18   23
+CONECT   19    6   18   20   21
+CONECT   20    6   19   21   22
+CONECT   20   24   34   35   40
+CONECT   21   18   19   20   23
+CONECT   21   40   42   47
+CONECT   22    5    6   20   24
+CONECT   23   10   18   21   26
+CONECT   23   47   49
+CONECT   24    5    7   20   22
+CONECT   24   25   29   35   43
+CONECT   25    7   24   28   29
+CONECT   26   10   11   23   33
+CONECT   26   49   54
+CONECT   27    7   15   28   29
+CONECT   27   31
+CONECT   28    7   25   27   29
+CONECT   29   24   25   27   28
+CONECT   29   31   43   46   48
+CONECT   30   14   15   31   32
+CONECT   30   50   51
+CONECT   31   15   27   29   30
+CONECT   31   48   51
+CONECT   32   14   17   30   33
+CONECT   32   50   52
+CONECT   33   11   17   26   32
+CONECT   33   52   54
+CONECT   34   20   35   36   38
+CONECT   34   40   41
+CONECT   35   20   24   34   36
+CONECT   35   37   39   43   44
+CONECT   36   34   35   37   38
+CONECT   37   35   36   38   39
+CONECT   37   55   58
+CONECT   38   34   36   37   41
+CONECT   38   58   60
+CONECT   39   35   37   44   45
+CONECT   39   55   56
+CONECT   40   20   21   34   41
+CONECT   40   42
+CONECT   41   34   38   40   42
+CONECT   41   59   60
+CONECT   42   21   40   41   47
+CONECT   42   59   64
+CONECT   43   24   29   35   44
+CONECT   43   45   46
+CONECT   44   35   39   43   45
+CONECT   45   39   43   44   46
+CONECT   45   56   61
+CONECT   46   29   43   45   48
+CONECT   46   61   62   65   66
+CONECT   47   21   23   42   49
+CONECT   47   64   70
+CONECT   48   29   31   46   51
+CONECT   48   65   71
+CONECT   49   23   26   47   53
+CONECT   49   54   69   70
+CONECT   50   30   32   51   52
+CONECT   50   72   74
+CONECT   51   30   31   48   50
+CONECT   51   71   72   73
+CONECT   52   32   33   50   53
+CONECT   52   54   74   76
+CONECT   53   49   52   54   69
+CONECT   53   76
+CONECT   54   26   33   49   52
+CONECT   54   53
+CONECT   55   37   39   56   57
+CONECT   55   58
+CONECT   56   39   45   55   57
+CONECT   56   61   78   80
+CONECT   57   55   56   58   59
+CONECT   57   63   64   80   81
+CONECT   58   37   38   55   57
+CONECT   58   59   60
+CONECT   59   41   42   57   58
+CONECT   59   60   64
+CONECT   60   38   41   58   59
+CONECT   61   45   46   56   62
+CONECT   61   77   78
+CONECT   62   46   61   66   67
+CONECT   62   77   79
+CONECT   63   57   64   69   70
+CONECT   63   81   84
+CONECT   64   42   47   57   59
+CONECT   64   63   70
+CONECT   65   46   48   66   67
+CONECT   65   68   71
+CONECT   66   46   62   65   67
+CONECT   67   62   65   66   68
+CONECT   67   79   82
+CONECT   68   65   67   71   73
+CONECT   68   82   83
+CONECT   69   49   53   63   70
+CONECT   69   75   76   84   85
+CONECT   70   47   49   63   64
+CONECT   70   69
+CONECT   71   48   51   65   68
+CONECT   71   73
+CONECT   72   50   51   73   74
+CONECT   72   86   87   90
+CONECT   73   51   68   71   72
+CONECT   73   83   87
+CONECT   74   50   52   72   75
+CONECT   74   76   88   89   90
+CONECT   74   91
+CONECT   75   69   74   76   85
+CONECT   75   88
+CONECT   76   52   53   69   74
+CONECT   76   75
+CONECT   77   61   62   78   79
+CONECT   77   93   96
+CONECT   78   56   61   77   80
+CONECT   78   96   98
+CONECT   79   62   67   77   82
+CONECT   79   93   94
+CONECT   80   56   57   78   81
+CONECT   80   97   98
+CONECT   81   57   63   80   84
+CONECT   81   97  103
+CONECT   82   67   68   79   83
+CONECT   82   94   99
+CONECT   83   68   73   82   87
+CONECT   83   99  100  104  105
+CONECT   84   63   69   81   85
+CONECT   84  102  103
+CONECT   85   69   75   84   88
+CONECT   85  102  110
+CONECT   86   72   87   90   92
+CONECT   86  107  109
+CONECT   87   72   73   83   86
+CONECT   87  104  107  108
+CONECT   88   74   75   85   91
+CONECT   88  110  112
+CONECT   89   74   90   91   92
+CONECT   90   72   74   86   89
+CONECT   90   92
+CONECT   91   74   88   89   92
+CONECT   91  111  112
+CONECT   92   86   89   90   91
+CONECT   92  109  111
+CONECT   93   77   79   94   95
+CONECT   93   96
+CONECT   94   79   82   93   95
+CONECT   94   99  101  102
+CONECT   95   93   94   96   97
+CONECT   95  102  103
+CONECT   96   77   78   93   95
+CONECT   96   97   98
+CONECT   97   80   81   95   96
+CONECT   97   98  103
+CONECT   98   78   80   96   97
+CONECT   99   82   83   94  100
+CONECT   99  101
+CONECT  100   83   99  101  105
+CONECT  100  106  107  109  115
+CONECT  100  116
+CONECT  101   94   99  100  102
+CONECT  101  109  110
+CONECT  102   84   85   94   95
+CONECT  102  101  103  110
+CONECT  103   81   84   95   97
+CONECT  103  102
+CONECT  104   83   87  105  106
+CONECT  104  108
+CONECT  105   83  100  104  106
+CONECT  106  100  104  105  108
+CONECT  106  113  116
+CONECT  107   86   87  100  108
+CONECT  107  109  114  115
+CONECT  108   87  104  106  107
+CONECT  108  113  114
+CONECT  109   86   92  100  101
+CONECT  109  107  110  111  112
+CONECT  110   85   88  101  102
+CONECT  110  109  112
+CONECT  111   91   92  109  112
+CONECT  112   88   91  109  110
+CONECT  112  111
+CONECT  113  106  108  114  115
+CONECT  113  116
+CONECT  114  107  108  113  115
+CONECT  115  100  107  113  114
+CONECT  115  116
+CONECT  116  100  106  113  115
+END

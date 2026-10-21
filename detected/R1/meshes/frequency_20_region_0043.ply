@@ -1,0 +1,30 @@
+ply
+format ascii 1.0
+comment Units angstrom; MDpocket detection region, not physical cavity
+element vertex 8
+property double x
+property double y
+property double z
+element face 12
+property list uchar int vertex_indices
+end_header
+94.400000 40.330000 49.780000
+94.400000 41.330000 49.780000
+94.400000 41.330000 48.780000
+94.400000 40.330000 48.780000
+95.400000 40.330000 48.780000
+95.400000 41.330000 48.780000
+95.400000 41.330000 49.780000
+95.400000 40.330000 49.780000
+3 0 1 2
+3 0 2 3
+3 4 5 6
+3 4 6 7
+3 3 4 7
+3 3 7 0
+3 1 6 5
+3 1 5 2
+3 2 5 4
+3 2 4 3
+3 0 7 6
+3 0 6 1

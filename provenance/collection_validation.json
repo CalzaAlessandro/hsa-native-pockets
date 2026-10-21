@@ -1,0 +1,88 @@
+{
+  "checked_utc": "2026-10-21T14:44:14.920401+00:00",
+  "validation_scope": "Artifact consistency and provenance, not validation of ligand affinity or a force-field model.",
+  "source_archive_sha256": "98d7baf81275119e5446e3bbb70e10a8d68e393cb05a11f75fdccfb3c48e19f2",
+  "original_manifest_files_verified": 1662,
+  "copied_data_integrity": "All copied original bytes and decompressed DX bytes match recorded source hashes; path edits are explicit in collection_mapping.json.",
+  "physiological_volume_summary_rows_independently_reproduced": 11,
+  "sampled_frames_per_replica_per_region": 102,
+  "replicas": 3,
+  "protein_representatives_directly_compared_to_source_frames": 6,
+  "protein_pdbs_with_585_residues_and_9228_atoms": [
+    "physiological/R2/cluster_1/protein.pdb",
+    "physiological/R2/cluster_2/protein.pdb",
+    "physiological/R3/cluster_1/protein.pdb",
+    "physiological/R3/cluster_2/protein.pdb",
+    "physiological/R1/cluster_1/protein.pdb",
+    "physiological/R1/cluster_2/protein.pdb"
+  ],
+  "physiological_models": 66,
+  "zero_volume_model_count": 14,
+  "zero_volume_models": [
+    "physiological/R1/cluster_1/FA2",
+    "physiological/R1/cluster_1/FA1",
+    "physiological/R1/cluster_2/Sudlow_II",
+    "physiological/R1/cluster_2/FA2",
+    "physiological/R1/cluster_2/FA7",
+    "physiological/R3/cluster_1/FA3",
+    "physiological/R3/cluster_1/FA7",
+    "physiological/R3/cluster_2/FA3",
+    "physiological/R2/cluster_1/Sudlow_II",
+    "physiological/R2/cluster_1/FA3",
+    "physiological/R2/cluster_1/FA7",
+    "physiological/R2/cluster_1/FA1",
+    "physiological/R2/cluster_2/FA2",
+    "physiological/R2/cluster_2/FA5"
+  ],
+  "obj_files_validated_for_finite_vertices_and_face_indices": 375,
+  "pdb_files_validated_for_finite_coordinates": 594,
+  "mdpocket_grids": [
+    {
+      "path": "detected/R1/mdpocket/mdpout_freq_grid.dx.gz",
+      "items": 1181415,
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "npz_exact_match": true
+    },
+    {
+      "path": "detected/R1/mdpocket/mdpout_dens_grid.dx.gz",
+      "items": 1181415,
+      "minimum": 0.0,
+      "maximum": 15.431,
+      "npz_exact_match": true
+    },
+    {
+      "path": "detected/R3/mdpocket/mdpout_freq_grid.dx.gz",
+      "items": 1222640,
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "npz_exact_match": true
+    },
+    {
+      "path": "detected/R3/mdpocket/mdpout_dens_grid.dx.gz",
+      "items": 1222640,
+      "minimum": 0.0,
+      "maximum": 15.0,
+      "npz_exact_match": true
+    },
+    {
+      "path": "detected/R2/mdpocket/mdpout_freq_grid.dx.gz",
+      "items": 1104730,
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "npz_exact_match": true
+    },
+    {
+      "path": "detected/R2/mdpocket/mdpout_dens_grid.dx.gz",
+      "items": 1104730,
+      "minimum": 0.0,
+      "maximum": 15.833,
+      "npz_exact_match": true
+    }
+  ],
+  "executable_scripts_present": false,
+  "raw_trajectories_present": false,
+  "individual_files_below_50_MB": true,
+  "html_relative_resources_checked": 41,
+  "inventory_scope": "inventory.csv lists all curated files except itself and SHA256SUMS. SHA256SUMS includes inventory.csv and all other curated files, excluding itself."
+}

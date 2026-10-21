@@ -1,0 +1,49 @@
+{
+  "backbone_atom_aliases": {
+    "ASL": {
+      "N": "N1",
+      "CA": "C1",
+      "C": "C2",
+      "O": "O1"
+    },
+    "GLS": {
+      "N": "N1",
+      "CA": "C1",
+      "C": "C2",
+      "O": "O1"
+    },
+    "GLL": {
+      "N": "N1",
+      "CA": "C1",
+      "C": "C2",
+      "O": "O1"
+    }
+  },
+  "backbone_mapping_validation": "atomic number, intra-residue bonds and peptide connectivity",
+  "system": "0",
+  "replica": "R2",
+  "frames": 10000,
+  "reference": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/internal/pockets/context/inputs/native/hsa.pdb",
+  "reference_sha256": "7b0ead70a323891665f6159658d68e4447f96c0186ce3a8b826fda7f1b7510db",
+  "topology_sha256": "a9df53f8ec8e66b8a57815651a1e1f3ccea65583aadcf5338a055a18fad73d40",
+  "mapping_sha256": "85c0c4f60a28f63abcc6ad926e47545c98e507e31adb0648e38925d5cc8133d7",
+  "global_fit": "all common CA atoms; unweighted least squares",
+  "domain_fit": "each domain independently fitted to itself",
+  "Rg": "all protein atoms; mass weighted; unfitted coordinates",
+  "rmsf": "CA atoms after global fit; population variance",
+  "domains": {
+    "I": [
+      1,
+      195
+    ],
+    "II": [
+      196,
+      383
+    ],
+    "III": [
+      384,
+      585
+    ]
+  },
+  "domain_rmsf": "Each domain fitted independently to its native reference on every frame; RMSF about its own time-average coordinates, population variance. Compare with global-fit RMSF descriptively; their difference is not an additive decomposition of motions."
+}

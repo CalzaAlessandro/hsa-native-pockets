@@ -1,0 +1,230 @@
+{
+  "site": "FA7",
+  "reference_sha256": "7b0ead70a323891665f6159658d68e4447f96c0186ce3a8b826fda7f1b7510db",
+  "alignment_canonical_residues": [
+    150,
+    195,
+    199,
+    211,
+    214,
+    215,
+    218,
+    219,
+    222,
+    223,
+    238,
+    241,
+    242,
+    257,
+    260,
+    264,
+    290,
+    291,
+    292
+  ],
+  "grid_spacing_A": 1.0,
+  "probe_radius_A": 1.4,
+  "grid_min_A": [
+    53.0,
+    37.0,
+    44.0
+  ],
+  "grid_max_A": [
+    70.0,
+    50.0,
+    57.0
+  ],
+  "inclusion_spheres": [
+    {
+      "center_A": [
+        64.78366702501677,
+        41.12984201481187,
+        52.007130498249225
+      ],
+      "radius_A": 3.0
+    },
+    {
+      "center_A": [
+        65.49038305461472,
+        42.46882263035204,
+        51.745626454844526
+      ],
+      "radius_A": 3.0
+    },
+    {
+      "center_A": [
+        65.23930555068843,
+        42.95487357421569,
+        50.31169564514993
+      ],
+      "radius_A": 3.0
+    },
+    {
+      "center_A": [
+        64.02551442298056,
+        43.86876323850055,
+        50.414970907487856
+      ],
+      "radius_A": 3.0
+    },
+    {
+      "center_A": [
+        63.59715019736515,
+        44.38915807547855,
+        49.056551125587006
+      ],
+      "radius_A": 3.0
+    },
+    {
+      "center_A": [
+        62.14246331215183,
+        44.06875873628093,
+        48.775308651145345
+      ],
+      "radius_A": 3.0
+    },
+    {
+      "center_A": [
+        61.21988635401074,
+        45.12254488178707,
+        49.36015351591415
+      ],
+      "radius_A": 3.0
+    },
+    {
+      "center_A": [
+        59.75548587323077,
+        44.7724667574058,
+        49.13825592980493
+      ],
+      "radius_A": 3.0
+    },
+    {
+      "center_A": [
+        59.309937380894944,
+        43.59018015251078,
+        50.00081197138314
+      ],
+      "radius_A": 3.0
+    },
+    {
+      "center_A": [
+        57.85634969731269,
+        43.240660185995885,
+        49.75282277979328
+      ],
+      "radius_A": 3.0
+    }
+  ],
+  "seed_spheres": [
+    {
+      "center_A": [
+        64.78366702501677,
+        41.12984201481187,
+        52.007130498249225
+      ],
+      "radius_A": 1.1
+    },
+    {
+      "center_A": [
+        65.49038305461472,
+        42.46882263035204,
+        51.745626454844526
+      ],
+      "radius_A": 1.1
+    },
+    {
+      "center_A": [
+        65.23930555068843,
+        42.95487357421569,
+        50.31169564514993
+      ],
+      "radius_A": 1.1
+    },
+    {
+      "center_A": [
+        64.02551442298056,
+        43.86876323850055,
+        50.414970907487856
+      ],
+      "radius_A": 1.1
+    },
+    {
+      "center_A": [
+        63.59715019736515,
+        44.38915807547855,
+        49.056551125587006
+      ],
+      "radius_A": 1.1
+    },
+    {
+      "center_A": [
+        62.14246331215183,
+        44.06875873628093,
+        48.775308651145345
+      ],
+      "radius_A": 1.1
+    },
+    {
+      "center_A": [
+        61.21988635401074,
+        45.12254488178707,
+        49.36015351591415
+      ],
+      "radius_A": 1.1
+    },
+    {
+      "center_A": [
+        59.75548587323077,
+        44.7724667574058,
+        49.13825592980493
+      ],
+      "radius_A": 1.1
+    },
+    {
+      "center_A": [
+        59.309937380894944,
+        43.59018015251078,
+        50.00081197138314
+      ],
+      "radius_A": 1.1
+    },
+    {
+      "center_A": [
+        57.85634969731269,
+        43.240660185995885,
+        49.75282277979328
+      ],
+      "radius_A": 1.1
+    }
+  ],
+  "region_source": "Experimental ligand PLM A:1007 in 1E7H, https://www.rcsb.org/structure/1E7H; source SHA256 06b0343da3e51686e051125ae978271780c0fe6da1544e541413b64608ca9799",
+  "region_rationale": "Fixed union of 3 A spheres about aligned experimental ligand heavy atoms, with 1.1 A seed spheres. Same ROI/probe/grid for every replica. Local mapped backbone fit for intradomain pockets; fixed canonical 207-236 reference for FA2/FA6. All-atom exclusions include modified side chains. ROI contact is truncation/open-groove evidence, not a physical entrance/depth.",
+  "experimental_contact_residues": [
+    218,
+    219,
+    222,
+    238,
+    257,
+    260,
+    264,
+    287,
+    290,
+    291
+  ],
+  "mapped_contact_overlap": [
+    218,
+    219,
+    222,
+    238,
+    257,
+    260,
+    264,
+    290,
+    291
+  ],
+  "reference_alignment_RMSD_A": 0.41579153535413066,
+  "caveat": "Geometric comparison of ligand-informed probe-center regions, not ligand affinity, occupancy, physical cavity volume or MOF pore. FA7/Sudlow I and FA3-4/Sudlow II overlap and must not be added as independent volumes.",
+  "native_transfer_anchor_RMSD_A": 0.6071126345523005,
+  "legacy_region_sha256": "5446f92136832520e13c85b8b1d3e6303368f6ebf53e69373ec96efd44479d58"
+}

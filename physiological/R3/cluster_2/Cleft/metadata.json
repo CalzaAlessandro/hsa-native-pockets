@@ -1,0 +1,12 @@
+{
+  "replica": "R3",
+  "cluster": 2,
+  "frame": 857,
+  "production_percent": 8.57,
+  "site": "Cleft",
+  "volume_A3": 207.0,
+  "lining_residues": "108;109;110;145;146;147;148;149;184;187;188;190;191;193;194;197;425;426;428;429;432;436;452;456;459;460;462;463",
+  "folder": "physiological/R3/cluster_2/Cleft",
+  "protein_pdb": "physiological/R3/cluster_2/protein.pdb",
+  "source_trajectory_sha256": "e0516914fc6512cec0da8fb4dd0ad2c9f79e3f8eb804f8d892a070518f87e4e7"
+}

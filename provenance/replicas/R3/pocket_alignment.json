@@ -1,0 +1,42 @@
+{
+  "canonical_residues": [
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236
+  ],
+  "rationale": "Fixed central Domain II helical core; independently tested on every complete native frame.",
+  "integrity_evidence": {
+    "0/R3": {
+      "path": "/export/scratch/alessandro.calza3/CATIONIZED_HSA/series_585_apbs/analysis/0/R3/pocket_alignment_integrity.json",
+      "sha256": "28892aafb4253df493d4e3c888c536230fede0a7cbe754797706b18c761a7445",
+      "assessment": "Self-fitted core p95 RMSD <2.5 A"
+    }
+  }
+}

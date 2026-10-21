@@ -1,0 +1,12 @@
+{
+  "replica": "R1",
+  "cluster": 2,
+  "frame": 7432,
+  "production_percent": 74.32000000000001,
+  "site": "FA6",
+  "volume_A3": 168.0,
+  "lining_residues": "206;209;210;212;213;216;228;231;232;235;236;324;325;327;328;331;347;350;351;354;480;482;483",
+  "folder": "physiological/R1/cluster_2/FA6",
+  "protein_pdb": "physiological/R1/cluster_2/protein.pdb",
+  "source_trajectory_sha256": "a3b5c6403d911dcc2f2d7bfd6d9a947131cf4679887290a6cebcbb8385807b39"
+}

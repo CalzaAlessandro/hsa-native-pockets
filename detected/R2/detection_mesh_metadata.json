@@ -1,0 +1,16 @@
+{
+  "code_sha256": "3c3e4016a9518225dcbbfc155c616ffc0de7d59ee97be5389ca5ec541a374cbb",
+  "grid_sha256": "2ccf8a19673b981f8bf971597ce89db59f8fbcc8d56128ab057c36892119b2dd",
+  "units": "angstrom",
+  "thresholds": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "connectivity": "6-neighbour shared-face connectivity",
+  "surface": "Exact exposed faces of selected voxel union; triangulated without smoothing or interpolation",
+  "voxel_convention": "DX samples interpreted as cell centers with boundaries at plus/minus half a grid step",
+  "interpretation": "Detection-region geometry only. Not physical empty volume, ligand accessibility, pocket-mouth size, or a MOF pore. Region IDs are threshold-local and are not matched to per-frame fpocket IDs or physiological sites.",
+  "boundary": "Components touching grid edges are flagged as potentially truncated; their exported surface is closed at the grid boundary.",
+  "principal_dimensions": "Bounding extents along uniform voxel-union principal axes; axes become nonunique for degenerate eigenvalues."
+}

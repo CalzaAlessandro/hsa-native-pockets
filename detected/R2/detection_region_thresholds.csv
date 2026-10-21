@@ -1,0 +1,4 @@
+frequency_cutoff,components,selected_voxels,detection_region_volume_A3
+0.2,40,20196,20196.0
+0.5,29,3472,3472.0
+0.8,8,568,568.0

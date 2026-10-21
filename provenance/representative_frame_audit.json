@@ -1,0 +1,84 @@
+{
+  "checked_utc": "2026-10-21T14:41:34.382085+00:00",
+  "method": "Direct random-access read of each recorded clean_unfitted.nc frame; PDB atom names and all coordinates compared with 0.00051 A tolerance for three-decimal PDB rounding. No fitting applied.",
+  "representatives": [
+    {
+      "replica": "R1",
+      "cluster": 1,
+      "frame": 4532,
+      "production_time_ns": 453.20000000000005,
+      "source_absolute_time_ps": 455400.0,
+      "protein_atoms": 9228,
+      "protein_residues": 585,
+      "atom_names_match": true,
+      "max_coordinate_component_difference_A": 0.0004999542236330257,
+      "pdb_sha256": "bf73655296e5d87b2d3d531e0466dbba546a6fa800ce02f329b7747ba092638f",
+      "source_trajectory_sha256_recorded": "a3b5c6403d911dcc2f2d7bfd6d9a947131cf4679887290a6cebcbb8385807b39"
+    },
+    {
+      "replica": "R1",
+      "cluster": 2,
+      "frame": 7432,
+      "production_time_ns": 743.2,
+      "source_absolute_time_ps": 745400.0,
+      "protein_atoms": 9228,
+      "protein_residues": 585,
+      "atom_names_match": true,
+      "max_coordinate_component_difference_A": 0.0004999847412108238,
+      "pdb_sha256": "3f18ba2e1dbfa801d1aa737e4653d0f4bacabab26defddf2b7628344f3236c1a",
+      "source_trajectory_sha256_recorded": "a3b5c6403d911dcc2f2d7bfd6d9a947131cf4679887290a6cebcbb8385807b39"
+    },
+    {
+      "replica": "R2",
+      "cluster": 1,
+      "frame": 4648,
+      "production_time_ns": 464.8,
+      "source_absolute_time_ps": 467000.0,
+      "protein_atoms": 9228,
+      "protein_residues": 585,
+      "atom_names_match": true,
+      "max_coordinate_component_difference_A": 0.0004999923706057174,
+      "pdb_sha256": "c7c98e18303a82c61591da5b7307d741838297ed30922d852092285aca98b5a3",
+      "source_trajectory_sha256_recorded": "680598a9a630ba603b0216ee14be9ebcd5037b74c2d6384acbea6753140ad8f8"
+    },
+    {
+      "replica": "R2",
+      "cluster": 2,
+      "frame": 9134,
+      "production_time_ns": 913.4000000000001,
+      "source_absolute_time_ps": 915600.0,
+      "protein_atoms": 9228,
+      "protein_residues": 585,
+      "atom_names_match": true,
+      "max_coordinate_component_difference_A": 0.0004999542236312493,
+      "pdb_sha256": "76f9f27adeb5f8f453d4dfc8de57254de55a4fe34d7f95f29af5b56ed3728904",
+      "source_trajectory_sha256_recorded": "680598a9a630ba603b0216ee14be9ebcd5037b74c2d6384acbea6753140ad8f8"
+    },
+    {
+      "replica": "R3",
+      "cluster": 1,
+      "frame": 7499,
+      "production_time_ns": 749.9000000000001,
+      "source_absolute_time_ps": 752100.0,
+      "protein_atoms": 9228,
+      "protein_residues": 585,
+      "atom_names_match": true,
+      "max_coordinate_component_difference_A": 0.0004999761581421236,
+      "pdb_sha256": "78a949b75e9a16840bcac6ed069085f9a9b9655ec5136802847cfb06b6346eac",
+      "source_trajectory_sha256_recorded": "e0516914fc6512cec0da8fb4dd0ad2c9f79e3f8eb804f8d892a070518f87e4e7"
+    },
+    {
+      "replica": "R3",
+      "cluster": 2,
+      "frame": 857,
+      "production_time_ns": 85.7,
+      "source_absolute_time_ps": 87900.0,
+      "protein_atoms": 9228,
+      "protein_residues": 585,
+      "atom_names_match": true,
+      "max_coordinate_component_difference_A": 0.000500000000000167,
+      "pdb_sha256": "9350f33b0e8d12c05ed7a86a9daeaf8474530b4514215f3de4a6c6f3f652712d",
+      "source_trajectory_sha256_recorded": "e0516914fc6512cec0da8fb4dd0ad2c9f79e3f8eb804f8d892a070518f87e4e7"
+    }
+  ]
+}
