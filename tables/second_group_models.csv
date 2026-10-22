@@ -1,0 +1,12 @@
+group,site,replica,frame,production_percent,volume_A3,lining_residues,folder
+2,FA1,R2,8894,88.94,60.0,115;116;117;118;123;138;141;142;145;146;161;182;183;186,structures/representative/whole_protein_group_2/FA1
+2,FA2,R2,8894,88.94,0.0,,structures/representative/whole_protein_group_2/FA2
+2,FA3,R2,8894,88.94,3.0,388;391;411;430;433;453;488,structures/representative/whole_protein_group_2/FA3
+2,FA4,R2,8894,88.94,36.0,387;390;391;410;411;414;415;418;423;426;430;460;473;488;489;491,structures/representative/whole_protein_group_2/FA4
+2,FA5,R2,8894,88.94,1.0,401;405;529;548;551;552,structures/representative/whole_protein_group_2/FA5
+2,FA6,R2,8894,88.94,181.0,207;209;210;212;213;216;228;232;235;236;324;325;327;328;331;347;350;351;354;480;481;482,structures/representative/whole_protein_group_2/FA6
+2,FA7,R2,8894,88.94,0.0,,structures/representative/whole_protein_group_2/FA7
+2,Heme,R2,8894,88.94,63.0,115;116;117;118;119;123;138;141;142;145;146;149;157;161;182;183;185;186;189,structures/representative/whole_protein_group_2/Heme
+2,Sudlow_I,R2,8894,88.94,55.0,150;153;195;199;211;214;215;218;219;238;242;257;288;291;292,structures/representative/whole_protein_group_2/Sudlow_I
+2,Sudlow_II,R2,8894,88.94,3.0,388;391;411;430;433;453;488,structures/representative/whole_protein_group_2/Sudlow_II
+2,Cleft,R2,8894,88.94,392.0,108;110;114;115;145;146;147;148;184;186;187;188;190;191;193;194;197;425;429;432;436;452;456;459;462;463;465,structures/representative/whole_protein_group_2/Cleft

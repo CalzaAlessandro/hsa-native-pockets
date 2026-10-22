@@ -19,6 +19,29 @@ classification contains two groups. The whole-protein frame is R3, frame 2726
 weighted R1–R3 frames. All eleven geometries were recalculated on that same
 observed frame. This classification describes overall opening coordinates.
 
+### Second common whole-protein frame
+
+The second group contains 31.7% of the equally weighted R1–R3 frames. Its
+common observed representative is R2, frame 8894 (88.94% of production).
+The eleven pocket geometries were extracted anew on that frame with the same
+physiological regions, atomic exclusions and 1.4 Å probe used for group 1.
+The cleft uses the existing common local lattice. These measurements are
+reported in [second_group_models.csv](second_group_models.csv).
+
+Group 2 is the less populated of the two common groups. Its frame fractions
+are 30.2% in R1, 62.1% in R2 and 2.8% in R3. Thus the 31.7% pooled fraction also
+contains substantial replica variability. The original common assignments and
+source-frame tables are retained in
+[common_cluster_populations.csv](common_cluster_populations.csv) and
+[common_cluster_representatives.csv](common_cluster_representatives.csv).
+
+For display, both observed proteins and all associated geometry are fitted
+with the same canonical Domain II Cα atoms (196–383) to the established native
+reference, then shown with one frontal camera and molecular scale. The atom
+coordinates in the delivered structures are unchanged by this display fit.
+The protein hull panel belongs to group 1. The second group's complete hull,
+atomic structures and probe models are supplied in its own structure folder.
+
 ### Independent pocket-shape frames
 
 Each region was analyzed across 102 uniformly sampled frames per replica,
@@ -94,6 +117,8 @@ shows the volumes directly.
 | [Pocket-shape methods](pocket_shape_methods.csv) | Alignment residues, grids and method for each region |
 | [Shape representativeness](pocket_shape_representativeness.csv) | Medoid overlap and selected-volume percentile |
 | [Representative geometry formats](representative_geometry_formats.csv) | Exported geometry files and vertex/face counts |
+| [Second-group models](second_group_models.csv) | Pocket volumes, lining residues and source frame for common group 2 |
+| [Second-group geometry formats](second_group_geometry_formats.csv) | Additional geometric exports for common group 2 |
 | [Original geometry formats](geometry_formats.csv) | Original R1–R3 geometric exports |
 
 ## Geometric export formats

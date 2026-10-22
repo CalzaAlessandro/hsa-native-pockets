@@ -1,0 +1,30 @@
+ply
+format ascii 1.0
+comment Centers of a 1.4 A probe; geometry extracted from an observed MD frame; angstrom
+element vertex 8
+property double x
+property double y
+property double z
+element face 12
+property list uchar int vertex_indices
+end_header
+0.03579293 -11.53940206 42.71294668
+1.01619958 -11.34782460 42.75878188
+0.89935077 -10.59489530 42.11113705
+-0.08105588 -10.78647276 42.06530185
+0.07752893 -11.41607228 41.30473935
+1.05793559 -11.22449482 41.35057455
+1.17478440 -11.97742411 41.99821939
+0.19437775 -12.16900157 41.95238419
+3 0 1 2
+3 0 2 3
+3 4 5 6
+3 4 6 7
+3 3 4 7
+3 3 7 0
+3 1 6 5
+3 1 5 2
+3 2 5 4
+3 2 4 3
+3 0 7 6
+3 0 6 1

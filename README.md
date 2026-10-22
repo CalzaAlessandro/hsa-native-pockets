@@ -43,43 +43,54 @@ and its surrounding atoms. The two collections let the MOF group compare an
 intact-protein design with a local-site design. Their suitability for a particular
 MOF chemistry will require testing with that material's building blocks.
 
-## The complete HSA template
+## Pockets in two native conformations
+
+The common clustering identifies two groups. **Group 1 is the most populated
+(68.3%)** and supplies the principal whole-protein template. **Group 2 (31.7%)**
+is shown as an alternative conformation. Both are observed frames from the same
+native HSA dataset, with the replicas contributing equally.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HSA_common_representative_dark.png">
-  <img src="images/HSA_common_representative.png" width="100%" alt="Front and oblique HSA views with physiological probe spaces, and the complete protein envelope">
+  <img src="images/HSA_common_representative.png" width="100%" alt="The two common native HSA conformations in the same frontal view, with physiological probes and the group 1 protein envelope">
 </picture>
 
-The cartoon shows HSA secondary structure; colored regions show the available
-probe-center space in its physiological pockets. The separate wireframe shows
-the enclosing protein convex hull. A convex hull bridges surface indentations;
+The two frontal views use the same Domain II alignment, camera and molecular
+scale. The cartoon shows HSA secondary structure; saturated colors identify the
+pocket probe spaces. Each pocket was recalculated on its own group representative.
+The separate wireframe shows the complete protein convex hull of group 1. A convex hull bridges surface indentations;
 it is a coarse geometric envelope. The atomic PDB retains atomic detail and chemical identities.
 
-[Protein PDB](structures/representative/whole_protein/protein.pdb) ·
+[Group 1 protein PDB](structures/representative/whole_protein/protein.pdb) ·
+[Group 2 protein PDB](structures/representative/whole_protein_group_2/protein.pdb) ·
+[Group 2 protein and pockets](structures/representative/whole_protein_group_2/HSA_with_all_pockets.pdb) ·
 [Protein with all probes, PDB](structures/representative/whole_protein/HSA_with_all_pockets.pdb) ·
 [Protein hull with all probes, PDB](structures/representative/whole_protein/HSA_hull_with_all_pockets.pdb) ·
 [OBJ](structures/representative/whole_protein/HSA_hull_with_all_pockets.obj) ·
-[SDF](structures/representative/whole_protein/HSA_hull_with_all_pockets.sdf)
+[SDF](structures/representative/whole_protein/HSA_hull_with_all_pockets.sdf) ·
+[Complete group 2 models](structures/representative/whole_protein_group_2)
 
 ## Pocket volumes
 
 The MD column is the mean ± SD of the three replica means. The other columns
 give the probe-space volume in each selected structure; click a value to open
-its model folder. All volumes are in Å³.
+its model folder. Groups 1 and 2 are the common protein conformations above;
+pocket-shape frames are selected independently for each cavity. All volumes
+are in Å³.
 
-| Pocket | MD mean ± SD | Whole protein | Pocket shape |
-|---|---:|---:|---:|
-| Cleft | 233.5 ± 103.8 | [250](structures/representative/whole_protein/Cleft) | [307](structures/representative/pocket_geometry/Cleft) |
-| FA1 | 41.0 ± 13.1 | [0](structures/representative/whole_protein/FA1) | [129](structures/representative/pocket_geometry/FA1) |
-| FA2 | 5.7 ± 4.6 | [1](structures/representative/whole_protein/FA2) | [11](structures/representative/pocket_geometry/FA2) |
-| FA3 | 4.2 ± 4.4 | [0](structures/representative/whole_protein/FA3) | [3](structures/representative/pocket_geometry/FA3) |
-| FA4 | 57.9 ± 33.2 | [53](structures/representative/whole_protein/FA4) | [120](structures/representative/pocket_geometry/FA4) |
-| FA5 | 14.1 ± 15.0 | [26](structures/representative/whole_protein/FA5) | [38](structures/representative/pocket_geometry/FA5) |
-| FA6 | 169.1 ± 24.5 | [168](structures/representative/whole_protein/FA6) | [199](structures/representative/pocket_geometry/FA6) |
-| FA7 | 9.3 ± 5.5 | [2](structures/representative/whole_protein/FA7) | [25](structures/representative/pocket_geometry/FA7) |
-| Heme | 173.5 ± 36.9 | [136](structures/representative/whole_protein/Heme) | [383](structures/representative/pocket_geometry/Heme) |
-| Sudlow&nbsp;I | 65.9 ± 13.4 | [50](structures/representative/whole_protein/Sudlow_I) | [114](structures/representative/pocket_geometry/Sudlow_I) |
-| Sudlow&nbsp;II | 16.4 ± 10.6 | [24](structures/representative/whole_protein/Sudlow_II) | [36](structures/representative/pocket_geometry/Sudlow_II) |
+| Pocket | MD mean ± SD | Group 1 | Group 2 | Pocket shape |
+|---|---:|---:|---:|---:|
+| Cleft | 233.5 ± 103.8 | [250](structures/representative/whole_protein/Cleft) | [392](structures/representative/whole_protein_group_2/Cleft) | [307](structures/representative/pocket_geometry/Cleft) |
+| FA1 | 41.0 ± 13.1 | [0](structures/representative/whole_protein/FA1) | [60](structures/representative/whole_protein_group_2/FA1) | [129](structures/representative/pocket_geometry/FA1) |
+| FA2 | 5.7 ± 4.6 | [1](structures/representative/whole_protein/FA2) | [0](structures/representative/whole_protein_group_2/FA2) | [11](structures/representative/pocket_geometry/FA2) |
+| FA3 | 4.2 ± 4.4 | [0](structures/representative/whole_protein/FA3) | [3](structures/representative/whole_protein_group_2/FA3) | [3](structures/representative/pocket_geometry/FA3) |
+| FA4 | 57.9 ± 33.2 | [53](structures/representative/whole_protein/FA4) | [36](structures/representative/whole_protein_group_2/FA4) | [120](structures/representative/pocket_geometry/FA4) |
+| FA5 | 14.1 ± 15.0 | [26](structures/representative/whole_protein/FA5) | [1](structures/representative/whole_protein_group_2/FA5) | [38](structures/representative/pocket_geometry/FA5) |
+| FA6 | 169.1 ± 24.5 | [168](structures/representative/whole_protein/FA6) | [181](structures/representative/whole_protein_group_2/FA6) | [199](structures/representative/pocket_geometry/FA6) |
+| FA7 | 9.3 ± 5.5 | [2](structures/representative/whole_protein/FA7) | [0](structures/representative/whole_protein_group_2/FA7) | [25](structures/representative/pocket_geometry/FA7) |
+| Heme | 173.5 ± 36.9 | [136](structures/representative/whole_protein/Heme) | [63](structures/representative/whole_protein_group_2/Heme) | [383](structures/representative/pocket_geometry/Heme) |
+| Sudlow&nbsp;I | 65.9 ± 13.4 | [50](structures/representative/whole_protein/Sudlow_I) | [55](structures/representative/whole_protein_group_2/Sudlow_I) | [114](structures/representative/pocket_geometry/Sudlow_I) |
+| Sudlow&nbsp;II | 16.4 ± 10.6 | [24](structures/representative/whole_protein/Sudlow_II) | [3](structures/representative/whole_protein_group_2/Sudlow_II) | [36](structures/representative/pocket_geometry/Sudlow_II) |
 
 A zero means that the 1.4 Å probe has no accessible center positions within
 the specified region in that frame. The physiological site is still defined by
@@ -258,8 +269,9 @@ also included in the combined PDB files.
 ```text
 structures/
 ├── representative/
-│   ├── whole_protein/       One HSA frame with all eleven pockets
-│   └── pocket_geometry/     One frame selected for each pocket
+│   ├── whole_protein/          Group 1: principal HSA template
+│   ├── whole_protein_group_2/  Group 2: alternative HSA conformation
+│   └── pocket_geometry/        One frame selected for each pocket
 ├── R1/                     Original per-replica models
 ├── R2/
 └── R3/
