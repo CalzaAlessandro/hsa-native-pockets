@@ -19,35 +19,6 @@ once, or design a material around the complete HSA molecule. The files are in
 [`whole_protein/`](structures/representative/whole_protein); the alternative
 conformation is in [`whole_protein_group_2/`](structures/representative/whole_protein_group_2).
 
-### Pocket-shape representatives
-
-Each pocket is considered separately. Frames containing space for the probe
-are compared across the three simulations, and one observed frame is selected
-to represent the most populated cavity-shape group. The selection reflects the **shape of that pocket**,
-including where its internal space lies. It is not determined by volume alone.
-
-Use these models to examine a particular cavity and its lining residues.
-Different pockets can come from different frames. Each model includes its own
-complete parent protein and geometric envelope. The selected structures are
-observed conformations; the trajectory averages are reported separately below.
-The files are in [`pocket_geometry/`](structures/representative/pocket_geometry).
-
-### Which should be used for MOF design?
-
-**Start with the whole-protein model for intact-HSA templating or encapsulation.**
-Use its atomic PDB to retain the exposed chemical groups, and its geometric
-envelope to describe the overall size and shape. Protein-directed MOF
-mineralization has been demonstrated experimentally, including with HSA
-([Liang et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26041070/)).
-
-**Use the pocket-shape models as complementary local templates** when the design
-concerns a specific cavity. They provide a cavity-focused choice of conformation
-and its surrounding atoms. The two collections let the MOF group compare an
-intact-protein design with a local-site design. Their suitability for a particular
-MOF chemistry will require testing with that material's building blocks.
-
-## Whole protein representation
-
 The common clustering identifies two groups. **Group 1 is the most populated
 (68.3%)** and supplies the principal whole-protein template. **Group 2 (31.7%)**
 is shown as an alternative conformation. Both are observed frames from the same
@@ -86,14 +57,14 @@ it is a coarse geometric envelope. The atomic PDB retains atomic detail and chem
 - [Complete group 2 models](structures/representative/whole_protein_group_2)
 
 
-### Group 1 · dominant conformation
+#### Group 1 · dominant conformation
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HSA_group_1_representations_dark.png">
   <img src="images/HSA_group_1_representations.png" width="100%" alt="Group 1 observed HSA frame in four matching views: structure, all probes, structure with probes and the complete protein hull with probes">
 </picture>
 
-### Group 2 · alternative conformation
+#### Group 2 · alternative conformation
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HSA_group_2_representations_dark.png">
@@ -108,7 +79,18 @@ stored in `protein_hull.*`. Probe volumes and all delivered models are unchanged
 
 </details>
 
-## Single pockets representations
+### Pocket-shape representatives
+
+Each pocket is considered separately. Frames containing space for the probe
+are compared across the three simulations, and one observed frame is selected
+to represent the most populated cavity-shape group. The selection reflects the **shape of that pocket**,
+including where its internal space lies. It is not determined by volume alone.
+
+Use these models to examine a particular cavity and its lining residues.
+Different pockets can come from different frames. Each model includes its own
+complete parent protein and geometric envelope. The selected structures are
+observed conformations; the trajectory averages are reported separately below.
+The files are in [`pocket_geometry/`](structures/representative/pocket_geometry).
 
 The schematic example introduces four views: **atomic pocket residues**,
 **probe surface**, **residues with the probe**, and **residue convex hull**.
@@ -120,8 +102,6 @@ atoms.
   <img src="images/representations_overview.svg" width="100%" alt="Schematic pocket example showing atomic residues, probe space, their overlay and the residue convex hull">
 </picture>
 
-### HSA pocket results
-
 Expand a pocket below to see its measured structures. The upper row comes
 from `whole_protein/`; the lower row comes from `pocket_geometry/`. All eight
 panels for each pocket share the same local alignment and molecular scale.
@@ -131,7 +111,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>Sudlow I - view all representations</summary>
 
-### Sudlow I
+#### Sudlow I
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Sudlow_I_representatives_dark.png">
@@ -146,7 +126,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>Sudlow II - view all representations</summary>
 
-### Sudlow II
+#### Sudlow II
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Sudlow_II_representatives_dark.png">
@@ -161,7 +141,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>Heme - view all representations</summary>
 
-### Heme
+#### Heme
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Heme_representatives_dark.png">
@@ -176,7 +156,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>Cleft - view all representations</summary>
 
-### Cleft
+#### Cleft
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Cleft_representatives_dark.png">
@@ -191,7 +171,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>FA1 - view all representations</summary>
 
-### FA1
+#### FA1
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA1_representatives_dark.png">
@@ -206,7 +186,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>FA2 - view all representations</summary>
 
-### FA2
+#### FA2
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA2_representatives_dark.png">
@@ -221,7 +201,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>FA3 - view all representations</summary>
 
-### FA3
+#### FA3
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA3_representatives_dark.png">
@@ -236,7 +216,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>FA4 - view all representations</summary>
 
-### FA4
+#### FA4
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA4_representatives_dark.png">
@@ -251,7 +231,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>FA5 - view all representations</summary>
 
-### FA5
+#### FA5
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA5_representatives_dark.png">
@@ -266,7 +246,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>FA6 - view all representations</summary>
 
-### FA6
+#### FA6
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA6_representatives_dark.png">
@@ -281,7 +261,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 <details>
 <summary>FA7 - view all representations</summary>
 
-### FA7
+#### FA7
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA7_representatives_dark.png">
@@ -292,6 +272,20 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 [`pocket_geometry/FA7/`](structures/representative/pocket_geometry/FA7)
 
 </details>
+
+### Which should be used for MOF design?
+
+**Start with the whole-protein model for intact-HSA templating or encapsulation.**
+Use its atomic PDB to retain the exposed chemical groups, and its geometric
+envelope to describe the overall size and shape. Protein-directed MOF
+mineralization has been demonstrated experimentally, including with HSA
+([Liang et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26041070/)).
+
+**Use the pocket-shape models as complementary local templates** when the design
+concerns a specific cavity. They provide a cavity-focused choice of conformation
+and its surrounding atoms. The two collections let the MOF group compare an
+intact-protein design with a local-site design. Their suitability for a particular
+MOF chemistry will require testing with that material's building blocks.
 
 ## Pocket volumes
 
