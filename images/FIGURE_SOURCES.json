@@ -51,6 +51,186 @@
     "images/HSA_common_representative.png": "219d37fff36da42b1b4c01c7987d2c88f870c02c4168e7103b8cb0faf06634ff",
     "images/HSA_common_representative_dark.png": "d766c1fee5ad21e11b37d07ac817383b29fea87718847fc0d8d63450f655086f",
     "images/representations_overview.svg": "7e1a170df69a9afdb7c45938d34a50b9b12270f5837bc8822a70261640740c0f",
-    "images/representations_overview_dark.svg": "0cb9f26abb076c667c39b890e4634d6439a0b69ed047fa2f02a57d71d3e52970"
+    "images/representations_overview_dark.svg": "0cb9f26abb076c667c39b890e4634d6439a0b69ed047fa2f02a57d71d3e52970",
+    "images/whole_protein_overview.svg": "eedc0de1ec9b17db7c415c66746e65a57c2dbb46d3e57d9678b74b73f2606f5e",
+    "images/whole_protein_overview_dark.svg": "9e4e6bd0f81e03da97653b1669504119d915c27305b8bb41c0c418221ded4658",
+    "images/HSA_group_1_representations.png": "6988f0966a32fb5fabe21bc4027d00df2f5fa150269c158ccb1ad7c187b39234",
+    "images/HSA_group_1_representations_dark.png": "77e31befe92a6419843bd198bf1ebc739df4d7633c0bf6b2ceae659d781986cf",
+    "images/HSA_group_2_representations.png": "4d7c7034ad731957d7648eccf0c7ac0ee7d6629d7250e16842e773ae81d74e0b",
+    "images/HSA_group_2_representations_dark.png": "4caf2b2e2bf55801e7116a236d1206f249d65f39e862477c5cf04552ec34a924"
+  },
+  "whole_protein_gallery": {
+    "raw_render": {
+      "groups": {
+        "1": {
+          "original_scene_sha256": "b083b0b8f2887240b60d97a52247a03fe5bec6fffe4fc8894d3b394549b23340",
+          "component_geometry_preserved": true
+        },
+        "2": {
+          "original_scene_sha256": "cf80f50ce83fd623d4873a12c4f09ad6191aa173722e74f9b8b8be2a42a73305",
+          "component_geometry_preserved": true,
+          "protein_hull_sha256": "466586ef3280f32a5e65175594750a2d78089c79e1d22262bb09eae3a0119868"
+        }
+      },
+      "alpha": {
+        "protein_1": {
+          "alpha_min": 0.0,
+          "alpha_max": 1.0,
+          "alpha_fractional_pixels": 36135,
+          "alpha_nonzero_pixels": 559616,
+          "alpha_bbox": [
+            1238,
+            502,
+            2724,
+            1891
+          ],
+          "transparent_pixel_rgb_nonzero": 0,
+          "foreground_channel_clip_fraction": 0.0002787625800548948,
+          "rgba8_recompose_black_mae": 6.44171959720552e-05,
+          "rgba8_recompose_black_p99": 0.0016632080078125,
+          "rgba8_recompose_black_max": 0.07016098499298096
+        },
+        "probes_1": {
+          "alpha_min": 0.0,
+          "alpha_max": 1.0,
+          "alpha_fractional_pixels": 3919,
+          "alpha_nonzero_pixels": 76772,
+          "alpha_bbox": [
+            1474,
+            772,
+            2364,
+            1530
+          ],
+          "transparent_pixel_rgb_nonzero": 0,
+          "foreground_channel_clip_fraction": 0.004710918911408673,
+          "rgba8_recompose_black_mae": 7.931967957119923e-06,
+          "rgba8_recompose_black_p99": 0.0,
+          "rgba8_recompose_black_max": 0.16656744480133057
+        },
+        "protein_1_dark": {
+          "alpha_min": 0.0,
+          "alpha_max": 1.0,
+          "alpha_fractional_pixels": 36135,
+          "alpha_nonzero_pixels": 559616,
+          "alpha_bbox": [
+            1238,
+            502,
+            2724,
+            1891
+          ],
+          "transparent_pixel_rgb_nonzero": 0,
+          "foreground_channel_clip_fraction": 0.002509458867032632,
+          "rgba8_recompose_black_mae": 6.205029785633087e-05,
+          "rgba8_recompose_black_p99": 0.0016174912452697754,
+          "rgba8_recompose_black_max": 0.1607843041419983
+        },
+        "protein_2": {
+          "alpha_min": 0.0,
+          "alpha_max": 1.0,
+          "alpha_fractional_pixels": 36137,
+          "alpha_nonzero_pixels": 565457,
+          "alpha_bbox": [
+            1207,
+            554,
+            2741,
+            1889
+          ],
+          "transparent_pixel_rgb_nonzero": 0,
+          "foreground_channel_clip_fraction": 0.0003171476050934613,
+          "rgba8_recompose_black_mae": 6.518594454973936e-05,
+          "rgba8_recompose_black_p99": 0.0016632080078125,
+          "rgba8_recompose_black_max": 0.05745023488998413
+        },
+        "probes_2": {
+          "alpha_min": 0.0,
+          "alpha_max": 1.0,
+          "alpha_fractional_pixels": 3688,
+          "alpha_nonzero_pixels": 76173,
+          "alpha_bbox": [
+            1469,
+            734,
+            2179,
+            1510
+          ],
+          "transparent_pixel_rgb_nonzero": 0,
+          "foreground_channel_clip_fraction": 0.0033651468805657296,
+          "rgba8_recompose_black_mae": 6.790403858758509e-06,
+          "rgba8_recompose_black_p99": 0.0,
+          "rgba8_recompose_black_max": 0.15887689590454102
+        },
+        "hull_2": {
+          "alpha_min": 0.0,
+          "alpha_max": 1.0,
+          "alpha_fractional_pixels": 99305,
+          "alpha_nonzero_pixels": 456278,
+          "alpha_bbox": [
+            1202,
+            522,
+            2762,
+            1912
+          ],
+          "transparent_pixel_rgb_nonzero": 0,
+          "foreground_channel_clip_fraction": 0.0002030925590685211,
+          "rgba8_recompose_black_mae": 6.181067146826535e-05,
+          "rgba8_recompose_black_p99": 0.001953125,
+          "rgba8_recompose_black_max": 0.12156862020492554
+        },
+        "protein_2_dark": {
+          "alpha_min": 0.0,
+          "alpha_max": 1.0,
+          "alpha_fractional_pixels": 36137,
+          "alpha_nonzero_pixels": 565457,
+          "alpha_bbox": [
+            1207,
+            554,
+            2741,
+            1889
+          ],
+          "transparent_pixel_rgb_nonzero": 0,
+          "foreground_channel_clip_fraction": 0.0029091513589892776,
+          "rgba8_recompose_black_mae": 6.367088644765317e-05,
+          "rgba8_recompose_black_p99": 0.0016326904296875,
+          "rgba8_recompose_black_max": 0.16978710889816284
+        }
+      },
+      "raw_size_px": [
+        3840,
+        2160
+      ],
+      "same_camera_and_scale_as_existing_representatives": true,
+      "protein_only_representation": "Opaque NewCartoon; secondary-structure colors; AOChalky",
+      "overlay_representation": "Original transparent NewCartoon and actual probe models",
+      "hull": "Original whole-protein convex hull; wireframe and all probes"
+    },
+    "composition": {
+      "output_dimensions_px": [
+        3200,
+        3340
+      ],
+      "same_global_crop": [
+        1167,
+        433,
+        2799,
+        1947
+      ],
+      "same_camera": true,
+      "same_scale": true,
+      "groups": [
+        1,
+        2
+      ],
+      "representations": [
+        "HSA structure",
+        "Pocket probes",
+        "HSA + probes",
+        "Protein hull + probes"
+      ],
+      "original_models_unchanged": true
+    },
+    "schematic": {
+      "kind": "Unitless heart-shaped protein guide with generic probe positions",
+      "uses_measured_HSA_geometry": false
+    },
+    "navigation": "One Whole HSA details element contains the two real groups and their models"
   }
 }

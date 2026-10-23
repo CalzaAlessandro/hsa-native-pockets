@@ -53,6 +53,18 @@ The common clustering identifies two groups. **Group 1 is the most populated
 is shown as an alternative conformation. Both are observed frames from the same
 native HSA dataset, with the replicas contributing equally.
 
+The whole-protein guide shows the complete structure, all probe models,
+their overlay and the protein convex hull. The schematic introduces the
+representations; the observed HSA structures are collected below.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/whole_protein_overview_dark.svg">
+  <img src="images/whole_protein_overview.svg" width="100%" alt="Schematic guide showing a whole protein, pocket probes, their overlay and the protein convex hull">
+</picture>
+
+<details>
+<summary>Whole HSA — view all representations</summary>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HSA_common_representative_dark.png">
   <img src="images/HSA_common_representative.png" width="100%" alt="The two common native HSA conformations in the same frontal view, with physiological probes and the group 1 protein envelope">
@@ -72,6 +84,29 @@ it is a coarse geometric envelope. The atomic PDB retains atomic detail and chem
 - [Protein hull with all probes, OBJ](structures/representative/whole_protein/HSA_hull_with_all_pockets.obj)
 - [Protein hull with all probes, SDF](structures/representative/whole_protein/HSA_hull_with_all_pockets.sdf)
 - [Complete group 2 models](structures/representative/whole_protein_group_2)
+
+
+### Group 1 · dominant conformation
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/HSA_group_1_representations_dark.png">
+  <img src="images/HSA_group_1_representations.png" width="100%" alt="Group 1 observed HSA frame in four matching views: structure, all probes, structure with probes and the complete protein hull with probes">
+</picture>
+
+### Group 2 · alternative conformation
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/HSA_group_2_representations_dark.png">
+  <img src="images/HSA_group_2_representations.png" width="100%" alt="Group 2 observed HSA frame in four matching views: structure, all probes, structure with probes and the complete protein hull with probes">
+</picture>
+
+All four panels for each group use the same observed parent frame, camera and
+molecular scale. Protein-only views use an opaque NewCartoon; overlays use
+the transparent cartoon to show the probe positions. Probe-only views retain
+their positions within the complete protein. The envelope is the convex hull
+stored in `protein_hull.*`. Probe volumes and all delivered models are unchanged.
+
+</details>
 
 ## Pocket volumes
 
