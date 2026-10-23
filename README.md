@@ -126,36 +126,6 @@ The probe mesh stored in `probe.obj` and `probe.ply` retains the 1 Å grid used
 for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 
 <details>
-<summary>Heme — view all representations</summary>
-
-### Heme
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/Heme_representatives_dark.png">
-  <img src="images/Heme_representatives.png" width="100%" alt="Heme: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
-</picture>
-
-[`whole_protein/Heme/`](structures/representative/whole_protein/Heme) ·
-[`pocket_geometry/Heme/`](structures/representative/pocket_geometry/Heme)
-
-</details>
-
-<details>
-<summary>FA6 — view all representations</summary>
-
-### FA6
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/FA6_representatives_dark.png">
-  <img src="images/FA6_representatives.png" width="100%" alt="FA6: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
-</picture>
-
-[`whole_protein/FA6/`](structures/representative/whole_protein/FA6) ·
-[`pocket_geometry/FA6/`](structures/representative/pocket_geometry/FA6)
-
-</details>
-
-<details>
 <summary>Sudlow I — view all representations</summary>
 
 ### Sudlow I
@@ -182,6 +152,36 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 
 [`whole_protein/Sudlow_II/`](structures/representative/whole_protein/Sudlow_II) ·
 [`pocket_geometry/Sudlow_II/`](structures/representative/pocket_geometry/Sudlow_II)
+
+</details>
+
+<details>
+<summary>Heme — view all representations</summary>
+
+### Heme
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/Heme_representatives_dark.png">
+  <img src="images/Heme_representatives.png" width="100%" alt="Heme: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[`whole_protein/Heme/`](structures/representative/whole_protein/Heme) ·
+[`pocket_geometry/Heme/`](structures/representative/pocket_geometry/Heme)
+
+</details>
+
+<details>
+<summary>Cleft — view all representations</summary>
+
+### Cleft
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/Cleft_representatives_dark.png">
+  <img src="images/Cleft_representatives.png" width="100%" alt="Cleft: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[`whole_protein/Cleft/`](structures/representative/whole_protein/Cleft) ·
+[`pocket_geometry/Cleft/`](structures/representative/pocket_geometry/Cleft)
 
 </details>
 
@@ -261,6 +261,21 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
+<summary>FA6 — view all representations</summary>
+
+### FA6
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA6_representatives_dark.png">
+  <img src="images/FA6_representatives.png" width="100%" alt="FA6: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
+</picture>
+
+[`whole_protein/FA6/`](structures/representative/whole_protein/FA6) ·
+[`pocket_geometry/FA6/`](structures/representative/pocket_geometry/FA6)
+
+</details>
+
+<details>
 <summary>FA7 — view all representations</summary>
 
 ### FA7
@@ -272,21 +287,6 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 
 [`whole_protein/FA7/`](structures/representative/whole_protein/FA7) ·
 [`pocket_geometry/FA7/`](structures/representative/pocket_geometry/FA7)
-
-</details>
-
-<details>
-<summary>Cleft — view all representations</summary>
-
-### Cleft
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/Cleft_representatives_dark.png">
-  <img src="images/Cleft_representatives.png" width="100%" alt="Cleft: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
-</picture>
-
-[`whole_protein/Cleft/`](structures/representative/whole_protein/Cleft) ·
-[`pocket_geometry/Cleft/`](structures/representative/pocket_geometry/Cleft)
 
 </details>
 
