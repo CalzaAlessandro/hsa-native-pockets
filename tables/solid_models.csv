@@ -1,0 +1,9 @@
+folder,nonempty_pocket_regions,protein_hull_volume_A3,sum_individual_probe_volumes_A3,empty_pocket_union_volume_A3,remaining_solid_volume_A3,volume_balance_error_A3,watertight,solid,section
+structures/R1/cluster_1,9,160329.88011174073,708.99999997119,622.0619387579405,159707.8181729828,2.9103830456733704e-11,True,structures/R1/cluster_1/protein_solid.obj,structures/R1/cluster_1/protein_section.obj
+structures/R1/cluster_2,8,162678.7490444586,379.9999999426995,376.2286333411216,162302.5204111174,-5.820766091346741e-11,True,structures/R1/cluster_2/protein_solid.obj,structures/R1/cluster_2/protein_section.obj
+structures/R2/cluster_1,7,154552.13819923747,633.9999999795685,633.9999999795685,153918.1381992579,0.0,True,structures/R2/cluster_1/protein_solid.obj,structures/R2/cluster_1/protein_section.obj
+structures/R2/cluster_2,9,160674.08031808963,754.9999998820014,706.9999999023063,159967.08031818733,0.0,True,structures/R2/cluster_2/protein_solid.obj,structures/R2/cluster_2/protein_section.obj
+structures/R3/cluster_1,9,152306.31274135376,727.9999999232027,688.1759091308426,151618.13683222292,0.0,True,structures/R3/cluster_1/protein_solid.obj,structures/R3/cluster_1/protein_section.obj
+structures/R3/cluster_2,10,158141.4345800681,1097.0000000913496,923.2656341000838,157218.168945968,0.0,True,structures/R3/cluster_2/protein_solid.obj,structures/R3/cluster_2/protein_section.obj
+structures/representative/whole_protein,9,157599.6697207515,710.0000001098826,645.0910325743674,156954.5786881771,-2.9103830456733704e-11,True,structures/representative/whole_protein/protein_solid.obj,structures/representative/whole_protein/protein_section.obj
+structures/representative/whole_protein_group_2,9,153698.33514715746,793.9999999728423,737.9999999505695,152960.3351472069,2.9103830456733704e-11,True,structures/representative/whole_protein_group_2/protein_solid.obj,structures/representative/whole_protein_group_2/protein_section.obj

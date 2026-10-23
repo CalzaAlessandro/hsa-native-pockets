@@ -32,6 +32,35 @@ All eleven pocket geometries in `whole_protein/` were computed from this
 same frame. The selected frame summarizes the opening measurements; its
 individual pocket volumes can differ from their trajectory means.
 
+### Ward and DBSCAN comparison
+
+Ward is agglomerative hierarchical clustering: each merge minimizes the increase
+in within-group squared variation. DBSCAN uses a neighborhood radius, `eps`,
+and minimum local sample count, `min_samples`, to identify dense regions and
+leave sparse observations unassigned. K-means fits a specified number of centers.
+
+The selection score is assigned training fraction multiplied by the nonnegative
+silhouette. Candidates require at least five training observations per group.
+This score evaluates both separation and sample coverage. It selected Ward with
+two groups (silhouette 0.3824), followed by two-group k-means (0.3663).
+The best eligible DBSCAN candidate has three groups, `eps = 0.4495` in standardized
+feature units and `min_samples = 20`: silhouette 0.2931, coverage 68.17%, score
+0.1998. Sparse frames account for 31.83% of its training sample.
+
+The stored Ward assignments were reproduced for all 30,000 frames. The DBSCAN
+training labels, coverage and silhouette were also reproduced. Extension of
+the DBSCAN core neighborhoods to the full saved dataset leaves 32.99% unassigned.
+Each frame is assigned to its nearest training core point when their distance
+is within `eps`; otherwise it remains unassigned.
+The comparison does not replace the original Ward representatives.
+Results are in [protein_clustering_comparison.csv](protein_clustering_comparison.csv),
+all candidates in [protein_clustering_candidates.csv](protein_clustering_candidates.csv),
+and DBSCAN per-replica populations in
+[protein_dbscan_populations.csv](protein_dbscan_populations.csv).
+Algorithm definitions are available in the
+[SciPy Ward documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.ward.html)
+and the [scikit-learn DBSCAN guide](https://scikit-learn.org/stable/modules/clustering.html#dbscan).
+
 ### Second common whole-protein frame
 
 The second group contains 31.7% of the equally weighted R1-R3 frames. Its
@@ -106,11 +135,11 @@ measurement. Protein and lining hulls enclose atomic positions; the green probe
 mesh describes the available cavity space. FA7 overlaps Sudlow I; FA3 and FA4
 overlap Sudlow II, so these region volumes should not be summed.
 
-`pocket_atoms.pdb` contains the complete residues whose heavy atoms lie within
+`residues.pdb` contains the complete residues whose heavy atoms lie within
 4 Å of a probe-mesh vertex in the selected frame. The selection follows the
 actual cavity geometry and can change with conformation.
 
-`region_atoms.pdb` contains the local alignment-anchor residues used to position
+`anchors.pdb` contains the local alignment-anchor residues used to position
 the physiological reference region on that frame. These fixed residue identities
 are listed in `alignment_canonical_residues` in `pocket_shape_methods.csv`.
 They provide a reference for locating the site; they can differ from its lining
@@ -120,6 +149,44 @@ A lining convex hull encloses those residues' heavy-atom positions. The complete
 protein hull encloses the heavy atoms of the source protein. These envelopes bridge
 concavities and differ from both an atomic solvent-excluded surface and the
 probe-space mesh. The probe mesh retains the unsmoothed 1 Å calculation grid.
+
+## Inverse whole-protein solids
+
+The complete heavy-atom protein convex hull is converted to a closed triangular
+solid. A Boolean union combines all nonempty physiological probe meshes from
+that same frame. The union is clipped to the protein envelope and subtracted
+from it. This preserves overlaps without double counting and retains the
+original probe geometry at scale 1.0. No cavity smoothing or enlargement is used.
+
+`protein_solid` contains the remaining material; `pocket_voids` contains the
+space removed from it. `protein_section` is a cutaway through the heme probe
+centroid, in the common frontal display direction. The complete solid is also
+retained. The exterior is a convex envelope and bridges the protein's external
+surface indentations.
+
+All eight solids and sections were checked for closed surfaces and positive
+volume. For each model, solid volume plus the clipped union volume reproduces
+the starting hull volume. The largest numerical balance error is below
+0.000001 Å³. Boolean operations use Manifold3D 3.5.4 with double-precision mesh
+coordinates; Trimesh 5.1.1 provides independent surface and volume checks.
+Both displayed planar sections also satisfy the corresponding solid-area plus
+void-area balance. Full measurements are in [solid_models.csv](solid_models.csv).
+
+The solids have OBJ, PLY, PDB, MOL, SDF and MOL2 exports. OBJ and PLY can
+be used for surface or solid-model processing. PDB mesh connections give a
+wireframe display in molecular viewers. Separate coincident vertices are retained
+where grid-based cavity surfaces touch. The geometry-only molecular formats
+retain virtual vertices and mesh links.
+
+## Component files and combinations
+
+Each pocket has four components: its lining `residues`, internal `probe` space,
+lining-residue `hull` and complete `protein_hull`. All fifteen nonempty subsets
+are delivered as PDB files. `both_hulls` combines the two envelopes. The seven
+pure-geometry subsets also have OBJ, PLY, MOL, SDF and MOL2 exports.
+[model_files.csv](model_files.csv) records components, chemical-atom counts,
+virtual-vertex counts, formats and paths for all 1,650 combinations.
+Original protein atom records and coordinates are retained in every atomic model.
 
 ## What does “probe availability” mean in the CSV?
 
@@ -156,6 +223,11 @@ shows the volumes directly.
 | [Second-group models](second_group_models.csv) | Pocket volumes, lining residues and source frame for common group 2 |
 | [Second-group geometry formats](second_group_geometry_formats.csv) | Additional geometric exports for common group 2 |
 | [Original geometry formats](geometry_formats.csv) | Original R1-R3 geometric exports |
+| [Model files](model_files.csv) | All fifteen component combinations in every pocket folder |
+| [Inverse solids](solid_models.csv) | Hull, empty-space union, remaining solid and volume checks |
+| [Protein clustering comparison](protein_clustering_comparison.csv) | Best eligible Ward, k-means and DBSCAN results |
+| [Protein clustering candidates](protein_clustering_candidates.csv) | Original candidate comparison |
+| [DBSCAN populations](protein_dbscan_populations.csv) | Full-dataset density groups and unassigned frames, by replica |
 
 ## Geometric export formats
 

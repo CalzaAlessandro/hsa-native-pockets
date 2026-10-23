@@ -1,6 +1,6 @@
-representative_mean_volume_FA6_probe
+probe
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 346 1029 0 0 0
@@ -1386,22 +1386,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/mean_volume/FA6/probe.obj
 
 >  <SOURCE_SHA256>
-2d13a014b69defd8ec022e750f77f20cdbc40f6565521ca5cc4fab15746b7be1
+d3920d131727b09681618eeaec8b9b5fbb959b43213cb2fa47456bb39eca4d72
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 1 2 3
@@ -2092,8 +2092,5 @@ structures/representative/mean_volume/FA6/probe.obj
 331 343 332
 327 346 345
 327 345 331
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

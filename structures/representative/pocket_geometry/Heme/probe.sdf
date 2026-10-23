@@ -1,6 +1,6 @@
-representative_pocket_geometry_Heme_probe
+probe
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 546 1644 0 0 0
@@ -2201,22 +2201,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/pocket_geometry/Heme/probe.obj
 
 >  <SOURCE_SHA256>
-0dd71714743c6588c5977f102295fdeeda724072e3d20c388d99fb2365d7e283
+56cd6ac76803b84181fe4c101d0a9cdddeb769543d279a9d053db932013a21e1
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 1 2 3
@@ -3319,8 +3319,5 @@ structures/representative/pocket_geometry/Heme/probe.obj
 527 543 524
 528 546 545
 528 545 529
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

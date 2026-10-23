@@ -1,0 +1,32 @@
+hull
+     RDKit          3D
+GEOMETRIC SURFACES; dummy vertices and mesh links.
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 0 0 0 0 0
+M  V30 BEGIN ATOM
+M  V30 END ATOM
+M  V30 END CTAB
+M  END
+>  <MODEL_KIND>
+GEOMETRIC_SURFACES
+
+>  <COORDINATE_UNITS>
+angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
+
+>  <SOURCE_OBJ>
+structures/R3/cluster_2/FA3/hull.obj
+
+>  <SOURCE_SHA256>
+a017821647de9d8fec00c2dec17f0150507de6c6cea51b044a9f11e4a50a0226
+
+>  <SOURCE_FACE_INDICES_1_BASED>
+EMPTY
+
+$$$$

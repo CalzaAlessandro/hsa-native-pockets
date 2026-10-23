@@ -1,6 +1,6 @@
-representative_pocket_geometry_FA2_probe
+probe
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 46 126 0 0 0
@@ -183,22 +183,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/pocket_geometry/FA2/probe.obj
 
 >  <SOURCE_SHA256>
-9f7d604c3c72abcc8a3ced77b6e6852bf9c1c65227c781cbc5639d9aff308ff1
+1b1c111184daa0a10974161b6eb07de89c998095c07e23c93cf10bf70644f5ad
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 1 2 3
@@ -285,8 +285,5 @@ structures/representative/pocket_geometry/FA2/probe.obj
 41 43 42
 39 46 45
 39 45 40
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

@@ -1,6 +1,6 @@
-representative_whole_protein_Cleft_probe
+probe
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 474 1392 0 0 0
@@ -1877,22 +1877,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/whole_protein/Cleft/probe.obj
 
 >  <SOURCE_SHA256>
-fab4b332aca677b76598a5e43c49f4f0418c3b377b48d59dfac8bd41586bbdb5
+faa75fb5ce4668336ffe2b851b515717fdf8bd7d1251f579d38f672657f31ee3
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 1 2 3
@@ -2827,8 +2827,5 @@ fab4b332aca677b76598a5e43c49f4f0418c3b377b48d59dfac8bd41586bbdb5
 418 472 424
 414 474 473
 414 473 418
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

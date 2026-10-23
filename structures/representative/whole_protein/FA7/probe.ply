@@ -1,6 +1,6 @@
 ply
 format ascii 1.0
-comment Centers of a 1.4 A probe; geometry extracted from an observed MD frame; angstrom
+comment Coordinates in angstrom; virtual geometry
 element vertex 12
 property double x
 property double y

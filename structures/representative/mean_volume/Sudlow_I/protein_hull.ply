@@ -1,6 +1,6 @@
 ply
 format ascii 1.0
-comment Whole-protein heavy-atom convex envelope; angstrom
+comment Coordinates in angstrom; virtual geometry
 element vertex 81
 property double x
 property double y

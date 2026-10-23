@@ -1,4 +1,5 @@
-# Centers of a 1.4 A probe; geometry extracted from an observed MD frame; angstrom
+# Geometric surfaces; coordinates in angstrom.
+o probe
 v 7.73421734 31.13040648 34.52326540
 v 8.72123512 31.22244218 34.39163970
 v 8.58698413 31.24535566 33.40095729

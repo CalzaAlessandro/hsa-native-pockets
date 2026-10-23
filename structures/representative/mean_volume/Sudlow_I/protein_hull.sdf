@@ -1,6 +1,6 @@
-representative_mean_volume_Sudlow_I_protein_hull
+protein_hull
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 81 237 0 0 0
@@ -329,22 +329,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/mean_volume/Sudlow_I/protein_hull.obj
 
 >  <SOURCE_SHA256>
-497d269a8fc068e10cb2b834d580ebebbb4eb5f1794131eec8c25498e5edec32
+be624a9b0502d19db00bf9bf46e00a48d850109b3cd74e987e2b653b4bebbd3f
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 66 71 55
@@ -505,8 +505,5 @@ structures/representative/mean_volume/Sudlow_I/protein_hull.obj
 4 14 13
 13 5 4
 13 7 5
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

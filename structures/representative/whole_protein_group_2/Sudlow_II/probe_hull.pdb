@@ -1,0 +1,104 @@
+REMARK   COORDINATES IN ANGSTROM; ORIGINAL ATOM RECORDS ARE RETAINED
+REMARK   PRB = PROBE, HUL = POCKET HULL, PHL = PROTEIN HULL
+REMARK   GEOMETRIC VERTICES AND LINKS ARE VIRTUAL DISPLAY GEOMETRY
+HETATM    1  VX  PRB P   1      -3.269  -3.463  25.810  0.00  0.00           X  
+HETATM    2  VX  PRB P   1      -2.327  -3.129  25.815  0.00  0.00           X  
+HETATM    3  VX  PRB P   1      -2.586  -2.388  25.196  0.00  0.00           X  
+HETATM    4  VX  PRB P   1      -3.529  -2.722  25.191  0.00  0.00           X  
+HETATM    5  VX  PRB P   1      -3.317  -3.304  24.405  0.00  0.00           X  
+HETATM    6  VX  PRB P   1      -2.375  -2.969  24.411  0.00  0.00           X  
+HETATM    7  VX  PRB P   1      -2.116  -3.711  25.030  0.00  0.00           X  
+HETATM    8  VX  PRB P   1      -3.058  -4.045  25.024  0.00  0.00           X  
+HETATM    9  VX  PRB P   1      -1.384  -2.794  25.821  0.00  0.00           X  
+HETATM   10  VX  PRB P   1      -1.644  -2.053  25.202  0.00  0.00           X  
+HETATM   11  VX  PRB P   1      -1.433  -2.635  24.416  0.00  0.00           X  
+HETATM   12  VX  PRB P   1      -1.173  -3.376  25.035  0.00  0.00           X  
+HETATM   13  VX  PRB P   1      -2.067  -3.870  26.434  0.00  0.00           X  
+HETATM   14  VX  PRB P   1      -1.125  -3.536  26.440  0.00  0.00           X  
+HETATM   15  VX  PRB P   1      -0.914  -4.118  25.654  0.00  0.00           X  
+HETATM   16  VX  PRB P   1      -1.856  -4.452  25.649  0.00  0.00           X  
+HETATM   17  VX  HUL L   2      -1.487   3.441  24.253  0.00  0.00           X  
+HETATM   18  VX  HUL L   2       0.523   2.892  22.942  0.00  0.00           X  
+HETATM   19  VX  HUL L   2       1.898   2.181  23.090  0.00  0.00           X  
+HETATM   20  VX  HUL L   2      -0.328   2.019  21.937  0.00  0.00           X  
+HETATM   21  VX  HUL L   2       0.719   3.335  25.450  0.00  0.00           X  
+HETATM   22  VX  HUL L   2       1.432   2.576  26.074  0.00  0.00           X  
+HETATM   23  VX  HUL L   2       0.403   1.835  28.635  0.00  0.00           X  
+HETATM   24  VX  HUL L   2       3.064  -0.124  29.795  0.00  0.00           X  
+HETATM   25  VX  HUL L   2      -7.245  -5.156  33.245  0.00  0.00           X  
+HETATM   26  VX  HUL L   2      -9.305  -6.578  33.045  0.00  0.00           X  
+HETATM   27  VX  HUL L   2     -10.432  -6.261  32.701  0.00  0.00           X  
+HETATM   28  VX  HUL L   2      -1.113  -9.632  25.676  0.00  0.00           X  
+HETATM   29  VX  HUL L   2       0.161  -7.659  26.369  0.00  0.00           X  
+HETATM   30  VX  HUL L   2       3.521  -7.067  23.679  0.00  0.00           X  
+HETATM   31  VX  HUL L   2       4.733  -4.765  24.072  0.00  0.00           X  
+HETATM   32  VX  HUL L   2       5.429  -3.998  23.459  0.00  0.00           X  
+HETATM   33  VX  HUL L   2      -1.262  -5.199  18.194  0.00  0.00           X  
+HETATM   34  VX  HUL L   2      -3.570  -6.000  17.796  0.00  0.00           X  
+HETATM   35  VX  HUL L   2      -4.301  -6.926  18.129  0.00  0.00           X  
+HETATM   36  VX  HUL L   2     -12.143  -2.710  21.483  0.00  0.00           X  
+HETATM   37  VX  HUL L   2     -11.835  -2.394  24.823  0.00  0.00           X  
+CONECT    1    2    3    4    7
+CONECT    1    8
+CONECT    2    1    3    7    9
+CONECT    2   10   13   16
+CONECT    3    1    2    4    5
+CONECT    3    6   10
+CONECT    4    1    3    5    8
+CONECT    5    3    4    6    7
+CONECT    5    8
+CONECT    6    3    5    7   10
+CONECT    6   11   12
+CONECT    7    1    2    5    6
+CONECT    7    8   12   15   16
+CONECT    8    1    4    5    7
+CONECT    9    2   10   11   12
+CONECT    9   13   14
+CONECT   10    2    3    6    9
+CONECT   10   11
+CONECT   11    6    9   10   12
+CONECT   12    6    7    9   11
+CONECT   12   14   15
+CONECT   13    2    9   14   15
+CONECT   13   16
+CONECT   14    9   12   13   15
+CONECT   15    7   12   13   14
+CONECT   15   16
+CONECT   16    2    7   13   15
+CONECT   17   18   20   21   23
+CONECT   17   27   36   37
+CONECT   18   17   19   20   21
+CONECT   19   18   20   21   22
+CONECT   19   24   32   33
+CONECT   20   17   18   19   33
+CONECT   20   34   36
+CONECT   21   17   18   19   22
+CONECT   21   23   24
+CONECT   22   19   21   24
+CONECT   23   17   21   24   25
+CONECT   23   27
+CONECT   24   19   21   22   23
+CONECT   24   25   29   30   31
+CONECT   24   32
+CONECT   25   23   24   26   27
+CONECT   25   28   29
+CONECT   26   25   27   28
+CONECT   27   17   23   25   26
+CONECT   27   28   35   36   37
+CONECT   28   25   26   27   29
+CONECT   28   30   35
+CONECT   29   24   25   28   30
+CONECT   30   24   28   29   31
+CONECT   30   32   33   35
+CONECT   31   24   30   32
+CONECT   32   19   24   30   31
+CONECT   32   33
+CONECT   33   19   20   30   32
+CONECT   33   34   35
+CONECT   34   20   33   35   36
+CONECT   35   27   28   30   33
+CONECT   35   34   36
+CONECT   36   17   20   27   34
+CONECT   36   35   37
+CONECT   37   17   27   36
+END

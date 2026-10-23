@@ -1,6 +1,6 @@
-representative_whole_protein_group_2_FA6_probe
+probe
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 387 1173 0 0 0
@@ -1571,22 +1571,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/whole_protein_group_2/FA6/probe.obj
 
 >  <SOURCE_SHA256>
-c3a0147abcbc0bfa17384c14dbd150d4c6e12bb16effbed3e7af6b8ed922c606
+606c5150a8eedbc6be6d19feb9ecc1b07ba1b2ee38e12795f94b28822e79a126
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 1 2 3
@@ -2377,8 +2377,5 @@ c3a0147abcbc0bfa17384c14dbd150d4c6e12bb16effbed3e7af6b8ed922c606
 378 384 376
 372 387 386
 372 386 378
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

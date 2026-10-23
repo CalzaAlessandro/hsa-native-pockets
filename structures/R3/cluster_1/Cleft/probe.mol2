@@ -1,8 +1,6 @@
-# GEOMETRIC MESH: virtual vertices; links are mesh edges, not chemical bonds.
-# No force-field parameters or physical charges are assigned.
-# Source: structures/R3/cluster_1/Cleft/probe.obj
+# Virtual geometry; coordinates in angstrom; links are not chemical bonds.
 @<TRIPOS>MOLECULE
-R3_cluster_1_Cleft_probe
+probe
 316 927 1 0 0
 SMALL
 NO_CHARGES

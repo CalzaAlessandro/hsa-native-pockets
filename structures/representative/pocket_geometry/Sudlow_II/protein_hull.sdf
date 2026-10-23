@@ -1,6 +1,6 @@
-representative_pocket_geometry_Sudlow_II_protein_hull
+protein_hull
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 72 210 0 0 0
@@ -293,22 +293,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/pocket_geometry/Sudlow_II/protein_hull.obj
 
 >  <SOURCE_SHA256>
-6b56190e1864196a311ca57e12bd33df939ffecf6e9e691427c8bea2c76b1804
+31af6ed7c2b1b0d91c370f00d96f40b2d379ca4641d195167f726c022336776c
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 25 30 60
@@ -451,8 +451,5 @@ structures/representative/pocket_geometry/Sudlow_II/protein_hull.obj
 61 59 51
 51 50 58
 58 70 51
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

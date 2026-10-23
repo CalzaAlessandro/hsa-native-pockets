@@ -1,6 +1,6 @@
-representative_mean_volume_FA6_protein_hull
+protein_hull
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 85 249 0 0 0
@@ -345,22 +345,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/mean_volume/FA6/protein_hull.obj
 
 >  <SOURCE_SHA256>
-df839c7cd9a59496d31f4ee0e3aa9df1dec7f4e3ceedf329b0c6aa8506877da6
+9cdc8eb76433f6db22daa13d4a94803572c84307e397c2338184e22e853c6008
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 37 55 54
@@ -529,8 +529,5 @@ df839c7cd9a59496d31f4ee0e3aa9df1dec7f4e3ceedf329b0c6aa8506877da6
 67 65 66
 66 68 67
 65 68 66
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

@@ -54,38 +54,44 @@
     "structures/representative/whole_protein_group_2/protein.pdb": "d3bb05b8b73a663eedad74b3a6049a7e13952804cf8b44ca3ee307fde25e4e0b"
   },
   "output_sha256": {
+    "images/Cleft_representatives.png": "6d9df6f4f8e915a0d9feaa7a3e3905cb0aa43a3d90fa2432af4ff8dc6cef36a1",
+    "images/Cleft_representatives_dark.png": "b81d3acb7fa53c6515fcd0e80512e0e1f235a124513e5b1c6850c41d75408425",
+    "images/FA1_representatives.png": "b0ee124d7f7c43b77caaf907abe745bfa7184032b5da0a4ffe97a2e315c53a50",
+    "images/FA1_representatives_dark.png": "18fcd0b13587ff266af56095dbb55262b7d339a2c337ca8facaeac632b7034a2",
+    "images/FA2_representatives.png": "47128a06169e1842f79e266e83dcd1299c5408f58277353658b53fc60218d7ac",
+    "images/FA2_representatives_dark.png": "3f53c51fa661123948ef3b52ba15510863abcbc6883d2911189564465c2e3842",
+    "images/FA3_representatives.png": "185371dd7bda1d343906272bf2dad6ca901cd7268b271c5d8c917a2952d8313c",
+    "images/FA3_representatives_dark.png": "d75ffd07bc3ea8babc845a0ecda8ee6a77b9e2406a414fe66b97afae7b5ff751",
+    "images/FA4_representatives.png": "6ba62d5790578bcad85aa79d3cc472df577d6f209edb476f9a8acb8a63e3589f",
+    "images/FA4_representatives_dark.png": "00eae6162978a701e696927baea9b6b933e4ebe5d85741774ac52f4d3853625d",
+    "images/FA5_representatives.png": "0b07f8a1668a1a7ea064a0bd24078200161505db39c3c450386207c948f0b4fc",
+    "images/FA5_representatives_dark.png": "ac9041314cad92419b6c3d9a24961668f593c9c4a4a76b0b588fb3b56cbb9ddd",
+    "images/FA6_representatives.png": "63b684cb73df1c0c018a4967679870744e69df4f41d04ad33822387be119f143",
+    "images/FA6_representatives_dark.png": "590219f155ff18af960392d0334d64a4773edd8ffadc5775d33b746c731c1af5",
+    "images/FA7_representatives.png": "d10a2ee3c428a8e3ad9b06a1ac74bac2a99d97293179791ae6f8f802a9ae232c",
+    "images/FA7_representatives_dark.png": "7c278f2dba1900553af7a0cc5fbfdce3a7bc06be856e0e8328ba0e66c597db3f",
     "images/HSA_common_representative.png": "219d37fff36da42b1b4c01c7987d2c88f870c02c4168e7103b8cb0faf06634ff",
     "images/HSA_common_representative_dark.png": "d766c1fee5ad21e11b37d07ac817383b29fea87718847fc0d8d63450f655086f",
-    "images/representations_overview.svg": "973b4842844ebb14609e3ab367bc6622a35ec8df0812565a7d19d176fafb1a90",
-    "images/representations_overview_dark.svg": "a046f80972dc7eb3f49344334a235fe8b10fe8af0e92ac34a59205c01f223bda",
-    "images/whole_protein_overview.svg": "e7e5dd47b25f781bd5c7eff508ab8c9820b741db396047a00c390e8f4b3d493b",
-    "images/whole_protein_overview_dark.svg": "105293671360d424174b7daf15b577f2ea539c03c75f0fec04e59eb255d47cad",
     "images/HSA_group_1_representations.png": "6988f0966a32fb5fabe21bc4027d00df2f5fa150269c158ccb1ad7c187b39234",
     "images/HSA_group_1_representations_dark.png": "77e31befe92a6419843bd198bf1ebc739df4d7633c0bf6b2ceae659d781986cf",
     "images/HSA_group_2_representations.png": "4d7c7034ad731957d7648eccf0c7ac0ee7d6629d7250e16842e773ae81d74e0b",
     "images/HSA_group_2_representations_dark.png": "4caf2b2e2bf55801e7116a236d1206f249d65f39e862477c5cf04552ec34a924",
-    "images/FA7_representatives.png": "d10a2ee3c428a8e3ad9b06a1ac74bac2a99d97293179791ae6f8f802a9ae232c",
-    "images/FA6_representatives.png": "63b684cb73df1c0c018a4967679870744e69df4f41d04ad33822387be119f143",
-    "images/FA5_representatives.png": "0b07f8a1668a1a7ea064a0bd24078200161505db39c3c450386207c948f0b4fc",
-    "images/FA4_representatives_dark.png": "00eae6162978a701e696927baea9b6b933e4ebe5d85741774ac52f4d3853625d",
-    "images/FA4_representatives.png": "6ba62d5790578bcad85aa79d3cc472df577d6f209edb476f9a8acb8a63e3589f",
-    "images/FA2_representatives.png": "47128a06169e1842f79e266e83dcd1299c5408f58277353658b53fc60218d7ac",
-    "images/FA3_representatives.png": "185371dd7bda1d343906272bf2dad6ca901cd7268b271c5d8c917a2952d8313c",
-    "images/Cleft_representatives_dark.png": "b81d3acb7fa53c6515fcd0e80512e0e1f235a124513e5b1c6850c41d75408425",
-    "images/FA1_representatives.png": "b0ee124d7f7c43b77caaf907abe745bfa7184032b5da0a4ffe97a2e315c53a50",
     "images/Heme_representatives.png": "6a07aad3e1f0aab152c96d83884e3464c483f73ba4c80f43cf3e0c9176213a73",
-    "images/Sudlow_II_representatives_dark.png": "2923967d11a3ba0445ee621d6b65c1bea1387b25b7b3e9752867c43dc42fb149",
-    "images/FA5_representatives_dark.png": "ac9041314cad92419b6c3d9a24961668f593c9c4a4a76b0b588fb3b56cbb9ddd",
     "images/Heme_representatives_dark.png": "168de3375a475c7f7c5c7f56efe4e27632b510c222623aeb963ae304b45e559c",
-    "images/FA1_representatives_dark.png": "18fcd0b13587ff266af56095dbb55262b7d339a2c337ca8facaeac632b7034a2",
     "images/Sudlow_II_representatives.png": "d027d2372be39667285db5ccc97f28186da548099654b3bd04943eafa3c2d519",
+    "images/Sudlow_II_representatives_dark.png": "2923967d11a3ba0445ee621d6b65c1bea1387b25b7b3e9752867c43dc42fb149",
     "images/Sudlow_I_representatives.png": "a3e7a2a0fb908f5e582949b243f4ef2f58970f0b135511a902c31a0c2a1b8527",
-    "images/Cleft_representatives.png": "6d9df6f4f8e915a0d9feaa7a3e3905cb0aa43a3d90fa2432af4ff8dc6cef36a1",
-    "images/FA3_representatives_dark.png": "d75ffd07bc3ea8babc845a0ecda8ee6a77b9e2406a414fe66b97afae7b5ff751",
-    "images/FA7_representatives_dark.png": "7c278f2dba1900553af7a0cc5fbfdce3a7bc06be856e0e8328ba0e66c597db3f",
     "images/Sudlow_I_representatives_dark.png": "169e6d73b613eb972702f9fa0266eb90844851ab19d1f585bc291619708c244b",
-    "images/FA6_representatives_dark.png": "590219f155ff18af960392d0334d64a4773edd8ffadc5775d33b746c731c1af5",
-    "images/FA2_representatives_dark.png": "3f53c51fa661123948ef3b52ba15510863abcbc6883d2911189564465c2e3842"
+    "images/banner.svg": "53013fea26b0852f45afb0e360559a42fe2a8328bb4a8d46faa0182d09370561",
+    "images/banner_dark.svg": "853ea6911dded779a9c865ecaf63b77412638d89dfe51c56cd26e48a087884df",
+    "images/protein_solid_group_1.png": "653c132aa044ec7759f2a826cca069ac4cb700c296724316790191e38ba04353",
+    "images/protein_solid_group_1_dark.png": "8698a8ce2d11f3d459cf3fa899d5e19c9ec846bff165f0134f0903742dbb553d",
+    "images/protein_solid_group_2.png": "f01fc83713e93f6ba28df6c47d78f6671e6fa0ed0450b4395c7ee7a44315650d",
+    "images/protein_solid_group_2_dark.png": "2234f55ec815b8b80098c93d1410ff5f926bce3b0fdeb29b65e848cdcb3ab226",
+    "images/representations_overview.svg": "973b4842844ebb14609e3ab367bc6622a35ec8df0812565a7d19d176fafb1a90",
+    "images/representations_overview_dark.svg": "a046f80972dc7eb3f49344334a235fe8b10fe8af0e92ac34a59205c01f223bda",
+    "images/whole_protein_overview.svg": "e7e5dd47b25f781bd5c7eff508ab8c9820b741db396047a00c390e8f4b3d493b",
+    "images/whole_protein_overview_dark.svg": "105293671360d424174b7daf15b577f2ea539c03c75f0fec04e59eb255d47cad"
   },
   "whole_protein_gallery": {
     "raw_render": {
@@ -499,5 +505,26 @@
       }
     ],
     "mean_volume_model_validation": true
+  },
+  "banner": {
+    "description": "Native HSA and the heme lining residues, probe and pocket hull from the common group 1 frame",
+    "protein_frame": "R3 frame 2726",
+    "background": "transparent",
+    "site": "Heme",
+    "pocket_panels": "First row of the matching Heme gallery; cropped to molecular content",
+    "scale": "Each banner thumbnail is fitted independently; quantitative scale is retained in the result galleries"
+  },
+  "inverse_model_previews": {
+    "description": "Exact probe-union subtraction from the protein convex envelope",
+    "groups": [
+      1,
+      2
+    ],
+    "probe_scaling": 1.0,
+    "section": "Through the heme probe centroid",
+    "section_areas_verified": true,
+    "source_table": "tables/solid_models.csv",
+    "renderer": "Matplotlib 3D face projection and exact Manifold planar contours",
+    "background": "transparent light and dark variants"
   }
 }

@@ -1,6 +1,6 @@
 ply
 format ascii 1.0
-comment Available centers of a 1.4 A spherical probe; angstrom
+comment Coordinates in angstrom; virtual geometry
 element vertex 93
 property double x
 property double y

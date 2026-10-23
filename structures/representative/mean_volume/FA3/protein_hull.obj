@@ -1,4 +1,5 @@
-# Whole-protein heavy-atom convex envelope; angstrom
+# Geometric surfaces; coordinates in angstrom.
+o protein_hull
 v -0.49759930 -33.21888351 15.77415657
 v 0.25169498 -31.33422279 16.64115334
 v -11.43857098 -38.97223282 14.50980568

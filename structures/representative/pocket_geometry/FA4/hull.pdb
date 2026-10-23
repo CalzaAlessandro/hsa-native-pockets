@@ -1,0 +1,74 @@
+REMARK   COORDINATES IN ANGSTROM; ORIGINAL ATOM RECORDS ARE RETAINED
+REMARK   PRB = PROBE, HUL = POCKET HULL, PHL = PROTEIN HULL
+REMARK   GEOMETRIC VERTICES AND LINKS ARE VIRTUAL DISPLAY GEOMETRY
+HETATM    1  VX  HUL L   1      -5.768  22.328  -2.119  0.00  0.00           X  
+HETATM    2  VX  HUL L   1      -8.506  25.130  -4.389  0.00  0.00           X  
+HETATM    3  VX  HUL L   1      -9.397  29.702  -0.092  0.00  0.00           X  
+HETATM    4  VX  HUL L   1      -8.593  28.636  -1.834  0.00  0.00           X  
+HETATM    5  VX  HUL L   1      -8.727  29.171   4.090  0.00  0.00           X  
+HETATM    6  VX  HUL L   1      -6.911  28.795   7.001  0.00  0.00           X  
+HETATM    7  VX  HUL L   1     -18.565  27.706   6.710  0.00  0.00           X  
+HETATM    8  VX  HUL L   1     -20.450  25.989   6.953  0.00  0.00           X  
+HETATM    9  VX  HUL L   1     -23.203  26.476   4.345  0.00  0.00           X  
+HETATM   10  VX  HUL L   1     -20.104  27.100  -0.782  0.00  0.00           X  
+HETATM   11  VX  HUL L   1     -23.619  24.144   3.855  0.00  0.00           X  
+HETATM   12  VX  HUL L   1     -24.220  23.435   3.046  0.00  0.00           X  
+HETATM   13  VX  HUL L   1     -10.820  20.645  11.644  0.00  0.00           X  
+HETATM   14  VX  HUL L   1      -9.490  22.705  11.109  0.00  0.00           X  
+HETATM   15  VX  HUL L   1      -8.510  23.184  10.490  0.00  0.00           X  
+HETATM   16  VX  HUL L   1     -12.551  13.797  10.840  0.00  0.00           X  
+HETATM   17  VX  HUL L   1     -14.571  13.392   9.542  0.00  0.00           X  
+HETATM   18  VX  HUL L   1     -15.792  13.538   9.704  0.00  0.00           X  
+HETATM   19  VX  HUL L   1     -14.738  11.048   0.495  0.00  0.00           X  
+HETATM   20  VX  HUL L   1     -12.600  12.231   0.269  0.00  0.00           X  
+HETATM   21  VX  HUL L   1     -14.879  13.192  -0.675  0.00  0.00           X  
+HETATM   22  VX  HUL L   1     -17.982  12.507   6.438  0.00  0.00           X  
+HETATM   23  VX  HUL L   1     -18.332  12.045   5.148  0.00  0.00           X  
+HETATM   24  VX  HUL L   1     -15.928  17.503  -1.583  0.00  0.00           X  
+HETATM   25  VX  HUL L   1     -25.235  20.623  -0.613  0.00  0.00           X  
+CONECT    1    2    4    6   15
+CONECT    1   16   20
+CONECT    2    1    4   10   20
+CONECT    2   21   24   25
+CONECT    3    4    5    6    7
+CONECT    3   10
+CONECT    4    1    2    3    6
+CONECT    4   10
+CONECT    5    3    6    7
+CONECT    6    1    3    4    5
+CONECT    6    7   14   15
+CONECT    7    3    5    6    8
+CONECT    7    9   10   13   14
+CONECT    8    7    9   11   13
+CONECT    8   18
+CONECT    9    7    8   10   11
+CONECT    9   12   25
+CONECT   10    2    3    4    7
+CONECT   10    9   25
+CONECT   11    8    9   12   18
+CONECT   12    9   11   18   22
+CONECT   12   25
+CONECT   13    7    8   14   15
+CONECT   13   16   18
+CONECT   14    6    7   13   15
+CONECT   15    1    6   13   14
+CONECT   15   16
+CONECT   16    1   13   15   17
+CONECT   16   18   19   20   23
+CONECT   17   16   18   23
+CONECT   18    8   11   12   13
+CONECT   18   16   17   22   23
+CONECT   19   16   20   21   23
+CONECT   19   25
+CONECT   20    1    2   16   19
+CONECT   20   21
+CONECT   21    2   19   20   24
+CONECT   21   25
+CONECT   22   12   18   23   25
+CONECT   23   16   17   18   19
+CONECT   23   22   25
+CONECT   24    2   21   25
+CONECT   25    2    9   10   12
+CONECT   25   19   21   22   23
+CONECT   25   24
+END

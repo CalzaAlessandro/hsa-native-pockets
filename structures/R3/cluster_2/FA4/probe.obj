@@ -1,4 +1,5 @@
-# Available centers of a 1.4 A spherical probe; angstrom
+# Geometric surfaces; coordinates in angstrom.
+o probe
 v -26.58277118 4.58320805 11.48518286
 v -26.08622686 5.44820292 11.55748505
 v -25.89156417 5.41840816 10.57706743

@@ -1,6 +1,6 @@
-representative_whole_protein_group_2_Sudlow_II_probe
+probe
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 16 42 0 0 0
@@ -69,22 +69,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/whole_protein_group_2/Sudlow_II/probe.obj
 
 >  <SOURCE_SHA256>
-1ce919f92ec0b7db11cb91b22683f52e991772c8bb8209025d5ed249c7117810
+a3e577b6f7bddc96cc39b49d02bf25a5da0928c649dbec92e02518eeb6ee3131
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 1 2 3
@@ -115,8 +115,5 @@ structures/representative/whole_protein_group_2/Sudlow_II/probe.obj
 14 12 9
 13 16 15
 13 15 14
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

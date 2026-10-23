@@ -1,6 +1,6 @@
-representative_whole_protein_Sudlow_I_probe
+probe
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 143 423 0 0 0
@@ -577,22 +577,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/whole_protein/Sudlow_I/probe.obj
 
 >  <SOURCE_SHA256>
-5d5820c0ecb39ff16cde4029c770083eea442cd384635f29d9ea99b1f22e1831
+f2a075b0868c2d1d8441f4f381f58a2c1d614a43d6e3ac3f80bcf254fe766e79
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 1 2 3
@@ -879,8 +879,5 @@ structures/representative/whole_protein/Sudlow_I/probe.obj
 141 139 134
 132 143 142
 132 142 141
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

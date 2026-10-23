@@ -1,6 +1,6 @@
-representative_pocket_geometry_Sudlow_I_probe
+probe
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 264 798 0 0 0
@@ -1073,22 +1073,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/representative/pocket_geometry/Sudlow_I/probe.obj
 
 >  <SOURCE_SHA256>
-207021d3923f788cd72d2aba60f48f81fb0f09d3bd33c892d2ccb5c928eceae5
+8dff2baa3e3d28f62b452aa2450c448a5343fdaa937857e40d03d7541b0730c1
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 1 2 3
@@ -1627,8 +1627,5 @@ structures/representative/pocket_geometry/Sudlow_I/probe.obj
 258 261 255
 256 264 263
 256 263 257
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$

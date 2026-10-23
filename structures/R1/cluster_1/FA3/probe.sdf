@@ -1,6 +1,6 @@
-R1_cluster_1_FA3_probe
+probe
      RDKit          3D
-GEOMETRIC MESH; dummy vertices and mesh edges; not chemical parameters.
+GEOMETRIC SURFACES; dummy vertices and mesh links.
   0  0  0  0  0  0  0  0  0  0999 V3000
 M  V30 BEGIN CTAB
 M  V30 COUNTS 32 90 0 0 0
@@ -133,22 +133,22 @@ M  V30 END BOND
 M  V30 END CTAB
 M  END
 >  <MODEL_KIND>
-GEOMETRIC_MESH_DUMMY_GRAPH
-
->  <VERTICES>
-Virtual points, atomic number 0; not physical atoms
-
->  <EDGES>
-Mesh links, not chemical bonds; no force-field parameters
+GEOMETRIC_SURFACES
 
 >  <COORDINATE_UNITS>
 angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
 
 >  <SOURCE_OBJ>
 structures/R1/cluster_1/FA3/probe.obj
 
 >  <SOURCE_SHA256>
-c5a59addcee2d18a847a3500c3388e802abc926ec79ecd8deb519c15c885db36
+f30390983ddfb66dbfd2fd86813dce9b5e5d1b5e0fe0e226646dc23aaa45ddda
 
 >  <SOURCE_FACE_INDICES_1_BASED>
 1 2 3
@@ -211,8 +211,5 @@ c5a59addcee2d18a847a3500c3388e802abc926ec79ecd8deb519c15c885db36
 23 28 18
 22 29 32
 22 32 24
-
->  <GEOMETRY_STATUS>
-NONEMPTY
 
 $$$$
