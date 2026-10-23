@@ -359,3 +359,16 @@ The original R1, R2 and R3 models and numerical results are retained. Each repli
 has two whole-protein cluster representatives, with all eleven regions extracted
 from each frame. Frame identities, clustering details and the definitions of all
 tables are in [Methods and numerical results](tables/README.md).
+
+## License
+
+The original structures, geometric models, numerical tables, figures and
+documentation in this collection are licensed under
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE).
+
+Reuse and adaptation, including commercial use, are permitted with appropriate
+credit, a link to the license and an indication of any changes. Please identify
+this collection and retain the author and source information supplied with
+the material.
+
+Third-party material retains its original terms and attribution.
