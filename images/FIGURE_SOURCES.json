@@ -1,0 +1,56 @@
+{
+  "description": "Upright native HSA representative previews and schematic pocket-representation guide",
+  "camera": {
+    "reference": "Native 585-residue HSA, saved frontal display copy",
+    "axis": "Leading projected CA axis of the heart tip, subdomain IIB (292-383)",
+    "old_camera_up": [
+      0,
+      1,
+      0
+    ],
+    "new_camera_up": [
+      0.27301162851414545,
+      0.9620107331501319,
+      -0.0
+    ],
+    "camera_up_rotation_deg": -15.843555185566746,
+    "projected_axis_after_roll_x": 0.0,
+    "operation": "Camera roll only; frontal yaw/pitch and all scene coordinates preserved"
+  },
+  "molecular_render": {
+    "renderer": "VMD/Tachyon",
+    "raw_dimensions_px": [
+      3840,
+      2160
+    ],
+    "output_dimensions_px": [
+      4800,
+      2600
+    ],
+    "personal_vmdrc_ignored": true,
+    "original_scene_geometry_preserved": true,
+    "source_groups": [
+      "structures/representative/whole_protein",
+      "structures/representative/whole_protein_group_2"
+    ]
+  },
+  "schematic_overview": {
+    "kind": "Invented unitless geometry explaining four representations",
+    "contains_HSA_measurements": false,
+    "styles": [
+      "light",
+      "dark"
+    ],
+    "format": "SVG with transparent background"
+  },
+  "source_protein_sha256": {
+    "structures/representative/whole_protein/protein.pdb": "8b265863dccaa125c833ed013a791f1e1a3d4c20f9584a76de4eac24742e6e1a",
+    "structures/representative/whole_protein_group_2/protein.pdb": "d3bb05b8b73a663eedad74b3a6049a7e13952804cf8b44ca3ee307fde25e4e0b"
+  },
+  "output_sha256": {
+    "images/HSA_common_representative.png": "219d37fff36da42b1b4c01c7987d2c88f870c02c4168e7103b8cb0faf06634ff",
+    "images/HSA_common_representative_dark.png": "d766c1fee5ad21e11b37d07ac817383b29fea87718847fc0d8d63450f655086f",
+    "images/representations_overview.svg": "7e1a170df69a9afdb7c45938d34a50b9b12270f5837bc8822a70261640740c0f",
+    "images/representations_overview_dark.svg": "0cb9f26abb076c667c39b890e4634d6439a0b69ed047fa2f02a57d71d3e52970"
+  }
+}

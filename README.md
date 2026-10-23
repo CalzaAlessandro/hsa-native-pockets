@@ -15,7 +15,9 @@ Their relative positions, the shape of the protein and the surrounding residues
 therefore belong to one coherent structure.
 
 Use this model to study the intact protein, locate several binding regions at
-once, or design a material around the complete HSA molecule.
+once, or design a material around the complete HSA molecule. The files are in
+[`whole_protein/`](structures/representative/whole_protein); the alternative
+conformation is in [`whole_protein_group_2/`](structures/representative/whole_protein_group_2).
 
 ### Pocket-shape representatives
 
@@ -28,6 +30,7 @@ Use these models to examine a particular cavity and its lining residues.
 Different pockets can come from different frames. Each model includes its own
 complete parent protein and geometric envelope. The selected structures are
 observed conformations; the trajectory averages are reported separately below.
+The files are in [`pocket_geometry/`](structures/representative/pocket_geometry).
 
 ### Which should be used for MOF design?
 
@@ -61,20 +64,21 @@ pocket probe spaces. Each pocket was recalculated on its own group representativ
 The separate wireframe shows the complete protein convex hull of group 1. A convex hull bridges surface indentations;
 it is a coarse geometric envelope. The atomic PDB retains atomic detail and chemical identities.
 
-[Group 1 protein PDB](structures/representative/whole_protein/protein.pdb) ·
-[Group 2 protein PDB](structures/representative/whole_protein_group_2/protein.pdb) ·
-[Group 2 protein and pockets](structures/representative/whole_protein_group_2/HSA_with_all_pockets.pdb) ·
-[Protein with all probes, PDB](structures/representative/whole_protein/HSA_with_all_pockets.pdb) ·
-[Protein hull with all probes, PDB](structures/representative/whole_protein/HSA_hull_with_all_pockets.pdb) ·
-[OBJ](structures/representative/whole_protein/HSA_hull_with_all_pockets.obj) ·
-[SDF](structures/representative/whole_protein/HSA_hull_with_all_pockets.sdf) ·
-[Complete group 2 models](structures/representative/whole_protein_group_2)
+- [Group 1 protein PDB](structures/representative/whole_protein/protein.pdb)
+- [Group 2 protein PDB](structures/representative/whole_protein_group_2/protein.pdb)
+- [Group 2 protein and pockets](structures/representative/whole_protein_group_2/HSA_with_all_pockets.pdb)
+- [Protein with all probes, PDB](structures/representative/whole_protein/HSA_with_all_pockets.pdb)
+- [Protein hull with all probes, PDB](structures/representative/whole_protein/HSA_hull_with_all_pockets.pdb)
+- [Protein hull with all probes, OBJ](structures/representative/whole_protein/HSA_hull_with_all_pockets.obj)
+- [Protein hull with all probes, SDF](structures/representative/whole_protein/HSA_hull_with_all_pockets.sdf)
+- [Complete group 2 models](structures/representative/whole_protein_group_2)
 
 ## Pocket volumes
 
 The MD column is the mean ± SD of the three replica means. The other columns
-give the probe-space volume in each selected structure; click a value to open
-its model folder. Groups 1 and 2 are the common protein conformations above;
+give probe-space volumes from `whole_protein/`, `whole_protein_group_2/` and
+`pocket_geometry/`, respectively. Click a value to open the corresponding
+site directory. Groups 1 and 2 are the common protein conformations above;
 pocket-shape frames are selected independently for each cavity. All volumes
 are in Å³.
 
@@ -103,16 +107,26 @@ FA7 overlaps Sudlow I, and FA3/FA4 overlap Sudlow II.
 
 ## See the different representations
 
-Each gallery separates four views: **atomic pocket residues**, the **probe
-surface**, **residues with the probe**, and the **residue convex hull** as a
-wireframe. The probe surface is the mesh stored in OBJ/PLY. Its stepped boundary
-retains the 1 Å calculation grid. The convex hull encloses lining atoms and has
-a different shape from the cavity itself.
+The schematic example introduces four views: **atomic pocket residues**,
+**probe surface**, **residues with the probe**, and **residue convex hull**.
+Green shows the internal probe space; the amber wireframe encloses the lining
+atoms.
 
-The upper row uses the whole-protein frame; the lower row uses the independently
-selected pocket-shape frame. All eight panels for a given pocket share the same
-scale and local alignment. The complete protein envelope is shown above and is
-also included in the combined PDB files.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/representations_overview_dark.svg">
+  <img src="images/representations_overview.svg" width="100%" alt="Schematic pocket example showing atomic residues, probe space, their overlay and the residue convex hull">
+</picture>
+
+### HSA pocket results
+
+Expand a pocket below to see its measured structures. The upper row comes
+from `whole_protein/`; the lower row comes from `pocket_geometry/`. All eight
+panels for each pocket share the same local alignment and molecular scale.
+The probe mesh stored in `probe.obj` and `probe.ply` retains the 1 Å grid used
+for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
+
+<details>
+<summary>Heme — view all representations</summary>
 
 ### Heme
 
@@ -121,8 +135,13 @@ also included in the combined PDB files.
   <img src="images/Heme_representatives.png" width="100%" alt="Heme: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/Heme) ·
-[Pocket-shape files](structures/representative/pocket_geometry/Heme)
+[`whole_protein/Heme/`](structures/representative/whole_protein/Heme) ·
+[`pocket_geometry/Heme/`](structures/representative/pocket_geometry/Heme)
+
+</details>
+
+<details>
+<summary>FA6 — view all representations</summary>
 
 ### FA6
 
@@ -131,8 +150,13 @@ also included in the combined PDB files.
   <img src="images/FA6_representatives.png" width="100%" alt="FA6: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/FA6) ·
-[Pocket-shape files](structures/representative/pocket_geometry/FA6)
+[`whole_protein/FA6/`](structures/representative/whole_protein/FA6) ·
+[`pocket_geometry/FA6/`](structures/representative/pocket_geometry/FA6)
+
+</details>
+
+<details>
+<summary>Sudlow I — view all representations</summary>
 
 ### Sudlow I
 
@@ -141,8 +165,10 @@ also included in the combined PDB files.
   <img src="images/Sudlow_I_representatives.png" width="100%" alt="Sudlow I: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/Sudlow_I) ·
-[Pocket-shape files](structures/representative/pocket_geometry/Sudlow_I)
+[`whole_protein/Sudlow_I/`](structures/representative/whole_protein/Sudlow_I) ·
+[`pocket_geometry/Sudlow_I/`](structures/representative/pocket_geometry/Sudlow_I)
+
+</details>
 
 <details>
 <summary>Sudlow II — view all representations</summary>
@@ -154,8 +180,8 @@ also included in the combined PDB files.
   <img src="images/Sudlow_II_representatives.png" width="100%" alt="Sudlow II: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/Sudlow_II) ·
-[Pocket-shape files](structures/representative/pocket_geometry/Sudlow_II)
+[`whole_protein/Sudlow_II/`](structures/representative/whole_protein/Sudlow_II) ·
+[`pocket_geometry/Sudlow_II/`](structures/representative/pocket_geometry/Sudlow_II)
 
 </details>
 
@@ -169,8 +195,8 @@ also included in the combined PDB files.
   <img src="images/FA1_representatives.png" width="100%" alt="FA1: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/FA1) ·
-[Pocket-shape files](structures/representative/pocket_geometry/FA1)
+[`whole_protein/FA1/`](structures/representative/whole_protein/FA1) ·
+[`pocket_geometry/FA1/`](structures/representative/pocket_geometry/FA1)
 
 </details>
 
@@ -184,8 +210,8 @@ also included in the combined PDB files.
   <img src="images/FA2_representatives.png" width="100%" alt="FA2: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/FA2) ·
-[Pocket-shape files](structures/representative/pocket_geometry/FA2)
+[`whole_protein/FA2/`](structures/representative/whole_protein/FA2) ·
+[`pocket_geometry/FA2/`](structures/representative/pocket_geometry/FA2)
 
 </details>
 
@@ -199,8 +225,8 @@ also included in the combined PDB files.
   <img src="images/FA3_representatives.png" width="100%" alt="FA3: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/FA3) ·
-[Pocket-shape files](structures/representative/pocket_geometry/FA3)
+[`whole_protein/FA3/`](structures/representative/whole_protein/FA3) ·
+[`pocket_geometry/FA3/`](structures/representative/pocket_geometry/FA3)
 
 </details>
 
@@ -214,8 +240,8 @@ also included in the combined PDB files.
   <img src="images/FA4_representatives.png" width="100%" alt="FA4: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/FA4) ·
-[Pocket-shape files](structures/representative/pocket_geometry/FA4)
+[`whole_protein/FA4/`](structures/representative/whole_protein/FA4) ·
+[`pocket_geometry/FA4/`](structures/representative/pocket_geometry/FA4)
 
 </details>
 
@@ -229,8 +255,8 @@ also included in the combined PDB files.
   <img src="images/FA5_representatives.png" width="100%" alt="FA5: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/FA5) ·
-[Pocket-shape files](structures/representative/pocket_geometry/FA5)
+[`whole_protein/FA5/`](structures/representative/whole_protein/FA5) ·
+[`pocket_geometry/FA5/`](structures/representative/pocket_geometry/FA5)
 
 </details>
 
@@ -244,8 +270,8 @@ also included in the combined PDB files.
   <img src="images/FA7_representatives.png" width="100%" alt="FA7: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/FA7) ·
-[Pocket-shape files](structures/representative/pocket_geometry/FA7)
+[`whole_protein/FA7/`](structures/representative/whole_protein/FA7) ·
+[`pocket_geometry/FA7/`](structures/representative/pocket_geometry/FA7)
 
 </details>
 
@@ -259,8 +285,8 @@ also included in the combined PDB files.
   <img src="images/Cleft_representatives.png" width="100%" alt="Cleft: atomic residues, probe mesh, residues with probe and convex hull, compared between the two frame selections">
 </picture>
 
-[Whole-protein-frame files](structures/representative/whole_protein/Cleft) ·
-[Pocket-shape files](structures/representative/pocket_geometry/Cleft)
+[`whole_protein/Cleft/`](structures/representative/whole_protein/Cleft) ·
+[`pocket_geometry/Cleft/`](structures/representative/pocket_geometry/Cleft)
 
 </details>
 
@@ -279,7 +305,11 @@ tables/                     Volumes, source frames and methods
 images/                     Transparent previews
 ```
 
-Every pocket folder contains the following models. Coordinates are in Å.
+Pocket models are stored under `structures/representative/` in
+`whole_protein/<site>/`, `whole_protein_group_2/<site>/` and
+`pocket_geometry/<site>/`. For example, the pocket-shape files for FA1 are in
+[`pocket_geometry/FA1/`](structures/representative/pocket_geometry/FA1).
+These directories contain the models listed below. Coordinates are in Å.
 
 | File | Contents |
 |---|---|
@@ -289,10 +319,11 @@ Every pocket folder contains the following models. Coordinates are in Å.
 | `lining_hull.pdb`, `.obj`, `.ply` | Convex envelope of the lining-residue heavy atoms |
 | `pocket_with_geometry.pdb` | Pocket atoms, probe model and complete protein hull |
 | `protein_with_pocket.pdb` | Complete protein, that pocket's probe and protein hull |
-| `protein.pdb`, `protein_hull.*` | Complete parent protein and its enclosing hull; in the parent directory for the whole-protein collection |
+| `protein.pdb`, `protein_hull.*` | Complete parent protein and its hull; inside `pocket_geometry/<site>/`, or in the parent `whole_protein/` and `whole_protein_group_2/` directories |
 
-Every OBJ also has **SDF, MOL and MOL2** exports. Their vertices and edges describe
-geometry. They use virtual atoms (`*` or `Du`); chemical atoms remain in the atomic
+`probe.obj`, `lining_hull.obj` and `protein_hull.obj` also have matching
+**SDF, MOL and MOL2** exports. Their vertices and edges describe geometry.
+They use virtual atoms (`*` or `Du`); chemical atoms remain in the atomic
 PDB files. OBJ/PLY retain the triangular surface faces.
 
 The original R1, R2 and R3 models and numerical results are retained. Each replica

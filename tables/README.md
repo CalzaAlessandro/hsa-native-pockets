@@ -39,8 +39,11 @@ For display, both observed proteins and all associated geometry are fitted
 with the same canonical Domain II Cα atoms (196–383) to the established native
 reference, then shown with one frontal camera and molecular scale. The atom
 coordinates in the delivered structures are unchanged by this display fit.
-The protein hull panel belongs to group 1. The second group's complete hull,
-atomic structures and probe models are supplied in its own structure folder.
+The same camera roll aligns the projected Cα axis of the heart tip,
+subdomain IIB (292–383), with the vertical direction. The protein hull panel
+belongs to group 1. The second group's complete hull, atomic structures and
+probe models are in
+[`structures/representative/whole_protein_group_2/`](../structures/representative/whole_protein_group_2).
 
 ### Independent pocket-shape frames
 
@@ -132,3 +135,6 @@ in the atomic PDB files.
 
 Source: `CATIONIZED_HSA/series_585_apbs`, native system 0%. Original trajectories,
 probe masks, analysis code and calculation records remain on the cluster.
+
+Preview camera settings, source hashes and the schematic overview are recorded
+in [images/FIGURE_SOURCES.json](../images/FIGURE_SOURCES.json).
