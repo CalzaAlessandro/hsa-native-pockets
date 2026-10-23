@@ -7,6 +7,21 @@ and the original R1-R3 results.
 
 ## Choose a template
 
+### Which should be used for MOF design?
+
+The two model sets describe HSA at different scales. The **whole-protein
+representative** retains all eleven binding regions in one observed
+conformation. Its atomic PDB includes the surrounding chemical groups, while
+the protein convex hull provides an envelope of the overall size and shape.
+This set preserves the spatial relationships between the pockets and the
+rest of the protein.
+
+The **pocket-shape representatives** describe each cavity separately, using
+a frame selected from its most populated shape group. They include the
+internal probe space, lining residues and complete parent protein. These
+models provide local structural detail that may complement the whole-protein
+view, depending on the region considered for MOF design.
+
 ### Whole-protein representative
 
 One observed frame is selected from the most populated group of overall HSA
@@ -14,8 +29,7 @@ conformations. **All eleven pockets are extracted from this same frame.**
 Their relative positions, the shape of the protein and the surrounding residues
 therefore belong to one coherent structure.
 
-Use this model to study the intact protein, locate several binding regions at
-once, or design a material around the complete HSA molecule. The files are in
+The files for this common protein conformation are in
 [`whole_protein/`](structures/representative/whole_protein); the alternative
 conformation is in [`whole_protein_group_2/`](structures/representative/whole_protein_group_2).
 
@@ -86,7 +100,7 @@ are compared across the three simulations, and one observed frame is selected
 to represent the most populated cavity-shape group. The selection reflects the **shape of that pocket**,
 including where its internal space lies. It is not determined by volume alone.
 
-Use these models to examine a particular cavity and its lining residues.
+These models retain each selected cavity and its lining residues.
 Different pockets can come from different frames. Each model includes its own
 complete parent protein and geometric envelope. The selected structures are
 observed conformations; the trajectory averages are reported separately below.
@@ -272,20 +286,6 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 [`pocket_geometry/FA7/`](structures/representative/pocket_geometry/FA7)
 
 </details>
-
-### Which should be used for MOF design?
-
-**Start with the whole-protein model for intact-HSA templating or encapsulation.**
-Use its atomic PDB to retain the exposed chemical groups, and its geometric
-envelope to describe the overall size and shape. Protein-directed MOF
-mineralization has been demonstrated experimentally, including with HSA
-([Liang et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26041070/)).
-
-**Use the pocket-shape models as complementary local templates** when the design
-concerns a specific cavity. They provide a cavity-focused choice of conformation
-and its surrounding atoms. The two collections let the MOF group compare an
-intact-protein design with a local-site design. Their suitability for a particular
-MOF chemistry will require testing with that material's building blocks.
 
 ## Pocket volumes
 
