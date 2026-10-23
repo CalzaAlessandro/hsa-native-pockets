@@ -11,17 +11,17 @@ and all original numerical tables are unchanged.
 
 ### Common whole-protein frame
 
-The common protein classification uses Domain I–III COM distance, opening angle
-and Q_I–III with standardized features. Candidate k-means, Ward and DBSCAN
+The common protein classification uses Domain I-III COM distance, opening angle
+and Q_I-III with standardized features. Candidate k-means, Ward and DBSCAN
 classifications were compared using equally sampled replicas. The selected Ward
 classification contains two groups. The whole-protein frame is R3, frame 2726
 (27.26% of production), from the dominant group containing 68.3% of all equally
-weighted R1–R3 frames. All eleven geometries were recalculated on that same
+weighted R1-R3 frames. All eleven geometries were recalculated on that same
 observed frame. This classification describes overall opening coordinates.
 
 ### Second common whole-protein frame
 
-The second group contains 31.7% of the equally weighted R1–R3 frames. Its
+The second group contains 31.7% of the equally weighted R1-R3 frames. Its
 common observed representative is R2, frame 8894 (88.94% of production).
 The eleven pocket geometries were extracted anew on that frame with the same
 physiological regions, atomic exclusions and 1.4 Å probe used for group 1.
@@ -36,11 +36,11 @@ source-frame tables are retained in
 [common_cluster_representatives.csv](common_cluster_representatives.csv).
 
 For display, both observed proteins and all associated geometry are fitted
-with the same canonical Domain II Cα atoms (196–383) to the established native
+with the same canonical Domain II Cα atoms (196-383) to the established native
 reference, then shown with one frontal camera and molecular scale. The atom
 coordinates in the delivered structures are unchanged by this display fit.
 The same camera roll aligns the projected Cα axis of the heart tip,
-subdomain IIB (292–383), with the vertical direction. The protein hull panel
+subdomain IIB (292-383), with the vertical direction. The protein hull panel
 belongs to group 1. The second group's complete hull, atomic structures and
 probe models are in
 [`structures/representative/whole_protein_group_2/`](../structures/representative/whole_protein_group_2).
@@ -110,7 +110,7 @@ shows the volumes directly.
 | [Volume summary](pocket_volume_summary.csv) | Mean and sample SD of the three replica means |
 | [Per-replica volumes](per_replica_pocket_volumes.csv) | Mean, median and within-replica spread |
 | [Sampled volumes](sampled_pocket_volumes.csv) | Original 102 frames per replica and region |
-| [Original pocket models](pocket_models.csv) | Original 66 R1–R3 models and source frames |
+| [Original pocket models](pocket_models.csv) | Original 66 R1-R3 models and source frames |
 | [Protein representatives](protein_representatives.csv) | Per-replica protein-cluster populations and frames |
 | [Representative comparison](representative_comparison.csv) | Ensemble means and volumes of the two selected model sets |
 | [Representative models](representative_models.csv) | Source frames, lining residues, populations and file locations |
@@ -122,7 +122,7 @@ shows the volumes directly.
 | [Representative geometry formats](representative_geometry_formats.csv) | Exported geometry files and vertex/face counts |
 | [Second-group models](second_group_models.csv) | Pocket volumes, lining residues and source frame for common group 2 |
 | [Second-group geometry formats](second_group_geometry_formats.csv) | Additional geometric exports for common group 2 |
-| [Original geometry formats](geometry_formats.csv) | Original R1–R3 geometric exports |
+| [Original geometry formats](geometry_formats.csv) | Original R1-R3 geometric exports |
 
 ## Geometric export formats
 

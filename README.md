@@ -3,7 +3,7 @@
 Atomic structures and geometric models of eleven physiological regions in
 **native, 585-residue HSA**, sampled in three independent 1 µs simulations.
 The collection includes a common HSA template, individual pocket templates,
-and the original R1–R3 results.
+and the original R1-R3 results.
 
 ## Choose a template
 
@@ -46,16 +46,16 @@ and its surrounding atoms. The two collections let the MOF group compare an
 intact-protein design with a local-site design. Their suitability for a particular
 MOF chemistry will require testing with that material's building blocks.
 
-## Pockets in two native conformations
+## Whole protein representation
 
 The common clustering identifies two groups. **Group 1 is the most populated
 (68.3%)** and supplies the principal whole-protein template. **Group 2 (31.7%)**
 is shown as an alternative conformation. Both are observed frames from the same
 native HSA dataset, with the replicas contributing equally.
 
-The whole-protein guide shows the complete structure, all probe models,
-their overlay and the protein convex hull. The schematic introduces the
-representations; the observed HSA structures are collected below.
+The guide uses the native reference cartoon and its convex hull; green
+shapes illustrate the probe positions. The observed protein frames and their
+calculated pocket geometries are collected below.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/whole_protein_overview_dark.svg">
@@ -63,7 +63,7 @@ representations; the observed HSA structures are collected below.
 </picture>
 
 <details>
-<summary>Whole HSA — view all representations</summary>
+<summary>Whole HSA - view all representations</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HSA_common_representative_dark.png">
@@ -108,39 +108,7 @@ stored in `protein_hull.*`. Probe volumes and all delivered models are unchanged
 
 </details>
 
-## Pocket volumes
-
-The MD column is the mean ± SD of the three replica means. The other columns
-give probe-space volumes from `whole_protein/`, `whole_protein_group_2/` and
-`pocket_geometry/`, respectively. Click a value to open the corresponding
-site directory. Groups 1 and 2 are the common protein conformations above;
-pocket-shape frames are selected independently for each cavity. All volumes
-are in Å³.
-
-| Pocket | MD mean ± SD | Group 1 | Group 2 | Pocket shape |
-|---|---:|---:|---:|---:|
-| Cleft | 233.5 ± 103.8 | [250](structures/representative/whole_protein/Cleft) | [392](structures/representative/whole_protein_group_2/Cleft) | [307](structures/representative/pocket_geometry/Cleft) |
-| FA1 | 41.0 ± 13.1 | [0](structures/representative/whole_protein/FA1) | [60](structures/representative/whole_protein_group_2/FA1) | [129](structures/representative/pocket_geometry/FA1) |
-| FA2 | 5.7 ± 4.6 | [1](structures/representative/whole_protein/FA2) | [0](structures/representative/whole_protein_group_2/FA2) | [11](structures/representative/pocket_geometry/FA2) |
-| FA3 | 4.2 ± 4.4 | [0](structures/representative/whole_protein/FA3) | [3](structures/representative/whole_protein_group_2/FA3) | [3](structures/representative/pocket_geometry/FA3) |
-| FA4 | 57.9 ± 33.2 | [53](structures/representative/whole_protein/FA4) | [36](structures/representative/whole_protein_group_2/FA4) | [120](structures/representative/pocket_geometry/FA4) |
-| FA5 | 14.1 ± 15.0 | [26](structures/representative/whole_protein/FA5) | [1](structures/representative/whole_protein_group_2/FA5) | [38](structures/representative/pocket_geometry/FA5) |
-| FA6 | 169.1 ± 24.5 | [168](structures/representative/whole_protein/FA6) | [181](structures/representative/whole_protein_group_2/FA6) | [199](structures/representative/pocket_geometry/FA6) |
-| FA7 | 9.3 ± 5.5 | [2](structures/representative/whole_protein/FA7) | [0](structures/representative/whole_protein_group_2/FA7) | [25](structures/representative/pocket_geometry/FA7) |
-| Heme | 173.5 ± 36.9 | [136](structures/representative/whole_protein/Heme) | [63](structures/representative/whole_protein_group_2/Heme) | [383](structures/representative/pocket_geometry/Heme) |
-| Sudlow&nbsp;I | 65.9 ± 13.4 | [50](structures/representative/whole_protein/Sudlow_I) | [55](structures/representative/whole_protein_group_2/Sudlow_I) | [114](structures/representative/pocket_geometry/Sudlow_I) |
-| Sudlow&nbsp;II | 16.4 ± 10.6 | [24](structures/representative/whole_protein/Sudlow_II) | [3](structures/representative/whole_protein_group_2/Sudlow_II) | [36](structures/representative/pocket_geometry/Sudlow_II) |
-
-A zero means that the 1.4 Å probe has no accessible center positions within
-the specified region in that frame. The physiological site is still defined by
-its reference residues. These volumes describe the selected probe and region;
-FA7 overlaps Sudlow I, and FA3/FA4 overlap Sudlow II.
-
-[Full comparison table](tables/representative_comparison.csv) ·
-[Source frames and lining residues](tables/representative_models.csv) ·
-[Methods and table definitions](tables/README.md)
-
-## See the different representations
+## Single pockets representations
 
 The schematic example introduces four views: **atomic pocket residues**,
 **probe surface**, **residues with the probe**, and **residue convex hull**.
@@ -161,7 +129,7 @@ The probe mesh stored in `probe.obj` and `probe.ply` retains the 1 Å grid used
 for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 
 <details>
-<summary>Sudlow I — view all representations</summary>
+<summary>Sudlow I - view all representations</summary>
 
 ### Sudlow I
 
@@ -176,7 +144,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>Sudlow II — view all representations</summary>
+<summary>Sudlow II - view all representations</summary>
 
 ### Sudlow II
 
@@ -191,7 +159,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>Heme — view all representations</summary>
+<summary>Heme - view all representations</summary>
 
 ### Heme
 
@@ -206,7 +174,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>Cleft — view all representations</summary>
+<summary>Cleft - view all representations</summary>
 
 ### Cleft
 
@@ -221,7 +189,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>FA1 — view all representations</summary>
+<summary>FA1 - view all representations</summary>
 
 ### FA1
 
@@ -236,7 +204,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>FA2 — view all representations</summary>
+<summary>FA2 - view all representations</summary>
 
 ### FA2
 
@@ -251,7 +219,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>FA3 — view all representations</summary>
+<summary>FA3 - view all representations</summary>
 
 ### FA3
 
@@ -266,7 +234,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>FA4 — view all representations</summary>
+<summary>FA4 - view all representations</summary>
 
 ### FA4
 
@@ -281,7 +249,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>FA5 — view all representations</summary>
+<summary>FA5 - view all representations</summary>
 
 ### FA5
 
@@ -296,7 +264,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>FA6 — view all representations</summary>
+<summary>FA6 - view all representations</summary>
 
 ### FA6
 
@@ -311,7 +279,7 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 </details>
 
 <details>
-<summary>FA7 — view all representations</summary>
+<summary>FA7 - view all representations</summary>
 
 ### FA7
 
@@ -324,6 +292,38 @@ for the calculation. The lining-atom envelope is stored in `lining_hull.*`.
 [`pocket_geometry/FA7/`](structures/representative/pocket_geometry/FA7)
 
 </details>
+
+## Pocket volumes
+
+The MD column is the mean ± SD of the three replica means. The other columns
+give probe-space volumes from `whole_protein/`, `whole_protein_group_2/` and
+`pocket_geometry/`, respectively. Click a value to open the corresponding
+site directory. Groups 1 and 2 are the common protein conformations above;
+pocket-shape frames are selected independently for each cavity. All volumes
+are in Å³.
+
+| Pocket | MD mean ± SD | Group 1 | Group 2 | Pocket shape |
+|---|---:|---:|---:|---:|
+| Sudlow&nbsp;I | 65.9 ± 13.4 | [50](structures/representative/whole_protein/Sudlow_I) | [55](structures/representative/whole_protein_group_2/Sudlow_I) | [114](structures/representative/pocket_geometry/Sudlow_I) |
+| Sudlow&nbsp;II | 16.4 ± 10.6 | [24](structures/representative/whole_protein/Sudlow_II) | [3](structures/representative/whole_protein_group_2/Sudlow_II) | [36](structures/representative/pocket_geometry/Sudlow_II) |
+| Heme | 173.5 ± 36.9 | [136](structures/representative/whole_protein/Heme) | [63](structures/representative/whole_protein_group_2/Heme) | [383](structures/representative/pocket_geometry/Heme) |
+| Cleft | 233.5 ± 103.8 | [250](structures/representative/whole_protein/Cleft) | [392](structures/representative/whole_protein_group_2/Cleft) | [307](structures/representative/pocket_geometry/Cleft) |
+| FA1 | 41.0 ± 13.1 | [0](structures/representative/whole_protein/FA1) | [60](structures/representative/whole_protein_group_2/FA1) | [129](structures/representative/pocket_geometry/FA1) |
+| FA2 | 5.7 ± 4.6 | [1](structures/representative/whole_protein/FA2) | [0](structures/representative/whole_protein_group_2/FA2) | [11](structures/representative/pocket_geometry/FA2) |
+| FA3 | 4.2 ± 4.4 | [0](structures/representative/whole_protein/FA3) | [3](structures/representative/whole_protein_group_2/FA3) | [3](structures/representative/pocket_geometry/FA3) |
+| FA4 | 57.9 ± 33.2 | [53](structures/representative/whole_protein/FA4) | [36](structures/representative/whole_protein_group_2/FA4) | [120](structures/representative/pocket_geometry/FA4) |
+| FA5 | 14.1 ± 15.0 | [26](structures/representative/whole_protein/FA5) | [1](structures/representative/whole_protein_group_2/FA5) | [38](structures/representative/pocket_geometry/FA5) |
+| FA6 | 169.1 ± 24.5 | [168](structures/representative/whole_protein/FA6) | [181](structures/representative/whole_protein_group_2/FA6) | [199](structures/representative/pocket_geometry/FA6) |
+| FA7 | 9.3 ± 5.5 | [2](structures/representative/whole_protein/FA7) | [0](structures/representative/whole_protein_group_2/FA7) | [25](structures/representative/pocket_geometry/FA7) |
+
+A zero means that the 1.4 Å probe has no accessible center positions within
+the specified region in that frame. The physiological site is still defined by
+its reference residues. These volumes describe the selected probe and region;
+FA7 overlaps Sudlow I, and FA3/FA4 overlap Sudlow II.
+
+[Full comparison table](tables/representative_comparison.csv) ·
+[Source frames and lining residues](tables/representative_models.csv) ·
+[Methods and table definitions](tables/README.md)
 
 ## Find the files
 
