@@ -11,13 +11,26 @@ and all original numerical tables are unchanged.
 
 ### Common whole-protein frame
 
-The common protein classification uses Domain I-III COM distance, opening angle
-and Q_I-III with standardized features. Candidate k-means, Ward and DBSCAN
-classifications were compared using equally sampled replicas. The selected Ward
-classification contains two groups. The whole-protein frame is R3, frame 2726
-(27.26% of production), from the dominant group containing 68.3% of all equally
-weighted R1-R3 frames. All eleven geometries were recalculated on that same
-observed frame. This classification describes overall opening coordinates.
+Each saved frame is described by three measurements:
+
+- **Domain I-III COM distance:** the distance between the domains' centers of mass.
+- **Opening angle:** the angle between the centers of mass of Domains I, II and III, with Domain II at the vertex.
+- **Q_I-III:** the fraction of reference contacts between Domains I and III retained in that frame.
+
+The clustering compares overall opening geometries. Training uses 200 uniformly
+sampled frames from each replica, giving 600 frames with equal replica weights.
+Each measurement is centered on its training-set mean and divided by its
+training-set SD, so distances, angles and contact fractions contribute on
+comparable scales.
+
+K-means, Ward and DBSCAN candidates were compared. The selected two-group
+Ward model was fitted to the training set; all 30,000 saved frames were then
+assigned to the nearest group center in the standardized measurements.
+Group 1 contains 68.3% of these frames. Its representative is the observed
+member closest to its group center: R3, frame 2726, at 27.26% of production.
+All eleven pocket geometries in `whole_protein/` were computed from this
+same frame. The selected frame summarizes the opening measurements; its
+individual pocket volumes can differ from their trajectory means.
 
 ### Second common whole-protein frame
 
@@ -35,14 +48,9 @@ source-frame tables are retained in
 [common_cluster_populations.csv](common_cluster_populations.csv) and
 [common_cluster_representatives.csv](common_cluster_representatives.csv).
 
-For display, both observed proteins and all associated geometry are fitted
-with the same canonical Domain II Cα atoms (196-383) to the established native
-reference, then shown with one frontal camera and molecular scale. The atom
-coordinates in the delivered structures are unchanged by this display fit.
-The same camera roll aligns the projected Cα axis of the heart tip,
-subdomain IIB (292-383), with the vertical direction. The protein hull panel
-belongs to group 1. The second group's complete hull, atomic structures and
-probe models are in
+The preview images align the two observed proteins on Domain II and use one
+frontal view and molecular scale. Delivered model coordinates retain their
+source-frame positions. Complete group 2 structures and geometry are in
 [`structures/representative/whole_protein_group_2/`](../structures/representative/whole_protein_group_2).
 
 ### Independent pocket-shape frames
@@ -53,7 +61,7 @@ Cα alignment places the probe-space masks on a common grid. Jaccard distance
 compares occupied grid cells, allowing different shapes with equal volume to be
 distinguished. The representative is the observed medoid: the member minimizing
 the sum of its Jaccard distances to the other members of the dominant nonempty
-group. It is not a coordinate average or a frame selected by mean volume.
+group. The geometry and atomic coordinates belong to that observed frame.
 
 Average-linkage partitions with two to six groups and DBSCAN candidates were
 compared. Candidate groups require at least five frames or 5% of the nonempty
@@ -67,6 +75,21 @@ numbers are ordered by population. The selected medoid can differ in volume
 from the trajectory mean. Shape overlap and volume percentiles are reported in
 [pocket_shape_representativeness.csv](pocket_shape_representativeness.csv).
 Each pocket-specific frame retains its own complete source protein.
+
+### Frames closest to the mean pocket volume
+
+For each region, one additional observed frame minimizes the absolute difference
+between its volume and the mean of the original 306 observations. Ties are
+resolved by replica order and then by the earliest frame. These frames include
+the same treatment of zero-volume observations as the reported MD mean.
+The coordinates are taken directly from the selected frame. The mean describes
+cavity size across the sampled ensemble; it does not define a unique cavity shape.
+
+The selected models, complete parent proteins and geometric envelopes are in
+[`mean_volume/`](../structures/representative/mean_volume). Source frames, exact
+volumes and differences from the target means are in
+[mean_volume_models.csv](mean_volume_models.csv). The cleft uses the original
+moving landmark lattice for this selection, matching the trajectory-volume table.
 
 ## How the cavity geometry is extracted
 
@@ -83,10 +106,18 @@ measurement. Protein and lining hulls enclose atomic positions; the green probe
 mesh describes the available cavity space. FA7 overlaps Sudlow I; FA3 and FA4
 overlap Sudlow II, so these region volumes should not be summed.
 
+`pocket_atoms.pdb` contains the complete residues whose heavy atoms lie within
+4 Å of a probe-mesh vertex in the selected frame. The selection follows the
+actual cavity geometry and can change with conformation.
 
-Lining residues have heavy atoms within 4 Å of probe-mesh vertices. A lining
-convex hull encloses those residues' heavy-atom positions. The complete protein
-hull encloses the heavy atoms of the source protein. These envelopes bridge
+`region_atoms.pdb` contains the local alignment-anchor residues used to position
+the physiological reference region on that frame. These fixed residue identities
+are listed in `alignment_canonical_residues` in `pocket_shape_methods.csv`.
+They provide a reference for locating the site; they can differ from its lining
+residues.
+
+A lining convex hull encloses those residues' heavy-atom positions. The complete
+protein hull encloses the heavy atoms of the source protein. These envelopes bridge
 concavities and differ from both an atomic solvent-excluded surface and the
 probe-space mesh. The probe mesh retains the unsmoothed 1 Å calculation grid.
 
@@ -114,6 +145,8 @@ shows the volumes directly.
 | [Protein representatives](protein_representatives.csv) | Per-replica protein-cluster populations and frames |
 | [Representative comparison](representative_comparison.csv) | Ensemble means and volumes of the two selected model sets |
 | [Representative models](representative_models.csv) | Source frames, lining residues, populations and file locations |
+| [Near-mean-volume models](mean_volume_models.csv) | Observed frames closest to the MD mean, their volumes and absolute differences |
+| [Near-mean geometric formats](mean_volume_geometry_formats.csv) | Geometric exports of the near-mean-volume frames |
 | [Shape assignments](pocket_shape_assignments.csv) | Geometry labels and volumes for all 306 observations per region |
 | [Shape populations](pocket_shape_populations.csv) | Geometry-group populations by replica |
 | [Clustering candidates](pocket_shape_candidates.csv) | Candidate partitions, silhouettes and coverage |
