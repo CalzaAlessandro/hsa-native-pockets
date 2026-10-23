@@ -82,12 +82,12 @@
     "images/Sudlow_II_representatives_dark.png": "2923967d11a3ba0445ee621d6b65c1bea1387b25b7b3e9752867c43dc42fb149",
     "images/Sudlow_I_representatives.png": "a3e7a2a0fb908f5e582949b243f4ef2f58970f0b135511a902c31a0c2a1b8527",
     "images/Sudlow_I_representatives_dark.png": "169e6d73b613eb972702f9fa0266eb90844851ab19d1f585bc291619708c244b",
-    "images/banner.svg": "53013fea26b0852f45afb0e360559a42fe2a8328bb4a8d46faa0182d09370561",
-    "images/banner_dark.svg": "853ea6911dded779a9c865ecaf63b77412638d89dfe51c56cd26e48a087884df",
-    "images/protein_solid_group_1.png": "653c132aa044ec7759f2a826cca069ac4cb700c296724316790191e38ba04353",
-    "images/protein_solid_group_1_dark.png": "8698a8ce2d11f3d459cf3fa899d5e19c9ec846bff165f0134f0903742dbb553d",
-    "images/protein_solid_group_2.png": "f01fc83713e93f6ba28df6c47d78f6671e6fa0ed0450b4395c7ee7a44315650d",
-    "images/protein_solid_group_2_dark.png": "2234f55ec815b8b80098c93d1410ff5f926bce3b0fdeb29b65e848cdcb3ab226",
+    "images/banner.svg": "74abe1692375ceab9f1f575cf4a11d24cd3cfd6ac317bd292e7e324d9c1dd7b1",
+    "images/banner_dark.svg": "a477b8e45b4ad0ae1b8b407e8e809ca25e5b07c47b23e09a3896f155f341a34b",
+    "images/protein_solid_group_1.png": "b3d914c5bfdca2cd252f188aa049dfba25aa70574744af68f67543842fe5fcbb",
+    "images/protein_solid_group_1_dark.png": "6539ed09e5d84a31abb5c62b28cff09317683632d6e7e6568ec0070f16682a27",
+    "images/protein_solid_group_2.png": "75faf5be38f618d11a7f4d58243ddf680f738368f688e4c4e15fce0a8c38087b",
+    "images/protein_solid_group_2_dark.png": "63016f2a585bf5ed83f2316ac501fdda000256a7446ff2d9175adf91edfdf305",
     "images/representations_overview.svg": "973b4842844ebb14609e3ab367bc6622a35ec8df0812565a7d19d176fafb1a90",
     "images/representations_overview_dark.svg": "a046f80972dc7eb3f49344334a235fe8b10fe8af0e92ac34a59205c01f223bda",
     "images/whole_protein_overview.svg": "e7e5dd47b25f781bd5c7eff508ab8c9820b741db396047a00c390e8f4b3d493b",
@@ -507,24 +507,31 @@
     "mean_volume_model_validation": true
   },
   "banner": {
-    "description": "Native HSA and the heme lining residues, probe and pocket hull from the common group 1 frame",
-    "protein_frame": "R3 frame 2726",
-    "background": "transparent",
-    "site": "Heme",
-    "pocket_panels": "First row of the matching Heme gallery; cropped to molecular content",
-    "scale": "Each banner thumbnail is fitted independently; quantitative scale is retained in the result galleries"
+    "description": "Abstract schematic of a protein envelope with empty pockets and an enlarged local cavity model",
+    "format": "Pure SVG paths and vector text; no embedded raster images",
+    "contains_HSA_measurements": false,
+    "background": "transparent light and dark variants",
+    "dimensions_px": [
+      1600,
+      280
+    ]
   },
   "inverse_model_previews": {
-    "description": "Exact probe-union subtraction from the protein convex envelope",
+    "description": "Full protein solids and a local heme cavity with rounded 10-Angstrom surroundings",
     "groups": [
       1,
       2
     ],
     "probe_scaling": 1.0,
-    "section": "Through the heme probe centroid",
-    "section_areas_verified": true,
-    "source_table": "tables/solid_models.csv",
-    "renderer": "Matplotlib 3D face projection and exact Manifold planar contours",
-    "background": "transparent light and dark variants"
+    "source_tables": [
+      "tables/solid_models.csv",
+      "tables/pocket_solid_models.csv"
+    ],
+    "renderer": "Matplotlib depth-sorted triangular surfaces",
+    "solid_color": "amber",
+    "cavity_boundary_color": "green",
+    "background": "transparent light and dark variants",
+    "common_scale_per_panel_type": true,
+    "planar_sections": false
   }
 }

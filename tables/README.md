@@ -159,24 +159,42 @@ from it. This preserves overlaps without double counting and retains the
 original probe geometry at scale 1.0. No cavity smoothing or enlargement is used.
 
 `protein_solid` contains the remaining material; `pocket_voids` contains the
-space removed from it. `protein_section` is a cutaway through the heme probe
-centroid, in the common frontal display direction. The complete solid is also
-retained. The exterior is a convex envelope and bridges the protein's external
-surface indentations.
+space removed from it. The exterior is a convex envelope and bridges the
+protein's external surface indentations.
 
-All eight solids and sections were checked for closed surfaces and positive
-volume. For each model, solid volume plus the clipped union volume reproduces
-the starting hull volume. The largest numerical balance error is below
-0.000001 Å³. Boolean operations use Manifold3D 3.5.4 with double-precision mesh
-coordinates; Trimesh 5.1.1 provides independent surface and volume checks.
-Both displayed planar sections also satisfy the corresponding solid-area plus
-void-area balance. Full measurements are in [solid_models.csv](solid_models.csv).
+All eight full solids were checked for closed surfaces and positive volume.
+For each model, solid volume plus the clipped union volume reproduces the
+starting hull volume. Boolean operations use Manifold3D 3.5.4 with
+double-precision mesh coordinates; Trimesh 5.1.1 provides independent surface
+and volume checks. Full measurements are in [solid_models.csv](solid_models.csv).
 
-The solids have OBJ, PLY, PDB, MOL, SDF and MOL2 exports. OBJ and PLY can
-be used for surface or solid-model processing. PDB mesh connections give a
-wireframe display in molecular viewers. Separate coincident vertices are retained
-where grid-based cavity surfaces touch. The geometry-only molecular formats
-retain virtual vertices and mesh links.
+### Local cavity surroundings
+
+`pocket_solid` isolates the selected cavity and a rounded part of its surrounding
+solid. First, the pocket probe is subtracted from the convex hull of its own
+parent protein. The local context is then limited to the convex envelope of
+the probe, dilated by a nominal 10 Å spherical margin. The spherical buffer is
+represented by a geodesic mesh with 32 circular segments. This buffer controls
+only the displayed outer context; the original pocket space remains unchanged.
+The local solid is clipped to the protein hull.
+
+The construction is applied to all 110 pocket folders: 92 have nonempty cavity
+space, while 18 retain empty local files. Each nonempty model was checked for a
+closed surface and positive volume. The volume of the local material plus
+its empty cavity reproduces the clipped local envelope volume, with a largest
+numerical error below 0.000001 Å³. Source proteins, margin, status and measured
+volumes are in [pocket_solid_models.csv](pocket_solid_models.csv).
+
+The previews use transparent amber for the solid material and green for the
+boundary of the empty cavity. They show the complete protein beside its heme
+cavity as a local example. Common scales are retained across the two groups
+within the whole-protein and local panels.
+
+Full and local solids have OBJ, PLY, PDB, MOL, SDF and MOL2 exports. OBJ and PLY
+retain indexed surface triangles. PDB mesh connections give a wireframe display
+in molecular viewers. Separate coincident vertices are retained where grid-based
+cavity surfaces touch. The geometry-only molecular formats retain virtual
+vertices and mesh links.
 
 ## Component files and combinations
 
@@ -225,6 +243,7 @@ shows the volumes directly.
 | [Original geometry formats](geometry_formats.csv) | Original R1-R3 geometric exports |
 | [Model files](model_files.csv) | All fifteen component combinations in every pocket folder |
 | [Inverse solids](solid_models.csv) | Hull, empty-space union, remaining solid and volume checks |
+| [Local pocket solids](pocket_solid_models.csv) | Rounded 10 Å surroundings, source frames and volume checks |
 | [Protein clustering comparison](protein_clustering_comparison.csv) | Best eligible Ward, k-means and DBSCAN results |
 | [Protein clustering candidates](protein_clustering_candidates.csv) | Original candidate comparison |
 | [DBSCAN populations](protein_dbscan_populations.csv) | Full-dataset density groups and unassigned frames, by replica |

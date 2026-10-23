@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/banner_dark.svg">
-  <img src="images/banner.svg" width="100%" alt="Native HSA and three views of its heme pocket: lining residues, internal probe space and geometric envelope">
+  <img src="images/banner.svg" width="100%" alt="Abstract schematic of a protein envelope with pocket voids and an enlarged local cavity model">
 </picture>
 
 Atomic structures and geometric models of eleven physiological regions in
@@ -139,30 +139,37 @@ once. The outer envelope and the probe spaces retain their original scale.
 The model is available for both common conformations and for the six
 per-replica representatives.
 
+The local model isolates one cavity and its surrounding material. Its rounded
+outer boundary extends 10 Å beyond the convex envelope of that pocket's probe
+and is clipped to the parent protein hull. The cavity itself retains its
+calculated shape and size. Each pocket folder contains this local model as
+`pocket_solid.*`.
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/protein_solid_group_1_dark.png">
-  <img src="images/protein_solid_group_1.png" width="100%" alt="Group 1: pocket positions, a cut through the inverse protein solid, and a detailed section through the empty heme cavity">
+  <img src="images/protein_solid_group_1.png" width="100%" alt="Group 1: complete protein solid with its pocket voids, beside the heme cavity and its rounded 10-Angstrom solid surroundings">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/protein_solid_group_2_dark.png">
-  <img src="images/protein_solid_group_2.png" width="100%" alt="Group 2: pocket positions, a cut through the inverse protein solid, and a detailed section through the empty heme cavity">
+  <img src="images/protein_solid_group_2.png" width="100%" alt="Group 2: complete protein solid with its pocket voids, beside the heme cavity and its rounded 10-Angstrom solid surroundings">
 </picture>
 
-The blue material is the filled envelope; green marks cavity walls. The detail
-shows an exact planar section through the heme probe center. The complete
-solid retains all cavities, including those outside this display section.
-An enclosed cavity is visible after cutting the model or hiding its outer wall.
+Amber shows the surrounding solid in transparency; green marks the boundary
+of the empty pocket space. The whole-protein panels show all cavity voids.
+The enlarged panels show the heme cavity as an example of the local models.
+Both groups share the same scale within each type of panel.
 
 | File | Group 1 | Group 2 |
 |---|---|---|
 | `protein_solid` - complete envelope with empty pockets | [OBJ](structures/representative/whole_protein/protein_solid.obj), [PDB](structures/representative/whole_protein/protein_solid.pdb) | [OBJ](structures/representative/whole_protein_group_2/protein_solid.obj), [PDB](structures/representative/whole_protein_group_2/protein_solid.pdb) |
-| `protein_section` - solid cut through the heme region | [OBJ](structures/representative/whole_protein/protein_section.obj) | [OBJ](structures/representative/whole_protein_group_2/protein_section.obj) |
-| `pocket_voids` - union of the subtracted spaces | [OBJ](structures/representative/whole_protein/pocket_voids.obj), [SDF](structures/representative/whole_protein/pocket_voids.sdf) | [OBJ](structures/representative/whole_protein_group_2/pocket_voids.obj), [SDF](structures/representative/whole_protein_group_2/pocket_voids.sdf) |
+| `pocket_solid` - heme cavity with local solid surroundings | [OBJ](structures/representative/whole_protein/Heme/pocket_solid.obj), [PDB](structures/representative/whole_protein/Heme/pocket_solid.pdb) | [OBJ](structures/representative/whole_protein_group_2/Heme/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/Heme/pocket_solid.pdb) |
+| `pocket_voids` - union of all subtracted spaces | [OBJ](structures/representative/whole_protein/pocket_voids.obj), [SDF](structures/representative/whole_protein/pocket_voids.sdf) | [OBJ](structures/representative/whole_protein_group_2/pocket_voids.obj), [SDF](structures/representative/whole_protein_group_2/pocket_voids.sdf) |
 
-All three models also have PLY, MOL, SDF and MOL2 files. OBJ and PLY retain
-the surface triangles. PDB contains virtual vertices and mesh connections.
-The numerical volume checks are in [solid_models.csv](tables/solid_models.csv).
+These models also have PLY, MOL, SDF and MOL2 files. OBJ and PLY retain the
+surface triangles. PDB contains virtual vertices and mesh connections.
+The numerical checks are in [solid_models.csv](tables/solid_models.csv) and
+[pocket_solid_models.csv](tables/pocket_solid_models.csv).
 
 </details>
 
@@ -417,16 +424,16 @@ FA7 overlaps Sudlow I, and FA3/FA4 overlap Sudlow II.
 
 ```text
 structures/
-  representative/
-    whole_protein/          Principal protein frame, group 1
-    whole_protein_group_2/  Alternative protein frame, group 2
-    pocket_geometry/        One shape-selected frame per pocket
-    mean_volume/            One frame near each mean pocket volume
-  R1/                      Original per-replica representatives
-  R2/
-  R3/
-tables/                    Volumes, source frames and methods
-images/                    Transparent previews
+├── representative/
+│   ├── whole_protein/          Principal protein frame, group 1
+│   ├── whole_protein_group_2/  Alternative protein frame, group 2
+│   ├── pocket_geometry/        One shape-selected frame per pocket
+│   └── mean_volume/            One frame near each mean pocket volume
+├── R1/                        Original per-replica representatives
+├── R2/
+└── R3/
+tables/                        Volumes, source frames and methods
+images/                        Transparent previews
 ```
 
 Inside `R1/`, `R2/` and `R3/`, `cluster_1/` and `cluster_2/` contain
@@ -493,8 +500,11 @@ An empty probe file records a frame in which no space fits the selected probe.
 | `probes_protein_hull.*` | All probes and the complete protein hull |
 | `protein_with_probes_and_hull.pdb` | Protein atoms, all probes and protein hull |
 | `protein_solid.*` | Filled protein hull with the probe union removed |
-| `protein_section.*` | Cutaway version of the inverse solid |
+| `pocket_solid.*` | One empty cavity with rounded 10 Å solid surroundings; inside each pocket folder |
 | `pocket_voids.*` | The union removed from the inverse solid |
+
+Local solids are available for all nonempty pockets in every model collection.
+An empty local file records a frame with no accessible probe space.
 
 The complete all-pocket models are in the two `whole_protein` folders and the
 six `R1`-`R3` group folders. All fifteen pocket combinations and their paths

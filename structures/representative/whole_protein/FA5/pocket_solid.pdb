@@ -1,0 +1,1423 @@
+REMARK   COORDINATES IN ANGSTROM; ORIGINAL ATOM RECORDS ARE RETAINED
+REMARK   PRB = PROBE, HUL = POCKET HULL, PHL = PROTEIN HULL
+REMARK   GEOMETRIC VERTICES AND LINKS ARE VIRTUAL DISPLAY GEOMETRY
+HETATM    1  VX  LOC L   1       0.917  20.866  33.165  0.00  0.00           X  
+HETATM    2  VX  LOC L   1       1.950  20.253  31.044  0.00  0.00           X  
+HETATM    3  VX  LOC L   1       0.303  25.817  27.127  0.00  0.00           X  
+HETATM    4  VX  LOC L   1       1.631  23.558  26.807  0.00  0.00           X  
+HETATM    5  VX  LOC L   1       3.690  23.640  25.224  0.00  0.00           X  
+HETATM    6  VX  LOC L   1       3.579  26.974  24.062  0.00  0.00           X  
+HETATM    7  VX  LOC L   1       1.950  25.817  25.480  0.00  0.00           X  
+HETATM    8  VX  LOC L   1       0.047  23.640  28.867  0.00  0.00           X  
+HETATM    9  VX  LOC L   1      -0.897  23.848  31.080  0.00  0.00           X  
+HETATM   10  VX  LOC L   1      -1.251  24.110  33.165  0.00  0.00           X  
+HETATM   11  VX  LOC L   1       0.303  21.899  31.044  0.00  0.00           X  
+HETATM   12  VX  LOC L   1      -0.327  22.381  33.165  0.00  0.00           X  
+HETATM   13  VX  LOC L   1      -0.897  25.853  29.075  0.00  0.00           X  
+HETATM   14  VX  LOC L   1      -1.594  25.914  31.141  0.00  0.00           X  
+HETATM   15  VX  LOC L   1      -1.820  25.986  33.165  0.00  0.00           X  
+HETATM   16  VX  LOC L   1       1.631  21.580  28.786  0.00  0.00           X  
+HETATM   17  VX  LOC L   1       4.829  20.848  26.155  0.00  0.00           X  
+HETATM   18  VX  LOC L   1       6.807  18.870  26.155  0.00  0.00           X  
+HETATM   19  VX  LOC L   1       6.889  20.930  24.571  0.00  0.00           X  
+HETATM   20  VX  LOC L   1       9.066  17.543  26.474  0.00  0.00           X  
+HETATM   21  VX  LOC L   1       9.102  21.138  23.627  0.00  0.00           X  
+HETATM   22  VX  LOC L   1      10.073  21.230  23.408  0.00  0.00           X  
+HETATM   23  VX  LOC L   1       9.066  19.190  24.827  0.00  0.00           X  
+HETATM   24  VX  LOC L   1      10.037  19.282  24.607  0.00  0.00           X  
+HETATM   25  VX  LOC L   1       5.149  17.543  30.392  0.00  0.00           X  
+HETATM   26  VX  LOC L   1       7.097  16.343  30.427  0.00  0.00           X  
+HETATM   27  VX  LOC L   1       6.889  17.286  28.214  0.00  0.00           X  
+HETATM   28  VX  LOC L   1       4.115  18.156  32.512  0.00  0.00           X  
+HETATM   29  VX  LOC L   1       5.630  16.913  32.512  0.00  0.00           X  
+HETATM   30  VX  LOC L   1       4.829  18.870  28.133  0.00  0.00           X  
+HETATM   31  VX  LOC L   1       9.102  16.343  28.423  0.00  0.00           X  
+HETATM   32  VX  LOC L   1       7.359  15.989  32.512  0.00  0.00           X  
+HETATM   33  VX  LOC L   1       9.163  15.645  30.489  0.00  0.00           X  
+HETATM   34  VX  LOC L   1       9.235  15.419  32.512  0.00  0.00           X  
+HETATM   35  VX  LOC L   1       6.480  22.897  23.591  0.00  0.00           X  
+HETATM   36  VX  LOC L   1       4.420  22.816  25.175  0.00  0.00           X  
+HETATM   37  VX  LOC L   1       4.740  25.075  23.847  0.00  0.00           X  
+HETATM   38  VX  LOC L   1       5.527  27.009  22.862  0.00  0.00           X  
+HETATM   39  VX  LOC L   1       6.688  25.111  22.647  0.00  0.00           X  
+HETATM   40  VX  LOC L   1       6.951  27.195  22.293  0.00  0.00           X  
+HETATM   41  VX  LOC L   1       8.693  23.106  22.647  0.00  0.00           X  
+HETATM   42  VX  LOC L   1       9.664  23.198  22.427  0.00  0.00           X  
+HETATM   43  VX  LOC L   1       8.754  25.172  21.950  0.00  0.00           X  
+HETATM   44  VX  LOC L   1       9.725  25.264  21.730  0.00  0.00           X  
+HETATM   45  VX  LOC L   1       8.827  27.195  21.724  0.00  0.00           X  
+HETATM   46  VX  LOC L   1       9.798  27.287  21.504  0.00  0.00           X  
+HETATM   47  VX  LOC L   1       1.950  20.253  35.285  0.00  0.00           X  
+HETATM   48  VX  LOC L   1       2.169  20.276  36.260  0.00  0.00           X  
+HETATM   49  VX  LOC L   1       3.454  19.396  37.018  0.00  0.00           X  
+HETATM   50  VX  LOC L   1       3.134  20.723  39.277  0.00  0.00           X  
+HETATM   51  VX  LOC L   1      -0.897  23.848  35.249  0.00  0.00           X  
+HETATM   52  VX  LOC L   1      -0.678  23.871  36.225  0.00  0.00           X  
+HETATM   53  VX  LOC L   1       0.303  21.899  35.285  0.00  0.00           X  
+HETATM   54  VX  LOC L   1       0.522  21.923  36.260  0.00  0.00           X  
+HETATM   55  VX  LOC L   1       0.265  23.663  38.438  0.00  0.00           X  
+HETATM   56  VX  LOC L   1      -1.594  25.914  35.188  0.00  0.00           X  
+HETATM   57  VX  LOC L   1      -1.376  25.937  36.163  0.00  0.00           X  
+HETATM   58  VX  LOC L   1      -0.678  25.876  38.229  0.00  0.00           X  
+HETATM   59  VX  LOC L   1       1.849  21.603  38.519  0.00  0.00           X  
+HETATM   60  VX  LOC L   1       0.522  25.840  40.178  0.00  0.00           X  
+HETATM   61  VX  LOC L   1       1.849  23.581  40.497  0.00  0.00           X  
+HETATM   62  VX  LOC L   1       3.134  22.701  41.255  0.00  0.00           X  
+HETATM   63  VX  LOC L   1       2.169  25.840  41.825  0.00  0.00           X  
+HETATM   64  VX  LOC L   1       3.454  24.960  42.583  0.00  0.00           X  
+HETATM   65  VX  LOC L   1       3.935  27.080  43.213  0.00  0.00           X  
+HETATM   66  VX  LOC L   1       5.149  17.543  34.632  0.00  0.00           X  
+HETATM   67  VX  LOC L   1       7.097  16.343  34.596  0.00  0.00           X  
+HETATM   68  VX  LOC L   1       5.586  17.589  36.583  0.00  0.00           X  
+HETATM   69  VX  LOC L   1       5.194  19.139  39.196  0.00  0.00           X  
+HETATM   70  VX  LOC L   1       7.797  16.035  34.463  0.00  0.00           X  
+HETATM   71  VX  LOC L   1       9.673  15.466  34.463  0.00  0.00           X  
+HETATM   72  VX  LOC L   1       9.600  15.692  36.486  0.00  0.00           X  
+HETATM   73  VX  LOC L   1       7.535  16.389  36.548  0.00  0.00           X  
+HETATM   74  VX  LOC L   1       7.326  17.333  38.761  0.00  0.00           X  
+HETATM   75  VX  LOC L   1       9.539  16.389  38.552  0.00  0.00           X  
+HETATM   76  VX  LOC L   1       5.112  20.723  41.255  0.00  0.00           X  
+HETATM   77  VX  LOC L   1       9.503  17.589  40.501  0.00  0.00           X  
+HETATM   78  VX  LOC L   1       7.245  18.917  40.820  0.00  0.00           X  
+HETATM   79  VX  LOC L   1       7.371  21.043  42.583  0.00  0.00           X  
+HETATM   80  VX  LOC L   1       9.503  19.236  42.147  0.00  0.00           X  
+HETATM   81  VX  LOC L   1       9.539  21.185  43.347  0.00  0.00           X  
+HETATM   82  VX  LOC L   1       9.273  27.057  33.923  0.00  0.00           X  
+HETATM   83  VX  LOC L   1       9.491  27.080  34.898  0.00  0.00           X  
+HETATM   84  VX  LOC L   1       5.194  22.783  42.839  0.00  0.00           X  
+HETATM   85  VX  LOC L   1       5.402  24.996  43.783  0.00  0.00           X  
+HETATM   86  VX  LOC L   1       6.497  26.107  44.536  0.00  0.00           X  
+HETATM   87  VX  LOC L   1       7.407  22.991  43.783  0.00  0.00           X  
+HETATM   88  VX  LOC L   1       8.501  24.102  44.536  0.00  0.00           X  
+HETATM   89  VX  LOC L   1       8.563  26.168  45.233  0.00  0.00           X  
+HETATM   90  VX  LOC L   1       0.917  27.937  26.094  0.00  0.00           X  
+HETATM   91  VX  LOC L   1       0.822  28.933  26.091  0.00  0.00           X  
+HETATM   92  VX  LOC L   1       0.208  31.053  27.125  0.00  0.00           X  
+HETATM   93  VX  LOC L   1       4.061  29.094  23.432  0.00  0.00           X  
+HETATM   94  VX  LOC L   1       3.965  30.089  23.430  0.00  0.00           X  
+HETATM   95  VX  LOC L   1       2.432  27.937  24.850  0.00  0.00           X  
+HETATM   96  VX  LOC L   1       2.337  28.933  24.848  0.00  0.00           X  
+HETATM   97  VX  LOC L   1       2.450  30.089  24.673  0.00  0.00           X  
+HETATM   98  VX  LOC L   1       3.483  32.209  24.060  0.00  0.00           X  
+HETATM   99  VX  LOC L   1       1.837  32.209  25.707  0.00  0.00           X  
+HETATM  100  VX  LOC L   1       1.535  33.311  26.805  0.00  0.00           X  
+HETATM  101  VX  LOC L   1      -1.346  28.933  29.335  0.00  0.00           X  
+HETATM  102  VX  LOC L   1      -1.251  27.937  29.338  0.00  0.00           X  
+HETATM  103  VX  LOC L   1      -0.327  27.937  27.609  0.00  0.00           X  
+HETATM  104  VX  LOC L   1      -0.422  28.933  27.607  0.00  0.00           X  
+HETATM  105  VX  LOC L   1      -1.820  27.937  31.214  0.00  0.00           X  
+HETATM  106  VX  LOC L   1      -1.915  28.933  31.211  0.00  0.00           X  
+HETATM  107  VX  LOC L   1      -2.012  27.937  33.165  0.00  0.00           X  
+HETATM  108  VX  LOC L   1      -2.107  28.933  33.162  0.00  0.00           X  
+HETATM  109  VX  LOC L   1      -0.992  31.017  29.073  0.00  0.00           X  
+HETATM  110  VX  LOC L   1      -0.048  33.230  28.865  0.00  0.00           X  
+HETATM  111  VX  LOC L   1      -1.689  30.956  31.139  0.00  0.00           X  
+HETATM  112  VX  LOC L   1      -1.915  30.884  33.162  0.00  0.00           X  
+HETATM  113  VX  LOC L   1      -0.992  33.022  31.078  0.00  0.00           X  
+HETATM  114  VX  LOC L   1      -1.346  32.759  33.162  0.00  0.00           X  
+HETATM  115  VX  LOC L   1       3.164  34.468  25.387  0.00  0.00           X  
+HETATM  116  VX  LOC L   1       3.164  36.446  27.366  0.00  0.00           X  
+HETATM  117  VX  LOC L   1       0.208  34.970  31.042  0.00  0.00           X  
+HETATM  118  VX  LOC L   1      -0.422  34.488  33.162  0.00  0.00           X  
+HETATM  119  VX  LOC L   1       0.822  36.004  33.162  0.00  0.00           X  
+HETATM  120  VX  LOC L   1       1.580  34.387  27.447  0.00  0.00           X  
+HETATM  121  VX  LOC L   1       1.535  35.290  28.783  0.00  0.00           X  
+HETATM  122  VX  LOC L   1       1.837  36.127  29.624  0.00  0.00           X  
+HETATM  123  VX  LOC L   1       1.855  36.617  31.042  0.00  0.00           X  
+HETATM  124  VX  LOC L   1       3.483  37.774  29.624  0.00  0.00           X  
+HETATM  125  VX  LOC L   1       2.337  37.247  33.162  0.00  0.00           X  
+HETATM  126  VX  LOC L   1       3.545  38.271  32.498  0.00  0.00           X  
+HETATM  127  VX  LOC L   1       5.789  29.094  22.508  0.00  0.00           X  
+HETATM  128  VX  LOC L   1       5.694  30.089  22.506  0.00  0.00           X  
+HETATM  129  VX  LOC L   1       5.432  32.174  22.860  0.00  0.00           X  
+HETATM  130  VX  LOC L   1       7.665  29.094  21.939  0.00  0.00           X  
+HETATM  131  VX  LOC L   1       7.570  30.089  21.937  0.00  0.00           X  
+HETATM  132  VX  LOC L   1       9.513  30.274  21.497  0.00  0.00           X  
+HETATM  133  VX  LOC L   1       7.498  32.113  22.163  0.00  0.00           X  
+HETATM  134  VX  LOC L   1       9.440  32.297  21.723  0.00  0.00           X  
+HETATM  135  VX  LOC L   1       7.893  28.933  33.162  0.00  0.00           X  
+HETATM  136  VX  LOC L   1       7.988  27.937  33.165  0.00  0.00           X  
+HETATM  137  VX  LOC L   1       8.959  28.029  32.945  0.00  0.00           X  
+HETATM  138  VX  LOC L   1       8.864  29.025  32.942  0.00  0.00           X  
+HETATM  139  VX  LOC L   1       9.930  28.122  32.725  0.00  0.00           X  
+HETATM  140  VX  LOC L   1       9.616  29.094  31.747  0.00  0.00           X  
+HETATM  141  VX  LOC L   1       9.521  30.089  31.745  0.00  0.00           X  
+HETATM  142  VX  LOC L   1       9.835  29.117  32.722  0.00  0.00           X  
+HETATM  143  VX  LOC L   1       9.740  30.112  32.720  0.00  0.00           X  
+HETATM  144  VX  LOC L   1       5.224  34.387  23.803  0.00  0.00           X  
+HETATM  145  VX  LOC L   1       5.142  36.446  25.387  0.00  0.00           X  
+HETATM  146  VX  LOC L   1       6.237  37.557  26.141  0.00  0.00           X  
+HETATM  147  VX  LOC L   1       7.059  38.040  26.257  0.00  0.00           X  
+HETATM  148  VX  LOC L   1       6.283  38.456  27.310  0.00  0.00           X  
+HETATM  149  VX  LOC L   1       7.437  34.178  22.860  0.00  0.00           X  
+HETATM  150  VX  LOC L   1       7.401  36.127  24.060  0.00  0.00           X  
+HETATM  151  VX  LOC L   1       9.379  34.363  22.420  0.00  0.00           X  
+HETATM  152  VX  LOC L   1       9.343  36.311  23.620  0.00  0.00           X  
+HETATM  153  VX  LOC L   1      10.110  36.685  23.842  0.00  0.00           X  
+HETATM  154  VX  LOC L   1       9.423  36.967  24.247  0.00  0.00           X  
+HETATM  155  VX  LOC L   1       7.401  37.774  25.707  0.00  0.00           X  
+HETATM  156  VX  LOC L   1       7.458  37.831  25.746  0.00  0.00           X  
+HETATM  157  VX  LOC L   1       8.496  37.238  24.813  0.00  0.00           X  
+HETATM  158  VX  LOC L   1       8.496  37.374  24.950  0.00  0.00           X  
+HETATM  159  VX  LOC L   1       8.751  37.262  24.755  0.00  0.00           X  
+HETATM  160  VX  LOC L   1       5.224  38.030  27.447  0.00  0.00           X  
+HETATM  161  VX  LOC L   1       4.578  38.885  30.378  0.00  0.00           X  
+HETATM  162  VX  LOC L   1       5.491  39.019  29.236  0.00  0.00           X  
+HETATM  163  VX  LOC L   1       5.233  39.288  30.390  0.00  0.00           X  
+HETATM  164  VX  LOC L   1       5.866  38.682  27.889  0.00  0.00           X  
+HETATM  165  VX  LOC L   1       5.060  39.515  32.498  0.00  0.00           X  
+HETATM  166  VX  LOC L   1       5.242  39.586  32.239  0.00  0.00           X  
+HETATM  167  VX  LOC L   1       5.260  39.622  32.498  0.00  0.00           X  
+HETATM  168  VX  LOC L   1       5.279  39.538  33.473  0.00  0.00           X  
+HETATM  169  VX  LOC L   1       5.557  39.687  33.473  0.00  0.00           X  
+HETATM  170  VX  LOC L   1      -1.820  27.937  35.115  0.00  0.00           X  
+HETATM  171  VX  LOC L   1      -1.602  27.960  36.091  0.00  0.00           X  
+HETATM  172  VX  LOC L   1      -1.915  28.933  35.113  0.00  0.00           X  
+HETATM  173  VX  LOC L   1      -1.697  28.956  36.089  0.00  0.00           X  
+HETATM  174  VX  LOC L   1      -1.032  27.960  37.967  0.00  0.00           X  
+HETATM  175  VX  LOC L   1      -1.128  28.956  37.965  0.00  0.00           X  
+HETATM  176  VX  LOC L   1      -1.689  30.956  35.186  0.00  0.00           X  
+HETATM  177  VX  LOC L   1      -1.471  30.979  36.161  0.00  0.00           X  
+HETATM  178  VX  LOC L   1      -0.992  33.022  35.247  0.00  0.00           X  
+HETATM  179  VX  LOC L   1      -0.773  33.045  36.222  0.00  0.00           X  
+HETATM  180  VX  LOC L   1      -0.773  31.040  38.227  0.00  0.00           X  
+HETATM  181  VX  LOC L   1       0.170  33.253  38.435  0.00  0.00           X  
+HETATM  182  VX  LOC L   1      -0.108  27.960  39.696  0.00  0.00           X  
+HETATM  183  VX  LOC L   1      -0.203  28.956  39.693  0.00  0.00           X  
+HETATM  184  VX  LOC L   1       0.427  31.076  40.175  0.00  0.00           X  
+HETATM  185  VX  LOC L   1       1.135  27.960  41.211  0.00  0.00           X  
+HETATM  186  VX  LOC L   1       1.040  28.956  41.209  0.00  0.00           X  
+HETATM  187  VX  LOC L   1       2.651  27.960  42.455  0.00  0.00           X  
+HETATM  188  VX  LOC L   1       2.556  28.956  42.452  0.00  0.00           X  
+HETATM  189  VX  LOC L   1       2.074  31.076  41.822  0.00  0.00           X  
+HETATM  190  VX  LOC L   1       1.754  33.335  40.495  0.00  0.00           X  
+HETATM  191  VX  LOC L   1       3.814  33.253  42.079  0.00  0.00           X  
+HETATM  192  VX  LOC L   1       0.208  34.970  35.282  0.00  0.00           X  
+HETATM  193  VX  LOC L   1       0.427  34.993  36.258  0.00  0.00           X  
+HETATM  194  VX  LOC L   1       1.855  36.617  35.282  0.00  0.00           X  
+HETATM  195  VX  LOC L   1       2.074  36.640  36.258  0.00  0.00           X  
+HETATM  196  VX  LOC L   1       1.754  35.313  38.517  0.00  0.00           X  
+HETATM  197  VX  LOC L   1       3.820  36.516  39.050  0.00  0.00           X  
+HETATM  198  VX  LOC L   1       3.814  36.897  38.435  0.00  0.00           X  
+HETATM  199  VX  LOC L   1       3.732  35.313  40.495  0.00  0.00           X  
+HETATM  200  VX  LOC L   1       8.206  27.960  34.140  0.00  0.00           X  
+HETATM  201  VX  LOC L   1       8.111  28.956  34.138  0.00  0.00           X  
+HETATM  202  VX  LOC L   1       9.177  28.053  33.920  0.00  0.00           X  
+HETATM  203  VX  LOC L   1       9.396  28.076  34.896  0.00  0.00           X  
+HETATM  204  VX  LOC L   1       9.082  29.048  33.918  0.00  0.00           X  
+HETATM  205  VX  LOC L   1      10.149  28.145  33.700  0.00  0.00           X  
+HETATM  206  VX  LOC L   1       9.301  29.071  34.893  0.00  0.00           X  
+HETATM  207  VX  LOC L   1      10.054  29.140  33.698  0.00  0.00           X  
+HETATM  208  VX  LOC L   1       9.959  30.136  33.696  0.00  0.00           X  
+HETATM  209  VX  LOC L   1      10.177  30.159  34.671  0.00  0.00           X  
+HETATM  210  VX  LOC L   1       5.030  28.191  43.966  0.00  0.00           X  
+HETATM  211  VX  LOC L   1       4.935  29.187  43.964  0.00  0.00           X  
+HETATM  212  VX  LOC L   1       6.759  28.191  44.890  0.00  0.00           X  
+HETATM  213  VX  LOC L   1       6.664  29.187  44.888  0.00  0.00           X  
+HETATM  214  VX  LOC L   1       4.453  31.307  43.333  0.00  0.00           X  
+HETATM  215  VX  LOC L   1       6.402  31.271  44.533  0.00  0.00           X  
+HETATM  216  VX  LOC L   1       6.193  33.484  43.590  0.00  0.00           X  
+HETATM  217  VX  LOC L   1       8.635  28.191  45.459  0.00  0.00           X  
+HETATM  218  VX  LOC L   1       8.540  29.187  45.457  0.00  0.00           X  
+HETATM  219  VX  LOC L   1       8.468  31.210  45.231  0.00  0.00           X  
+HETATM  220  VX  LOC L   1       8.406  33.276  44.533  0.00  0.00           X  
+HETATM  221  VX  LOC L   1       4.578  38.885  34.618  0.00  0.00           X  
+HETATM  222  VX  LOC L   1       4.797  38.908  35.593  0.00  0.00           X  
+HETATM  223  VX  LOC L   1       5.778  39.732  34.182  0.00  0.00           X  
+HETATM  224  VX  LOC L   1       6.255  39.806  35.567  0.00  0.00           X  
+HETATM  225  VX  LOC L   1       6.406  39.801  35.830  0.00  0.00           X  
+HETATM  226  VX  LOC L   1       6.672  39.777  36.335  0.00  0.00           X  
+HETATM  227  VX  LOC L   1       5.880  38.100  38.969  0.00  0.00           X  
+HETATM  228  VX  LOC L   1       6.537  39.164  37.771  0.00  0.00           X  
+HETATM  229  VX  LOC L   1       7.685  39.654  37.663  0.00  0.00           X  
+HETATM  230  VX  LOC L   1       8.715  38.908  39.511  0.00  0.00           X  
+HETATM  231  VX  LOC L   1       8.732  39.502  38.546  0.00  0.00           X  
+HETATM  232  VX  LOC L   1       8.809  39.490  38.586  0.00  0.00           X  
+HETATM  233  VX  LOC L   1       9.887  39.256  39.245  0.00  0.00           X  
+HETATM  234  VX  LOC L   1       5.798  36.516  41.028  0.00  0.00           X  
+HETATM  235  VX  LOC L   1       6.112  35.544  42.006  0.00  0.00           X  
+HETATM  236  VX  LOC L   1       8.057  36.197  42.356  0.00  0.00           X  
+HETATM  237  VX  LOC L   1       8.371  35.224  43.333  0.00  0.00           X  
+HETATM  238  VX  LOC L   1       8.057  37.843  40.709  0.00  0.00           X  
+HETATM  239  VX  LOC L   1      10.177  37.230  41.742  0.00  0.00           X  
+HETATM  240  VX  LOC L   1      11.186  18.156  25.441  0.00  0.00           X  
+HETATM  241  VX  LOC L   1      11.186  16.913  26.956  0.00  0.00           X  
+HETATM  242  VX  LOC L   1      12.157  18.248  25.221  0.00  0.00           X  
+HETATM  243  VX  LOC L   1      12.157  17.005  26.736  0.00  0.00           X  
+HETATM  244  VX  LOC L   1      12.157  19.764  23.977  0.00  0.00           X  
+HETATM  245  VX  LOC L   1      14.277  17.635  26.254  0.00  0.00           X  
+HETATM  246  VX  LOC L   1      14.242  21.230  23.408  0.00  0.00           X  
+HETATM  247  VX  LOC L   1      14.277  19.282  24.607  0.00  0.00           X  
+HETATM  248  VX  LOC L   1      11.186  15.989  28.685  0.00  0.00           X  
+HETATM  249  VX  LOC L   1      12.157  16.081  28.465  0.00  0.00           X  
+HETATM  250  VX  LOC L   1      12.157  15.512  30.341  0.00  0.00           X  
+HETATM  251  VX  LOC L   1      11.186  15.419  30.561  0.00  0.00           X  
+HETATM  252  VX  LOC L   1      11.186  15.227  32.512  0.00  0.00           X  
+HETATM  253  VX  LOC L   1      12.157  15.320  32.292  0.00  0.00           X  
+HETATM  254  VX  LOC L   1      14.242  16.435  28.203  0.00  0.00           X  
+HETATM  255  VX  LOC L   1      14.181  15.738  30.269  0.00  0.00           X  
+HETATM  256  VX  LOC L   1      16.246  16.435  30.207  0.00  0.00           X  
+HETATM  257  VX  LOC L   1      14.108  15.512  32.292  0.00  0.00           X  
+HETATM  258  VX  LOC L   1      15.984  16.081  32.292  0.00  0.00           X  
+HETATM  259  VX  LOC L   1      11.749  23.460  22.073  0.00  0.00           X  
+HETATM  260  VX  LOC L   1      12.157  21.493  23.053  0.00  0.00           X  
+HETATM  261  VX  LOC L   1      11.749  25.336  21.504  0.00  0.00           X  
+HETATM  262  VX  LOC L   1      11.749  27.287  21.312  0.00  0.00           X  
+HETATM  263  VX  LOC L   1      13.833  23.198  22.427  0.00  0.00           X  
+HETATM  264  VX  LOC L   1      16.046  22.990  23.371  0.00  0.00           X  
+HETATM  265  VX  LOC L   1      13.772  25.264  21.730  0.00  0.00           X  
+HETATM  266  VX  LOC L   1      13.699  27.287  21.504  0.00  0.00           X  
+HETATM  267  VX  LOC L   1      15.838  25.203  22.427  0.00  0.00           X  
+HETATM  268  VX  LOC L   1      15.575  27.287  22.073  0.00  0.00           X  
+HETATM  269  VX  LOC L   1      11.186  25.227  32.512  0.00  0.00           X  
+HETATM  270  VX  LOC L   1      10.777  27.195  31.532  0.00  0.00           X  
+HETATM  271  VX  LOC L   1      11.749  27.287  31.312  0.00  0.00           X  
+HETATM  272  VX  LOC L   1      10.996  27.218  32.507  0.00  0.00           X  
+HETATM  273  VX  LOC L   1      11.091  26.223  32.510  0.00  0.00           X  
+HETATM  274  VX  LOC L   1      12.157  25.320  32.292  0.00  0.00           X  
+HETATM  275  VX  LOC L   1      12.376  25.343  33.268  0.00  0.00           X  
+HETATM  276  VX  LOC L   1      12.062  26.315  32.290  0.00  0.00           X  
+HETATM  277  VX  LOC L   1      12.281  26.338  33.265  0.00  0.00           X  
+HETATM  278  VX  LOC L   1      11.967  27.310  32.287  0.00  0.00           X  
+HETATM  279  VX  LOC L   1      12.186  27.334  33.263  0.00  0.00           X  
+HETATM  280  VX  LOC L   1      16.536  18.962  25.935  0.00  0.00           X  
+HETATM  281  VX  LOC L   1      16.455  21.022  24.351  0.00  0.00           X  
+HETATM  282  VX  LOC L   1      18.514  20.941  25.935  0.00  0.00           X  
+HETATM  283  VX  LOC L   1      16.455  17.378  27.994  0.00  0.00           X  
+HETATM  284  VX  LOC L   1      18.195  17.635  30.172  0.00  0.00           X  
+HETATM  285  VX  LOC L   1      17.713  17.005  32.292  0.00  0.00           X  
+HETATM  286  VX  LOC L   1      18.632  17.681  32.123  0.00  0.00           X  
+HETATM  287  VX  LOC L   1      18.514  18.962  27.913  0.00  0.00           X  
+HETATM  288  VX  LOC L   1      19.842  19.282  30.172  0.00  0.00           X  
+HETATM  289  VX  LOC L   1      20.098  21.022  27.994  0.00  0.00           X  
+HETATM  290  VX  LOC L   1      21.042  21.230  30.207  0.00  0.00           X  
+HETATM  291  VX  LOC L   1      20.279  19.328  32.123  0.00  0.00           X  
+HETATM  292  VX  LOC L   1      21.479  21.277  32.158  0.00  0.00           X  
+HETATM  293  VX  LOC L   1      18.195  23.199  24.607  0.00  0.00           X  
+HETATM  294  VX  LOC L   1      17.786  25.167  23.627  0.00  0.00           X  
+HETATM  295  VX  LOC L   1      17.304  27.287  22.997  0.00  0.00           X  
+HETATM  296  VX  LOC L   1      18.820  27.287  24.241  0.00  0.00           X  
+HETATM  297  VX  LOC L   1      19.433  25.167  25.274  0.00  0.00           X  
+HETATM  298  VX  LOC L   1      19.210  27.287  24.716  0.00  0.00           X  
+HETATM  299  VX  LOC L   1      19.842  23.199  26.254  0.00  0.00           X  
+HETATM  300  VX  LOC L   1      20.472  25.320  26.736  0.00  0.00           X  
+HETATM  301  VX  LOC L   1      19.845  26.554  25.589  0.00  0.00           X  
+HETATM  302  VX  LOC L   1      20.311  26.096  26.349  0.00  0.00           X  
+HETATM  303  VX  LOC L   1      21.042  23.235  28.203  0.00  0.00           X  
+HETATM  304  VX  LOC L   1      21.739  23.296  30.269  0.00  0.00           X  
+HETATM  305  VX  LOC L   1      22.177  23.343  32.220  0.00  0.00           X  
+HETATM  306  VX  LOC L   1      21.319  25.320  28.321  0.00  0.00           X  
+HETATM  307  VX  LOC L   1      21.388  25.269  28.459  0.00  0.00           X  
+HETATM  308  VX  LOC L   1      21.405  25.268  28.511  0.00  0.00           X  
+HETATM  309  VX  LOC L   1      21.639  25.290  29.276  0.00  0.00           X  
+HETATM  310  VX  LOC L   1      21.947  25.153  30.335  0.00  0.00           X  
+HETATM  311  VX  LOC L   1      22.376  25.125  32.283  0.00  0.00           X  
+HETATM  312  VX  LOC L   1      22.403  25.156  32.502  0.00  0.00           X  
+HETATM  313  VX  LOC L   1      11.624  15.274  34.463  0.00  0.00           X  
+HETATM  314  VX  LOC L   1      11.624  15.466  36.414  0.00  0.00           X  
+HETATM  315  VX  LOC L   1      12.595  15.366  34.243  0.00  0.00           X  
+HETATM  316  VX  LOC L   1      11.624  16.035  38.290  0.00  0.00           X  
+HETATM  317  VX  LOC L   1      13.574  15.466  34.463  0.00  0.00           X  
+HETATM  318  VX  LOC L   1      14.546  15.558  34.243  0.00  0.00           X  
+HETATM  319  VX  LOC L   1      13.647  15.692  36.486  0.00  0.00           X  
+HETATM  320  VX  LOC L   1      14.618  15.784  36.266  0.00  0.00           X  
+HETATM  321  VX  LOC L   1      13.708  16.389  38.552  0.00  0.00           X  
+HETATM  322  VX  LOC L   1      14.679  16.481  38.332  0.00  0.00           X  
+HETATM  323  VX  LOC L   1      11.624  16.959  40.019  0.00  0.00           X  
+HETATM  324  VX  LOC L   1      11.624  18.203  41.534  0.00  0.00           X  
+HETATM  325  VX  LOC L   1      11.624  19.718  42.778  0.00  0.00           X  
+HETATM  326  VX  LOC L   1      13.744  17.589  40.501  0.00  0.00           X  
+HETATM  327  VX  LOC L   1      14.715  17.681  40.281  0.00  0.00           X  
+HETATM  328  VX  LOC L   1      13.744  19.236  42.147  0.00  0.00           X  
+HETATM  329  VX  LOC L   1      14.715  19.328  41.928  0.00  0.00           X  
+HETATM  330  VX  LOC L   1      13.708  21.185  43.347  0.00  0.00           X  
+HETATM  331  VX  LOC L   1      14.679  21.277  43.128  0.00  0.00           X  
+HETATM  332  VX  LOC L   1      11.405  25.251  33.487  0.00  0.00           X  
+HETATM  333  VX  LOC L   1      11.624  25.274  34.463  0.00  0.00           X  
+HETATM  334  VX  LOC L   1      10.244  27.149  33.703  0.00  0.00           X  
+HETATM  335  VX  LOC L   1      10.462  27.172  34.678  0.00  0.00           X  
+HETATM  336  VX  LOC L   1      11.310  26.246  33.485  0.00  0.00           X  
+HETATM  337  VX  LOC L   1      11.529  26.269  34.461  0.00  0.00           X  
+HETATM  338  VX  LOC L   1      11.215  27.241  33.483  0.00  0.00           X  
+HETATM  339  VX  LOC L   1      11.434  27.265  34.458  0.00  0.00           X  
+HETATM  340  VX  LOC L   1      12.595  25.366  34.243  0.00  0.00           X  
+HETATM  341  VX  LOC L   1      12.500  26.361  34.241  0.00  0.00           X  
+HETATM  342  VX  LOC L   1      12.405  27.357  34.238  0.00  0.00           X  
+HETATM  343  VX  LOC L   1      11.624  21.447  43.702  0.00  0.00           X  
+HETATM  344  VX  LOC L   1      10.586  24.364  44.890  0.00  0.00           X  
+HETATM  345  VX  LOC L   1      12.671  24.102  44.536  0.00  0.00           X  
+HETATM  346  VX  LOC L   1      10.586  26.240  45.459  0.00  0.00           X  
+HETATM  347  VX  LOC L   1      12.609  26.168  45.233  0.00  0.00           X  
+HETATM  348  VX  LOC L   1      13.647  23.250  44.045  0.00  0.00           X  
+HETATM  349  VX  LOC L   1      14.618  23.343  43.825  0.00  0.00           X  
+HETATM  350  VX  LOC L   1      14.552  26.352  44.793  0.00  0.00           X  
+HETATM  351  VX  LOC L   1      16.422  16.127  34.243  0.00  0.00           X  
+HETATM  352  VX  LOC L   1      16.684  16.481  36.328  0.00  0.00           X  
+HETATM  353  VX  LOC L   1      18.150  17.051  34.243  0.00  0.00           X  
+HETATM  354  VX  LOC L   1      18.632  17.681  36.363  0.00  0.00           X  
+HETATM  355  VX  LOC L   1      16.892  17.425  38.541  0.00  0.00           X  
+HETATM  356  VX  LOC L   1      18.952  19.009  38.622  0.00  0.00           X  
+HETATM  357  VX  LOC L   1      19.666  18.295  34.243  0.00  0.00           X  
+HETATM  358  VX  LOC L   1      20.909  19.810  34.243  0.00  0.00           X  
+HETATM  359  VX  LOC L   1      20.279  19.328  36.363  0.00  0.00           X  
+HETATM  360  VX  LOC L   1      21.479  21.277  36.328  0.00  0.00           X  
+HETATM  361  VX  LOC L   1      20.536  21.068  38.541  0.00  0.00           X  
+HETATM  362  VX  LOC L   1      16.974  19.009  40.600  0.00  0.00           X  
+HETATM  363  VX  LOC L   1      16.892  21.068  42.184  0.00  0.00           X  
+HETATM  364  VX  LOC L   1      18.952  20.987  40.600  0.00  0.00           X  
+HETATM  365  VX  LOC L   1      21.834  21.539  34.243  0.00  0.00           X  
+HETATM  366  VX  LOC L   1      22.403  23.415  34.243  0.00  0.00           X  
+HETATM  367  VX  LOC L   1      22.177  23.343  36.266  0.00  0.00           X  
+HETATM  368  VX  LOC L   1      21.479  23.281  38.332  0.00  0.00           X  
+HETATM  369  VX  LOC L   1      22.553  25.366  33.816  0.00  0.00           X  
+HETATM  370  VX  LOC L   1      22.595  25.366  34.243  0.00  0.00           X  
+HETATM  371  VX  LOC L   1      22.593  25.459  34.273  0.00  0.00           X  
+HETATM  372  VX  LOC L   1      22.403  25.366  36.194  0.00  0.00           X  
+HETATM  373  VX  LOC L   1      21.834  25.366  38.070  0.00  0.00           X  
+HETATM  374  VX  LOC L   1      22.375  26.624  36.599  0.00  0.00           X  
+HETATM  375  VX  LOC L   1      21.413  26.291  39.301  0.00  0.00           X  
+HETATM  376  VX  LOC L   1      18.632  23.246  41.928  0.00  0.00           X  
+HETATM  377  VX  LOC L   1      16.684  23.281  43.128  0.00  0.00           X  
+HETATM  378  VX  LOC L   1      16.617  26.291  44.096  0.00  0.00           X  
+HETATM  379  VX  LOC L   1      18.566  26.255  42.896  0.00  0.00           X  
+HETATM  380  VX  LOC L   1      20.279  23.246  40.281  0.00  0.00           X  
+HETATM  381  VX  LOC L   1      20.213  26.255  41.249  0.00  0.00           X  
+HETATM  382  VX  LOC L   1      11.463  30.274  21.305  0.00  0.00           X  
+HETATM  383  VX  LOC L   1      11.463  32.225  21.497  0.00  0.00           X  
+HETATM  384  VX  LOC L   1      13.414  30.274  21.497  0.00  0.00           X  
+HETATM  385  VX  LOC L   1      15.290  30.274  22.066  0.00  0.00           X  
+HETATM  386  VX  LOC L   1      13.487  32.297  21.723  0.00  0.00           X  
+HETATM  387  VX  LOC L   1      15.553  32.358  22.420  0.00  0.00           X  
+HETATM  388  VX  LOC L   1      15.604  32.899  22.651  0.00  0.00           X  
+HETATM  389  VX  LOC L   1      15.929  32.365  22.652  0.00  0.00           X  
+HETATM  390  VX  LOC L   1      10.682  28.191  31.529  0.00  0.00           X  
+HETATM  391  VX  LOC L   1      11.654  28.283  31.309  0.00  0.00           X  
+HETATM  392  VX  LOC L   1      10.901  28.214  32.505  0.00  0.00           X  
+HETATM  393  VX  LOC L   1      10.587  29.186  31.527  0.00  0.00           X  
+HETATM  394  VX  LOC L   1      10.492  30.182  31.525  0.00  0.00           X  
+HETATM  395  VX  LOC L   1      11.559  29.278  31.307  0.00  0.00           X  
+HETATM  396  VX  LOC L   1      11.463  30.274  31.305  0.00  0.00           X  
+HETATM  397  VX  LOC L   1      10.806  29.209  32.502  0.00  0.00           X  
+HETATM  398  VX  LOC L   1      10.711  30.205  32.500  0.00  0.00           X  
+HETATM  399  VX  LOC L   1      10.930  30.228  33.476  0.00  0.00           X  
+HETATM  400  VX  LOC L   1      11.777  29.301  32.283  0.00  0.00           X  
+HETATM  401  VX  LOC L   1      11.682  30.297  32.280  0.00  0.00           X  
+HETATM  402  VX  LOC L   1      11.872  28.306  32.285  0.00  0.00           X  
+HETATM  403  VX  LOC L   1      12.091  28.329  33.260  0.00  0.00           X  
+HETATM  404  VX  LOC L   1      11.996  29.325  33.258  0.00  0.00           X  
+HETATM  405  VX  LOC L   1      11.901  30.320  33.256  0.00  0.00           X  
+HETATM  406  VX  LOC L   1      10.616  31.200  32.498  0.00  0.00           X  
+HETATM  407  VX  LOC L   1      10.835  31.223  33.473  0.00  0.00           X  
+HETATM  408  VX  LOC L   1      11.587  31.292  32.278  0.00  0.00           X  
+HETATM  409  VX  LOC L   1      11.806  31.316  33.253  0.00  0.00           X  
+HETATM  410  VX  LOC L   1      11.463  34.101  22.066  0.00  0.00           X  
+HETATM  411  VX  LOC L   1      11.463  35.829  22.990  0.00  0.00           X  
+HETATM  412  VX  LOC L   1      11.463  36.163  23.264  0.00  0.00           X  
+HETATM  413  VX  LOC L   1      12.048  35.962  23.164  0.00  0.00           X  
+HETATM  414  VX  LOC L   1      13.548  34.363  22.420  0.00  0.00           X  
+HETATM  415  VX  LOC L   1      14.760  34.368  22.894  0.00  0.00           X  
+HETATM  416  VX  LOC L   1      14.656  34.467  22.893  0.00  0.00           X  
+HETATM  417  VX  LOC L   1      13.568  35.473  23.104  0.00  0.00           X  
+HETATM  418  VX  LOC L   1      13.685  35.440  23.127  0.00  0.00           X  
+HETATM  419  VX  LOC L   1      17.019  30.274  22.990  0.00  0.00           X  
+HETATM  420  VX  LOC L   1      17.088  30.578  23.080  0.00  0.00           X  
+HETATM  421  VX  LOC L   1      17.274  30.274  23.199  0.00  0.00           X  
+HETATM  422  VX  LOC L   1      18.762  27.896  24.239  0.00  0.00           X  
+HETATM  423  VX  LOC L   1      16.986  30.767  23.048  0.00  0.00           X  
+HETATM  424  VX  LOC L   1      10.367  28.168  34.676  0.00  0.00           X  
+HETATM  425  VX  LOC L   1      11.120  28.237  33.480  0.00  0.00           X  
+HETATM  426  VX  LOC L   1      11.338  28.260  34.456  0.00  0.00           X  
+HETATM  427  VX  LOC L   1      10.586  28.191  35.651  0.00  0.00           X  
+HETATM  428  VX  LOC L   1      11.557  28.283  35.431  0.00  0.00           X  
+HETATM  429  VX  LOC L   1      10.272  29.163  34.673  0.00  0.00           X  
+HETATM  430  VX  LOC L   1      11.243  29.256  34.454  0.00  0.00           X  
+HETATM  431  VX  LOC L   1      11.148  30.251  34.451  0.00  0.00           X  
+HETATM  432  VX  LOC L   1      10.491  29.187  35.649  0.00  0.00           X  
+HETATM  433  VX  LOC L   1      11.462  29.279  35.429  0.00  0.00           X  
+HETATM  434  VX  LOC L   1      12.310  28.352  34.236  0.00  0.00           X  
+HETATM  435  VX  LOC L   1      12.528  28.375  35.211  0.00  0.00           X  
+HETATM  436  VX  LOC L   1      12.215  29.348  34.234  0.00  0.00           X  
+HETATM  437  VX  LOC L   1      12.120  30.343  34.231  0.00  0.00           X  
+HETATM  438  VX  LOC L   1      12.433  29.371  35.209  0.00  0.00           X  
+HETATM  439  VX  LOC L   1      10.586  28.191  45.651  0.00  0.00           X  
+HETATM  440  VX  LOC L   1      10.491  29.187  45.649  0.00  0.00           X  
+HETATM  441  VX  LOC L   1      12.537  28.191  45.459  0.00  0.00           X  
+HETATM  442  VX  LOC L   1      12.442  29.187  45.457  0.00  0.00           X  
+HETATM  443  VX  LOC L   1      10.491  31.137  45.457  0.00  0.00           X  
+HETATM  444  VX  LOC L   1      10.491  33.013  44.888  0.00  0.00           X  
+HETATM  445  VX  LOC L   1      12.514  31.210  45.231  0.00  0.00           X  
+HETATM  446  VX  LOC L   1      12.576  33.276  44.533  0.00  0.00           X  
+HETATM  447  VX  LOC L   1      14.479  28.375  45.019  0.00  0.00           X  
+HETATM  448  VX  LOC L   1      13.413  29.279  45.237  0.00  0.00           X  
+HETATM  449  VX  LOC L   1      14.384  29.371  45.017  0.00  0.00           X  
+HETATM  450  VX  LOC L   1      16.355  28.375  44.450  0.00  0.00           X  
+HETATM  451  VX  LOC L   1      16.260  29.371  44.448  0.00  0.00           X  
+HETATM  452  VX  LOC L   1      14.457  31.394  44.791  0.00  0.00           X  
+HETATM  453  VX  LOC L   1      14.518  33.460  44.094  0.00  0.00           X  
+HETATM  454  VX  LOC L   1      12.433  36.442  42.280  0.00  0.00           X  
+HETATM  455  VX  LOC L   1      10.491  34.742  43.964  0.00  0.00           X  
+HETATM  456  VX  LOC L   1      10.491  36.258  42.720  0.00  0.00           X  
+HETATM  457  VX  LOC L   1      12.611  35.224  43.333  0.00  0.00           X  
+HETATM  458  VX  LOC L   1      10.835  39.024  39.656  0.00  0.00           X  
+HETATM  459  VX  LOC L   1      10.835  38.294  40.544  0.00  0.00           X  
+HETATM  460  VX  LOC L   1      11.806  38.387  40.324  0.00  0.00           X  
+HETATM  461  VX  LOC L   1      11.806  38.753  39.878  0.00  0.00           X  
+HETATM  462  VX  LOC L   1      12.447  38.572  40.012  0.00  0.00           X  
+HETATM  463  VX  LOC L   1      16.351  35.999  41.501  0.00  0.00           X  
+HETATM  464  VX  LOC L   1      14.553  35.409  42.894  0.00  0.00           X  
+HETATM  465  VX  LOC L   1      13.880  38.151  40.203  0.00  0.00           X  
+HETATM  466  VX  LOC L   1      14.319  37.783  40.516  0.00  0.00           X  
+HETATM  467  VX  LOC L   1      14.553  37.055  41.247  0.00  0.00           X  
+HETATM  468  VX  LOC L   1      21.800  28.375  38.929  0.00  0.00           X  
+HETATM  469  VX  LOC L   1      21.767  28.375  39.038  0.00  0.00           X  
+HETATM  470  VX  LOC L   1      21.757  28.485  39.038  0.00  0.00           X  
+HETATM  471  VX  LOC L   1      19.504  29.371  42.280  0.00  0.00           X  
+HETATM  472  VX  LOC L   1      18.084  28.375  43.526  0.00  0.00           X  
+HETATM  473  VX  LOC L   1      17.989  29.371  43.524  0.00  0.00           X  
+HETATM  474  VX  LOC L   1      18.907  33.552  41.538  0.00  0.00           X  
+HETATM  475  VX  LOC L   1      16.522  31.456  44.094  0.00  0.00           X  
+HETATM  476  VX  LOC L   1      18.471  31.491  42.894  0.00  0.00           X  
+HETATM  477  VX  LOC L   1      20.843  28.375  40.767  0.00  0.00           X  
+HETATM  478  VX  LOC L   1      19.599  28.375  42.283  0.00  0.00           X  
+HETATM  479  VX  LOC L   1      20.748  29.371  40.765  0.00  0.00           X  
+HETATM  480  VX  LOC L   1      20.969  30.180  40.196  0.00  0.00           X  
+HETATM  481  VX  LOC L   1      21.346  29.371  39.647  0.00  0.00           X  
+HETATM  482  VX  LOC L   1      20.154  31.798  41.002  0.00  0.00           X  
+HETATM  483  VX  LOC L   1      20.325  31.485  40.910  0.00  0.00           X  
+HETATM  484  VX  LOC L   1      20.118  31.491  41.247  0.00  0.00           X  
+HETATM  485  VX  LOC L   1      19.509  32.908  41.149  0.00  0.00           X  
+HETATM  486  VX  LOC L   1      16.678  35.709  41.645  0.00  0.00           X  
+HETATM  487  VX  LOC L   1      16.807  35.591  41.672  0.00  0.00           X  
+HETATM  488  VX  LOC L   1      18.718  33.747  41.622  0.00  0.00           X  
+HETATM  489  VX  LOC L   1      18.781  33.684  41.605  0.00  0.00           X  
+HETATM  490  VX  LOC L   1      16.731  33.669  43.150  0.00  0.00           X  
+CONECT    1    2   11   12   25
+CONECT    1   28   47   53
+CONECT    2    1   11   16   25
+CONECT    3    4    7    8   13
+CONECT    3   90  103
+CONECT    4    3    5    7    8
+CONECT    4   16   17   35   36
+CONECT    5    4    7   35
+CONECT    6    7   37   38   39
+CONECT    6   93   95
+CONECT    7    3    4    5    6
+CONECT    7   35   37   90   95
+CONECT    8    3    4    9   11
+CONECT    8   13   16
+CONECT    9    8   10   11   12
+CONECT    9   13   14
+CONECT   10    9   12   14   15
+CONECT   10   51   56
+CONECT   11    1    2    8    9
+CONECT   11   12   16
+CONECT   12    1    9   10   11
+CONECT   12   51   53
+CONECT   13    3    8    9   14
+CONECT   13  102  103
+CONECT   14    9   10   13   15
+CONECT   14  102  105
+CONECT   15   10   14   56  105
+CONECT   15  107  170
+CONECT   16    2    4    8   11
+CONECT   16   17   25   30
+CONECT   17    4   16   18   19
+CONECT   17   30   35   36
+CONECT   18   17   19   20   23
+CONECT   18   27   30
+CONECT   19   17   18   21   23
+CONECT   19   35   41
+CONECT   20   18   23   27   31
+CONECT   20  240  241
+CONECT   21   19   22   23   24
+CONECT   21   41   42
+CONECT   22   21   24   42  244
+CONECT   22  259  260
+CONECT   23   18   19   20   21
+CONECT   23   24  240  242
+CONECT   24   21   22   23  242
+CONECT   24  244
+CONECT   25    1    2   16   26
+CONECT   25   27   28   29   30
+CONECT   26   25   27   29   31
+CONECT   26   32   33
+CONECT   27   18   20   25   26
+CONECT   27   30   31
+CONECT   28    1   25   29   47
+CONECT   28   66
+CONECT   29   25   26   28   32
+CONECT   29   66   67
+CONECT   30   16   17   18   25
+CONECT   30   27
+CONECT   31   20   26   27   33
+CONECT   31  241  248
+CONECT   32   26   29   33   34
+CONECT   32   67   70   71   73
+CONECT   33   26   31   32   34
+CONECT   33  248  251
+CONECT   34   32   33   71  251
+CONECT   34  252  313
+CONECT   35    4    5    7   17
+CONECT   35   19   36   37   39
+CONECT   35   41
+CONECT   36    4   17   35
+CONECT   37    6    7   35   39
+CONECT   38    6   39   93  127
+CONECT   39    6   35   37   38
+CONECT   39   40   41   43  127
+CONECT   40   39   43   45  127
+CONECT   40  130
+CONECT   41   19   21   35   39
+CONECT   41   42   43   44
+CONECT   42   21   22   41   44
+CONECT   42  259
+CONECT   43   39   40   41   44
+CONECT   43   45
+CONECT   44   41   42   43   45
+CONECT   44   46  259  261
+CONECT   45   40   43   44   46
+CONECT   45  130
+CONECT   46   44   45  130  132
+CONECT   46  261  262
+CONECT   47    1   28   48   53
+CONECT   47   54   66
+CONECT   48   47   49   50   54
+CONECT   48   59   66   68
+CONECT   49   48   50   68   69
+CONECT   49   74
+CONECT   50   48   49   59   62
+CONECT   50   69   76
+CONECT   51   10   12   52   53
+CONECT   51   54   56   57
+CONECT   52   51   54   55   57
+CONECT   52   58
+CONECT   53    1   12   47   51
+CONECT   53   54
+CONECT   54   47   48   51   52
+CONECT   54   53   55   59
+CONECT   55   52   54   58   59
+CONECT   55   60   61
+CONECT   56   10   15   51   57
+CONECT   56  170
+CONECT   57   51   52   56   58
+CONECT   57  170  171  174
+CONECT   58   52   55   57   60
+CONECT   58  174  182
+CONECT   59   48   50   54   55
+CONECT   59   61   62
+CONECT   60   55   58   61   63
+CONECT   60  182  185
+CONECT   61   55   59   60   62
+CONECT   61   63
+CONECT   62   50   59   61   63
+CONECT   62   64   76   84
+CONECT   63   60   61   62   64
+CONECT   63   65  185  187
+CONECT   64   62   63   65   84
+CONECT   64   85
+CONECT   65   63   64   85   86
+CONECT   65  187  188  210
+CONECT   66   28   29   47   48
+CONECT   66   67   68   73
+CONECT   67   29   32   66   73
+CONECT   68   48   49   66   73
+CONECT   68   74
+CONECT   69   49   50   74   76
+CONECT   69   78
+CONECT   70   32   71   72   73
+CONECT   71   32   34   70   72
+CONECT   71  313  314
+CONECT   72   70   71   73   75
+CONECT   72  314  316
+CONECT   73   32   66   67   68
+CONECT   73   70   72   74   75
+CONECT   74   49   68   69   73
+CONECT   74   75   77   78
+CONECT   75   72   73   74   77
+CONECT   75  316  323
+CONECT   76   50   62   69   78
+CONECT   76   79   84
+CONECT   77   74   75   78   80
+CONECT   77  323  324
+CONECT   78   69   74   76   77
+CONECT   78   79   80
+CONECT   79   76   78   80   81
+CONECT   79   84   87
+CONECT   80   77   78   79   81
+CONECT   80  324  325
+CONECT   81   79   80   87   88
+CONECT   81  325  343  344
+CONECT   82   83  202  205  334
+CONECT   82  335
+CONECT   83   82  202  203  335
+CONECT   84   62   64   76   79
+CONECT   84   85   87
+CONECT   85   64   65   84   86
+CONECT   85   87
+CONECT   86   65   85   87   88
+CONECT   86   89  210  212
+CONECT   87   79   81   84   85
+CONECT   87   86   88
+CONECT   88   81   86   87   89
+CONECT   88  344
+CONECT   89   86   88  212  217
+CONECT   89  344  346
+CONECT   90    3    7   91   95
+CONECT   90  103
+CONECT   91   90   92   95   96
+CONECT   91   97  103  104
+CONECT   92   91   97   99  100
+CONECT   92  104  109  110  115
+CONECT   93    6   38   94   95
+CONECT   93   96  127
+CONECT   94   93   96   97   98
+CONECT   94  127  128  129
+CONECT   95    6    7   90   91
+CONECT   95   93   96
+CONECT   96   91   93   94   95
+CONECT   96   97
+CONECT   97   91   92   94   96
+CONECT   97   98   99
+CONECT   98   94   97   99  115
+CONECT   98  129  144
+CONECT   99   92   97   98  115
+CONECT  100   92  110  115
+CONECT  101  102  104  106  109
+CONECT  101  111
+CONECT  102   13   14  101  103
+CONECT  102  104  105  106
+CONECT  103    3   13   90   91
+CONECT  103  102  104
+CONECT  104   91   92  101  102
+CONECT  104  103  109
+CONECT  105   14   15  102  106
+CONECT  105  107  108
+CONECT  106  101  102  105  108
+CONECT  106  111  112
+CONECT  107   15  105  108  170
+CONECT  107  172
+CONECT  108  105  106  107  112
+CONECT  108  172
+CONECT  109   92  101  104  110
+CONECT  109  111  113
+CONECT  110   92  100  109  113
+CONECT  110  115  117  120  121
+CONECT  111  101  106  109  112
+CONECT  111  113  114
+CONECT  112  106  108  111  114
+CONECT  112  172  176
+CONECT  113  109  110  111  114
+CONECT  113  117  118
+CONECT  114  111  112  113  118
+CONECT  114  176  178
+CONECT  115   92   98   99  100
+CONECT  115  110  116  120  144
+CONECT  115  145
+CONECT  116  115  120  121  122
+CONECT  116  124  145  160
+CONECT  117  110  113  118  119
+CONECT  117  121  122  123  124
+CONECT  118  113  114  117  119
+CONECT  118  178  192
+CONECT  119  117  118  123  125
+CONECT  119  126  161  192  194
+CONECT  120  110  115  116  121
+CONECT  121  110  116  117  120
+CONECT  121  122
+CONECT  122  116  117  121  124
+CONECT  123  117  119  124  161
+CONECT  124  116  117  122  123
+CONECT  124  160  161  162
+CONECT  125  119  126  165  194
+CONECT  125  221
+CONECT  126  119  125  161  165
+CONECT  127   38   39   40   93
+CONECT  127   94  128  130  131
+CONECT  128   94  127  129  131
+CONECT  128  133
+CONECT  129   94   98  128  133
+CONECT  129  144  149
+CONECT  130   40   45   46  127
+CONECT  130  131  132
+CONECT  131  127  128  130  132
+CONECT  131  133  134
+CONECT  132   46  130  131  134
+CONECT  132  262  382  383
+CONECT  133  128  129  131  134
+CONECT  133  149
+CONECT  134  131  132  133  149
+CONECT  134  151  383  410
+CONECT  135  136  138  200  201
+CONECT  136  135  137  138  200
+CONECT  136  202
+CONECT  137  136  138  139  142
+CONECT  137  202  205
+CONECT  138  135  136  137  142
+CONECT  138  201  204
+CONECT  139  137  142  205  392
+CONECT  139  397  425
+CONECT  140  141  142  393  394
+CONECT  140  397
+CONECT  141  140  142  143  394
+CONECT  142  137  138  139  140
+CONECT  142  141  143  204  207
+CONECT  142  397
+CONECT  143  141  142  207  208
+CONECT  143  394  398
+CONECT  144   98  115  129  145
+CONECT  144  149  150
+CONECT  145  115  116  144  146
+CONECT  145  150  155  160  164
+CONECT  146  145  147  148  155
+CONECT  146  164
+CONECT  147  146  148  155  156
+CONECT  147  232
+CONECT  148  146  147  164  232
+CONECT  149  129  133  134  144
+CONECT  149  150  151  152
+CONECT  150  144  145  149  152
+CONECT  150  155  157
+CONECT  151  134  149  152  410
+CONECT  151  411
+CONECT  152  149  150  151  153
+CONECT  152  154  157  411
+CONECT  153  152  154  232  411
+CONECT  153  412
+CONECT  154  152  153  157  159
+CONECT  154  232
+CONECT  155  145  146  147  150
+CONECT  155  156  157  158
+CONECT  156  147  155  158  232
+CONECT  157  150  152  154  155
+CONECT  157  158  159
+CONECT  158  155  156  157  159
+CONECT  158  232
+CONECT  159  154  157  158  232
+CONECT  160  116  124  145  162
+CONECT  160  164
+CONECT  161  119  123  124  126
+CONECT  161  162  163  165  166
+CONECT  162  124  160  161  163
+CONECT  162  164  232
+CONECT  163  161  162  166  232
+CONECT  164  145  146  148  160
+CONECT  164  162  232
+CONECT  165  125  126  161  166
+CONECT  165  167  168  169  221
+CONECT  165  222
+CONECT  166  161  163  165  167
+CONECT  166  232
+CONECT  167  165  166  169  232
+CONECT  168  165  169  222  223
+CONECT  169  165  167  168  223
+CONECT  169  225  232
+CONECT  170   15   56   57  107
+CONECT  170  171  172  173
+CONECT  171   57  170  173  174
+CONECT  172  107  108  112  170
+CONECT  172  173  176  177
+CONECT  173  170  171  172  174
+CONECT  173  175  177
+CONECT  174   57   58  171  173
+CONECT  174  175  182  183
+CONECT  175  173  174  177  180
+CONECT  175  183
+CONECT  176  112  114  172  177
+CONECT  176  178
+CONECT  177  172  173  175  176
+CONECT  177  178  179  180
+CONECT  178  114  118  176  177
+CONECT  178  179  192
+CONECT  179  177  178  180  181
+CONECT  179  192  193
+CONECT  180  175  177  179  181
+CONECT  180  183  184
+CONECT  181  179  180  184  190
+CONECT  181  193  196
+CONECT  182   58   60  174  183
+CONECT  182  185  186
+CONECT  183  174  175  180  182
+CONECT  183  184  186
+CONECT  184  180  181  183  186
+CONECT  184  189  190
+CONECT  185   60   63  182  186
+CONECT  185  187  188
+CONECT  186  182  183  184  185
+CONECT  186  188  189
+CONECT  187   63   65  185  188
+CONECT  188   65  185  186  187
+CONECT  188  189  210  211
+CONECT  189  184  186  188  190
+CONECT  189  191  211  214  216
+CONECT  190  181  184  189  191
+CONECT  190  196  199
+CONECT  191  189  190  199  216
+CONECT  192  118  119  178  179
+CONECT  192  193  194  195
+CONECT  193  179  181  192  195
+CONECT  193  196
+CONECT  194  119  125  192  195
+CONECT  194  221  222
+CONECT  195  192  193  194  196
+CONECT  195  198  222  228
+CONECT  196  181  190  193  195
+CONECT  196  197  198  199  227
+CONECT  197  196  199  227  234
+CONECT  198  195  196  227  228
+CONECT  199  190  191  196  197
+CONECT  199  216  234  235
+CONECT  200  135  136  201  202
+CONECT  201  135  138  200  202
+CONECT  201  204
+CONECT  202   82   83  136  137
+CONECT  202  200  201  203  204
+CONECT  202  205
+CONECT  203   83  202  204  206
+CONECT  203  335  424
+CONECT  204  138  142  201  202
+CONECT  204  203  206  207
+CONECT  205   82  137  139  202
+CONECT  205  334  425
+CONECT  206  203  204  207  424
+CONECT  206  429
+CONECT  207  142  143  204  206
+CONECT  207  208  429
+CONECT  208  143  207  209  398
+CONECT  208  399  429
+CONECT  209  208  399  429  430
+CONECT  209  431
+CONECT  210   65   86  188  211
+CONECT  210  212  213
+CONECT  211  188  189  210  213
+CONECT  211  214  215
+CONECT  212   86   89  210  213
+CONECT  212  217  218
+CONECT  213  210  211  212  215
+CONECT  213  218  219
+CONECT  214  189  211  215  216
+CONECT  215  211  213  214  216
+CONECT  215  219  220
+CONECT  216  189  191  199  214
+CONECT  216  215  220  235  237
+CONECT  217   89  212  218  346
+CONECT  217  439  440
+CONECT  218  212  213  217  219
+CONECT  218  440  443
+CONECT  219  213  215  218  220
+CONECT  219  443  444
+CONECT  220  215  216  219  237
+CONECT  220  444  455
+CONECT  221  125  165  194  222
+CONECT  222  165  168  194  195
+CONECT  222  221  223  224  225
+CONECT  222  226  228
+CONECT  223  168  169  222  224
+CONECT  223  225
+CONECT  224  222  223  225
+CONECT  225  169  222  223  224
+CONECT  225  226  229  231  232
+CONECT  226  222  225  228  229
+CONECT  227  196  197  198  228
+CONECT  227  230  234  238
+CONECT  228  195  198  222  226
+CONECT  228  227  229  230
+CONECT  229  225  226  228  230
+CONECT  229  231
+CONECT  230  227  228  229  231
+CONECT  230  232  233  238  459
+CONECT  231  225  229  230  232
+CONECT  232  147  148  153  154
+CONECT  232  156  158  159  162
+CONECT  232  163  164  166  167
+CONECT  232  169  225  230  231
+CONECT  232  233  412  413  417
+CONECT  233  230  232  417  458
+CONECT  233  459
+CONECT  234  197  199  227  235
+CONECT  234  236  238
+CONECT  235  199  216  234  236
+CONECT  235  237
+CONECT  236  234  235  237  238
+CONECT  236  239
+CONECT  237  216  220  235  236
+CONECT  237  239  455  456
+CONECT  238  227  230  234  236
+CONECT  238  239  459
+CONECT  239  236  237  238  454
+CONECT  239  456  459  460
+CONECT  240   20   23  241  242
+CONECT  241   20   31  240  242
+CONECT  241  243  248
+CONECT  242   23   24  240  241
+CONECT  242  243  244  245  247
+CONECT  243  241  242  245  248
+CONECT  243  249  254
+CONECT  244   22   24  242  246
+CONECT  244  247  260
+CONECT  245  242  243  247  254
+CONECT  245  280  283
+CONECT  246  244  247  259  260
+CONECT  246  263  264  281
+CONECT  247  242  244  245  246
+CONECT  247  280  281
+CONECT  248   31   33  241  243
+CONECT  248  249  251
+CONECT  249  243  248  250  251
+CONECT  249  254  255
+CONECT  250  249  251  252  253
+CONECT  250  255  257
+CONECT  251   33   34  248  249
+CONECT  251  250  252
+CONECT  252   34  250  251  253
+CONECT  252  313
+CONECT  253  250  252  257  313
+CONECT  253  315  318
+CONECT  254  243  245  249  255
+CONECT  254  256  283
+CONECT  255  249  250  254  256
+CONECT  255  257  258
+CONECT  256  254  255  258  283
+CONECT  256  284  285
+CONECT  257  250  253  255  258
+CONECT  257  318  351
+CONECT  258  255  256  257  285
+CONECT  258  351
+CONECT  259   22   42   44  246
+CONECT  259  260  261  263  265
+CONECT  260   22  244  246  259
+CONECT  261   44   46  259  262
+CONECT  261  265  266
+CONECT  262   46  132  261  266
+CONECT  262  382  384
+CONECT  263  246  259  264  265
+CONECT  263  267
+CONECT  264  246  263  267  281
+CONECT  264  293  294
+CONECT  265  259  261  263  266
+CONECT  265  267  268
+CONECT  266  261  262  265  268
+CONECT  266  384
+CONECT  267  263  264  265  268
+CONECT  267  294  295
+CONECT  268  265  266  267  295
+CONECT  268  384  385
+CONECT  269  273  274  275  276
+CONECT  269  332
+CONECT  270  271  272  278  390
+CONECT  270  391
+CONECT  271  270  278  391  402
+CONECT  272  270  273  278  336
+CONECT  272  338  390  392
+CONECT  273  269  272  276  278
+CONECT  273  332  336
+CONECT  274  269  275  276  277
+CONECT  275  269  274  277  332
+CONECT  275  340  341
+CONECT  276  269  273  274  277
+CONECT  276  278  279
+CONECT  277  274  275  276  279
+CONECT  277  341  342
+CONECT  278  270  271  272  273
+CONECT  278  276  279  402  403
+CONECT  279  276  277  278  342
+CONECT  279  403  434
+CONECT  280  245  247  281  282
+CONECT  280  283  287
+CONECT  281  246  247  264  280
+CONECT  281  282  293
+CONECT  282  280  281  287  289
+CONECT  282  293  299
+CONECT  283  245  254  256  280
+CONECT  283  284  287
+CONECT  284  256  283  285  286
+CONECT  284  287  288  291  353
+CONECT  285  256  258  284  351
+CONECT  285  353
+CONECT  286  284  291  353  357
+CONECT  287  280  282  283  284
+CONECT  287  288  289
+CONECT  288  284  287  289  290
+CONECT  288  291  292
+CONECT  289  282  287  288  290
+CONECT  289  299  303
+CONECT  290  288  289  292  303
+CONECT  290  304
+CONECT  291  284  286  288  292
+CONECT  291  357  358
+CONECT  292  288  290  291  304
+CONECT  292  305  358  365
+CONECT  293  264  281  282  294
+CONECT  293  299
+CONECT  294  264  267  293  295
+CONECT  294  296  297  299
+CONECT  295  267  268  294  296
+CONECT  295  385  419  421
+CONECT  296  294  295  297  298
+CONECT  296  301  421  422
+CONECT  297  294  296  299  300
+CONECT  297  301  302
+CONECT  298  296  301  422
+CONECT  299  282  289  293  294
+CONECT  299  297  300  303
+CONECT  300  297  299  302  303
+CONECT  300  306  307
+CONECT  301  296  297  298  302
+CONECT  301  422
+CONECT  302  297  300  301  306
+CONECT  302  421  422
+CONECT  303  289  290  299  300
+CONECT  303  304  307  308
+CONECT  304  290  292  303  305
+CONECT  304  308  310
+CONECT  305  292  304  310  311
+CONECT  305  312  365  366
+CONECT  306  300  302  307  421
+CONECT  307  300  303  306  308
+CONECT  307  421
+CONECT  308  303  304  307  309
+CONECT  308  310  421
+CONECT  309  308  310  420  421
+CONECT  309  423
+CONECT  310  304  305  308  309
+CONECT  310  311  388  389  415
+CONECT  310  423
+CONECT  311  305  310  312  415
+CONECT  312  305  311  366  369
+CONECT  312  370  415
+CONECT  313   34   71  252  253
+CONECT  313  314  315  317  318
+CONECT  314   71   72  313  316
+CONECT  314  317  319
+CONECT  315  253  313  318
+CONECT  316   72   75  314  319
+CONECT  316  321  323
+CONECT  317  313  314  318  319
+CONECT  318  253  257  313  315
+CONECT  318  317  319  320  351
+CONECT  319  314  316  317  318
+CONECT  319  320  321
+CONECT  320  318  319  321  322
+CONECT  320  351  352
+CONECT  321  316  319  320  322
+CONECT  321  323  326
+CONECT  322  320  321  326  327
+CONECT  322  352  355
+CONECT  323   75   77  316  321
+CONECT  323  324  326
+CONECT  324   77   80  323  325
+CONECT  324  326  328
+CONECT  325   80   81  324  328
+CONECT  325  330  343
+CONECT  326  321  322  323  324
+CONECT  326  327  328  329
+CONECT  327  322  326  329  355
+CONECT  327  362
+CONECT  328  324  325  326  329
+CONECT  328  330
+CONECT  329  326  327  328  330
+CONECT  329  331  362  363
+CONECT  330  325  328  329  331
+CONECT  330  343  344  345  347
+CONECT  330  348  349
+CONECT  331  329  330  349  363
+CONECT  331  377
+CONECT  332  269  273  275  333
+CONECT  332  336  340
+CONECT  333  332  336  337  340
+CONECT  334   82  205  335  338
+CONECT  334  339  425
+CONECT  335   82   83  203  334
+CONECT  335  339  424
+CONECT  336  272  273  332  333
+CONECT  336  337  338
+CONECT  337  333  336  338  339
+CONECT  337  340  341
+CONECT  338  272  334  336  337
+CONECT  338  339  392  425
+CONECT  339  334  335  337  338
+CONECT  339  341  342  424  426
+CONECT  340  275  332  333  337
+CONECT  340  341
+CONECT  341  275  277  337  339
+CONECT  341  340  342
+CONECT  342  277  279  339  341
+CONECT  342  426  434
+CONECT  343   81  325  330  344
+CONECT  344   81   88   89  330
+CONECT  344  343  345  346  347
+CONECT  345  330  344  347
+CONECT  346   89  217  344  347
+CONECT  346  439  441
+CONECT  347  330  344  345  346
+CONECT  347  348  350  441
+CONECT  348  330  347  349  350
+CONECT  349  330  331  348  350
+CONECT  349  377
+CONECT  350  347  348  349  377
+CONECT  350  378  441  447  450
+CONECT  351  257  258  285  318
+CONECT  351  320  352  353
+CONECT  352  320  322  351  353
+CONECT  352  354  355
+CONECT  353  284  285  286  351
+CONECT  353  352  354  357
+CONECT  354  352  353  355  356
+CONECT  354  357  359
+CONECT  355  322  327  352  354
+CONECT  355  356  362
+CONECT  356  354  355  359  361
+CONECT  356  362  364
+CONECT  357  286  291  353  354
+CONECT  357  358  359
+CONECT  358  291  292  357  359
+CONECT  358  360  365
+CONECT  359  354  356  357  358
+CONECT  359  360  361
+CONECT  360  358  359  361  365
+CONECT  360  367  368
+CONECT  361  356  359  360  364
+CONECT  361  368  380
+CONECT  362  327  329  355  356
+CONECT  362  363  364
+CONECT  363  329  331  362  364
+CONECT  363  376  377
+CONECT  364  356  361  362  363
+CONECT  364  376  380
+CONECT  365  292  305  358  360
+CONECT  365  366  367
+CONECT  366  305  312  365  367
+CONECT  366  370  372
+CONECT  367  360  365  366  368
+CONECT  367  372  373
+CONECT  368  360  361  367  373
+CONECT  368  375  380  381  469
+CONECT  369  312  370  371  415
+CONECT  370  312  366  369  371
+CONECT  370  372
+CONECT  371  369  370  372  374
+CONECT  371  415
+CONECT  372  366  367  370  371
+CONECT  372  373  374  469
+CONECT  373  367  368  372  469
+CONECT  374  371  372  415  468
+CONECT  374  469
+CONECT  375  368  381  469  477
+CONECT  376  363  364  377  379
+CONECT  376  380  381
+CONECT  377  331  349  350  363
+CONECT  377  376  378  379
+CONECT  378  350  377  379  450
+CONECT  378  472
+CONECT  379  376  377  378  381
+CONECT  379  472  478
+CONECT  380  361  364  368  376
+CONECT  380  381
+CONECT  381  368  375  376  379
+CONECT  381  380  477  478
+CONECT  382  132  262  383  384
+CONECT  383  132  134  382  384
+CONECT  383  386  410
+CONECT  384  262  266  268  382
+CONECT  384  383  385  386
+CONECT  385  268  295  384  386
+CONECT  385  387  419
+CONECT  386  383  384  385  387
+CONECT  386  410  414
+CONECT  387  385  386  388  389
+CONECT  387  414  416  419  420
+CONECT  387  423
+CONECT  388  310  387  389  415
+CONECT  388  416
+CONECT  389  310  387  388  423
+CONECT  390  270  272  391  392
+CONECT  390  393  395
+CONECT  391  270  271  390  395
+CONECT  391  400  402
+CONECT  392  139  272  338  390
+CONECT  392  393  397  425
+CONECT  393  140  390  392  394
+CONECT  393  395  396  397
+CONECT  394  140  141  143  393
+CONECT  394  396  398
+CONECT  395  390  391  393  396
+CONECT  395  400  401
+CONECT  396  393  394  395  398
+CONECT  396  401
+CONECT  397  139  140  142  392
+CONECT  397  393
+CONECT  398  143  208  394  396
+CONECT  398  399  401  406  408
+CONECT  399  208  209  398  405
+CONECT  399  406  407  431
+CONECT  400  391  395  401  402
+CONECT  400  404  405
+CONECT  401  395  396  398  400
+CONECT  401  405  408  409
+CONECT  402  271  278  391  400
+CONECT  402  403  404
+CONECT  403  278  279  402  404
+CONECT  403  434  436
+CONECT  404  400  402  403  405
+CONECT  404  436  437
+CONECT  405  399  400  401  404
+CONECT  405  407  409  431  437
+CONECT  406  398  399  407  408
+CONECT  407  399  405  406  408
+CONECT  407  409
+CONECT  408  398  401  406  407
+CONECT  408  409
+CONECT  409  401  405  407  408
+CONECT  410  134  151  383  386
+CONECT  410  411  414
+CONECT  411  151  152  153  410
+CONECT  411  412  413  414  417
+CONECT  412  153  232  411  413
+CONECT  413  232  411  412  417
+CONECT  414  386  387  410  411
+CONECT  414  416  417  418
+CONECT  415  310  311  312  369
+CONECT  415  371  374  388  416
+CONECT  415  463  465  466  468
+CONECT  415  470  474  480  481
+CONECT  415  482  483  485  486
+CONECT  415  487  488  489
+CONECT  416  387  388  414  415
+CONECT  416  418  465
+CONECT  417  232  233  411  413
+CONECT  417  414  418  458  461
+CONECT  417  462
+CONECT  418  414  416  417  462
+CONECT  418  465
+CONECT  419  295  385  387  420
+CONECT  419  421
+CONECT  420  309  387  419  421
+CONECT  420  423
+CONECT  421  295  296  302  306
+CONECT  421  307  308  309  419
+CONECT  421  420  422
+CONECT  422  296  298  301  302
+CONECT  422  421
+CONECT  423  309  310  387  389
+CONECT  423  420
+CONECT  424  203  206  335  339
+CONECT  424  426  427  428  429
+CONECT  425  139  205  334  338
+CONECT  425  392
+CONECT  426  339  342  424  428
+CONECT  426  434  435
+CONECT  427  424  428  429  432
+CONECT  428  424  426  427  432
+CONECT  428  433  435
+CONECT  429  206  207  208  209
+CONECT  429  424  427  430  432
+CONECT  430  209  429  431  432
+CONECT  430  433  436
+CONECT  431  209  399  405  430
+CONECT  431  436  437
+CONECT  432  427  428  429  430
+CONECT  432  433
+CONECT  433  428  430  432  435
+CONECT  433  436  438
+CONECT  434  279  342  403  426
+CONECT  434  435  436  438
+CONECT  435  426  428  433  434
+CONECT  435  438
+CONECT  436  403  404  430  431
+CONECT  436  433  434  437  438
+CONECT  437  404  405  431  436
+CONECT  438  433  434  435  436
+CONECT  439  217  346  440  441
+CONECT  439  442
+CONECT  440  217  218  439  442
+CONECT  440  443
+CONECT  441  346  347  350  439
+CONECT  441  442  447  448
+CONECT  442  439  440  441  443
+CONECT  442  445  448
+CONECT  443  218  219  440  442
+CONECT  443  444  445
+CONECT  444  219  220  443  445
+CONECT  444  446  455
+CONECT  445  442  443  444  446
+CONECT  445  448  452
+CONECT  446  444  445  452  453
+CONECT  446  455  457
+CONECT  447  350  441  448  449
+CONECT  447  450  451
+CONECT  448  441  442  445  447
+CONECT  448  449  452
+CONECT  449  447  448  451  452
+CONECT  450  350  378  447  451
+CONECT  450  472
+CONECT  451  447  449  450  452
+CONECT  451  472  473  475
+CONECT  452  445  446  448  449
+CONECT  452  451  453  475
+CONECT  453  446  452  457  464
+CONECT  453  475  490
+CONECT  454  239  456  460  464
+CONECT  454  465  466  467
+CONECT  455  220  237  444  446
+CONECT  455  456  457
+CONECT  456  237  239  454  455
+CONECT  456  457  464
+CONECT  457  446  453  455  456
+CONECT  457  464
+CONECT  458  233  417  459  461
+CONECT  459  230  233  238  239
+CONECT  459  458  460  461
+CONECT  460  239  454  459  461
+CONECT  460  462  465
+CONECT  461  417  458  459  460
+CONECT  461  462
+CONECT  462  417  418  460  461
+CONECT  462  465
+CONECT  463  415  464  466  467
+CONECT  463  486
+CONECT  464  453  454  456  457
+CONECT  464  463  467  486  490
+CONECT  465  415  416  418  454
+CONECT  465  460  462  466
+CONECT  466  415  454  463  465
+CONECT  466  467
+CONECT  467  454  463  464  466
+CONECT  468  374  415  469  470
+CONECT  469  368  372  373  374
+CONECT  469  375  468  470  477
+CONECT  470  415  468  469  477
+CONECT  470  479  481
+CONECT  471  472  473  476  477
+CONECT  471  478  479  484
+CONECT  472  378  379  450  451
+CONECT  472  471  473  478
+CONECT  473  451  471  472  475
+CONECT  473  476
+CONECT  474  415  476  484  485
+CONECT  474  489
+CONECT  475  451  452  453  473
+CONECT  475  476  490
+CONECT  476  471  473  474  475
+CONECT  476  484  489  490
+CONECT  477  375  381  469  470
+CONECT  477  471  478  479
+CONECT  478  379  381  471  472
+CONECT  478  477
+CONECT  479  470  471  477  480
+CONECT  479  481  484
+CONECT  480  415  479  481  483
+CONECT  480  484
+CONECT  481  415  470  479  480
+CONECT  482  415  483  484  485
+CONECT  483  415  480  482  484
+CONECT  484  471  474  476  479
+CONECT  484  480  482  483  485
+CONECT  485  415  474  482  484
+CONECT  486  415  463  464  487
+CONECT  486  490
+CONECT  487  415  486  488  490
+CONECT  488  415  487  489  490
+CONECT  489  415  474  476  488
+CONECT  489  490
+CONECT  490  453  464  475  476
+CONECT  490  486  487  488  489
+END

@@ -1,0 +1,32 @@
+pocket_solid
+     RDKit          3D
+GEOMETRIC SURFACES; dummy vertices and mesh links.
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 0 0 0 0 0
+M  V30 BEGIN ATOM
+M  V30 END ATOM
+M  V30 END CTAB
+M  END
+>  <MODEL_KIND>
+GEOMETRIC_SURFACES
+
+>  <COORDINATE_UNITS>
+angstrom
+
+>  <VERTICES>
+Virtual vertices; atomic number 0, not physical atoms
+
+>  <EDGES>
+Mesh links; not chemical bonds or force-field parameters
+
+>  <SOURCE_OBJ>
+structures/R2/cluster_1/FA3/pocket_solid.obj
+
+>  <SOURCE_SHA256>
+cf508a672c38f533055908a9559582f18c24b923427dbef26ef052d4f3c1e9df
+
+>  <SOURCE_FACE_INDICES_1_BASED>
+EMPTY
+
+$$$$
