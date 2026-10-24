@@ -1,4 +1,4 @@
-# Native HSA physiological pockets
+<h1 align="center">Native HSA physiological pockets</h1>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/banner_dark.svg">

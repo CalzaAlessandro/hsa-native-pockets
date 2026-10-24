@@ -82,8 +82,8 @@
     "images/Sudlow_II_representatives_dark.png": "2923967d11a3ba0445ee621d6b65c1bea1387b25b7b3e9752867c43dc42fb149",
     "images/Sudlow_I_representatives.png": "a3e7a2a0fb908f5e582949b243f4ef2f58970f0b135511a902c31a0c2a1b8527",
     "images/Sudlow_I_representatives_dark.png": "169e6d73b613eb972702f9fa0266eb90844851ab19d1f585bc291619708c244b",
-    "images/banner.svg": "c8967a7bcffbabb70f061831ac30c76486ff6bfd7ef57e8f96ffe97a2dde8240",
-    "images/banner_dark.svg": "e5b0708e61574cff301f90c1baf7e180dbda7411541597c7fb07fe2b9f12b337",
+    "images/banner.svg": "a3802950ea2b811ddbeb0c645776d9f17a266a11dbd603eb56bfcaa5c58e5e53",
+    "images/banner_dark.svg": "852147aaaacf0ecb96132c2c845b5cfccace218a146fcd61e6cc4beb880ef163",
     "images/protein_solid_group_1.png": "b3d914c5bfdca2cd252f188aa049dfba25aa70574744af68f67543842fe5fcbb",
     "images/protein_solid_group_1_dark.png": "6539ed09e5d84a31abb5c62b28cff09317683632d6e7e6568ec0070f16682a27",
     "images/protein_solid_group_2.png": "75faf5be38f618d11a7f4d58243ddf680f738368f688e4c4e15fce0a8c38087b",
@@ -516,11 +516,13 @@
     },
     "dimensions_px": [
       1600,
-      450
+      310
     ],
     "background": "transparent light and dark variants",
     "orientation": "Same isometric rigid view for all representations, derived from the probe-grid face normals",
-    "scales": "Residue and hull panels share one scale; the probe is magnified separately, with a calibrated 5-A scale bar in every panel",
+    "scales": "Residue and hull views share one scale; the probe is enlarged separately for the repository banner",
+    "scale_bars": false,
+    "visible_project_title": false,
     "atomic_selection": "All heavy atoms of the delivered Heme/residues.pdb; original CONECT chemical bonds retained",
     "source_sha256": {
       "structures/representative/whole_protein/Heme/residues.pdb": "693d103d1f264f097c8c2be64336d66c53f6779bba02ba6ed24561d884e2e420",
@@ -530,9 +532,9 @@
     "render_composition": {
       "False": {
         "panel_scales_px_per_A": [
-          12.402438738222124,
-          22.045407710156788,
-          12.402438738222124
+          12.614446238020793,
+          22.422252286398784,
+          12.614446238020793
         ],
         "lining_heavy_atoms": 108,
         "chemical_bonds": 104,
@@ -562,9 +564,9 @@
       },
       "True": {
         "panel_scales_px_per_A": [
-          12.402438738222124,
-          22.045407710156788,
-          12.402438738222124
+          12.614446238020793,
+          22.422252286398784,
+          12.614446238020793
         ],
         "lining_heavy_atoms": 108,
         "chemical_bonds": 104,
