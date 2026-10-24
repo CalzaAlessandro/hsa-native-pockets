@@ -91,7 +91,29 @@
     "images/representations_overview.svg": "973b4842844ebb14609e3ab367bc6622a35ec8df0812565a7d19d176fafb1a90",
     "images/representations_overview_dark.svg": "a046f80972dc7eb3f49344334a235fe8b10fe8af0e92ac34a59205c01f223bda",
     "images/whole_protein_overview.svg": "e7e5dd47b25f781bd5c7eff508ab8c9820b741db396047a00c390e8f4b3d493b",
-    "images/whole_protein_overview_dark.svg": "105293671360d424174b7daf15b577f2ea539c03c75f0fec04e59eb255d47cad"
+    "images/whole_protein_overview_dark.svg": "105293671360d424174b7daf15b577f2ea539c03c75f0fec04e59eb255d47cad",
+    "images/Sudlow_I_pocket_solid.png": "3f213c49bd579b15ed0ab1fa90eb0ca0171d21609f047456ec740f8a058f1376",
+    "images/Sudlow_I_pocket_solid_dark.png": "c7ed6b84c80cc02d481a2cac304c58e650fd90e25a44e9019e929c43ff42c394",
+    "images/Sudlow_II_pocket_solid.png": "f668aeecc50ef614d57b0c6d3c4da0aed1337a08ecdcb31842da208dbbc17d9b",
+    "images/Sudlow_II_pocket_solid_dark.png": "c2f47b977b25454349342f8bcfedbb9b6380cd4afcb45649a0a2936cc3c350f8",
+    "images/Heme_pocket_solid.png": "9e3097a86f49afc6b84669f0fc706424549b5aa99d2ad6d6077b9dd5a44647b3",
+    "images/Heme_pocket_solid_dark.png": "7ca2528b8bbca35c15f948988285ffb8fb93c82476cc0173e1d7f72b5e21130c",
+    "images/Cleft_pocket_solid.png": "66370af9b8edb1cb154a90acb797dfc48a156a2699c9e15f8fd0775575b7d7c9",
+    "images/Cleft_pocket_solid_dark.png": "5e1cef75c439a152fee55f76b0da92d22ce3e52476580936a0882822267f4d31",
+    "images/FA1_pocket_solid.png": "a3d683407fcd175c39688140da8206e3baf9a0d552394221265ea24e26ad19e4",
+    "images/FA1_pocket_solid_dark.png": "c90e7817d7f16468f8b6b7c18552f67e793b9b20d75d724beac6d4e5027bf08a",
+    "images/FA2_pocket_solid.png": "5609264f8d9fee7916e242b693c389f51e8e40146597601280ce3fd35089d43f",
+    "images/FA2_pocket_solid_dark.png": "a86d01558e226ee2e6a5c84609f33b20098078c29e54911febb9eec9fe1b1ead",
+    "images/FA3_pocket_solid.png": "e0056870f9d11b38d0a0e5f9e4c4aabaf340ed20345aebabf3d053648946b95b",
+    "images/FA3_pocket_solid_dark.png": "55897defa41bfa2b464cfdf3b0cd62e40e972bd3730264835582bc9058451ee5",
+    "images/FA4_pocket_solid.png": "372bcaf57075f21cc076bb36b93ed2d04e47c0473de80270ae4ed5a2b56610f4",
+    "images/FA4_pocket_solid_dark.png": "fdd5d16dce9982fba6d88ffab31e24a9ffd97e14034f222f9f2eff09a754e71f",
+    "images/FA5_pocket_solid.png": "7ba334ef654959c3929ce7c7041f6368d2999f3f64ed18c24332a9e433e245f1",
+    "images/FA5_pocket_solid_dark.png": "acdd9688764a4afa7a28b2cd3dd2a3ebc95569281c4672351d14470da336babe",
+    "images/FA6_pocket_solid.png": "e383accc07ed740f73614fc73397d1240939989ef054989036e665bca21ea5a0",
+    "images/FA6_pocket_solid_dark.png": "be82695bf02a5de3dfc2f5df43445b7ac2f7bc2eb13a713d4dc2810562c0cba3",
+    "images/FA7_pocket_solid.png": "9d29874da031835dad59dff34d087a031a2260bd2e4b0a483c120b51d223810b",
+    "images/FA7_pocket_solid_dark.png": "d02b3ef6e53618c4123476423f6ea5970b17e038eec7ac1e7c4fc45aaefcfbd0"
   },
   "whole_protein_gallery": {
     "raw_render": {
@@ -614,5 +636,509 @@
     "background": "transparent light and dark variants",
     "common_scale_per_panel_type": true,
     "planar_sections": false
+  },
+  "local_pocket_solid_galleries": {
+    "description": "Existing cavity and local solid models for all eleven pockets and four representative selections",
+    "source_tables": [
+      "tables/pocket_solid_models.csv",
+      "tables/pocket_shape_methods.csv"
+    ],
+    "source_sha256": {
+      "structures/representative/whole_protein/protein.pdb": "8b265863dccaa125c833ed013a791f1e1a3d4c20f9584a76de4eac24742e6e1a",
+      "structures/representative/whole_protein/Sudlow_I/pocket_solid.obj": "1957d6401892ab78a39075c72fd58fff14f547e191a930b2c76e03b604fb65b9",
+      "structures/representative/whole_protein/Sudlow_I/probe.obj": "f2a075b0868c2d1d8441f4f381f58a2c1d614a43d6e3ac3f80bcf254fe766e79",
+      "structures/representative/whole_protein_group_2/protein.pdb": "d3bb05b8b73a663eedad74b3a6049a7e13952804cf8b44ca3ee307fde25e4e0b",
+      "structures/representative/whole_protein_group_2/Sudlow_I/pocket_solid.obj": "c0f7877effb582491a04f3759d43da525e951bcf1b6d97171aada157dde0910e",
+      "structures/representative/whole_protein_group_2/Sudlow_I/probe.obj": "81a7335b245e5b2a0fb8a85a8da9ed3a99a5e660371d77713a5367f8e9e82a17",
+      "structures/representative/pocket_geometry/Sudlow_I/protein.pdb": "018c064ce9dca5e1899c8e11eb5c1d17b531830a0bfe9933edf8dee4f2a321f9",
+      "structures/representative/pocket_geometry/Sudlow_I/pocket_solid.obj": "16d923808c33436f6f3f0816f62fe8e5cb9df3ed3a88a37999ddc108743c0ed4",
+      "structures/representative/pocket_geometry/Sudlow_I/probe.obj": "8dff2baa3e3d28f62b452aa2450c448a5343fdaa937857e40d03d7541b0730c1",
+      "structures/representative/mean_volume/Sudlow_I/protein.pdb": "604a1b319b5eb22dfe4497636b19c94889dacbe9ed61e4ea4e7d04f29097cef2",
+      "structures/representative/mean_volume/Sudlow_I/pocket_solid.obj": "1260732ef5ef97f82d3f10e548512a7f693932455e6defc9628621e562556646",
+      "structures/representative/mean_volume/Sudlow_I/probe.obj": "70ab609e284d23c87862dee90221fb81f7f12ab3993910ea6ce77d1cb3070af0",
+      "structures/representative/whole_protein/Sudlow_II/pocket_solid.obj": "e29e6f223782428b774aa3fa726dbfaa61ae20d7b453ad353ff985ea8d04a325",
+      "structures/representative/whole_protein/Sudlow_II/probe.obj": "63233a2ad42a38948ba5e3aa57388680d09d54cf60f1f6cf8b70aa5236f86c62",
+      "structures/representative/whole_protein_group_2/Sudlow_II/pocket_solid.obj": "96a561294d0691685319ec284825590e74c3fd1c73af3bbc245d1243f8be81b7",
+      "structures/representative/whole_protein_group_2/Sudlow_II/probe.obj": "a3e577b6f7bddc96cc39b49d02bf25a5da0928c649dbec92e02518eeb6ee3131",
+      "structures/representative/pocket_geometry/Sudlow_II/protein.pdb": "c7a236cd68c2e084801696e6199112a720187222f36a7876aef494aa02469427",
+      "structures/representative/pocket_geometry/Sudlow_II/pocket_solid.obj": "2c25a3e8f0105f65a5ecffd163734210ae4896b0512f60b189d148e6d5f6b239",
+      "structures/representative/pocket_geometry/Sudlow_II/probe.obj": "92c18ef1299ba90b97e90e017a8993c682e8fb08ddd0e3dea71af3d525b11b54",
+      "structures/representative/mean_volume/Sudlow_II/protein.pdb": "93c6bbccb6fcee6a0bcde2f45ea4bce1364b917530f69007adbab58d8511bd8b",
+      "structures/representative/mean_volume/Sudlow_II/pocket_solid.obj": "8bf3aaf39f9a096a10a8da77b5ae1fb3b2f00fcd5dbca5e9c82d8202b86ad089",
+      "structures/representative/mean_volume/Sudlow_II/probe.obj": "9b497f2e0789a5c1e5cb395f02b530576ef758088fef90bb3c5939ea241b50b1",
+      "structures/representative/whole_protein/Heme/pocket_solid.obj": "8ed3985e133df8985b08322f25b4048a37dd897d2b4b1dfc959385d41adeb309",
+      "structures/representative/whole_protein/Heme/probe.obj": "b681f2afee69f7da7b9a7246edcdd01b9cc8f22958d063265aafcbd05ef5c09b",
+      "structures/representative/whole_protein_group_2/Heme/pocket_solid.obj": "e983b3a97196c8323ad74d7a0d2c9ad6dbbe2636c3d64e39b174969db277bd56",
+      "structures/representative/whole_protein_group_2/Heme/probe.obj": "b6e4e8a790bc5072862bfcc96d884ea7fd19159b7d17a1088c69da039e141a4c",
+      "structures/representative/pocket_geometry/Heme/protein.pdb": "d29188829dc9bb7564ed23dd8aafcd02480c1a1f0061d311a8ea2713a63ca9d2",
+      "structures/representative/pocket_geometry/Heme/pocket_solid.obj": "a24114d6fd56c34ff91d7552a2d6f162ced80cd993897fe4f0a08b699397a9c1",
+      "structures/representative/pocket_geometry/Heme/probe.obj": "56cd6ac76803b84181fe4c101d0a9cdddeb769543d279a9d053db932013a21e1",
+      "structures/representative/mean_volume/Heme/protein.pdb": "74932d6ae3c686e553f55716e8ac32b5c2cb1f1706f16c3ab7f5c81425daaaca",
+      "structures/representative/mean_volume/Heme/pocket_solid.obj": "9bff00913882a13c47a8d97dd57a0aab5e4c75ba4aa6ba13ef2fcf6963727067",
+      "structures/representative/mean_volume/Heme/probe.obj": "7447c6a3d5dff16d74a754d6a617125b63edd9892bb713d9497e22b205025223",
+      "structures/representative/whole_protein/Cleft/pocket_solid.obj": "46a3d56b39021d6ebe4d21847ba885fcf9df8d6efb13ce242311290c6e40e532",
+      "structures/representative/whole_protein/Cleft/probe.obj": "faa75fb5ce4668336ffe2b851b515717fdf8bd7d1251f579d38f672657f31ee3",
+      "structures/representative/whole_protein_group_2/Cleft/pocket_solid.obj": "4d26ecf4cdf3705b9218b99dfcfa7df2d0c218ec144d2770ac52364b02bef8c1",
+      "structures/representative/whole_protein_group_2/Cleft/probe.obj": "59c2bda78e46b03afd17994a7a0de3e429f442f8eb49b32d35b269dee5a18807",
+      "structures/representative/pocket_geometry/Cleft/protein.pdb": "fc7b696032a610ce0e32b0ed2c751fd76c7c9e73435daa2dc87c000e1b68c1fa",
+      "structures/representative/pocket_geometry/Cleft/pocket_solid.obj": "feba50a3d2de70f5db8b3720ea61052e85341e5f48b0f952baaeb2af3df2dbf3",
+      "structures/representative/pocket_geometry/Cleft/probe.obj": "4e665cd64348b008a5c02db9ae0c3e8198039bd492128b888075815ded4974cc",
+      "structures/representative/mean_volume/Cleft/protein.pdb": "370805022bb507bd8caec4774cac0b87fadb735027e3691357f9e0f73636f0f0",
+      "structures/representative/mean_volume/Cleft/pocket_solid.obj": "de9c3d43aeb418fb0193b8fda23919d65baf6bdff2f1e3c3bd27e560bbee43da",
+      "structures/representative/mean_volume/Cleft/probe.obj": "34dd34aa0b208f96b92e29aaf9c352e6368bd88b1aa7246717b190a9f5d6eb22",
+      "structures/representative/whole_protein/FA1/pocket_solid.obj": "cf508a672c38f533055908a9559582f18c24b923427dbef26ef052d4f3c1e9df",
+      "structures/representative/whole_protein/FA1/probe.obj": "06e5cbf619c2ffabfeed8799c6f777b51e3b78d6c549a1fcab2904c7f9ad8317",
+      "structures/representative/whole_protein_group_2/FA1/pocket_solid.obj": "f2e78e4fc41b798c0c2a96dd2ff054ef57f2711004e2603eb75a89667caa1ad7",
+      "structures/representative/whole_protein_group_2/FA1/probe.obj": "43af1c6dcfd38c93911704517dda1a033c50fb739bbf7be714c4728c04f6adfa",
+      "structures/representative/pocket_geometry/FA1/protein.pdb": "15aa912e06f756d22b44b09ae3559c40d856eccc6288062d028ababb4edc5b25",
+      "structures/representative/pocket_geometry/FA1/pocket_solid.obj": "15843c39f2446c04a7060a832aebda34de6e859d5505b022c865ed2fee237488",
+      "structures/representative/pocket_geometry/FA1/probe.obj": "4fb380e591dcc1542115b0cafbd965c903ed43cae59edfafcb8a7a11f62448e3",
+      "structures/representative/mean_volume/FA1/protein.pdb": "150f3223286012a1f3bbf9b566e79501abce15a40ad6961d000fb017a0211084",
+      "structures/representative/mean_volume/FA1/pocket_solid.obj": "985211192ef87e181445b9883594a805e5af6b29065e3955fdb2ea26057b1934",
+      "structures/representative/mean_volume/FA1/probe.obj": "98dd9b59b0b4944a68d2e4361da4d6dae9d1c21863fbaf496a66b9c52bb7fbaf",
+      "structures/representative/whole_protein/FA2/pocket_solid.obj": "9c151a88f90c759b7ff2040eb8b27f97d6d5c54dc4f1163fe56b991fce076bdc",
+      "structures/representative/whole_protein/FA2/probe.obj": "c776aaa828136b8b0c0e706491326af3bc35229ce46d51450e06a007e82046ac",
+      "structures/representative/whole_protein_group_2/FA2/pocket_solid.obj": "cf508a672c38f533055908a9559582f18c24b923427dbef26ef052d4f3c1e9df",
+      "structures/representative/whole_protein_group_2/FA2/probe.obj": "06e5cbf619c2ffabfeed8799c6f777b51e3b78d6c549a1fcab2904c7f9ad8317",
+      "structures/representative/pocket_geometry/FA2/protein.pdb": "49c5b6d5d2b3072135464e71320efa828778d574dfb54c542031cd37a1bebaf8",
+      "structures/representative/pocket_geometry/FA2/pocket_solid.obj": "753d193394348678ff3e499432ee283f1ff7281026c95e29161fcd3d89b36811",
+      "structures/representative/pocket_geometry/FA2/probe.obj": "1b1c111184daa0a10974161b6eb07de89c998095c07e23c93cf10bf70644f5ad",
+      "structures/representative/mean_volume/FA2/protein.pdb": "cdd7cb95b7240869a76734a7aadfe533b1303ed01ed40a481640556c22fb46e5",
+      "structures/representative/mean_volume/FA2/pocket_solid.obj": "af09926c14b7cca96cfdfbde3c308bf454c4a668292f0cf3fc97a9cf11b86918",
+      "structures/representative/mean_volume/FA2/probe.obj": "6f597fab5cabf4ccf485848cc8bcfcfa88758456d89759befe66f2dac43c1cbf",
+      "structures/representative/whole_protein/FA3/pocket_solid.obj": "cf508a672c38f533055908a9559582f18c24b923427dbef26ef052d4f3c1e9df",
+      "structures/representative/whole_protein/FA3/probe.obj": "06e5cbf619c2ffabfeed8799c6f777b51e3b78d6c549a1fcab2904c7f9ad8317",
+      "structures/representative/whole_protein_group_2/FA3/pocket_solid.obj": "96a561294d0691685319ec284825590e74c3fd1c73af3bbc245d1243f8be81b7",
+      "structures/representative/whole_protein_group_2/FA3/probe.obj": "a3e577b6f7bddc96cc39b49d02bf25a5da0928c649dbec92e02518eeb6ee3131",
+      "structures/representative/pocket_geometry/FA3/protein.pdb": "5c5dc5e371679379a1f0f030cfb6ea7812d1bfdaa04633df381df819b0219e44",
+      "structures/representative/pocket_geometry/FA3/pocket_solid.obj": "84db7d9ab593732c2cb761958cdd60abdbb7ea81725b16899f20365276e05a0c",
+      "structures/representative/pocket_geometry/FA3/probe.obj": "8414a13f99ba7b1fa91ae0892475128e362ceded831e1cf50eed3c6747f49fe9",
+      "structures/representative/mean_volume/FA3/protein.pdb": "6a10256561c0c738a0ad62cd237ab62c44ae334a6878e33128eb4a00eaa3ff90",
+      "structures/representative/mean_volume/FA3/pocket_solid.obj": "286b0800d99b1ba91054b58a68db120d16b3aa98a9e47bd62672828bb3c03bfe",
+      "structures/representative/mean_volume/FA3/probe.obj": "e739ba95ab47f5825410783d97cff1dd82952f2d87c27e04ba61913b467bcf14",
+      "structures/representative/whole_protein/FA4/pocket_solid.obj": "f00f3ad2d8f88d51e6bc373368b2c6cfbbe4475022367d6a2890cd71e5b5ac16",
+      "structures/representative/whole_protein/FA4/probe.obj": "cad64a1a967f0d79db7823e9666e52a1418f5f71da0de57be5fef892c7d08f97",
+      "structures/representative/whole_protein_group_2/FA4/pocket_solid.obj": "3729d1344cf712ea1e564540e0636f8a636a88ae7c28d0f58cdf8079923bacb0",
+      "structures/representative/whole_protein_group_2/FA4/probe.obj": "6ea665ddf2df2347cef8fc5a27236cadadeccec00ec83cc137bb429d56aff6fb",
+      "structures/representative/pocket_geometry/FA4/protein.pdb": "62f6f600f870283f33c7c1e5c7fa267ed3efc95a726efb6fd8c486681de15f71",
+      "structures/representative/pocket_geometry/FA4/pocket_solid.obj": "ad989d1c060f79f2ec7cbea6700d62192ceeac5b8cacaa6cb08f20fea02a1ebb",
+      "structures/representative/pocket_geometry/FA4/probe.obj": "8b6047b6b9db39917922214151ae66003cdfdb786eaaaab63be8b7979faeae0f",
+      "structures/representative/mean_volume/FA4/protein.pdb": "cdd7cb95b7240869a76734a7aadfe533b1303ed01ed40a481640556c22fb46e5",
+      "structures/representative/mean_volume/FA4/pocket_solid.obj": "df3b002b369000071e31f5f747bdc2353726b880ba87dfb236d9b5288ba97286",
+      "structures/representative/mean_volume/FA4/probe.obj": "783463e6094fb817be4aac9b369b5e69d580060c2f85d49d3650c1b5e07290d9",
+      "structures/representative/whole_protein/FA5/pocket_solid.obj": "260fe07ae4d25392f1513185e0786bd108095686000564173e59c9fbef88cde0",
+      "structures/representative/whole_protein/FA5/probe.obj": "72ba6c3fef10347b69e8a659ee0b1390f3444354b52a0685707acbd80e1d2d2a",
+      "structures/representative/whole_protein_group_2/FA5/pocket_solid.obj": "b94dcc2181c45663759c0ffa39ef726648cd486bbbf56229b8708c055be7731e",
+      "structures/representative/whole_protein_group_2/FA5/probe.obj": "c4843ec8abbb9114ed671c864f139f50c9bbc6b9116ba813e89892dd64d10a9d",
+      "structures/representative/pocket_geometry/FA5/protein.pdb": "20f1b556373acb871f27db0a440b4767a113d8199bcb81e234556afedeca8943",
+      "structures/representative/pocket_geometry/FA5/pocket_solid.obj": "e356b6576bd6a06cbfe18211af8510382d02fcde2585a4e60fd294dd3f4d411b",
+      "structures/representative/pocket_geometry/FA5/probe.obj": "7dcca5152d7af66516000d8ac2951b75733aa978a60b91f08bad18d40de07871",
+      "structures/representative/mean_volume/FA5/protein.pdb": "b20b357f54c8d6344f4f3f13d810d40fa4f755ac07ae2211981efbe81b4288ac",
+      "structures/representative/mean_volume/FA5/pocket_solid.obj": "d4779c624dc8a8455f0a51d1d18d702a75a9c1e684654808a64d63d7891c31d6",
+      "structures/representative/mean_volume/FA5/probe.obj": "f49101bdb50ebd57997c091f86aa95de33108dcda420dcb9a95fd21b522d4478",
+      "structures/representative/whole_protein/FA6/pocket_solid.obj": "a12394b922ec8af2c816b70bd08654546538e85e5260d8d6e23aba6fa20d7c11",
+      "structures/representative/whole_protein/FA6/probe.obj": "de49ae92cc973cdae48658877348ce22a82988c74051287e50bf096eccbfe633",
+      "structures/representative/whole_protein_group_2/FA6/pocket_solid.obj": "677c1fdfe5187aa23304ab1b568110e6835ac5e063fa3044ad726e071555f3cf",
+      "structures/representative/whole_protein_group_2/FA6/probe.obj": "606c5150a8eedbc6be6d19feb9ecc1b07ba1b2ee38e12795f94b28822e79a126",
+      "structures/representative/pocket_geometry/FA6/protein.pdb": "60119177807348cc0ee9b0a543700632f40c757e47dd9216d7c4cf71296ae46d",
+      "structures/representative/pocket_geometry/FA6/pocket_solid.obj": "0dd9544e5b8d945dc8a25187515bccc1ec4d0c1e83a2a8dbdff05a12733af04f",
+      "structures/representative/pocket_geometry/FA6/probe.obj": "d8be77eb5d8280e9ab13038d1782794efd3a52dc6d548e19849c3515feba6b78",
+      "structures/representative/mean_volume/FA6/protein.pdb": "764b183120b274eefa687e014bea08991891e848652b55bce35e559a29d7bbd5",
+      "structures/representative/mean_volume/FA6/pocket_solid.obj": "94dc81219b9a05b87b767d4c4da5a00f1252a73b5b38e91df313e35841d86074",
+      "structures/representative/mean_volume/FA6/probe.obj": "d3920d131727b09681618eeaec8b9b5fbb959b43213cb2fa47456bb39eca4d72",
+      "structures/representative/whole_protein/FA7/pocket_solid.obj": "ce6f3e68e9ff7350ca9307172405d4cfb8ffdb7a0a5a73650d1789939a301b78",
+      "structures/representative/whole_protein/FA7/probe.obj": "30e86f381131f05b12bd81559af429602437c3b3c6df02eb273759273f70fedf",
+      "structures/representative/whole_protein_group_2/FA7/pocket_solid.obj": "cf508a672c38f533055908a9559582f18c24b923427dbef26ef052d4f3c1e9df",
+      "structures/representative/whole_protein_group_2/FA7/probe.obj": "06e5cbf619c2ffabfeed8799c6f777b51e3b78d6c549a1fcab2904c7f9ad8317",
+      "structures/representative/pocket_geometry/FA7/protein.pdb": "191d4351aa0517adb0cbaa587b12ad3acae0f74701286e56c705aedbea2c92ab",
+      "structures/representative/pocket_geometry/FA7/pocket_solid.obj": "456c3b6e7678df435b4432b7c4e08a389e294a21c1f9e3e8d013828da1cb44ff",
+      "structures/representative/pocket_geometry/FA7/probe.obj": "b8136e99d192503a9a6ae49e4c653be6dcaccb9857269ea9f9b52f5e3af38758",
+      "structures/representative/mean_volume/FA7/protein.pdb": "8ac4d8e52035f3938c2ca60012ef857c654caac44ab4e5544bfa3d3e008f56dd",
+      "structures/representative/mean_volume/FA7/pocket_solid.obj": "c08a4a905b18047524cbc0b62562d95d58b6bec479a97cd18eed430657755768",
+      "structures/representative/mean_volume/FA7/probe.obj": "320413b33e1560aa2e4e006fb3228c868599178c29a0195ccf1d2d948b42ea87"
+    },
+    "reference_sha256": "7b0ead70a323891665f6159658d68e4447f96c0186ce3a8b826fda7f1b7510db",
+    "alignment": "Kabsch fit of local canonical C-alpha anchors to the native reference; principal local axes and orthographic view",
+    "view_elevation_deg": 28,
+    "view_azimuth_deg": -65,
+    "panels": [
+      "Dominant protein frame",
+      "Alternative protein frame",
+      "Pocket-shape frame",
+      "Mean-volume frame"
+    ],
+    "same_local_view_and_scale_within_each_site": true,
+    "mesh_scaling": 1.0,
+    "mesh_smoothing": false,
+    "background": "Transparent light and dark PNGs",
+    "dimensions_px": [
+      2760,
+      1848
+    ],
+    "sites": {
+      "Sudlow_I": {
+        "local_scale_A": 34.57751046957266,
+        "view_center_A": [
+          1.8524193114773855,
+          2.423785514322888
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/Sudlow_I",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "49.99999998257815"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/Sudlow_I",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "54.99999997184807"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/Sudlow_I",
+            "parent_protein": "structures/representative/pocket_geometry/Sudlow_I/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "113.99999995995034"
+          },
+          {
+            "folder": "structures/representative/mean_volume/Sudlow_I",
+            "parent_protein": "structures/representative/mean_volume/Sudlow_I/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "66.0000000118957"
+          }
+        ]
+      },
+      "Sudlow_II": {
+        "local_scale_A": 30.624036125979494,
+        "view_center_A": [
+          1.836263723488246,
+          0.25213704304271545
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/Sudlow_II",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "23.999999997938243"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/Sudlow_II",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "3.0000000025055242"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/Sudlow_II",
+            "parent_protein": "structures/representative/pocket_geometry/Sudlow_II/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "35.99999998787124"
+          },
+          {
+            "folder": "structures/representative/mean_volume/Sudlow_II",
+            "parent_protein": "structures/representative/mean_volume/Sudlow_II/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "16.000000006349065"
+          }
+        ]
+      },
+      "Heme": {
+        "local_scale_A": 42.66554366842639,
+        "view_center_A": [
+          4.159205669454529,
+          -5.405145213597981
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/Heme",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "136.00000003382067"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/Heme",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "63.00000002171794"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/Heme",
+            "parent_protein": "structures/representative/pocket_geometry/Heme/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "383.00000000376104"
+          },
+          {
+            "folder": "structures/representative/mean_volume/Heme",
+            "parent_protein": "structures/representative/mean_volume/Heme/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "174.0000000192881"
+          }
+        ]
+      },
+      "Cleft": {
+        "local_scale_A": 46.979203236581235,
+        "view_center_A": [
+          -3.3229987143404784,
+          0.7637075226598693
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/Cleft",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "250.0000000414926"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/Cleft",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "391.9999999801644"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/Cleft",
+            "parent_protein": "structures/representative/pocket_geometry/Cleft/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "307.166666663031"
+          },
+          {
+            "folder": "structures/representative/mean_volume/Cleft",
+            "parent_protein": "structures/representative/mean_volume/Cleft/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "231.0"
+          }
+        ]
+      },
+      "FA1": {
+        "local_scale_A": 34.525212344166846,
+        "view_center_A": [
+          0.02373134833076751,
+          -4.995272196894254
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/FA1",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NO_PROBE_SPACE",
+            "empty_pocket_volume_A3": "0.0"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/FA1",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "60.000000015173974"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/FA1",
+            "parent_protein": "structures/representative/pocket_geometry/FA1/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "128.9999999910128"
+          },
+          {
+            "folder": "structures/representative/mean_volume/FA1",
+            "parent_protein": "structures/representative/mean_volume/FA1/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "41.0000000014092"
+          }
+        ]
+      },
+      "FA2": {
+        "local_scale_A": 32.235250818698354,
+        "view_center_A": [
+          -0.3594586436679936,
+          -18.309591853601017
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/FA2",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "0.9999999969763186"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/FA2",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NO_PROBE_SPACE",
+            "empty_pocket_volume_A3": "0.0"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/FA2",
+            "parent_protein": "structures/representative/pocket_geometry/FA2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "11.000000011927739"
+          },
+          {
+            "folder": "structures/representative/mean_volume/FA2",
+            "parent_protein": "structures/representative/mean_volume/FA2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "6.000000003124545"
+          }
+        ]
+      },
+      "FA3": {
+        "local_scale_A": 37.40952022264408,
+        "view_center_A": [
+          -2.959942437695883,
+          0.3148013218991439
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/FA3",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NO_PROBE_SPACE",
+            "empty_pocket_volume_A3": "0.0"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/FA3",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "3.0000000025055242"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/FA3",
+            "parent_protein": "structures/representative/pocket_geometry/FA3/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "2.99999999995391"
+          },
+          {
+            "folder": "structures/representative/mean_volume/FA3",
+            "parent_protein": "structures/representative/mean_volume/FA3/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "3.999999992821479"
+          }
+        ]
+      },
+      "FA4": {
+        "local_scale_A": 41.03170154252776,
+        "view_center_A": [
+          0.7387635653816931,
+          -2.400924542978811
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/FA4",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "53.00000001384898"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/FA4",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "36.000000005226916"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/FA4",
+            "parent_protein": "structures/representative/pocket_geometry/FA4/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "119.99999997825178"
+          },
+          {
+            "folder": "structures/representative/mean_volume/FA4",
+            "parent_protein": "structures/representative/mean_volume/FA4/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "58.00000001439624"
+          }
+        ]
+      },
+      "FA5": {
+        "local_scale_A": 30.88700645001446,
+        "view_center_A": [
+          -7.5315428598982965,
+          2.3480347075911103
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/FA5",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "25.999999979586722"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/FA5",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "0.9999999967474045"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/FA5",
+            "parent_protein": "structures/representative/pocket_geometry/FA5/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "37.999999994040984"
+          },
+          {
+            "folder": "structures/representative/mean_volume/FA5",
+            "parent_protein": "structures/representative/mean_volume/FA5/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "14.000000008216952"
+          }
+        ]
+      },
+      "FA6": {
+        "local_scale_A": 46.08274477543229,
+        "view_center_A": [
+          -8.466272391889145,
+          6.213239110580667
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/FA6",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "168.00000006767485"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/FA6",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "180.99999997695247"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/FA6",
+            "parent_protein": "structures/representative/pocket_geometry/FA6/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "198.99999997252894"
+          },
+          {
+            "folder": "structures/representative/mean_volume/FA6",
+            "parent_protein": "structures/representative/mean_volume/FA6/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "169.00000003716332"
+          }
+        ]
+      },
+      "FA7": {
+        "local_scale_A": 33.46952298931348,
+        "view_center_A": [
+          0.9637824801546389,
+          2.6142455387135746
+        ],
+        "models": [
+          {
+            "folder": "structures/representative/whole_protein/FA7",
+            "parent_protein": "structures/representative/whole_protein/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "1.9999999959661583"
+          },
+          {
+            "folder": "structures/representative/whole_protein_group_2/FA7",
+            "parent_protein": "structures/representative/whole_protein_group_2/protein.pdb",
+            "geometry_status": "NO_PROBE_SPACE",
+            "empty_pocket_volume_A3": "0.0"
+          },
+          {
+            "folder": "structures/representative/pocket_geometry/FA7",
+            "parent_protein": "structures/representative/pocket_geometry/FA7/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "24.99999999359026"
+          },
+          {
+            "folder": "structures/representative/mean_volume/FA7",
+            "parent_protein": "structures/representative/mean_volume/FA7/protein.pdb",
+            "geometry_status": "NONEMPTY",
+            "empty_pocket_volume_A3": "9.000000020914456"
+          }
+        ]
+      }
+    }
   }
 }

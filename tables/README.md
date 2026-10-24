@@ -5,9 +5,8 @@
 ## Sampling and frame selection
 
 The dataset contains three independent 1 µs trajectories of native 585-residue
-HSA. Replica identity is retained throughout. Coordinates are in Å and volumes
-in Å³. Display alignment affects preview images only; the delivered coordinates
-and all original numerical tables are unchanged.
+HSA, with 10,000 saved frames per trajectory. Coordinates are in Å and volumes
+in Å³.
 
 ### Common whole-protein frame
 
@@ -47,12 +46,9 @@ The best eligible DBSCAN candidate has three groups, `eps = 0.4495` in standardi
 feature units and `min_samples = 20`: silhouette 0.2931, coverage 68.17%, score
 0.1998. Sparse frames account for 31.83% of its training sample.
 
-The stored Ward assignments were reproduced for all 30,000 frames. The DBSCAN
-training labels, coverage and silhouette were also reproduced. Extension of
-the DBSCAN core neighborhoods to the full saved dataset leaves 32.99% unassigned.
-Each frame is assigned to its nearest training core point when their distance
-is within `eps`; otherwise it remains unassigned.
-The comparison does not replace the original Ward representatives.
+Extending the DBSCAN core neighborhoods to all 30,000 frames leaves 32.99%
+unassigned. Each frame was assigned to its nearest training core point when
+their distance was within `eps`.
 Results are in [protein_clustering_comparison.csv](protein_clustering_comparison.csv),
 all candidates in [protein_clustering_candidates.csv](protein_clustering_candidates.csv),
 and DBSCAN per-replica populations in
@@ -77,9 +73,8 @@ source-frame tables are retained in
 [common_cluster_populations.csv](common_cluster_populations.csv) and
 [common_cluster_representatives.csv](common_cluster_representatives.csv).
 
-The preview images align the two observed proteins on Domain II and use one
-frontal view and molecular scale. Delivered model coordinates retain their
-source-frame positions. Complete group 2 structures and geometry are in
+The two proteins are aligned on Domain II for comparison. The alternative
+protein structure and its pocket models are in
 [`structures/representative/whole_protein_group_2/`](../structures/representative/whole_protein_group_2).
 
 ### Independent pocket-shape frames
@@ -129,11 +124,11 @@ exclude space using element-specific radii. A 1.4 Å spherical probe and a
 Heme uses the hemin region from 1O9X. The cleft uses free space inside its moving
 residue-landmark convex envelope.
 
-The new cleft shape comparison uses a common grid after local landmark
-alignment. The original trajectory-volume table retains its original moving-grid
-measurement. Protein and lining hulls enclose atomic positions; the green probe
-mesh describes the available cavity space. FA7 overlaps Sudlow I; FA3 and FA4
-overlap Sudlow II, so these region volumes should not be summed.
+Cleft shapes were compared on a common grid after local landmark alignment.
+Trajectory cleft volumes were measured on a moving landmark grid. Protein
+and lining hulls enclose atomic positions; the probe mesh describes accessible
+cavity space. FA7 overlaps Sudlow I; FA3 and FA4 overlap Sudlow II, so their
+region volumes should not be summed.
 
 `residues.pdb` contains the complete residues whose heavy atoms lie within
 4 Å of a probe-mesh vertex in the selected frame. The selection follows the
@@ -174,9 +169,8 @@ and volume checks. Full measurements are in [solid_models.csv](solid_models.csv)
 solid. First, the pocket probe is subtracted from the convex hull of its own
 parent protein. The local context is then limited to the convex envelope of
 the probe, dilated by a nominal 10 Å spherical margin. The spherical buffer is
-represented by a geodesic mesh with 32 circular segments. This buffer controls
-only the displayed outer context; the original pocket space remains unchanged.
-The local solid is clipped to the protein hull.
+represented by a geodesic mesh with 32 circular segments. The buffer defines
+the outer boundary of the local solid, which is clipped to the protein hull.
 
 The construction is applied to all 110 pocket folders: 92 have nonempty cavity
 space, while 18 retain empty local files. Each nonempty model was checked for a
@@ -185,10 +179,11 @@ its empty cavity reproduces the clipped local envelope volume, with a largest
 numerical error below 0.000001 Å³. Source proteins, margin, status and measured
 volumes are in [pocket_solid_models.csv](pocket_solid_models.csv).
 
-The previews use transparent amber for the solid material and green for the
-boundary of the empty cavity. They show the complete protein beside its heme
-cavity as a local example. Common scales are retained across the two groups
-within the whole-protein and local panels.
+The previews use transparent amber for solid material and green for the
+boundary of the empty cavity. Each pocket gallery compares the dominant
+protein frame, alternative protein frame, pocket-shape frame and mean-volume
+frame after local Cα alignment. All four panels for a pocket use the same
+view and scale.
 
 Full and local solids have OBJ, PLY, PDB, MOL, SDF and MOL2 exports. OBJ and PLY
 retain indexed surface triangles. PDB mesh connections give a wireframe display
@@ -215,9 +210,6 @@ in half of the sampled frames. It is not a measured ligand-binding probability.
 A zero-volume observation can result from a narrow or occluded cavity under
 this particular probe size and region definition. The physiological reference
 region remains defined even when no probe fits.
-
-The raw CSV field names are retained for reproducibility. The main summary
-shows the volumes directly.
 
 ## Tables
 

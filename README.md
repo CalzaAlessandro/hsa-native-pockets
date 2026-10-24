@@ -12,37 +12,28 @@ and the original R1-R3 results.
 
 ## Choose a template
 
-The **whole-protein representative** retains all eleven binding regions in
-one observed HSA conformation. It provides a common structural context for
-comparing sites, examining the complete surface and modelling partners that
-contact more than one part of the protein. Its atomic PDB preserves the
-chemical groups; the protein hull describes the overall geometric envelope.
+The **whole-protein representatives** were selected by clustering frames from
+the three HSA simulations according to domain opening. The observed frame
+closest to each cluster center was retained. All eleven pocket geometries
+were then calculated on each selected protein frame.
 
-The **pocket-shape representatives** describe each cavity independently,
-together with its lining residues and parent protein. They support local
-docking preparation, cavity-shape comparisons and inspection of possible
-contacts. Different pockets can come from different observed frames.
+The **pocket-shape representatives** were selected separately for each pocket
+from 306 frames, sampled equally across the three simulations. Locally aligned
+cavity shapes were grouped by their spatial overlap. The frame with the
+smallest average shape difference from the other members of the largest
+nonempty group was retained.
 
-The **mean-volume models** add one observed frame per pocket with cavity
-volume closest to the trajectory mean. This selection describes typical size;
-the pocket-shape selection describes the spatial distribution of cavity space.
-
-| Model | How the frame is chosen | Structural context |
-|---|---|---|
-| Whole protein | Closest observed frame to the center of a protein-opening group | All eleven pockets belong to one HSA frame |
-| Pocket shape | Most central cavity shape in the dominant nonempty shape group | Each pocket has its own source frame and complete protein |
-| Mean volume | Observed volume closest to the sampled mean | Each pocket has its own source frame and complete protein |
+The **mean-volume representatives** were selected separately for each pocket
+as the observed frame whose cavity volume was closest to the mean over the
+same 306 sampled frames.
 
 ### How the protein groups were selected
 
-The comparison uses Domain I-III distance, the I-II-III opening angle and the
-fraction of native I-III contacts. These three measurements are standardized
-and compared on 600 equally sampled frames, 200 from each replica.
-
-**Ward** starts with individual frames and successively joins the groups that
-produce the smallest increase in their internal variation. **DBSCAN** identifies
-dense regions using a neighborhood radius and minimum neighbor count; sparse
-frames can remain unassigned. K-means groups frames around fitted centers.
+Protein clustering used standardized Domain I-III distance, the I-II-III
+opening angle and the fraction of native I-III contacts. Ward, k-means and
+DBSCAN were compared on 600 uniformly sampled frames, 200 per replica.
+Candidates were ranked by the fraction of assigned frames multiplied by the
+silhouette score, which measures separation between groups.
 
 | Method | Groups | Assigned training frames | Silhouette | Coverage × silhouette |
 |---|---:|---:|---:|---:|
@@ -50,37 +41,25 @@ frames can remain unassigned. K-means groups frames around fitted centers.
 | K-means | 2 | 100.0% | 0.366 | 0.366 |
 | DBSCAN | 3 | 68.2% | 0.293 | 0.200 |
 
-Ward gives the highest score among the tested candidates and supplies the
-whole-protein templates. The best eligible DBSCAN candidate leaves 31.8% of
-the training sample unassigned. Applying that density model to all saved frames
-leaves 33.0% unassigned. The supplied Ward groups cover all frames and provide
-two representative opening geometries. Their populations refer to this
-classification of the sampled trajectories.
+Ward gave the highest score and identified two groups. All 30,000 saved frames
+were assigned to their nearest group center. DBSCAN left 31.8% of the training
+frames and 33.0% of the full dataset unassigned.
 
-Pocket-shape clustering is a separate calculation: it compares locally aligned
-cavity masks. DBSCAN was selected for FA5; the other pockets were summarized by
-one nonempty shape group. Choosing a mean-volume frame involves no clustering.
+For pocket-shape selection, DBSCAN identified two nonempty groups for FA5;
+the other pockets were each represented by one nonempty shape group.
 [Methods and complete comparisons](tables/README.md).
 
 ### Whole-protein representative
 
-One observed frame is selected from the most populated group of overall HSA
-conformations. **All eleven pockets are extracted from this same frame.**
-Their relative positions, the shape of the protein and the surrounding residues
-therefore belong to one coherent structure.
+The dominant conformation represents the largest protein cluster, containing
+68.3% of the frames. The alternative represents the second cluster, containing
+31.7%. All eleven pockets in each collection were calculated on its selected
+protein frame.
 
-The files for this common protein conformation are in
-[`whole_protein/`](structures/representative/whole_protein); the alternative
-conformation is in [`whole_protein_group_2/`](structures/representative/whole_protein_group_2).
-
-The common clustering identifies two groups. **Group 1 is the most populated
-(68.3%)** and supplies the principal whole-protein template. **Group 2 (31.7%)**
-is shown as an alternative conformation. Both are observed frames from the same
-native HSA dataset, with the replicas contributing equally.
-
-The guide uses the native reference cartoon and its convex hull; green
-shapes illustrate the probe positions. The observed protein frames and their
-calculated pocket geometries are collected below.
+The dominant model is in
+[`whole_protein/`](structures/representative/whole_protein), and the alternative
+is in [`whole_protein_group_2/`](structures/representative/whole_protein_group_2).
+The schematic below introduces the protein, probe spaces and convex envelope.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/whole_protein_overview_dark.svg">
@@ -92,116 +71,94 @@ calculated pocket geometries are collected below.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HSA_common_representative_dark.png">
-  <img src="images/HSA_common_representative.png" width="100%" alt="The two common native HSA conformations in the same frontal view, with physiological probes and the group 1 protein envelope">
+  <img src="images/HSA_common_representative.png" width="100%" alt="Dominant and alternative HSA conformations, with physiological pocket probes and the dominant protein envelope">
 </picture>
 
-The two frontal views use the same Domain II alignment, camera and molecular
-scale. The cartoon shows HSA secondary structure; saturated colors identify the
-pocket probe spaces. For each group, all eleven pocket geometries were computed
-from the same whole-protein frame.
-The separate wireframe shows the complete protein convex hull of group 1. A convex hull bridges surface indentations;
-it is a coarse geometric envelope. The atomic PDB retains atomic detail and chemical identities.
+The structures are aligned on Domain II and shown at the same scale. The
+cartoon shows secondary structure; colored probes mark the calculated cavity
+spaces. The wireframe is the convex envelope of the complete protein.
 
-- [Group 1 protein PDB](structures/representative/whole_protein/protein.pdb)
-- [Group 2 protein PDB](structures/representative/whole_protein_group_2/protein.pdb)
-- [Group 2 protein and pockets](structures/representative/whole_protein_group_2/protein_with_probes_and_hull.pdb)
-- [Protein with all probes, PDB](structures/representative/whole_protein/protein_with_probes_and_hull.pdb)
-- [Protein hull with all probes, PDB](structures/representative/whole_protein/probes_protein_hull.pdb)
-- [Protein hull with all probes, OBJ](structures/representative/whole_protein/probes_protein_hull.obj)
-- [Protein hull with all probes, SDF](structures/representative/whole_protein/probes_protein_hull.sdf)
-- [Complete group 2 models](structures/representative/whole_protein_group_2)
+| Contents | Dominant conformation, 68.3% | Alternative conformation, 31.7% |
+|---|---|---|
+| Protein atoms | [PDB](structures/representative/whole_protein/protein.pdb) | [PDB](structures/representative/whole_protein_group_2/protein.pdb) |
+| Protein atoms and all pocket probes | [PDB](structures/representative/whole_protein/protein_with_probes.pdb) | [PDB](structures/representative/whole_protein_group_2/protein_with_probes.pdb) |
+| Protein atoms, all probes and protein hull | [PDB](structures/representative/whole_protein/protein_with_probes_and_hull.pdb) | [PDB](structures/representative/whole_protein_group_2/protein_with_probes_and_hull.pdb) |
+| Protein hull and all probes | [PDB](structures/representative/whole_protein/probes_protein_hull.pdb), [OBJ](structures/representative/whole_protein/probes_protein_hull.obj), [SDF](structures/representative/whole_protein/probes_protein_hull.sdf) | [PDB](structures/representative/whole_protein_group_2/probes_protein_hull.pdb), [OBJ](structures/representative/whole_protein_group_2/probes_protein_hull.obj), [SDF](structures/representative/whole_protein_group_2/probes_protein_hull.sdf) |
+| All model files | [Folder](structures/representative/whole_protein) | [Folder](structures/representative/whole_protein_group_2) |
 
-#### Group 1 · dominant conformation
+#### Dominant conformation - group 1
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HSA_group_1_representations_dark.png">
-  <img src="images/HSA_group_1_representations.png" width="100%" alt="Group 1 observed HSA frame in four matching views: structure, all probes, structure with probes and the complete protein hull with probes">
+  <img src="images/HSA_group_1_representations.png" width="100%" alt="Dominant HSA conformation: protein atoms, all pocket probes, their overlay and protein hull with probes">
 </picture>
 
-#### Group 2 · alternative conformation
+#### Alternative conformation - group 2
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HSA_group_2_representations_dark.png">
-  <img src="images/HSA_group_2_representations.png" width="100%" alt="Group 2 observed HSA frame in four matching views: structure, all probes, structure with probes and the complete protein hull with probes">
+  <img src="images/HSA_group_2_representations.png" width="100%" alt="Alternative HSA conformation: protein atoms, all pocket probes, their overlay and protein hull with probes">
 </picture>
 
-All four panels for each group use the same observed parent frame, camera and
-molecular scale. Protein-only views use an opaque NewCartoon; overlays use
-the transparent cartoon to show the probe positions. Probe-only views retain
-their positions within the complete protein. The envelope is the convex hull
-stored in `protein_hull.*`.
+Each gallery shows the selected protein, its eleven pocket probes, their
+overlay and the complete protein hull at the same scale.
 
 #### Protein solid with empty pockets
 
-The inverse model fills the complete protein convex envelope and subtracts
-the union of the eleven pocket probe meshes. Overlapping regions are removed
-once. The outer envelope and the probe spaces retain their original scale.
-The model is available for both common conformations and for the six
-per-replica representatives.
+The full solid is the complete protein convex envelope minus the union of
+the eleven probe spaces. Overlapping spaces are subtracted once.
 
-The local model isolates one cavity and its surrounding material. Its rounded
-outer boundary extends 10 Å beyond the convex envelope of that pocket's probe
-and is clipped to the parent protein hull. The cavity itself retains its
-calculated shape and size. Each pocket folder contains this local model as
-`pocket_solid.*`.
+The local solid contains one empty cavity and its surrounding material.
+Its outer boundary is obtained by extending the convex envelope of the probe
+by 10 Å and clipping it to the parent protein hull. These models are provided
+as `pocket_solid.*` for every pocket and representative type.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/protein_solid_group_1_dark.png">
-  <img src="images/protein_solid_group_1.png" width="100%" alt="Group 1: complete protein solid with its pocket voids, beside the heme cavity and its rounded 10-Angstrom solid surroundings">
+  <img src="images/protein_solid_group_1.png" width="100%" alt="Dominant conformation: protein solid with empty pockets, beside the heme cavity and its local solid surroundings">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/protein_solid_group_2_dark.png">
-  <img src="images/protein_solid_group_2.png" width="100%" alt="Group 2: complete protein solid with its pocket voids, beside the heme cavity and its rounded 10-Angstrom solid surroundings">
+  <img src="images/protein_solid_group_2.png" width="100%" alt="Alternative conformation: protein solid with empty pockets, beside the heme cavity and its local solid surroundings">
 </picture>
 
-Amber shows the surrounding solid in transparency; green marks the boundary
-of the empty pocket space. The whole-protein panels show all cavity voids.
-The enlarged panels show the heme cavity as an example of the local models.
-Both groups share the same scale within each type of panel.
+Amber marks the surrounding solid; green marks the boundary of the empty
+cavity. The enlarged panels show the heme pocket. Local models for all eleven
+pockets are shown and linked in the individual pocket sections below.
 
-| File | Group 1 | Group 2 |
+| Contents | Dominant conformation | Alternative conformation |
 |---|---|---|
-| `protein_solid` - complete envelope with empty pockets | [OBJ](structures/representative/whole_protein/protein_solid.obj), [PDB](structures/representative/whole_protein/protein_solid.pdb) | [OBJ](structures/representative/whole_protein_group_2/protein_solid.obj), [PDB](structures/representative/whole_protein_group_2/protein_solid.pdb) |
-| `pocket_solid` - heme cavity with local solid surroundings | [OBJ](structures/representative/whole_protein/Heme/pocket_solid.obj), [PDB](structures/representative/whole_protein/Heme/pocket_solid.pdb) | [OBJ](structures/representative/whole_protein_group_2/Heme/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/Heme/pocket_solid.pdb) |
-| `pocket_voids` - union of all subtracted spaces | [OBJ](structures/representative/whole_protein/pocket_voids.obj), [SDF](structures/representative/whole_protein/pocket_voids.sdf) | [OBJ](structures/representative/whole_protein_group_2/pocket_voids.obj), [SDF](structures/representative/whole_protein_group_2/pocket_voids.sdf) |
+| Protein solid with all pocket spaces removed | [OBJ](structures/representative/whole_protein/protein_solid.obj), [PDB](structures/representative/whole_protein/protein_solid.pdb), [SDF](structures/representative/whole_protein/protein_solid.sdf) | [OBJ](structures/representative/whole_protein_group_2/protein_solid.obj), [PDB](structures/representative/whole_protein_group_2/protein_solid.pdb), [SDF](structures/representative/whole_protein_group_2/protein_solid.sdf) |
+| Combined empty pocket spaces | [OBJ](structures/representative/whole_protein/pocket_voids.obj), [PDB](structures/representative/whole_protein/pocket_voids.pdb), [SDF](structures/representative/whole_protein/pocket_voids.sdf) | [OBJ](structures/representative/whole_protein_group_2/pocket_voids.obj), [PDB](structures/representative/whole_protein_group_2/pocket_voids.pdb), [SDF](structures/representative/whole_protein_group_2/pocket_voids.sdf) |
 
-These models also have PLY, MOL, SDF and MOL2 files. OBJ and PLY retain the
-surface triangles. PDB contains virtual vertices and mesh connections.
-The numerical checks are in [solid_models.csv](tables/solid_models.csv) and
+These models also have PLY, MOL and MOL2 files. OBJ and PLY store triangular
+surfaces; PDB stores mesh vertices and connections. Model volumes are listed in
+[solid_models.csv](tables/solid_models.csv) and
 [pocket_solid_models.csv](tables/pocket_solid_models.csv).
 
 </details>
 
 ### Pocket-shape representatives
 
-Each pocket is considered separately. Frames containing space for the probe
-are compared across the three simulations, and one observed frame is selected
-to represent the most populated group of nonempty cavity shapes. The selection
-reflects the **shape of that pocket**, including where its internal space lies.
+Each pocket-shape model contains the cavity selected by local shape clustering,
+its lining residues and its complete source protein. Different pockets can
+therefore come from different frames. These models are in
+[`pocket_geometry/`](structures/representative/pocket_geometry).
 
-These models retain each selected cavity and its lining residues.
-Different pockets can come from different frames. Each model includes its own
-complete parent protein and geometric envelope. The selected structures are
-observed conformations; the trajectory averages are reported separately below.
-The files are in [`pocket_geometry/`](structures/representative/pocket_geometry).
-
-The schematic example introduces four views: **atomic pocket residues**,
-**probe surface**, **residues with the probe**, and **residue convex hull**.
-Green shows the internal probe space; the amber wireframe encloses the lining
-atoms.
+The schematic shows the lining residues, probe space, their overlay and the
+lining-residue convex hull. Green marks probe space; amber marks the hull.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/representations_overview_dark.svg">
-  <img src="images/representations_overview.svg" width="100%" alt="Schematic pocket example showing atomic residues, probe space, their overlay and the residue convex hull">
+  <img src="images/representations_overview.svg" width="100%" alt="Schematic pocket example showing lining residues, probe space, their overlay and residue convex hull">
 </picture>
 
-Expand a pocket below to see its measured structures. The rows show the common
-whole-protein frame, the pocket-shape frame and an observed frame with volume
-closest to the trajectory mean. All twelve panels for each pocket share the
-same local alignment and molecular scale.
-The probe mesh stored in `probe.obj` and `probe.ply` retains the 1 Å grid used
-for the calculation. The lining-atom envelope is stored in `hull.*`.
+Each pocket gallery compares the dominant protein frame, pocket-shape frame
+and mean-volume frame after local alignment, at the same scale. The second
+image shows the empty cavity and its 10 Å solid surroundings in all four
+representative collections, including the alternative protein conformation.
+A frame with no accessible probe space has an empty local model.
 
 <details>
 <summary>Sudlow I - view all representations</summary>
@@ -210,12 +167,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Sudlow_I_representatives_dark.png">
-  <img src="images/Sudlow_I_representatives.png" width="100%" alt="Sudlow I: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/Sudlow_I_representatives.png" width="100%" alt="Sudlow I: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/Sudlow_I/`](structures/representative/whole_protein/Sudlow_I) ·
-[`pocket_geometry/Sudlow_I/`](structures/representative/pocket_geometry/Sudlow_I) ·
-[`mean_volume/Sudlow_I/`](structures/representative/mean_volume/Sudlow_I)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/Sudlow_I_pocket_solid_dark.png">
+  <img src="images/Sudlow_I_pocket_solid.png" width="100%" alt="Sudlow I: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/Sudlow_I/residues.pdb) | [OBJ](structures/representative/whole_protein/Sudlow_I/pocket_solid.obj), [PDB](structures/representative/whole_protein/Sudlow_I/pocket_solid.pdb), [SDF](structures/representative/whole_protein/Sudlow_I/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/Sudlow_I) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/Sudlow_I/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/Sudlow_I/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/Sudlow_I/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/Sudlow_I/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/Sudlow_I) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/Sudlow_I/residues.pdb) | [OBJ](structures/representative/pocket_geometry/Sudlow_I/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/Sudlow_I/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/Sudlow_I/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/Sudlow_I) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/Sudlow_I/residues.pdb) | [OBJ](structures/representative/mean_volume/Sudlow_I/pocket_solid.obj), [PDB](structures/representative/mean_volume/Sudlow_I/pocket_solid.pdb), [SDF](structures/representative/mean_volume/Sudlow_I/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/Sudlow_I) |
 
 </details>
 
@@ -226,12 +191,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Sudlow_II_representatives_dark.png">
-  <img src="images/Sudlow_II_representatives.png" width="100%" alt="Sudlow II: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/Sudlow_II_representatives.png" width="100%" alt="Sudlow II: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/Sudlow_II/`](structures/representative/whole_protein/Sudlow_II) ·
-[`pocket_geometry/Sudlow_II/`](structures/representative/pocket_geometry/Sudlow_II) ·
-[`mean_volume/Sudlow_II/`](structures/representative/mean_volume/Sudlow_II)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/Sudlow_II_pocket_solid_dark.png">
+  <img src="images/Sudlow_II_pocket_solid.png" width="100%" alt="Sudlow II: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/Sudlow_II/residues.pdb) | [OBJ](structures/representative/whole_protein/Sudlow_II/pocket_solid.obj), [PDB](structures/representative/whole_protein/Sudlow_II/pocket_solid.pdb), [SDF](structures/representative/whole_protein/Sudlow_II/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/Sudlow_II) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/Sudlow_II/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/Sudlow_II/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/Sudlow_II/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/Sudlow_II/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/Sudlow_II) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/Sudlow_II/residues.pdb) | [OBJ](structures/representative/pocket_geometry/Sudlow_II/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/Sudlow_II/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/Sudlow_II/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/Sudlow_II) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/Sudlow_II/residues.pdb) | [OBJ](structures/representative/mean_volume/Sudlow_II/pocket_solid.obj), [PDB](structures/representative/mean_volume/Sudlow_II/pocket_solid.pdb), [SDF](structures/representative/mean_volume/Sudlow_II/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/Sudlow_II) |
 
 </details>
 
@@ -242,12 +215,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Heme_representatives_dark.png">
-  <img src="images/Heme_representatives.png" width="100%" alt="Heme: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/Heme_representatives.png" width="100%" alt="Heme: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/Heme/`](structures/representative/whole_protein/Heme) ·
-[`pocket_geometry/Heme/`](structures/representative/pocket_geometry/Heme) ·
-[`mean_volume/Heme/`](structures/representative/mean_volume/Heme)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/Heme_pocket_solid_dark.png">
+  <img src="images/Heme_pocket_solid.png" width="100%" alt="Heme: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/Heme/residues.pdb) | [OBJ](structures/representative/whole_protein/Heme/pocket_solid.obj), [PDB](structures/representative/whole_protein/Heme/pocket_solid.pdb), [SDF](structures/representative/whole_protein/Heme/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/Heme) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/Heme/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/Heme/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/Heme/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/Heme/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/Heme) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/Heme/residues.pdb) | [OBJ](structures/representative/pocket_geometry/Heme/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/Heme/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/Heme/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/Heme) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/Heme/residues.pdb) | [OBJ](structures/representative/mean_volume/Heme/pocket_solid.obj), [PDB](structures/representative/mean_volume/Heme/pocket_solid.pdb), [SDF](structures/representative/mean_volume/Heme/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/Heme) |
 
 </details>
 
@@ -258,12 +239,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/Cleft_representatives_dark.png">
-  <img src="images/Cleft_representatives.png" width="100%" alt="Cleft: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/Cleft_representatives.png" width="100%" alt="Cleft: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/Cleft/`](structures/representative/whole_protein/Cleft) ·
-[`pocket_geometry/Cleft/`](structures/representative/pocket_geometry/Cleft) ·
-[`mean_volume/Cleft/`](structures/representative/mean_volume/Cleft)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/Cleft_pocket_solid_dark.png">
+  <img src="images/Cleft_pocket_solid.png" width="100%" alt="Cleft: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/Cleft/residues.pdb) | [OBJ](structures/representative/whole_protein/Cleft/pocket_solid.obj), [PDB](structures/representative/whole_protein/Cleft/pocket_solid.pdb), [SDF](structures/representative/whole_protein/Cleft/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/Cleft) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/Cleft/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/Cleft/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/Cleft/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/Cleft/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/Cleft) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/Cleft/residues.pdb) | [OBJ](structures/representative/pocket_geometry/Cleft/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/Cleft/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/Cleft/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/Cleft) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/Cleft/residues.pdb) | [OBJ](structures/representative/mean_volume/Cleft/pocket_solid.obj), [PDB](structures/representative/mean_volume/Cleft/pocket_solid.pdb), [SDF](structures/representative/mean_volume/Cleft/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/Cleft) |
 
 </details>
 
@@ -274,12 +263,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA1_representatives_dark.png">
-  <img src="images/FA1_representatives.png" width="100%" alt="FA1: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/FA1_representatives.png" width="100%" alt="FA1: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/FA1/`](structures/representative/whole_protein/FA1) ·
-[`pocket_geometry/FA1/`](structures/representative/pocket_geometry/FA1) ·
-[`mean_volume/FA1/`](structures/representative/mean_volume/FA1)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA1_pocket_solid_dark.png">
+  <img src="images/FA1_pocket_solid.png" width="100%" alt="FA1: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/FA1/residues.pdb) | [OBJ](structures/representative/whole_protein/FA1/pocket_solid.obj), [PDB](structures/representative/whole_protein/FA1/pocket_solid.pdb), [SDF](structures/representative/whole_protein/FA1/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/FA1) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/FA1/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/FA1/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/FA1/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/FA1/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/FA1) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/FA1/residues.pdb) | [OBJ](structures/representative/pocket_geometry/FA1/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/FA1/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/FA1/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/FA1) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/FA1/residues.pdb) | [OBJ](structures/representative/mean_volume/FA1/pocket_solid.obj), [PDB](structures/representative/mean_volume/FA1/pocket_solid.pdb), [SDF](structures/representative/mean_volume/FA1/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/FA1) |
 
 </details>
 
@@ -290,12 +287,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA2_representatives_dark.png">
-  <img src="images/FA2_representatives.png" width="100%" alt="FA2: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/FA2_representatives.png" width="100%" alt="FA2: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/FA2/`](structures/representative/whole_protein/FA2) ·
-[`pocket_geometry/FA2/`](structures/representative/pocket_geometry/FA2) ·
-[`mean_volume/FA2/`](structures/representative/mean_volume/FA2)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA2_pocket_solid_dark.png">
+  <img src="images/FA2_pocket_solid.png" width="100%" alt="FA2: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/FA2/residues.pdb) | [OBJ](structures/representative/whole_protein/FA2/pocket_solid.obj), [PDB](structures/representative/whole_protein/FA2/pocket_solid.pdb), [SDF](structures/representative/whole_protein/FA2/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/FA2) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/FA2/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/FA2/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/FA2/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/FA2/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/FA2) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/FA2/residues.pdb) | [OBJ](structures/representative/pocket_geometry/FA2/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/FA2/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/FA2/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/FA2) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/FA2/residues.pdb) | [OBJ](structures/representative/mean_volume/FA2/pocket_solid.obj), [PDB](structures/representative/mean_volume/FA2/pocket_solid.pdb), [SDF](structures/representative/mean_volume/FA2/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/FA2) |
 
 </details>
 
@@ -306,12 +311,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA3_representatives_dark.png">
-  <img src="images/FA3_representatives.png" width="100%" alt="FA3: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/FA3_representatives.png" width="100%" alt="FA3: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/FA3/`](structures/representative/whole_protein/FA3) ·
-[`pocket_geometry/FA3/`](structures/representative/pocket_geometry/FA3) ·
-[`mean_volume/FA3/`](structures/representative/mean_volume/FA3)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA3_pocket_solid_dark.png">
+  <img src="images/FA3_pocket_solid.png" width="100%" alt="FA3: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/FA3/residues.pdb) | [OBJ](structures/representative/whole_protein/FA3/pocket_solid.obj), [PDB](structures/representative/whole_protein/FA3/pocket_solid.pdb), [SDF](structures/representative/whole_protein/FA3/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/FA3) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/FA3/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/FA3/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/FA3/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/FA3/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/FA3) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/FA3/residues.pdb) | [OBJ](structures/representative/pocket_geometry/FA3/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/FA3/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/FA3/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/FA3) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/FA3/residues.pdb) | [OBJ](structures/representative/mean_volume/FA3/pocket_solid.obj), [PDB](structures/representative/mean_volume/FA3/pocket_solid.pdb), [SDF](structures/representative/mean_volume/FA3/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/FA3) |
 
 </details>
 
@@ -322,12 +335,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA4_representatives_dark.png">
-  <img src="images/FA4_representatives.png" width="100%" alt="FA4: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/FA4_representatives.png" width="100%" alt="FA4: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/FA4/`](structures/representative/whole_protein/FA4) ·
-[`pocket_geometry/FA4/`](structures/representative/pocket_geometry/FA4) ·
-[`mean_volume/FA4/`](structures/representative/mean_volume/FA4)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA4_pocket_solid_dark.png">
+  <img src="images/FA4_pocket_solid.png" width="100%" alt="FA4: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/FA4/residues.pdb) | [OBJ](structures/representative/whole_protein/FA4/pocket_solid.obj), [PDB](structures/representative/whole_protein/FA4/pocket_solid.pdb), [SDF](structures/representative/whole_protein/FA4/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/FA4) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/FA4/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/FA4/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/FA4/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/FA4/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/FA4) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/FA4/residues.pdb) | [OBJ](structures/representative/pocket_geometry/FA4/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/FA4/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/FA4/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/FA4) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/FA4/residues.pdb) | [OBJ](structures/representative/mean_volume/FA4/pocket_solid.obj), [PDB](structures/representative/mean_volume/FA4/pocket_solid.pdb), [SDF](structures/representative/mean_volume/FA4/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/FA4) |
 
 </details>
 
@@ -338,12 +359,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA5_representatives_dark.png">
-  <img src="images/FA5_representatives.png" width="100%" alt="FA5: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/FA5_representatives.png" width="100%" alt="FA5: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/FA5/`](structures/representative/whole_protein/FA5) ·
-[`pocket_geometry/FA5/`](structures/representative/pocket_geometry/FA5) ·
-[`mean_volume/FA5/`](structures/representative/mean_volume/FA5)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA5_pocket_solid_dark.png">
+  <img src="images/FA5_pocket_solid.png" width="100%" alt="FA5: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/FA5/residues.pdb) | [OBJ](structures/representative/whole_protein/FA5/pocket_solid.obj), [PDB](structures/representative/whole_protein/FA5/pocket_solid.pdb), [SDF](structures/representative/whole_protein/FA5/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/FA5) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/FA5/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/FA5/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/FA5/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/FA5/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/FA5) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/FA5/residues.pdb) | [OBJ](structures/representative/pocket_geometry/FA5/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/FA5/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/FA5/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/FA5) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/FA5/residues.pdb) | [OBJ](structures/representative/mean_volume/FA5/pocket_solid.obj), [PDB](structures/representative/mean_volume/FA5/pocket_solid.pdb), [SDF](structures/representative/mean_volume/FA5/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/FA5) |
 
 </details>
 
@@ -354,12 +383,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA6_representatives_dark.png">
-  <img src="images/FA6_representatives.png" width="100%" alt="FA6: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/FA6_representatives.png" width="100%" alt="FA6: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/FA6/`](structures/representative/whole_protein/FA6) ·
-[`pocket_geometry/FA6/`](structures/representative/pocket_geometry/FA6) ·
-[`mean_volume/FA6/`](structures/representative/mean_volume/FA6)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA6_pocket_solid_dark.png">
+  <img src="images/FA6_pocket_solid.png" width="100%" alt="FA6: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/FA6/residues.pdb) | [OBJ](structures/representative/whole_protein/FA6/pocket_solid.obj), [PDB](structures/representative/whole_protein/FA6/pocket_solid.pdb), [SDF](structures/representative/whole_protein/FA6/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/FA6) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/FA6/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/FA6/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/FA6/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/FA6/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/FA6) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/FA6/residues.pdb) | [OBJ](structures/representative/pocket_geometry/FA6/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/FA6/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/FA6/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/FA6) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/FA6/residues.pdb) | [OBJ](structures/representative/mean_volume/FA6/pocket_solid.obj), [PDB](structures/representative/mean_volume/FA6/pocket_solid.pdb), [SDF](structures/representative/mean_volume/FA6/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/FA6) |
 
 </details>
 
@@ -370,12 +407,20 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/FA7_representatives_dark.png">
-  <img src="images/FA7_representatives.png" width="100%" alt="FA7: atomic residues, probe mesh, residues with probe and convex hull, compared across whole-protein, pocket-shape and near-mean-volume frames">
+  <img src="images/FA7_representatives.png" width="100%" alt="FA7: lining residues, probe, residues with probe and convex hull in the dominant protein, pocket-shape and mean-volume frames">
 </picture>
 
-[`whole_protein/FA7/`](structures/representative/whole_protein/FA7) ·
-[`pocket_geometry/FA7/`](structures/representative/pocket_geometry/FA7) ·
-[`mean_volume/FA7/`](structures/representative/mean_volume/FA7)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/FA7_pocket_solid_dark.png">
+  <img src="images/FA7_pocket_solid.png" width="100%" alt="FA7: empty cavity and 10-Angstrom solid surroundings, compared across all four representative selections">
+</picture>
+
+| Frame selection | Atomic lining residues | Cavity with surrounding solid | All pocket models |
+|---|---|---|---|
+| Dominant protein frame | [PDB](structures/representative/whole_protein/FA7/residues.pdb) | [OBJ](structures/representative/whole_protein/FA7/pocket_solid.obj), [PDB](structures/representative/whole_protein/FA7/pocket_solid.pdb), [SDF](structures/representative/whole_protein/FA7/pocket_solid.sdf) | [Folder](structures/representative/whole_protein/FA7) |
+| Alternative protein frame | [PDB](structures/representative/whole_protein_group_2/FA7/residues.pdb) | [OBJ](structures/representative/whole_protein_group_2/FA7/pocket_solid.obj), [PDB](structures/representative/whole_protein_group_2/FA7/pocket_solid.pdb), [SDF](structures/representative/whole_protein_group_2/FA7/pocket_solid.sdf) | [Folder](structures/representative/whole_protein_group_2/FA7) |
+| Pocket-shape frame | [PDB](structures/representative/pocket_geometry/FA7/residues.pdb) | [OBJ](structures/representative/pocket_geometry/FA7/pocket_solid.obj), [PDB](structures/representative/pocket_geometry/FA7/pocket_solid.pdb), [SDF](structures/representative/pocket_geometry/FA7/pocket_solid.sdf) | [Folder](structures/representative/pocket_geometry/FA7) |
+| Mean-volume frame | [PDB](structures/representative/mean_volume/FA7/residues.pdb) | [OBJ](structures/representative/mean_volume/FA7/pocket_solid.obj), [PDB](structures/representative/mean_volume/FA7/pocket_solid.pdb), [SDF](structures/representative/mean_volume/FA7/pocket_solid.sdf) | [Folder](structures/representative/mean_volume/FA7) |
 
 </details>
 
@@ -385,7 +430,8 @@ for the calculation. The lining-atom envelope is stored in `hull.*`.
 between-replica SD. Each replica mean includes all 102 sampled observations,
 including frames with zero accessible probe space.
 
-**Group 1** and **Group 2** give the volumes in the two whole-protein frames.
+**Dominant protein** and **Alternative protein** give the volumes in the two
+whole-protein frames.
 **Pocket shape** gives the volume in the frame selected by cavity geometry.
 These selection criteria describe protein opening or local shape, so their
 volumes can differ from the ensemble mean.
@@ -396,7 +442,7 @@ the MD mean among the 306 sampled frames. The models are in
 reference for the average cavity size, using real coordinates. All volumes
 are in Å³. Click a value to open its model folder.
 
-| Pocket | MD mean ± SD | Group 1 | Group 2 | Pocket shape | Near mean |
+| Pocket | MD mean ± SD | Dominant protein | Alternative protein | Pocket shape | Mean volume |
 |---|---:|---:|---:|---:|---:|
 | Sudlow&nbsp;I | 65.9 ± 13.4 | [50](structures/representative/whole_protein/Sudlow_I) | [55](structures/representative/whole_protein_group_2/Sudlow_I) | [114](structures/representative/pocket_geometry/Sudlow_I) | [66](structures/representative/mean_volume/Sudlow_I) |
 | Sudlow&nbsp;II | 16.4 ± 10.6 | [24](structures/representative/whole_protein/Sudlow_II) | [3](structures/representative/whole_protein_group_2/Sudlow_II) | [36](structures/representative/pocket_geometry/Sudlow_II) | [16](structures/representative/mean_volume/Sudlow_II) |
@@ -425,8 +471,8 @@ FA7 overlaps Sudlow I, and FA3/FA4 overlap Sudlow II.
 ```text
 structures/
 ├── representative/
-│   ├── whole_protein/          Principal protein frame, group 1
-│   ├── whole_protein_group_2/  Alternative protein frame, group 2
+│   ├── whole_protein/          Dominant protein frame
+│   ├── whole_protein_group_2/  Alternative protein frame
 │   ├── pocket_geometry/        One shape-selected frame per pocket
 │   └── mean_volume/            One frame near each mean pocket volume
 ├── R1/                        Original per-replica representatives
