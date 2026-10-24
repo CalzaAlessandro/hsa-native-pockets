@@ -82,8 +82,8 @@
     "images/Sudlow_II_representatives_dark.png": "2923967d11a3ba0445ee621d6b65c1bea1387b25b7b3e9752867c43dc42fb149",
     "images/Sudlow_I_representatives.png": "a3e7a2a0fb908f5e582949b243f4ef2f58970f0b135511a902c31a0c2a1b8527",
     "images/Sudlow_I_representatives_dark.png": "169e6d73b613eb972702f9fa0266eb90844851ab19d1f585bc291619708c244b",
-    "images/banner.svg": "423b9a53d15196fa3fc466a9451c09e6e23c72ee58369813dd51345d136c1e75",
-    "images/banner_dark.svg": "8ca62c2f77f72db31efc827e3de1cbe8a534583ec014d37948bbff52fb0b447e",
+    "images/banner.svg": "d8345c1fcc1bf6b69b8ff054b019744db98a884586593e395aeeec7ec96e42d9",
+    "images/banner_dark.svg": "aee0a5553d2d5a1ed115808ee07c4993f9802e4fd12f8aef3d0f69f7a4ccb6ad",
     "images/protein_solid_group_1.png": "b3d914c5bfdca2cd252f188aa049dfba25aa70574744af68f67543842fe5fcbb",
     "images/protein_solid_group_1_dark.png": "6539ed09e5d84a31abb5c62b28cff09317683632d6e7e6568ec0070f16682a27",
     "images/protein_solid_group_2.png": "75faf5be38f618d11a7f4d58243ddf680f738368f688e4c4e15fce0a8c38087b",
@@ -507,75 +507,76 @@
     "mean_volume_model_validation": true
   },
   "banner": {
-    "description": "Native HSA convex envelope and actual physiological probe spaces, with the heme cavity and its lining-residue bond graph",
-    "format": "SVG vector triangles, atom-bond paths and text; no raster images or invented shapes",
+    "description": "Frontal native HSA cartoon with the actual heme cavity position and a larger local atomic detail",
+    "format": "SVG typography and cavity geometry; embedded VMD/Tachyon molecular render from a 3840 x 2160 source",
     "source_frame": {
       "replica": "R3",
       "frame": 2726,
       "protein_group": 1
     },
+    "protein_representation": "NewCartoon; secondary-structure colors; AOChalky",
     "background": "transparent light and dark variants",
     "dimensions_px": [
       1600,
       320
     ],
-    "coordinate_units": "angstrom",
     "scale_bars_A": {
       "whole_protein": 20,
       "heme_pocket": 5
     },
-    "native_view_rotation": [
-      [
-        -0.5574230602316961,
-        0.8248240340235147,
-        0.0945771897382135
-      ],
-      [
-        0.8161594240952662,
-        0.5652926339173091,
-        -0.11969975981174735
-      ],
-      [
-        -0.1521950274551816,
-        0.0104666582860269,
-        -0.9882950585135164
-      ]
-    ],
-    "native_view_translation": [
-      -67.81587364379442,
-      38.83698161255835,
-      -15.136613857573359
-    ],
-    "local_view_rotation": [
-      [
-        -0.7129291383785283,
-        -0.12382337424843401,
-        0.6902172235177715
-      ],
-      [
-        -0.665962204736564,
-        -0.18869191305405528,
-        -0.7217268900424979
-      ],
-      [
-        0.21960506713931738,
-        -0.9741987137836576,
-        0.05206227568021602
-      ]
-    ],
-    "local_view_translation": [
-      -0.46799060986188434,
-      31.764264357800776,
-      -5.858601949352861
-    ],
-    "local_view": "Proper rigid rotation onto the principal geometric axes of the lining heavy atoms",
+    "atomic_detail": "Heavy atoms within 4 A of a heme probe-mesh vertex; original chemical bonds retained between selected atoms",
+    "callout_location": "Projection of the measured heme cavity using the original orthographic VMD/Tachyon camera",
     "source_sha256": {
-      "structures/representative/whole_protein/protein_hull.obj": "7badfd618c7b914b3b9e4cd6735ee636968d1f95112d3e98fc76f673f174fe4b",
+      "structures/representative/whole_protein/protein.pdb": "8b265863dccaa125c833ed013a791f1e1a3d4c20f9584a76de4eac24742e6e1a",
       "structures/representative/whole_protein/Heme/probe.obj": "b681f2afee69f7da7b9a7246edcdd01b9cc8f22958d063265aafcbd05ef5c09b",
       "structures/representative/whole_protein/Heme/residues.pdb": "693d103d1f264f097c8c2be64336d66c53f6779bba02ba6ed24561d884e2e420"
     },
-    "hydrogens_displayed": false,
-    "chemical_bonds": "CONECT records of Heme/residues.pdb",
+    "source_render_sha256": {
+      "protein_1_transparent.png": "1a12bbd5f5163694e6b94cc32e3542ad231637439d759d2d4453290b63f3526b",
+      "protein_1_dark_transparent.png": "d95fde95ed6d8f4b044eafdd369ccc9fa9420425f5716cb5c997857f981842d3"
+    },
+    "render_composition": {
+      "False": {
+        "crop": [
+          1228,
+          492,
+          2734,
+          1901
+        ],
+        "displayed_render_box": [
+          801.3946061036196,
+          17.999999999999986,
+          267.21078779276087,
+          250.00000000000003
+        ],
+        "embedded_render_dimensions_px": [
+          1200,
+          1123
+        ],
+        "nearby_heavy_atoms": 53,
+        "effective_image_pixels_per_display_pixel": 4.490836653386453
+      },
+      "True": {
+        "crop": [
+          1228,
+          492,
+          2734,
+          1901
+        ],
+        "displayed_render_box": [
+          801.3946061036196,
+          17.999999999999986,
+          267.21078779276087,
+          250.00000000000003
+        ],
+        "embedded_render_dimensions_px": [
+          1200,
+          1123
+        ],
+        "nearby_heavy_atoms": 53,
+        "effective_image_pixels_per_display_pixel": 4.490836653386453
+      }
+    },
     "cavity_smoothing": false
   },
   "inverse_model_previews": {
