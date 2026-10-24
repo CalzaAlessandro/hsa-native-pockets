@@ -12,28 +12,12 @@ and the original R1-R3 results.
 
 ## Choose a template
 
-The **whole-protein representatives** were selected by clustering frames from
-the three HSA simulations according to domain opening. The observed frame
-closest to each cluster center was retained. All eleven pocket geometries
-were then calculated on each selected protein frame.
-
-The **pocket-shape representatives** were selected separately for each pocket
-from 306 frames, sampled equally across the three simulations. Locally aligned
-cavity shapes were grouped by their spatial overlap. The frame with the
-smallest average shape difference from the other members of the largest
-nonempty group was retained.
-
-The **mean-volume representatives** were selected separately for each pocket
-as the observed frame whose cavity volume was closest to the mean over the
-same 306 sampled frames.
-
-### How the protein groups were selected
-
-Protein clustering used standardized Domain I-III distance, the I-II-III
+The **whole-protein representatives** were selected by clustering the three
+HSA trajectories using standardized Domain I-III distance, the I-II-III
 opening angle and the fraction of native I-III contacts. Ward, k-means and
 DBSCAN were compared on 600 uniformly sampled frames, 200 per replica.
-Candidates were ranked by the fraction of assigned frames multiplied by the
-silhouette score, which measures separation between groups.
+Candidates were ranked by the fraction of assigned frames multiplied by
+the silhouette score.
 
 | Method | Groups | Assigned training frames | Silhouette | Coverage × silhouette |
 |---|---:|---:|---:|---:|
@@ -42,12 +26,23 @@ silhouette score, which measures separation between groups.
 | DBSCAN | 3 | 68.2% | 0.293 | 0.200 |
 
 Ward gave the highest score and identified two groups. All 30,000 saved frames
-were assigned to their nearest group center. DBSCAN left 31.8% of the training
-frames and 33.0% of the full dataset unassigned.
+were assigned to their nearest group center. The observed frame closest to
+each center was retained, and all eleven pocket geometries were calculated
+on that frame. DBSCAN left 31.8% of the training frames and 33.0% of the full
+dataset unassigned.
 
-For pocket-shape selection, DBSCAN identified two nonempty groups for FA5;
-the other pockets were each represented by one nonempty shape group.
-[Methods and complete comparisons](tables/README.md).
+The **pocket-shape representatives** were selected separately for each pocket
+from 306 frames, sampled equally across the three simulations. Locally aligned
+cavity shapes were grouped by spatial overlap. DBSCAN identified two nonempty
+groups for FA5; the other pockets were each represented by one nonempty group.
+Within the largest group, the frame with the smallest average shape difference
+from the other members was retained.
+
+The **mean-volume representatives** were selected separately for each pocket
+as the observed frame whose cavity volume was closest to the mean over the
+same 306 sampled frames.
+
+[Detailed methods and clustering comparisons](tables/README.md).
 
 ### Whole-protein representative
 
@@ -436,11 +431,10 @@ whole-protein frames.
 These selection criteria describe protein opening or local shape, so their
 volumes can differ from the ensemble mean.
 
-**Near mean** gives an additional observed frame whose volume is closest to
-the MD mean among the 306 sampled frames. The models are in
-[`mean_volume/`](structures/representative/mean_volume). They provide a
-reference for the average cavity size, using real coordinates. All volumes
-are in Å³. Click a value to open its model folder.
+**Mean volume** gives the cavity volume in the observed frame closest to the
+MD mean among the 306 sampled frames. Its model is in
+[`mean_volume/`](structures/representative/mean_volume). All volumes are in Å³;
+each linked value opens the corresponding model folder.
 
 | Pocket | MD mean ± SD | Dominant protein | Alternative protein | Pocket shape | Mean volume |
 |---|---:|---:|---:|---:|---:|
@@ -461,10 +455,10 @@ the specified region in that frame. The physiological site is still defined by
 its reference residues. These volumes describe the selected probe and region;
 FA7 overlaps Sudlow I, and FA3/FA4 overlap Sudlow II.
 
-[Full comparison table](tables/representative_comparison.csv) ·
-[Source frames and lining residues](tables/representative_models.csv) ·
-[Near-mean-volume frames](tables/mean_volume_models.csv) ·
-[Methods and table definitions](tables/README.md)
+- [Full comparison table](tables/representative_comparison.csv)
+- [Source frames and lining residues](tables/representative_models.csv)
+- [Mean-volume frames](tables/mean_volume_models.csv)
+- [Methods and table definitions](tables/README.md)
 
 ## Find the files
 
