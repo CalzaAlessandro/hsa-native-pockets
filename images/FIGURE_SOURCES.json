@@ -82,8 +82,8 @@
     "images/Sudlow_II_representatives_dark.png": "2923967d11a3ba0445ee621d6b65c1bea1387b25b7b3e9752867c43dc42fb149",
     "images/Sudlow_I_representatives.png": "a3e7a2a0fb908f5e582949b243f4ef2f58970f0b135511a902c31a0c2a1b8527",
     "images/Sudlow_I_representatives_dark.png": "169e6d73b613eb972702f9fa0266eb90844851ab19d1f585bc291619708c244b",
-    "images/banner.svg": "d8345c1fcc1bf6b69b8ff054b019744db98a884586593e395aeeec7ec96e42d9",
-    "images/banner_dark.svg": "aee0a5553d2d5a1ed115808ee07c4993f9802e4fd12f8aef3d0f69f7a4ccb6ad",
+    "images/banner.svg": "c8967a7bcffbabb70f061831ac30c76486ff6bfd7ef57e8f96ffe97a2dde8240",
+    "images/banner_dark.svg": "e5b0708e61574cff301f90c1baf7e180dbda7411541597c7fb07fe2b9f12b337",
     "images/protein_solid_group_1.png": "b3d914c5bfdca2cd252f188aa049dfba25aa70574744af68f67543842fe5fcbb",
     "images/protein_solid_group_1_dark.png": "6539ed09e5d84a31abb5c62b28cff09317683632d6e7e6568ec0070f16682a27",
     "images/protein_solid_group_2.png": "75faf5be38f618d11a7f4d58243ddf680f738368f688e4c4e15fce0a8c38087b",
@@ -507,74 +507,90 @@
     "mean_volume_model_validation": true
   },
   "banner": {
-    "description": "Frontal native HSA cartoon with the actual heme cavity position and a larger local atomic detail",
-    "format": "SVG typography and cavity geometry; embedded VMD/Tachyon molecular render from a 3840 x 2160 source",
+    "description": "Three actual outputs of the same native heme pocket: atomic lining residues, probe surface and convex hull with probe",
+    "format": "SVG molecular bonds, atom spheres and geometric surfaces; no raster images",
     "source_frame": {
       "replica": "R3",
       "frame": 2726,
       "protein_group": 1
     },
-    "protein_representation": "NewCartoon; secondary-structure colors; AOChalky",
-    "background": "transparent light and dark variants",
     "dimensions_px": [
       1600,
-      320
+      450
     ],
-    "scale_bars_A": {
-      "whole_protein": 20,
-      "heme_pocket": 5
-    },
-    "atomic_detail": "Heavy atoms within 4 A of a heme probe-mesh vertex; original chemical bonds retained between selected atoms",
-    "callout_location": "Projection of the measured heme cavity using the original orthographic VMD/Tachyon camera",
+    "background": "transparent light and dark variants",
+    "orientation": "Same isometric rigid view for all representations, derived from the probe-grid face normals",
+    "scales": "Residue and hull panels share one scale; the probe is magnified separately, with a calibrated 5-A scale bar in every panel",
+    "atomic_selection": "All heavy atoms of the delivered Heme/residues.pdb; original CONECT chemical bonds retained",
     "source_sha256": {
-      "structures/representative/whole_protein/protein.pdb": "8b265863dccaa125c833ed013a791f1e1a3d4c20f9584a76de4eac24742e6e1a",
+      "structures/representative/whole_protein/Heme/residues.pdb": "693d103d1f264f097c8c2be64336d66c53f6779bba02ba6ed24561d884e2e420",
       "structures/representative/whole_protein/Heme/probe.obj": "b681f2afee69f7da7b9a7246edcdd01b9cc8f22958d063265aafcbd05ef5c09b",
-      "structures/representative/whole_protein/Heme/residues.pdb": "693d103d1f264f097c8c2be64336d66c53f6779bba02ba6ed24561d884e2e420"
-    },
-    "source_render_sha256": {
-      "protein_1_transparent.png": "1a12bbd5f5163694e6b94cc32e3542ad231637439d759d2d4453290b63f3526b",
-      "protein_1_dark_transparent.png": "d95fde95ed6d8f4b044eafdd369ccc9fa9420425f5716cb5c997857f981842d3"
+      "structures/representative/whole_protein/Heme/hull.obj": "dfadcfd0275228d7e563a9a90692afa34aba91139bf736c815ef4e28cc8397ff"
     },
     "render_composition": {
       "False": {
-        "crop": [
-          1228,
-          492,
-          2734,
-          1901
+        "panel_scales_px_per_A": [
+          12.402438738222124,
+          22.045407710156788,
+          12.402438738222124
         ],
-        "displayed_render_box": [
-          801.3946061036196,
-          17.999999999999986,
-          267.21078779276087,
-          250.00000000000003
+        "lining_heavy_atoms": 108,
+        "chemical_bonds": 104,
+        "probe_vertices": 258,
+        "rotation": [
+          [
+            0.3469747918546829,
+            -0.8048967421150893,
+            -0.48140391393290016
+          ],
+          [
+            0.9342928194637121,
+            0.25182533572207183,
+            0.25235080302430807
+          ],
+          [
+            -0.08188663698032024,
+            -0.5373315874029571,
+            0.8393862900137649
+          ]
         ],
-        "embedded_render_dimensions_px": [
-          1200,
-          1123
-        ],
-        "nearby_heavy_atoms": 53,
-        "effective_image_pixels_per_display_pixel": 4.490836653386453
+        "translation": [
+          -0.7469926801309656,
+          20.334166159103898,
+          -25.944353311779235
+        ]
       },
       "True": {
-        "crop": [
-          1228,
-          492,
-          2734,
-          1901
+        "panel_scales_px_per_A": [
+          12.402438738222124,
+          22.045407710156788,
+          12.402438738222124
         ],
-        "displayed_render_box": [
-          801.3946061036196,
-          17.999999999999986,
-          267.21078779276087,
-          250.00000000000003
+        "lining_heavy_atoms": 108,
+        "chemical_bonds": 104,
+        "probe_vertices": 258,
+        "rotation": [
+          [
+            0.3469747918546829,
+            -0.8048967421150893,
+            -0.48140391393290016
+          ],
+          [
+            0.9342928194637121,
+            0.25182533572207183,
+            0.25235080302430807
+          ],
+          [
+            -0.08188663698032024,
+            -0.5373315874029571,
+            0.8393862900137649
+          ]
         ],
-        "embedded_render_dimensions_px": [
-          1200,
-          1123
-        ],
-        "nearby_heavy_atoms": 53,
-        "effective_image_pixels_per_display_pixel": 4.490836653386453
+        "translation": [
+          -0.7469926801309656,
+          20.334166159103898,
+          -25.944353311779235
+        ]
       }
     },
     "cavity_smoothing": false

@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/banner_dark.svg">
-  <img src="images/banner.svg" width="100%" alt="Native HSA in a frontal cartoon view with the heme cavity highlighted and enlarged beside its lining atoms">
+  <img src="images/banner.svg" width="100%" alt="Three views of the native heme pocket: atomic lining residues, the cavity probe surface, and the convex hull with probe">
 </picture>
 
 Atomic structures and geometric models of eleven physiological regions in
