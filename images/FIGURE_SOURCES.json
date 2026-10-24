@@ -82,8 +82,8 @@
     "images/Sudlow_II_representatives_dark.png": "2923967d11a3ba0445ee621d6b65c1bea1387b25b7b3e9752867c43dc42fb149",
     "images/Sudlow_I_representatives.png": "a3e7a2a0fb908f5e582949b243f4ef2f58970f0b135511a902c31a0c2a1b8527",
     "images/Sudlow_I_representatives_dark.png": "169e6d73b613eb972702f9fa0266eb90844851ab19d1f585bc291619708c244b",
-    "images/banner.svg": "74abe1692375ceab9f1f575cf4a11d24cd3cfd6ac317bd292e7e324d9c1dd7b1",
-    "images/banner_dark.svg": "a477b8e45b4ad0ae1b8b407e8e809ca25e5b07c47b23e09a3896f155f341a34b",
+    "images/banner.svg": "423b9a53d15196fa3fc466a9451c09e6e23c72ee58369813dd51345d136c1e75",
+    "images/banner_dark.svg": "8ca62c2f77f72db31efc827e3de1cbe8a534583ec014d37948bbff52fb0b447e",
     "images/protein_solid_group_1.png": "b3d914c5bfdca2cd252f188aa049dfba25aa70574744af68f67543842fe5fcbb",
     "images/protein_solid_group_1_dark.png": "6539ed09e5d84a31abb5c62b28cff09317683632d6e7e6568ec0070f16682a27",
     "images/protein_solid_group_2.png": "75faf5be38f618d11a7f4d58243ddf680f738368f688e4c4e15fce0a8c38087b",
@@ -507,14 +507,76 @@
     "mean_volume_model_validation": true
   },
   "banner": {
-    "description": "Abstract schematic of a protein envelope with empty pockets and an enlarged local cavity model",
-    "format": "Pure SVG paths and vector text; no embedded raster images",
-    "contains_HSA_measurements": false,
+    "description": "Native HSA convex envelope and actual physiological probe spaces, with the heme cavity and its lining-residue bond graph",
+    "format": "SVG vector triangles, atom-bond paths and text; no raster images or invented shapes",
+    "source_frame": {
+      "replica": "R3",
+      "frame": 2726,
+      "protein_group": 1
+    },
     "background": "transparent light and dark variants",
     "dimensions_px": [
       1600,
-      280
-    ]
+      320
+    ],
+    "coordinate_units": "angstrom",
+    "scale_bars_A": {
+      "whole_protein": 20,
+      "heme_pocket": 5
+    },
+    "native_view_rotation": [
+      [
+        -0.5574230602316961,
+        0.8248240340235147,
+        0.0945771897382135
+      ],
+      [
+        0.8161594240952662,
+        0.5652926339173091,
+        -0.11969975981174735
+      ],
+      [
+        -0.1521950274551816,
+        0.0104666582860269,
+        -0.9882950585135164
+      ]
+    ],
+    "native_view_translation": [
+      -67.81587364379442,
+      38.83698161255835,
+      -15.136613857573359
+    ],
+    "local_view_rotation": [
+      [
+        -0.7129291383785283,
+        -0.12382337424843401,
+        0.6902172235177715
+      ],
+      [
+        -0.665962204736564,
+        -0.18869191305405528,
+        -0.7217268900424979
+      ],
+      [
+        0.21960506713931738,
+        -0.9741987137836576,
+        0.05206227568021602
+      ]
+    ],
+    "local_view_translation": [
+      -0.46799060986188434,
+      31.764264357800776,
+      -5.858601949352861
+    ],
+    "local_view": "Proper rigid rotation onto the principal geometric axes of the lining heavy atoms",
+    "source_sha256": {
+      "structures/representative/whole_protein/protein_hull.obj": "7badfd618c7b914b3b9e4cd6735ee636968d1f95112d3e98fc76f673f174fe4b",
+      "structures/representative/whole_protein/Heme/probe.obj": "b681f2afee69f7da7b9a7246edcdd01b9cc8f22958d063265aafcbd05ef5c09b",
+      "structures/representative/whole_protein/Heme/residues.pdb": "693d103d1f264f097c8c2be64336d66c53f6779bba02ba6ed24561d884e2e420"
+    },
+    "hydrogens_displayed": false,
+    "chemical_bonds": "CONECT records of Heme/residues.pdb",
+    "cavity_smoothing": false
   },
   "inverse_model_previews": {
     "description": "Full protein solids and a local heme cavity with rounded 10-Angstrom surroundings",

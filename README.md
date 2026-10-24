@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/banner_dark.svg">
-  <img src="images/banner.svg" width="100%" alt="Abstract schematic of a protein envelope with pocket voids and an enlarged local cavity model">
+  <img src="images/banner.svg" width="100%" alt="Native HSA envelope and physiological cavity spaces, with an enlarged heme pocket showing actual lining atoms and cavity geometry">
 </picture>
 
 Atomic structures and geometric models of eleven physiological regions in
