@@ -4,212 +4,154 @@
 
 ## Sampling and frame selection
 
-The dataset contains three independent 1 µs trajectories of native 585-residue
-HSA, with 10,000 saved frames per trajectory. Coordinates are in Å and volumes
-in Å³.
+Three independent 1 µs simulations of native, 585-residue HSA supplied 10,000
+saved frames per replica. Coordinates are in Å and volumes in Å³.
 
-### Common whole-protein frame
+### Whole-protein representatives
 
-Each saved frame is described by three measurements:
+Protein opening was described by three measurements:
 
-- **Domain I-III COM distance:** the distance between the domains' centers of mass.
-- **Opening angle:** the angle between the centers of mass of Domains I, II and III, with Domain II at the vertex.
-- **Q_I-III:** the fraction of reference contacts between Domains I and III retained in that frame.
+- Domain I-III center-of-mass distance.
+- The angle between the centers of mass of Domains I, II and III, with Domain II at the vertex.
+- Q_I-III, the fraction of native contacts retained between Domains I and III.
 
-The clustering compares overall opening geometries. Training uses 200 uniformly
-sampled frames from each replica, giving 600 frames with equal replica weights.
-Each measurement is centered on its training-set mean and divided by its
-training-set SD, so distances, angles and contact fractions contribute on
-comparable scales.
+Clustering used 200 uniformly sampled frames per replica, giving 600 frames
+with equal replica weights. Each measurement was centered on its training-set
+mean and divided by its training-set SD. Ward, k-means and DBSCAN candidates
+were compared on these standardized features. All 30,000 saved frames were assigned to the
+nearest center of the selected two-group Ward model.
 
-K-means, Ward and DBSCAN candidates were compared. The selected two-group
-Ward model was fitted to the training set; all 30,000 saved frames were then
-assigned to the nearest group center in the standardized measurements.
-Group 1 contains 68.3% of these frames. Its representative is the observed
-member closest to its group center: R3, frame 2726, at 27.26% of production.
-All eleven pocket geometries in `whole_protein/` were computed from this
-same frame. The selected frame summarizes the opening measurements; its
-individual pocket volumes can differ from their trajectory means.
+For each group, the observed frame closest to its center was selected.
+Group 1 contained 68.3% of the frames; its representative was R3, frame 2726
+(27.26% of production). Group 2 contained 31.7%; its representative was R2,
+frame 8894 (88.94% of production). All eleven pocket geometries were calculated
+on each selected protein frame using the same physiological regions, atomic
+exclusions and 1.4 Å probe.
 
-### Ward and DBSCAN comparison
-
-Ward is agglomerative hierarchical clustering: each merge minimizes the increase
-in within-group squared variation. DBSCAN uses a neighborhood radius, `eps`,
-and minimum local sample count, `min_samples`, to identify dense regions and
-leave sparse observations unassigned. K-means fits a specified number of centers.
-
-The selection score is assigned training fraction multiplied by the nonnegative
-silhouette. Candidates require at least five training observations per group.
-This score evaluates both separation and sample coverage. It selected Ward with
-two groups (silhouette 0.3824), followed by two-group k-means (0.3663).
-The best eligible DBSCAN candidate has three groups, `eps = 0.4495` in standardized
-feature units and `min_samples = 20`: silhouette 0.2931, coverage 68.17%, score
-0.1998. Sparse frames account for 31.83% of its training sample.
-
-Extending the DBSCAN core neighborhoods to all 30,000 frames leaves 32.99%
-unassigned. Each frame was assigned to its nearest training core point when
-their distance was within `eps`.
-Results are in [protein_clustering_comparison.csv](protein_clustering_comparison.csv),
-all candidates in [protein_clustering_candidates.csv](protein_clustering_candidates.csv),
-and DBSCAN per-replica populations in
-[protein_dbscan_populations.csv](protein_dbscan_populations.csv).
-Algorithm definitions are available in the
-[SciPy Ward documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.ward.html)
-and the [scikit-learn DBSCAN guide](https://scikit-learn.org/stable/modules/clustering.html#dbscan).
-
-### Second common whole-protein frame
-
-The second group contains 31.7% of the equally weighted R1-R3 frames. Its
-common observed representative is R2, frame 8894 (88.94% of production).
-The eleven pocket geometries were extracted anew on that frame with the same
-physiological regions, atomic exclusions and 1.4 Å probe used for group 1.
-The cleft uses the existing common local lattice. These measurements are
-reported in [second_group_models.csv](second_group_models.csv).
-
-Group 2 is the less populated of the two common groups. Its frame fractions
-are 30.2% in R1, 62.1% in R2 and 2.8% in R3. Thus the 31.7% pooled fraction also
-contains substantial replica variability. The original common assignments and
-source-frame tables are retained in
+Group 2 populations were 30.2% in R1, 62.1% in R2 and 2.8% in R3.
+Populations and selected frames are reported in
 [common_cluster_populations.csv](common_cluster_populations.csv) and
 [common_cluster_representatives.csv](common_cluster_representatives.csv).
+Pocket measurements for the alternative conformation are in
+[second_group_models.csv](second_group_models.csv).
 
-The two proteins are aligned on Domain II for comparison. The alternative
-protein structure and its pocket models are in
-[`structures/representative/whole_protein_group_2/`](../structures/representative/whole_protein_group_2).
+### Clustering comparison
 
-### Independent pocket-shape frames
+Ward clustering minimizes the increase in within-group squared variation at
+each merge. K-means fits group centers. DBSCAN identifies dense regions using
+a neighborhood radius, `eps`, and minimum neighbor count, `min_samples`.
 
-Each region was analyzed across 102 uniformly sampled frames per replica,
-including the first and last saved frames: 306 observations per region. Local
-Cα alignment places the probe-space masks on a common grid. Jaccard distance
-compares occupied grid cells, allowing different shapes with equal volume to be
-distinguished. The representative is the observed medoid: the member minimizing
-the sum of its Jaccard distances to the other members of the dominant nonempty
-group. The geometry and atomic coordinates belong to that observed frame.
+Candidates required at least five training frames per group and were ranked
+by assigned training fraction multiplied by the nonnegative silhouette score.
+Ward with two groups scored 0.3824, followed by two-group k-means at 0.3663.
+The best eligible DBSCAN candidate had three groups, `eps = 0.4495` in
+standardized feature space and `min_samples = 20`: silhouette 0.2931,
+assigned fraction 68.17% and score
+0.1998. It left 31.83% of the training frames unassigned.
+
+The DBSCAN model was extended to all saved frames by assigning each frame
+to the nearest training core point within `eps`. This left 32.99% of frames
+unassigned. Scores and settings are in
+[protein_clustering_comparison.csv](protein_clustering_comparison.csv) and
+[protein_clustering_candidates.csv](protein_clustering_candidates.csv);
+per-replica DBSCAN populations are in
+[protein_dbscan_populations.csv](protein_dbscan_populations.csv).
+The algorithm definitions are described in the
+[SciPy Ward documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.ward.html)
+and [scikit-learn DBSCAN documentation](https://scikit-learn.org/stable/modules/clustering.html#dbscan).
+
+### Pocket-shape representatives
+
+Each pocket was sampled at 102 uniformly spaced frames per replica, including
+the first and last saved frames, giving 306 observations. Local Cα alignment
+placed cavity masks on a common 1 Å grid. Jaccard distance measured differences
+in occupied grid cells. The representative was the medoid of the largest
+nonempty group: the observed frame with the smallest sum of Jaccard distances
+to the other group members.
 
 Average-linkage partitions with two to six groups and DBSCAN candidates were
-compared. Candidate groups require at least five frames or 5% of the nonempty
-sample, whichever is larger. DBSCAN coverage must reach 70%. A partition is
-retained if coverage × silhouette is at least 0.25; otherwise one nonempty
-geometry group is used. The criteria retained two DBSCAN groups for FA5; the
-other regions were each summarized by one nonempty shape ensemble.
+compared. Groups required at least five frames or 5% of the nonempty sample,
+whichever was larger. DBSCAN candidates required at least 70% coverage.
+Partitions were retained when coverage × silhouette was at least 0.25;
+otherwise all nonempty masks formed one group. These criteria selected two
+DBSCAN groups for FA5 and one nonempty group for each of the other pockets.
 
-Empty masks are recorded as group 0 and DBSCAN noise as −1. Positive group
-numbers are ordered by population. The selected medoid can differ in volume
-from the trajectory mean. Shape overlap and volume percentiles are reported in
+Empty masks were labeled 0 and DBSCAN noise −1. Positive group labels were
+ordered by population. Medoid overlap and volume percentiles are reported in
 [pocket_shape_representativeness.csv](pocket_shape_representativeness.csv).
-Each pocket-specific frame retains its own complete source protein.
 
-### Frames closest to the mean pocket volume
+### Mean-volume representatives
 
-For each region, one additional observed frame minimizes the absolute difference
-between its volume and the mean of the original 306 observations. Ties are
-resolved by replica order and then by the earliest frame. These frames include
-the same treatment of zero-volume observations as the reported MD mean.
-The coordinates are taken directly from the selected frame. The mean describes
-cavity size across the sampled ensemble; it does not define a unique cavity shape.
+For each pocket, the selected frame minimized the absolute difference between
+its volume and the mean over the 306 sampled observations, including zero
+volumes. Ties were resolved by replica order and then the earliest frame.
+The cleft calculation used the moving landmark lattice used for the trajectory
+volume measurements. Selected frames, volumes and differences from the means
+are in [mean_volume_models.csv](mean_volume_models.csv).
 
-The selected models, complete parent proteins and geometric envelopes are in
-[`mean_volume/`](../structures/representative/mean_volume). Source frames, exact
-volumes and differences from the target means are in
-[mean_volume_models.csv](mean_volume_models.csv). The cleft uses the original
-moving landmark lattice for this selection, matching the trajectory-volume table.
+## Cavity extraction
 
-## How the cavity geometry is extracted
+Experimental ligand positions defined the physiological regions. Local
+canonical Cα anchors transferred each region onto the sampled protein frames.
+Protein atoms excluded space using element-specific radii. A 1.4 Å spherical
+probe on a 1 Å grid measured seed-connected free space within each region.
+The heme region was defined from hemin in 1O9X. The cleft was bounded by a
+convex envelope of residue landmarks.
 
-Experimental ligand positions define the physiological regions. Local canonical
-Cα anchors transfer those regions onto each observed frame. Protein atoms
-exclude space using element-specific radii. A 1.4 Å spherical probe and a
-1 Å grid measure seed-connected free space inside each ligand-informed region.
-Heme uses the hemin region from 1O9X. The cleft uses free space inside its moving
-residue-landmark convex envelope.
+Cleft shapes were compared on a common grid after local landmark alignment;
+trajectory cleft volumes were measured on a moving landmark grid. FA7 overlaps
+Sudlow I, and FA3 and FA4 overlap Sudlow II, so these volumes are not additive.
 
-Cleft shapes were compared on a common grid after local landmark alignment.
-Trajectory cleft volumes were measured on a moving landmark grid. Protein
-and lining hulls enclose atomic positions; the probe mesh describes accessible
-cavity space. FA7 overlaps Sudlow I; FA3 and FA4 overlap Sudlow II, so their
-region volumes should not be summed.
+Lining residues were selected from heavy atoms within 4 Å of a probe-mesh
+vertex. Their complete residues are stored in `residues.pdb`. The fixed local
+alignment residues are stored in `anchors.pdb` and listed under
+`alignment_canonical_residues` in [pocket_shape_methods.csv](pocket_shape_methods.csv).
 
-`residues.pdb` contains the complete residues whose heavy atoms lie within
-4 Å of a probe-mesh vertex in the selected frame. The selection follows the
-actual cavity geometry and can change with conformation.
+Pocket hulls were calculated from the lining-residue heavy atoms; protein
+hulls were calculated from all protein heavy atoms. A convex hull bridges
+surface concavities. Probe meshes follow the unsmoothed 1 Å grid.
 
-`anchors.pdb` contains the local alignment-anchor residues used to position
-the physiological reference region on that frame. These fixed residue identities
-are listed in `alignment_canonical_residues` in `pocket_shape_methods.csv`.
-They provide a reference for locating the site; they can differ from its lining
-residues.
+## Protein and local cavity solids
 
-A lining convex hull encloses those residues' heavy-atom positions. The complete
-protein hull encloses the heavy atoms of the source protein. These envelopes bridge
-concavities and differ from both an atomic solvent-excluded surface and the
-probe-space mesh. The probe mesh retains the unsmoothed 1 Å calculation grid.
+The complete protein heavy-atom convex hull was converted to a closed
+triangular solid. A Boolean union combined the nonempty pocket probe meshes
+from that frame. The union was clipped to the protein hull and subtracted
+at the calculated probe scale. Overlapping probe spaces were subtracted once.
+The remaining material is stored in `protein_solid`; the removed space is
+stored in `pocket_voids`.
 
-## Inverse whole-protein solids
-
-The complete heavy-atom protein convex hull is converted to a closed triangular
-solid. A Boolean union combines all nonempty physiological probe meshes from
-that same frame. The union is clipped to the protein envelope and subtracted
-from it. This preserves overlaps without double counting and retains the
-original probe geometry at scale 1.0. No cavity smoothing or enlargement is used.
-
-`protein_solid` contains the remaining material; `pocket_voids` contains the
-space removed from it. The exterior is a convex envelope and bridges the
-protein's external surface indentations.
-
-All eight full solids were checked for closed surfaces and positive volume.
-For each model, solid volume plus the clipped union volume reproduces the
-starting hull volume. Boolean operations use Manifold3D 3.5.4 with
-double-precision mesh coordinates; Trimesh 5.1.1 provides independent surface
-and volume checks. Full measurements are in [solid_models.csv](solid_models.csv).
+All eight protein solids were checked for closed surfaces and positive
+volume. Solid volume plus clipped cavity volume reproduced the starting
+hull volume. Boolean operations used Manifold3D 3.5.4 with double-precision
+coordinates; Trimesh 5.1.1 provided surface and volume checks. Measurements
+are in [solid_models.csv](solid_models.csv).
 
 ### Local cavity surroundings
 
-`pocket_solid` isolates the selected cavity and a rounded part of its surrounding
-solid. First, the pocket probe is subtracted from the convex hull of its own
-parent protein. The local context is then limited to the convex envelope of
-the probe, dilated by a nominal 10 Å spherical margin. The spherical buffer is
-represented by a geodesic mesh with 32 circular segments. The buffer defines
-the outer boundary of the local solid, which is clipped to the protein hull.
+For each pocket, the probe mesh was subtracted from its parent protein hull.
+The surrounding solid was limited to the probe's convex envelope expanded
+by a nominal 10 Å spherical margin, represented by a polygonal sphere with
+32 circular segments, and clipped to the protein hull.
 
-The construction is applied to all 110 pocket folders: 92 have nonempty cavity
-space, while 18 retain empty local files. Each nonempty model was checked for a
-closed surface and positive volume. The volume of the local material plus
-its empty cavity reproduces the clipped local envelope volume, with a largest
-numerical error below 0.000001 Å³. Source proteins, margin, status and measured
-volumes are in [pocket_solid_models.csv](pocket_solid_models.csv).
+Of the 110 pocket frames, 92 had nonempty probe space and produced local
+solids; 18 had no accessible probe space. Each nonempty model was checked for
+a closed surface and positive volume. Local solid volume plus cavity volume
+reproduced the clipped local envelope volume with an error below 0.000001 Å³.
+Source frames and measurements are in
+[pocket_solid_models.csv](pocket_solid_models.csv).
 
-The previews use transparent amber for solid material and green for the
-boundary of the empty cavity. Each pocket gallery compares the dominant
-protein frame, alternative protein frame, pocket-shape frame and mean-volume
-frame after local Cα alignment. All four panels for a pocket use the same
-view and scale.
+For visual comparison, models were aligned on local Cα anchors and shown
+with the same view and scale within each pocket. Amber marks solid material;
+green marks the empty cavity boundary.
 
-Full and local solids have OBJ, PLY, PDB, MOL, SDF and MOL2 exports. OBJ and PLY
-retain indexed surface triangles. PDB mesh connections give a wireframe display
-in molecular viewers. Separate coincident vertices are retained where grid-based
-cavity surfaces touch. The geometry-only molecular formats retain virtual
-vertices and mesh links.
+## Probe accessibility
 
-## Component files and combinations
-
-Each pocket has four components: its lining `residues`, internal `probe` space,
-lining-residue `hull` and complete `protein_hull`. All fifteen nonempty subsets
-are delivered as PDB files. `both_hulls` combines the two envelopes. The seven
-pure-geometry subsets also have OBJ, PLY, MOL, SDF and MOL2 exports.
-[model_files.csv](model_files.csv) records components, chemical-atom counts,
-virtual-vertex counts, formats and paths for all 1,650 combinations.
-Original protein atom records and coordinates are retained in every atomic model.
-
-## What does “probe availability” mean in the CSV?
-
-The `sampled_probe_availability` column in `representative_comparison.csv` is the
-fraction of sampled frames in which the defined region contains any accessible
-probe-center space. A value of 0.50 means the 1.4 Å probe fits within that region
-in half of the sampled frames. It is not a measured ligand-binding probability.
-A zero-volume observation can result from a narrow or occluded cavity under
-this particular probe size and region definition. The physiological reference
-region remains defined even when no probe fits.
+The `sampled_probe_availability` field in
+[representative_comparison.csv](representative_comparison.csv) reports the
+fraction of sampled frames with nonzero accessible probe space. A value of
+0.50 means that the 1.4 Å probe fits within the defined region in half of the
+sampled frames. Zero volume indicates no accessible probe-center positions
+under the selected probe size and region definition.
 
 ## Tables
 
@@ -217,13 +159,13 @@ region remains defined even when no probe fits.
 |---|---|
 | [Volume summary](pocket_volume_summary.csv) | Mean and sample SD of the three replica means |
 | [Per-replica volumes](per_replica_pocket_volumes.csv) | Mean, median and within-replica spread |
-| [Sampled volumes](sampled_pocket_volumes.csv) | Original 102 frames per replica and region |
-| [Original pocket models](pocket_models.csv) | Original 66 R1-R3 models and source frames |
+| [Sampled volumes](sampled_pocket_volumes.csv) | 102 sampled frames per replica and region |
+| [Per-replica pocket models](pocket_models.csv) | 66 R1-R3 models and source frames |
 | [Protein representatives](protein_representatives.csv) | Per-replica protein-cluster populations and frames |
 | [Representative comparison](representative_comparison.csv) | Ensemble means and volumes of the two selected model sets |
 | [Representative models](representative_models.csv) | Source frames, lining residues, populations and file locations |
-| [Near-mean-volume models](mean_volume_models.csv) | Observed frames closest to the MD mean, their volumes and absolute differences |
-| [Near-mean geometric formats](mean_volume_geometry_formats.csv) | Geometric exports of the near-mean-volume frames |
+| [Mean-volume models](mean_volume_models.csv) | Observed frames closest to the MD mean, their volumes and absolute differences |
+| [Mean-volume geometric formats](mean_volume_geometry_formats.csv) | Geometric exports of the mean-volume frames |
 | [Shape assignments](pocket_shape_assignments.csv) | Geometry labels and volumes for all 306 observations per region |
 | [Shape populations](pocket_shape_populations.csv) | Geometry-group populations by replica |
 | [Clustering candidates](pocket_shape_candidates.csv) | Candidate partitions, silhouettes and coverage |
@@ -232,25 +174,27 @@ region remains defined even when no probe fits.
 | [Representative geometry formats](representative_geometry_formats.csv) | Exported geometry files and vertex/face counts |
 | [Second-group models](second_group_models.csv) | Pocket volumes, lining residues and source frame for common group 2 |
 | [Second-group geometry formats](second_group_geometry_formats.csv) | Additional geometric exports for common group 2 |
-| [Original geometry formats](geometry_formats.csv) | Original R1-R3 geometric exports |
+| [Per-replica geometry formats](geometry_formats.csv) | R1-R3 geometric exports |
 | [Model files](model_files.csv) | All fifteen component combinations in every pocket folder |
 | [Inverse solids](solid_models.csv) | Hull, empty-space union, remaining solid and volume checks |
 | [Local pocket solids](pocket_solid_models.csv) | Rounded 10 Å surroundings, source frames and volume checks |
 | [Protein clustering comparison](protein_clustering_comparison.csv) | Best eligible Ward, k-means and DBSCAN results |
-| [Protein clustering candidates](protein_clustering_candidates.csv) | Original candidate comparison |
+| [Protein clustering candidates](protein_clustering_candidates.csv) | Candidate scores and settings |
 | [DBSCAN populations](protein_dbscan_populations.csv) | Full-dataset density groups and unassigned frames, by replica |
 
 ## Geometric export formats
 
-MOL/SDF use V3000 and atomic number 0 (`*`) for vertices. MOL2 uses `Du`.
-Mesh edges have no physical charge, chemical bond assignment or force-field
-parameters. OBJ/PLY encode triangular faces directly; SDF and MOL2 also retain
-face-index annotations. Readback checks compared the exported vertex positions,
-edge graphs and face records. Actual protein atoms and their coordinates remain
-in the atomic PDB files.
+OBJ and PLY store indexed triangular surfaces. PDB stores mesh vertices and
+connections. MOL and SDF use V3000 with atomic number 0 (`*`) for vertices;
+MOL2 uses `Du`. SDF and MOL2 also store face indices. Separate coincident
+vertices were retained where grid-based cavity surfaces touched.
 
-Source: `CATIONIZED_HSA/series_585_apbs`, native system 0%. Original trajectories,
-probe masks, analysis code and calculation records remain on the cluster.
+Mesh vertices and edges describe geometry and have no chemical charge or
+force-field parameters. Chemical atoms and residue identities are stored in
+the atomic PDB files. Exports were checked by comparing vertex positions,
+edge graphs and face records after readback.
 
-Preview camera settings, source hashes and the schematic overview are recorded
-in [images/FIGURE_SOURCES.json](../images/FIGURE_SOURCES.json).
+The fifteen component combinations are listed in
+[model_files.csv](model_files.csv), with 1,650 model records.
+Figure sources and camera settings are in
+[FIGURE_SOURCES.json](../images/FIGURE_SOURCES.json).

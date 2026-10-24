@@ -7,8 +7,8 @@
 
 Atomic structures and geometric models of eleven physiological regions in
 **native, 585-residue HSA**, sampled in three independent 1 µs simulations.
-The collection includes a common HSA template, individual pocket templates,
-and the original R1-R3 results.
+The collection includes whole-protein representatives, individual pocket
+representatives and per-replica results.
 
 ## Choose a template
 
@@ -54,7 +54,6 @@ protein frame.
 The dominant model is in
 [`whole_protein/`](structures/representative/whole_protein), and the alternative
 is in [`whole_protein_group_2/`](structures/representative/whole_protein_group_2).
-The schematic below introduces the protein, probe spaces and convex envelope.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/whole_protein_overview_dark.svg">
@@ -95,9 +94,6 @@ spaces. The wireframe is the convex envelope of the complete protein.
   <img src="images/HSA_group_2_representations.png" width="100%" alt="Alternative HSA conformation: protein atoms, all pocket probes, their overlay and protein hull with probes">
 </picture>
 
-Each gallery shows the selected protein, its eleven pocket probes, their
-overlay and the complete protein hull at the same scale.
-
 #### Protein solid with empty pockets
 
 The full solid is the complete protein convex envelope minus the union of
@@ -119,16 +115,14 @@ as `pocket_solid.*` for every pocket and representative type.
 </picture>
 
 Amber marks the surrounding solid; green marks the boundary of the empty
-cavity. The enlarged panels show the heme pocket. Local models for all eleven
-pockets are shown and linked in the individual pocket sections below.
+cavity.
 
 | Contents | Dominant conformation | Alternative conformation |
 |---|---|---|
 | Protein solid with all pocket spaces removed | [OBJ](structures/representative/whole_protein/protein_solid.obj), [PDB](structures/representative/whole_protein/protein_solid.pdb), [SDF](structures/representative/whole_protein/protein_solid.sdf) | [OBJ](structures/representative/whole_protein_group_2/protein_solid.obj), [PDB](structures/representative/whole_protein_group_2/protein_solid.pdb), [SDF](structures/representative/whole_protein_group_2/protein_solid.sdf) |
 | Combined empty pocket spaces | [OBJ](structures/representative/whole_protein/pocket_voids.obj), [PDB](structures/representative/whole_protein/pocket_voids.pdb), [SDF](structures/representative/whole_protein/pocket_voids.sdf) | [OBJ](structures/representative/whole_protein_group_2/pocket_voids.obj), [PDB](structures/representative/whole_protein_group_2/pocket_voids.pdb), [SDF](structures/representative/whole_protein_group_2/pocket_voids.sdf) |
 
-These models also have PLY, MOL and MOL2 files. OBJ and PLY store triangular
-surfaces; PDB stores mesh vertices and connections. Model volumes are listed in
+Model volumes are reported in
 [solid_models.csv](tables/solid_models.csv) and
 [pocket_solid_models.csv](tables/pocket_solid_models.csv).
 
@@ -141,19 +135,16 @@ its lining residues and its complete source protein. Different pockets can
 therefore come from different frames. These models are in
 [`pocket_geometry/`](structures/representative/pocket_geometry).
 
-The schematic shows the lining residues, probe space, their overlay and the
-lining-residue convex hull. Green marks probe space; amber marks the hull.
+Green marks probe space; the amber wireframe encloses the lining residues.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/representations_overview_dark.svg">
   <img src="images/representations_overview.svg" width="100%" alt="Schematic pocket example showing lining residues, probe space, their overlay and residue convex hull">
 </picture>
 
-Each pocket gallery compares the dominant protein frame, pocket-shape frame
-and mean-volume frame after local alignment, at the same scale. The second
-image shows the empty cavity and its 10 Å solid surroundings in all four
-representative collections, including the alternative protein conformation.
-A frame with no accessible probe space has an empty local model.
+Residue and probe views compare the dominant protein, pocket-shape and
+mean-volume frames. Solid models also include the alternative protein frame.
+The models share a local Cα alignment and scale within each pocket.
 
 <details>
 <summary>Sudlow I - view all representations</summary>
@@ -428,13 +419,10 @@ including frames with zero accessible probe space.
 **Dominant protein** and **Alternative protein** give the volumes in the two
 whole-protein frames.
 **Pocket shape** gives the volume in the frame selected by cavity geometry.
-These selection criteria describe protein opening or local shape, so their
-volumes can differ from the ensemble mean.
 
 **Mean volume** gives the cavity volume in the observed frame closest to the
 MD mean among the 306 sampled frames. Its model is in
-[`mean_volume/`](structures/representative/mean_volume). All volumes are in Å³;
-each linked value opens the corresponding model folder.
+[`mean_volume/`](structures/representative/mean_volume). All volumes are in Å³.
 
 | Pocket | MD mean ± SD | Dominant protein | Alternative protein | Pocket shape | Mean volume |
 |---|---:|---:|---:|---:|---:|
@@ -451,9 +439,8 @@ each linked value opens the corresponding model folder.
 | FA7 | 9.3 ± 5.5 | [2](structures/representative/whole_protein/FA7) | [0](structures/representative/whole_protein_group_2/FA7) | [25](structures/representative/pocket_geometry/FA7) | [9](structures/representative/mean_volume/FA7) |
 
 A zero means that the 1.4 Å probe has no accessible center positions within
-the specified region in that frame. The physiological site is still defined by
-its reference residues. These volumes describe the selected probe and region;
-FA7 overlaps Sudlow I, and FA3/FA4 overlap Sudlow II.
+the specified region in that frame. FA7 overlaps Sudlow I, and FA3/FA4 overlap
+Sudlow II.
 
 - [Full comparison table](tables/representative_comparison.csv)
 - [Source frames and lining residues](tables/representative_models.csv)
@@ -469,7 +456,7 @@ structures/
 │   ├── whole_protein_group_2/  Alternative protein frame
 │   ├── pocket_geometry/        One shape-selected frame per pocket
 │   └── mean_volume/            One frame near each mean pocket volume
-├── R1/                        Original per-replica representatives
+├── R1/                        Per-replica representatives
 ├── R2/
 └── R3/
 tables/                        Volumes, source frames and methods
@@ -492,16 +479,14 @@ folder also contains its own complete parent protein. All coordinates are in Å.
 | `protein_hull` | Convex envelope of the complete parent HSA |
 | `anchors.pdb` | Fixed reference residues used to locate and align the physiological region |
 
-`residues.pdb` follows the cavity boundary in the selected frame.
-`anchors.pdb` contains the alignment reference for that region; the two
-selections can differ. The probe measures cavity space. The pocket hull
-encloses the surrounding atoms, so its volume is different from the probe volume.
+Probe volume measures accessible internal space. The pocket hull encloses
+the lining atoms.
 
 ### All component combinations
 
 Every pocket folder contains all fifteen nonempty combinations of the four
 components as PDB files. `both_hulls` means the pocket hull and the complete
-protein hull together. Filenames use letters, numbers and underscores.
+protein hull together.
 
 | Components | File stem |
 |---|---|
@@ -523,8 +508,8 @@ protein hull together. Filenames use letters, numbers and underscores.
 
 The seven combinations containing only geometry also have OBJ, PLY, MOL, SDF
 and MOL2 exports. MOL/SDF/MOL2 encode mesh vertices as virtual atoms and edges
-as geometric links. These files retain the cavity geometry for shape processing;
-the chemical atoms and residue identities are in the atomic PDB files.
+as geometric links. Atomic PDB files contain the chemical atoms and residue
+identities.
 An empty probe file records a frame in which no space fits the selected probe.
 
 ### Complete protein models
@@ -547,10 +532,8 @@ Local solids are available for all nonempty pockets in every model collection.
 An empty local file records a frame with no accessible probe space.
 
 The complete all-pocket models are in the two `whole_protein` folders and the
-six `R1`-`R3` group folders. All fifteen pocket combinations and their paths
-are listed in [model_files.csv](tables/model_files.csv).
-Frame selections, clustering comparisons and table definitions are in
-[Methods and numerical results](tables/README.md).
+six `R1`-`R3` group folders. [model_files.csv](tables/model_files.csv) lists the
+components and paths for all pocket combinations.
 
 ## License
 
