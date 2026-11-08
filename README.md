@@ -535,6 +535,16 @@ The complete all-pocket models are in the two `whole_protein` folders and the
 six `R1`-`R3` group folders. [model_files.csv](tables/model_files.csv) lists the
 components and paths for all pocket combinations.
 
+## Software and references
+
+| Software / model | Role | Primary reference |
+|---|---|---|
+| [Amber](https://ambermd.org/) / ff14SB | Production molecular dynamics of native 585-residue HSA | Case et al., *J. Chem. Inf. Model.* 2023 ([10.1021/acs.jcim.3c01153](https://doi.org/10.1021/acs.jcim.3c01153)); Maier et al., *J. Chem. Theory Comput.* 2015 ([10.1021/acs.jctc.5b00255](https://doi.org/10.1021/acs.jctc.5b00255)) |
+| [SciPy](https://scipy.org/) | Hierarchical Ward clustering and convex-hull geometry | Virtanen et al., *Nat. Methods* 2020 ([10.1038/s41592-019-0686-2](https://doi.org/10.1038/s41592-019-0686-2)) |
+| [scikit-learn](https://scikit-learn.org/) | *k*-means, DBSCAN and silhouette evaluation | Pedregosa et al., *J. Mach. Learn. Res.* 2011 ([jmlr.org/papers/v12/pedregosa11a.html](https://jmlr.org/papers/v12/pedregosa11a.html)) |
+| [Manifold](https://github.com/elalish/manifold) / [Trimesh](https://trimesh.org/) | Exact Boolean solid operations and closed-surface validation | Manifold3D & Trimesh |
+| [VMD](https://www.ks.uiuc.edu/Research/vmd/) / Tachyon | Molecular visualization and ray-traced figures | Humphrey, Dalke & Schulten, *J. Mol. Graph.* 1996 ([10.1016/0263-7855(96)00018-5](https://doi.org/10.1016/0263-7855(96)00018-5)) |
+
 ## Acknowledgements
 
 This work was developed within the **NanoBio Interface Lab** at the Department
