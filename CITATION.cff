@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use these structures, models or tables, please cite this repository."
+title: "hsa-native-pockets"
+type: dataset
+license: CC-BY-4.0
+version: "1.0.0"
+repository-code: "https://github.com/CalzaAlessandro/hsa-native-pockets"
+authors:
+  - family-names: "Calza"
+    given-names: "Alessandro"
+    affiliation: "NanoBio Interface Lab, Dipartimento di Chimica “Giacomo Ciamician,” Alma Mater Studiorum – Università di Bologna, 40129 Bologna, Italy; IRCCS Azienda Ospedaliero – Universitaria di Bologna, Preclinical & Translational Research in Oncology lab (PRO), 40138 Bologna, Italy"

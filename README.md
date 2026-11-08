@@ -535,6 +535,13 @@ The complete all-pocket models are in the two `whole_protein` folders and the
 six `R1`-`R3` group folders. [model_files.csv](tables/model_files.csv) lists the
 components and paths for all pocket combinations.
 
+## Acknowledgements
+
+This work was developed within the **NanoBio Interface Lab** at the Department
+of Chemistry "Giacomo Ciamician," Alma Mater Studiorum – University of Bologna,
+and the Preclinical & Translational Research in Oncology lab (PRO), IRCCS
+Azienda Ospedaliero–Universitaria di Bologna.
+
 ## License
 
 The original structures, geometric models, numerical tables, figures and
@@ -544,6 +551,6 @@ documentation in this collection are licensed under
 Reuse and adaptation, including commercial use, are permitted with appropriate
 credit, a link to the license and an indication of any changes. Please identify
 this collection and retain the author and source information supplied with
-the material.
+the material (see [CITATION.cff](CITATION.cff)).
 
 Third-party material retains its original terms and attribution.
