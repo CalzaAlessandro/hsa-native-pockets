@@ -1,0 +1,22 @@
+{
+  "title": "Native HSA physiological pockets",
+  "description": "Atomic structures and geometric models of eleven physiological regions in native human serum albumin, including representative structures and pocket-volume tables.",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Calza, Alessandro",
+      "affiliation": "NanoBio Interface Lab, Dipartimento di Chimica “Giacomo Ciamician,” Alma Mater Studiorum – Università di Bologna, 40129 Bologna, Italy; IRCCS Azienda Ospedaliero – Universitaria di Bologna, Preclinical & Translational Research in Oncology lab (PRO), 40138 Bologna, Italy"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "version": "1.0.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/CalzaAlessandro/hsa-native-pockets",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "publication_date": "2026-11-10"
+}

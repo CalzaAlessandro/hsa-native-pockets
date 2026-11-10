@@ -4,6 +4,7 @@ title: "hsa-native-pockets"
 type: dataset
 license: CC-BY-4.0
 version: "1.0.0"
+date-released: "2026-11-10"
 repository-code: "https://github.com/CalzaAlessandro/hsa-native-pockets"
 authors:
   - family-names: "Calza"
