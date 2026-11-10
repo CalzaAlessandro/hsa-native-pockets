@@ -1,14 +1,26 @@
 <h1 align="center">Native HSA physiological pockets</h1>
 
+Atomic structures and geometric models of eleven physiological regions in
+**native, 585-residue HSA**, sampled in three independent 1 µs simulations.
+The collection includes whole-protein representatives, individual pocket
+representatives and per-replica results.
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-607D8B?style=flat" alt="License: CC BY 4.0"></a>
+  <a href="CITATION.cff"><img src="https://img.shields.io/badge/Citation-Metadata-58616B?style=flat" alt="Citation metadata"></a>
+</p>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/banner_dark.svg">
   <img src="images/banner.svg" width="100%" alt="Three views of the native heme pocket: atomic lining residues, the cavity probe surface, and the convex hull with probe">
 </picture>
 
-Atomic structures and geometric models of eleven physiological regions in
-**native, 585-residue HSA**, sampled in three independent 1 µs simulations.
-The collection includes whole-protein representatives, individual pocket
-representatives and per-replica results.
+<p align="center">
+  <a href="#choose-a-template">Choose a template</a> ·
+  <a href="#pocket-volumes">Pocket volumes</a> ·
+  <a href="#find-the-files">Find the files</a> ·
+  <a href="tables/README.md">Methods</a>
+</p>
 
 ## Choose a template
 
