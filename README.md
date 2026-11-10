@@ -6,6 +6,7 @@ The collection includes whole-protein representatives, individual pocket
 representatives and per-replica results.
 
 <p align="center">
+  <a href="https://doi.org/10.5281/zenodo.24119580"><img src="https://img.shields.io/badge/Archive-10.5281%2Fzenodo.24119580-2457A7?style=flat" alt="Archive DOI: 10.5281/zenodo.24119580"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-607D8B?style=flat" alt="License: CC BY 4.0"></a>
   <a href="CITATION.cff"><img src="https://img.shields.io/badge/Citation-Metadata-58616B?style=flat" alt="Citation metadata"></a>
 </p>
