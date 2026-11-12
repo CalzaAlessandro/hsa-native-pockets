@@ -12,8 +12,8 @@ representatives and per-replica results.
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/banner_dark.svg">
-  <img src="images/banner.svg" width="100%" alt="Three views of the native heme pocket: atomic lining residues, the cavity probe surface, and the convex hull with probe">
+  <source media="(prefers-color-scheme: dark)" srcset="images/banner_dark.png">
+  <img src="images/banner.png" width="100%" alt="Illustration of albumin, a magnified binding pocket and its cavity envelope inside a geometric hull">
 </picture>
 
 <p align="center">
