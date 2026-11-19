@@ -9,8 +9,8 @@ in native human serum albumin.
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/banner_dark.png">
-  <img src="images/banner.png" width="100%" alt="Illustration of albumin, a magnified binding pocket and its cavity envelope inside a geometric hull">
+  <source media="(prefers-color-scheme: dark)" srcset="images/banner_dark.webp">
+  <img src="images/banner.webp" width="100%" alt="Illustration of albumin, a magnified binding pocket and its cavity envelope inside a geometric hull">
 </picture>
 
 ## Contents
@@ -178,7 +178,7 @@ Citation metadata: [CITATION.cff](CITATION.cff).
 
 ## Contributing
 
-Report problems or propose changes through [GitHub Issues](https://github.com/CalzaAlessandro/hsa-native-pockets/issues). Include the affected file or command and a short description.
+Report problems or propose changes through [GitHub Issues](https://github.com/CalzaAlessandro/hsa-native-pockets/issues) and see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## Acknowledgements
 

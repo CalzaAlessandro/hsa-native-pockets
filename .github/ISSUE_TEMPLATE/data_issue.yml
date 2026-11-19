@@ -1,0 +1,28 @@
+name: Dataset or structure issue
+description: Report an error in a structure file, pocket geometry or table.
+title: "[Issue] "
+body:
+  - type: markdown
+    attributes:
+      value: Include the exact file path or pocket name and describe the discrepancy.
+  - type: input
+    id: path
+    attributes:
+      label: Affected file or pocket
+      placeholder: e.g. structures/representative/whole_protein/Heme/
+    validations:
+      required: true
+  - type: input
+    id: viewer
+    attributes:
+      label: Software or viewer used (optional)
+      placeholder: e.g. PyMOL, ChimeraX, MDAnalysis
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the issue
+      placeholder: Describe what appears inconsistent and what you expected.
+    validations:
+      required: true
